@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ConnorBryan/smashcombos
   branch: master
 
 media_folder: static/img
@@ -28,6 +29,8 @@ collections:
 
   - name: "characters"
     label: "Characters"
+    label_singular: "Character"
+    identifier_field: "name"
     folder: "src/characters"
     create: true
     slug: "{{slug}}"
