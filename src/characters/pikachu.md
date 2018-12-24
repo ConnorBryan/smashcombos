@@ -22,5 +22,12 @@ combos:
     lightweightPercentage: '0'
     middleweightPercentage: '0'
     superHeavyweightPercentage: '0'
+  - balloonweightPercentage: '75'
+    featherweightPercentage: '75'
+    heavyweightPercentage: '75'
+    input: uthrow dspecial
+    lightweightPercentage: '75'
+    middleweightPercentage: '75'
+    superHeavyweightPercentage: '75'
 ---
 
