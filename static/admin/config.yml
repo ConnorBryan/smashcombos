@@ -35,8 +35,247 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Render", name: "render", widget: "image" }
+      - {
+          label: Name,
+          name: name,
+          widget: string,
+          description: The name of the character.,
+        }
+      - {
+          label: Render,
+          name: render,
+          widget: image,
+          description: An image of the character.,
+        }
+      - {
+          label: Attributes,
+          name: attributes,
+          widget: object,
+          fields:
+            [
+              {
+                label: Weight,
+                name: weight,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Weight Class,
+                      name: weightClass,
+                      widget: select,
+                      description: The weight class to which the character belongs.,
+                      options:
+                        [
+                          { label: Balloonweight, value: balloonweight },
+                          { label: Featherweight, value: featherweight },
+                          { label: Lightweight, value: lightweight },
+                          { label: Middleweight, value: middleweight },
+                          { label: Heavyweight, value: heavyweight },
+                          { label: Super Heavyweight, value: superheavyweight },
+                        ],
+                    },
+                    {
+                      label: Weight Value,
+                      name: weightValue,
+                      widget: number,
+                      description: The character's weight value in units,
+                    },
+                    {
+                      label: Weight Rank,
+                      name: weightRank,
+                      widget: number,
+                      description: The placement of the character in regards to weight compared to the rest of the cast.,
+                    },
+                  ],
+                description: Weight information for the character.,
+              },
+            ],
+          description: Statistical values for various categories.,
+        }
+      - {
+          label: Kill Confirms,
+          name: killConfirms,
+          widget: object,
+          fields:
+            [
+              {
+                label: Input,
+                name: input,
+                widget: string,
+                description: The input for the attack which triggers the kill confirm.,
+              },
+              {
+                label: Balloonweight Percentage,
+                name: balloonweightPercentage,
+                widget: number,
+                description: The percentage at which balloonweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Featherweight Percentage,
+                name: featherweightPercentage,
+                widget: number,
+                description: The percentage at which featherweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Lightweight Percentage,
+                name: lightweightPercentage,
+                widget: number,
+                description: The percentage at which lightweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Middleweight Percentage,
+                name: middleweightPercentage,
+                widget: number,
+                description: The percentage at which middleweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Heavyweight Percentage,
+                name: heavyweightPercentage,
+                widget: number,
+                description: The percentage at which heavyweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Super Heavyweight Percentage,
+                name: superHeavyweightPercentage,
+                widget: number,
+                description: The percentage at which super heavyweight characters are vulnerable to the kill confirm.,
+              },
+              {
+                label: Tags,
+                name: tags,
+                widget: select,
+                multiple: true,
+                options:
+                  [
+                    {
+                      label: Floatie,
+                      value: floatie,
+                      description: Characters that fall to the ground slowly.,
+                    },
+                    {
+                      label: Fast Faller,
+                      value: fastFaller,
+                      description: Characters that fall to the ground quickly.,
+                    },
+                    {
+                      label: Big Body,
+                      value: bigBody,
+                      description: Characters that have larger hitboxes.,
+                    },
+                  ],
+                description: A list of different types of characters the kill confirm works against.,
+              },
+              {
+                label: Notes,
+                name: notes,
+                widget: string,
+                description: Additional information related to the kill confirm.,
+              },
+            ],
+          description: Single attacks the character can use that will result in a guaranteed kill.,
+        }
+      - {
+          label: Combos,
+          label_singular: Combo,
+          name: combos,
+          widget: list,
+          fields:
+            [
+              {
+                label: Input,
+                name: input,
+                widget: string,
+                description: The space-separated string of controller inputs to trigger the combo.,
+              },
+              {
+                label: Balloonweight Percentage,
+                name: balloonweightPercentage,
+                widget: number,
+                description: The percentage at which balloonweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Featherweight Percentage,
+                name: featherweightPercentage,
+                widget: number,
+                description: The percentage at which featherweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Lightweight Percentage,
+                name: lightweightPercentage,
+                widget: number,
+                description: The percentage at which lightweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Middleweight Percentage,
+                name: middleweightPercentage,
+                widget: number,
+                description: The percentage at which middleweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Heavyweight Percentage,
+                name: heavyweightPercentage,
+                widget: number,
+                description: The percentage at which heavyweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Super Heavyweight Percentage,
+                name: superHeavyweightPercentage,
+                widget: number,
+                description: The percentage at which super heavyweight characters are vulnerable to the combo.,
+              },
+              {
+                label: Damage,
+                name: damage,
+                widget: number,
+                description: Damage dealt by the combo.,
+              },
+              {
+                label: Kill Confirm,
+                name: killConfirm,
+                widget: boolean,
+                description: If executed correctly,
+                is the combo a guaranteed kill?,
+              },
+              {
+                label: DI-able,
+                name: diable,
+                widget: boolean,
+                description: Can the character being attacked utilize directional influence to escape?,
+              },
+              {
+                label: Tags,
+                name: tags,
+                widget: select,
+                multiple: true,
+                options:
+                  [
+                    {
+                      label: Floatie,
+                      value: floatie,
+                      description: Characters that fall to the ground slowly.,
+                    },
+                    {
+                      label: Fast Faller,
+                      value: fastFaller,
+                      description: Characters that fall to the ground quickly.,
+                    },
+                    {
+                      label: Big Body,
+                      value: bigBody,
+                      description: Characters that have larger hitboxes.,
+                    },
+                  ],
+                description: A list of different types of characters the kill confirm works against.,
+              },
+              {
+                label: Notes,
+                name: notes,
+                widget: string,
+                description: Additional information related to the combo.,
+              },
+            ],
+          description: Strings of attacks the character can use to inflict greater damage.,
+        }
 
   - name: "pages"
     label: "Pages"
