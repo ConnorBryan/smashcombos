@@ -20,7 +20,7 @@ export const characterPageQuery = graphql`
         name
         render {
           childImageSharp {
-            fluid(maxWidth: 240, quality: 64) {
+            fluid(maxWidth: 1075, quality: 72) {
               ...GatsbyImageSharpFluid
             }
           }
