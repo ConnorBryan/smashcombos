@@ -66,8 +66,8 @@ collections:
                 fields:
                   [
                     {
-                      label: Weight Class,
-                      name: weightClass,
+                      label: Class,
+                      name: class,
                       widget: select,
                       description: The weight class to which the character belongs.,
                       options:
@@ -81,14 +81,14 @@ collections:
                         ],
                     },
                     {
-                      label: Weight Value,
-                      name: weightValue,
+                      label: Value,
+                      name: value,
                       widget: number,
                       description: The character's weight value in units,
                     },
                     {
-                      label: Weight Rank,
-                      name: weightRank,
+                      label: Rank,
+                      name: rank,
                       widget: number,
                       description: The placement of the character in regards to weight compared to the rest of the cast.,
                     },

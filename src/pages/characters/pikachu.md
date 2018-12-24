@@ -4,9 +4,9 @@ templateKey: "character-page"
 render: /img/pikachu.png
 attributes:
   weight:
-    weightClass: featherweight
-    weightRank: "68"
-    weightValue: "79"
+    class: featherweight
+    rank: "68"
+    value: "79"
 killConfirms:
   balloonweightPercentage: "160"
   featherweightPercentage: "160"
