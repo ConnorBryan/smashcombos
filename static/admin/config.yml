@@ -31,10 +31,16 @@ collections:
     label: "Characters"
     label_singular: "Character"
     identifier_field: "name"
-    folder: "src/characters"
+    folder: "src/pages/characters"
     create: true
     slug: "{{slug}}"
     fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "character-page",
+        }
       - {
           label: Name,
           name: name,
