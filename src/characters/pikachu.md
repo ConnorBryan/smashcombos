@@ -2,9 +2,25 @@
 name: Pikachu
 render: /img/pikachu.png
 attributes:
-  weight: {}
-killConfirms: {}
+  weight:
+    weightClass: featherweight
+    weightRank: '68'
+    weightValue: '79'
+killConfirms:
+  balloonweightPercentage: '160'
+  featherweightPercentage: '160'
+  heavyweightPercentage: '160'
+  input: uthrow
+  lightweightPercentage: '160'
+  middleweightPercentage: '160'
+  superHeavyweightPercentage: '160'
 combos:
-  - combo: {}
+  - balloonweightPercentage: '0'
+    featherweightPercentage: '0'
+    heavyweightPercentage: '0'
+    input: dthrow nair
+    lightweightPercentage: '0'
+    middleweightPercentage: '0'
+    superHeavyweightPercentage: '0'
 ---
 
