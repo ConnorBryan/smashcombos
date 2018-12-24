@@ -26,6 +26,7 @@ combos:
     featherweightPercentage: '75'
     heavyweightPercentage: '75'
     input: uthrow dspecial
+    killConfirm: true
     lightweightPercentage: '75'
     middleweightPercentage: '75'
     superHeavyweightPercentage: '75'
