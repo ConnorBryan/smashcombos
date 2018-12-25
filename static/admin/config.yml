@@ -82,6 +82,7 @@ collections:
         }
       - {
           label: Kill Confirms,
+          label_singular: Kill Confirm,
           name: killConfirms,
           widget: list,
           fields:

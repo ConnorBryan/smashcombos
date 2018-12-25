@@ -16,6 +16,8 @@ export default function CharacterPage({ data }) {
   const hasKillConfirms = killConfirms.length > 0;
   const hasCombos = combos.length > 0;
 
+  console.log("\n\n\n", "data", data, "\n\n\n");
+
   return (
     <Layout>
       <section className="CharacterPage">
