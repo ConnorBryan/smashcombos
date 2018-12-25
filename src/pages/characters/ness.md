@@ -1,7 +1,7 @@
 ---
 templateKey: character-page
 name: Ness
-render: /img/ness.png
+render: /img/chemex.jpg
 attributes:
   weight:
     class: middleweight
