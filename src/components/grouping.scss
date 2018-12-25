@@ -1,16 +1,11 @@
-@import '../styles/styles.scss';
+@import "../styles/styles.scss";
 
 .Grouping {
   margin-bottom: $spacing-md;
   background: $darker-grey;
   border: 1px solid $primary;
-  cursor: pointer;
   transition: background 0.1s ease-in;
 
-  &:active,
-  &:hover {
-    background: $dark-grey;
-  }
   &-title {
     display: flex;
     align-items: center;
@@ -18,6 +13,12 @@
     padding: $spacing-md;
     font-size: $font-size-sm;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:active,
+    &:hover {
+      background: $dark-grey;
+    }
   }
   &-content {
     padding: $spacing-md;

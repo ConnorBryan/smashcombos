@@ -11,42 +11,62 @@ const getCharacterRender = character => character.render;
 export default function CharacterPage({ data }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
-  const { attributes, killConfirms, combos } = character;
-  const hasAttributes = attributes.length > 0;
+  const { name, attributes, killConfirms, combos } = character;
   const hasKillConfirms = killConfirms.length > 0;
   const hasCombos = combos.length > 0;
-
-  console.log("\n\n\n", "data", data, "\n\n\n");
 
   return (
     <Layout>
       <section className="CharacterPage">
         <CharacterStrip
-          character={character}
+          name={name}
           image={image}
           attributes={attributes}
           killConfirms={killConfirms}
           combos={combos}
         />
         <Grouping title="Attributes">
-          {hasAttributes ? (
-            attributes
+          {attributes ? (
+            Object.entries(attributes).map(([key, value]) => (
+              <Grouping title={key}>
+                {key === "weight" && (
+                  <Panel>
+                    <p>Class: {value.class}</p>
+                    <p>Value: {value.value}</p>
+                    <p>Rank: #{value.rank}</p>
+                  </Panel>
+                )}
+              </Grouping>
+            ))
           ) : (
             <Panel>This character has no listed attributes.</Panel>
           )}
         </Grouping>
         <Grouping title="Kill Confirms">
           {hasKillConfirms ? (
-            killConfirms.map(({ input, light, medium, heavy }) => (
-              <Panel key={input}>
-                <h2>{input}</h2>
-                <ul>
-                  <li>Light - {light}</li>
-                  <li>Medium - {medium}</li>
-                  <li>Heavy - {heavy}</li>
-                </ul>
-              </Panel>
-            ))
+            killConfirms.map(
+              ({
+                input,
+                balloonweightPercentage,
+                featherweightPercentage,
+                lightweightPercentage,
+                middleweightPercentage,
+                heavyweightPercentage,
+                superHeavyweightPercentage
+              }) => (
+                <Panel key={input}>
+                  <h2>{input}</h2>
+                  <ul>
+                    <li>Balloonweight - {balloonweightPercentage}</li>
+                    <li>Featherweight - {featherweightPercentage}</li>
+                    <li>Lightweight - {lightweightPercentage}</li>
+                    <li>Middleweight - {middleweightPercentage}</li>
+                    <li>Heavyweight - {heavyweightPercentage}</li>
+                    <li>Super Heavyweight - {superHeavyweightPercentage}</li>
+                  </ul>
+                </Panel>
+              )
+            )
           ) : (
             <Panel>This character has no listed kill confirms.</Panel>
           )}
