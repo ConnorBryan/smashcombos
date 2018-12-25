@@ -10,12 +10,14 @@ attributes:
 killConfirms:
   - percentages: {}
 combos:
-  - damage: '-2'
+  - damage: '-1'
     input: dthrow sh+fair dj+fair
     percentages:
       balloonweight: ''
       featherweight: ''
+      heavyweight: '999'
       lightweight: ''
       middleweight: ''
+      superHeavyweight: '999'
 ---
 
