@@ -8,9 +8,23 @@ const getCharacters = data =>
     .map(({ frontmatter }) => frontmatter);
 
 export default class IndexPage extends Component {
+  state = {
+    filter: ""
+  };
+
+  handleFilterChange = ({ target: { value: filter } }) =>
+    this.setState({ filter });
+
+  clearFilter = () => this.setState({ filter: "" });
+
+  scrollToTop = () => window.scrollTo(0, 0);
+
   render() {
     const { data } = this.props;
     const characters = getCharacters(data);
+    const matches = characters.filter(({ name }) =>
+      name.toLowerCase().includes(filter.toLowerCase())
+    );
 
     return <p>Index</p>;
   }
