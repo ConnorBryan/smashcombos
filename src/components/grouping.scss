@@ -1,0 +1,27 @@
+@import '../styles/styles.scss';
+
+.Grouping {
+  margin-bottom: $spacing-md;
+  background: $darker-grey;
+  border: 1px solid $primary;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+
+  &:active,
+  &:hover {
+    background: $dark-grey;
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-md;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+  }
+  &-content {
+    padding: $spacing-md;
+    background: $darkest-grey;
+    border-top: 1px solid $primary;
+  }
+}

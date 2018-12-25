@@ -83,7 +83,7 @@ collections:
       - {
           label: Kill Confirms,
           name: killConfirms,
-          widget: object,
+          widget: list,
           fields:
             [
               {

@@ -1,0 +1,12 @@
+@import '../styles/styles.scss';
+
+.Footer {
+  @include perfectly-centered();
+
+  display: flex;
+  align-items: center;
+  padding: $spacing-md;
+  min-height: $header-height;
+  background: $almost-black;
+  border-top: 1px solid $primary;
+}

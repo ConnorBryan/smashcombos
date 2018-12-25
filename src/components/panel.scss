@@ -1,0 +1,9 @@
+@import '../styles/styles.scss';
+
+.Panel {
+  @include drop-shadow;
+
+  padding: $spacing-sm;
+  background: $light-grey;
+  border-left: 2px solid $primary;
+}

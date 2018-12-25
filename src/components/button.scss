@@ -1,0 +1,19 @@
+@import '../styles/styles.scss';
+
+.Button {
+  width: 100%;
+  height: $spacing-xxl;
+  background: $primary;
+  border: 1px solid $primary-lighter;
+  color: $almost-white;
+  text-transform: uppercase;
+  font-size: $font-size-md;
+  transition: background 0.2s ease-in;
+  border: 0.2s ease-in;
+
+  &:focus,
+  &:active {
+    background: $primary-darker;
+    border: 1px solid $primary;
+  }
+}

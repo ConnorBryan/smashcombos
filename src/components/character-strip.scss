@@ -1,0 +1,63 @@
+@import '../styles/styles.scss';
+
+.CharacterStrip {
+  display: flex;
+  margin-bottom: $spacing-md;
+  border: 1px solid $primary;
+  background: $darkest-grey;
+  transition: background 0.1s ease-in;
+
+  &.clickable {
+    &:active,
+    &:hover {
+      background: $dark-grey;
+    }
+  }
+  .gatsby-image-wrapper,
+  .gatsby-image-wrapper img {
+    width: 100px !important;
+    height: 100px !important;
+    padding: $spacing-sm;
+  }
+  &-image {
+    @include perfectly-centered();
+
+    flex: 1;
+    border-right: 1px solid $primary;
+  }
+  &-details {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacing-md;
+
+    &-name {
+      margin-bottom: $spacing-lg;
+      text-transform: uppercase;
+    }
+    &-stats {
+      display: flex;
+      flex-direction: column;
+
+      &-shouter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &:first-of-type {
+          margin-bottom: $spacing-md;
+        }
+        &-stat {
+          flex: 3;
+          text-transform: uppercase;
+        }
+        &-count {
+          flex: 1;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

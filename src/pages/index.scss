@@ -1,0 +1,31 @@
+@import "../styles/styles.scss";
+
+.Master {
+  position: relative;
+
+  &-controls {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    height: 10vh;
+    margin: $spacing-xl 0;
+  }
+  &-characters {
+    &-noMatch {
+      min-height: 5rem;
+      padding: $spacing-lg;
+      font-size: $font-size-md;
+      text-align: center;
+
+      > p {
+        margin-bottom: $spacing-md;
+      }
+    }
+  }
+  &-top {
+    position: fixed;
+    right: $spacing-xl;
+    bottom: $spacing-lg;
+    width: 8rem;
+  }
+}

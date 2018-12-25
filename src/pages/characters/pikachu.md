@@ -8,13 +8,13 @@ attributes:
     rank: "68"
     value: "79"
 killConfirms:
-  balloonweightPercentage: "160"
-  featherweightPercentage: "160"
-  heavyweightPercentage: "160"
-  input: uthrow
-  lightweightPercentage: "160"
-  middleweightPercentage: "160"
-  superHeavyweightPercentage: "160"
+  - balloonweightPercentage: "160"
+    featherweightPercentage: "160"
+    heavyweightPercentage: "160"
+    input: uthrow
+    lightweightPercentage: "160"
+    middleweightPercentage: "160"
+    superHeavyweightPercentage: "160"
 combos:
   - balloonweightPercentage: "0"
     featherweightPercentage: "0"

@@ -1,0 +1,23 @@
+@import '../styles/styles.scss';
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $header-height;
+  padding: $spacing-md;
+  background: $almost-black;
+  border-bottom: 1px solid $primary;
+  color: $almost-white;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+
+  &-small {
+    font-size: 21px;
+  }
+}

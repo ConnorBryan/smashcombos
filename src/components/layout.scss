@@ -1,0 +1,46 @@
+@import '../styles/styles.scss';
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $almost-black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: $almost-white;
+}
+
+.Layout {
+  background: $darkest-grey;
+  color: $almost-white;
+  font-family: $font-primary;
+
+  &-content {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 8vh;
+    padding: $spacing-md;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../styles/styles.scss';
+
+.Input {
+  display: block;
+  width: 100%;
+  height: 70%;
+  padding: $spacing-md;
+  background: $dark-grey;
+  border: 1px solid $primary;
+  color: $almost-white;
+  font-size: $font-size-lg;
+}

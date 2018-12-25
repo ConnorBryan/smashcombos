@@ -1,0 +1,10 @@
+@import "../styles/styles.scss";
+
+.CharacterPage {
+  flex: 1;
+  margin: $spacing-xl 0;
+
+  &-back {
+    text-align: right;
+  }
+}
