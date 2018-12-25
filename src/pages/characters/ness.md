@@ -13,11 +13,11 @@ combos:
   - damage: '-1'
     input: dthrow sh+fair dj+fair
     percentages:
-      balloonweight: ''
-      featherweight: ''
-      heavyweight: '999'
-      lightweight: ''
-      middleweight: ''
-      superHeavyweight: '999'
+      balloonweight: 0-25
+      featherweight: 0-25
+      heavyweight: N/A
+      lightweight: 0-25
+      middleweight: 0-25
+      superHeavyweight: N/A
 ---
 
