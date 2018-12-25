@@ -101,22 +101,26 @@ export const pageQuery = graphql`
               }
             }
             killConfirms {
-              balloonweightPercentage
-              featherweightPercentage
-              heavyweightPercentage
               input
-              lightweightPercentage
-              middleweightPercentage
-              superHeavyweightPercentage
+              percentages {
+                balloonweight
+                featherweight
+                lightweight
+                middleweight
+                heavyweight
+                superHeavyweight
+              }
             }
             combos {
-              balloonweightPercentage
-              featherweightPercentage
-              heavyweightPercentage
               input
-              lightweightPercentage
-              middleweightPercentage
-              superHeavyweightPercentage
+              percentages {
+                balloonweight
+                featherweight
+                lightweight
+                middleweight
+                heavyweight
+                superHeavyweight
+              }
             }
           }
         }

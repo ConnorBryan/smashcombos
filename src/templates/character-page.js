@@ -27,17 +27,17 @@ export default function CharacterPage({ data }) {
         />
         <Grouping title="Attributes">
           {attributes ? (
-            Object.entries(attributes).map(([key, value]) => (
-              <Grouping title={key}>
-                {key === "weight" && (
+            Object.entries(attributes).map(
+              ([key, value]) =>
+                key === "weight" && (
                   <Panel>
+                    <h2>Weight</h2>
                     <p>Class: {value.class}</p>
                     <p>Value: {value.value}</p>
                     <p>Rank: #{value.rank}</p>
                   </Panel>
-                )}
-              </Grouping>
-            ))
+                )
+            )
           ) : (
             <Panel>This character has no listed attributes.</Panel>
           )}
@@ -47,22 +47,24 @@ export default function CharacterPage({ data }) {
             killConfirms.map(
               ({
                 input,
-                balloonweightPercentage,
-                featherweightPercentage,
-                lightweightPercentage,
-                middleweightPercentage,
-                heavyweightPercentage,
-                superHeavyweightPercentage
+                percentages: {
+                  balloonweight,
+                  featherweight,
+                  lightweight,
+                  middleweight,
+                  heavyweight,
+                  superHeavyweight
+                }
               }) => (
                 <Panel key={input}>
                   <h2>{input}</h2>
                   <ul>
-                    <li>Balloonweight - {balloonweightPercentage}</li>
-                    <li>Featherweight - {featherweightPercentage}</li>
-                    <li>Lightweight - {lightweightPercentage}</li>
-                    <li>Middleweight - {middleweightPercentage}</li>
-                    <li>Heavyweight - {heavyweightPercentage}</li>
-                    <li>Super Heavyweight - {superHeavyweightPercentage}</li>
+                    <li>Balloonweight - {balloonweight}</li>
+                    <li>Featherweight - {featherweight}</li>
+                    <li>Lightweight - {lightweight}</li>
+                    <li>Middleweight - {middleweight}</li>
+                    <li>Heavyweight - {heavyweight}</li>
+                    <li>Super Heavyweight - {superHeavyweight}</li>
                   </ul>
                 </Panel>
               )
@@ -76,22 +78,24 @@ export default function CharacterPage({ data }) {
             combos.map(
               ({
                 input,
-                balloonweightPercentage,
-                featherweightPercentage,
-                lightweightPercentage,
-                middleweightPercentage,
-                heavyweightPercentage,
-                superHeavyweightPercentage
+                percentages: {
+                  balloonweight,
+                  featherweight,
+                  lightweight,
+                  middleweight,
+                  heavyweight,
+                  superHeavyweight
+                }
               }) => (
                 <Panel key={input}>
                   <h2>{input}</h2>
                   <ul>
-                    <li>Balloonweight - {balloonweightPercentage}</li>
-                    <li>Featherweight - {featherweightPercentage}</li>
-                    <li>Lightweight - {lightweightPercentage}</li>
-                    <li>Middleweight - {middleweightPercentage}</li>
-                    <li>Heavyweight - {heavyweightPercentage}</li>
-                    <li>Super Heavyweight - {superHeavyweightPercentage}</li>
+                    <li>Balloonweight - {balloonweight}</li>
+                    <li>Featherweight - {featherweight}</li>
+                    <li>Lightweight - {lightweight}</li>
+                    <li>Middleweight - {middleweight}</li>
+                    <li>Heavyweight - {heavyweight}</li>
+                    <li>Super Heavyweight - {superHeavyweight}</li>
                   </ul>
                 </Panel>
               )
@@ -130,22 +134,26 @@ export const characterPageQuery = graphql`
           }
         }
         killConfirms {
-          balloonweightPercentage
-          featherweightPercentage
-          heavyweightPercentage
           input
-          lightweightPercentage
-          middleweightPercentage
-          superHeavyweightPercentage
+          percentages {
+            balloonweight
+            featherweight
+            lightweight
+            middleweight
+            heavyweight
+            superHeavyweight
+          }
         }
         combos {
-          balloonweightPercentage
-          featherweightPercentage
-          heavyweightPercentage
           input
-          lightweightPercentage
-          middleweightPercentage
-          superHeavyweightPercentage
+          percentages {
+            balloonweight
+            featherweight
+            lightweight
+            middleweight
+            heavyweight
+            superHeavyweight
+          }
         }
       }
     }

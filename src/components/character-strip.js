@@ -11,7 +11,6 @@ export default function CharacterStrip({
   combos,
   clickable
 }) {
-  console.log("\n\n\n", "killConfirms", killConfirms, "\n\n\n");
   return (
     <section className={`CharacterStrip ${clickable && "clickable"}`}>
       <div className="CharacterStrip-image">
