@@ -5,12 +5,18 @@ render: /img/chemex.jpg
 attributes:
   weight:
     class: middleweight
-    rank: '40'
-    value: '94'
+    rank: "40"
+    value: "94"
 killConfirms:
-  - percentages: {}
+  - percentages:
+      balloonweight: "160"
+      featherweight: "160"
+      lightweight: "160"
+      middleweight: "160"
+      heavyweight: "160"
+      superHeavyweight: "160"
 combos:
-  - damage: '-1'
+  - damage: "-1"
     input: dthrow sh+fair dj+fair
     percentages:
       balloonweight: 0-25
@@ -20,4 +26,3 @@ combos:
       middleweight: 0-25
       superHeavyweight: N/A
 ---
-

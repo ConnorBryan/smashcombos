@@ -36,6 +36,8 @@ export default class IndexPage extends Component {
     const characters = getCharacters(data);
     const matches = getFilteredCharacters(characters, filter);
 
+    console.log("\n\n\n", "matches", matches, "\n\n\n");
+
     return (
       <Layout className="Master">
         <div className="Master-controls">
