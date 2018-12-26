@@ -1,4 +1,4 @@
-@import '../styles/styles.scss';
+@import "../styles/styles.scss";
 
 html,
 body,
@@ -9,6 +9,12 @@ h2,
 p {
   margin: 0;
   padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -33,14 +39,15 @@ a:focus {
 }
 
 .Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: $darkest-grey;
   color: $almost-white;
   font-family: $font-primary;
 
   &-content {
-    max-width: 800px;
-    margin: auto;
-    margin-top: 8vh;
+    min-height: 100vh;
     padding: $spacing-md;
   }
 }

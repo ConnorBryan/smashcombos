@@ -30,7 +30,7 @@ export default function CharacterPage({ data }) {
             Object.entries(attributes).map(
               ([key, value]) =>
                 key === "weight" && (
-                  <Panel>
+                  <Panel key={key}>
                     <h2>Weight</h2>
                     <p>Class: {value.class}</p>
                     <p>Value: {value.value}</p>

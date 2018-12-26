@@ -1,10 +1,6 @@
-@import '../styles/styles.scss';
+@import "../styles/styles.scss";
 
 .Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
   display: flex;
   align-items: center;
   width: 100%;
