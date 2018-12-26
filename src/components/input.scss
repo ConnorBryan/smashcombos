@@ -3,10 +3,10 @@
 .Input {
   display: block;
   width: 100%;
-  height: 70%;
-  padding: $spacing-md;
+  height: $spacing-xxl;
+  padding: 0 $spacing-sm;
   background: $darker-grey;
-  border: 1px solid $primary;
+  border: none;
   color: $almost-white;
   font-size: $font-size-lg;
 }

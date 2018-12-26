@@ -1,9 +1,25 @@
 @import "../styles/styles.scss";
 
 .Master {
+  position: relative;
+
   &-controls {
     display: flex;
+    align-items: center;
     margin: $spacing-md 0;
+    background: $darker-grey;
+    border: 1px solid $primary;
+
+    .Input {
+      flex: 3;
+    }
+    .Button {
+      flex: 1;
+    }
+  }
+  &-more {
+    margin-bottom: $spacing-md;
+    padding: $spacing-lg;
   }
   &-characters {
     &-noMatch {

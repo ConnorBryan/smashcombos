@@ -23,7 +23,8 @@ const getFilteredCharacters = (characters, filter) =>
 
 class Master extends Component {
   state = {
-    filter: ""
+    filter: "",
+    showingMore: false
   };
 
   handleFilterChange = ({ target: { value: filter } }) =>
@@ -31,9 +32,14 @@ class Master extends Component {
 
   clearFilter = () => this.setState({ filter: "" });
 
+  toggleShowingMore = () =>
+    this.setState(prevState => ({
+      showingMore: !prevState.showingMore
+    }));
+
   render() {
     const { data } = this.props;
-    const { filter } = this.state;
+    const { filter, showingMore } = this.state;
     const characters = getCharacters(data);
     const matches = getFilteredCharacters(characters, filter);
 
@@ -45,7 +51,11 @@ class Master extends Component {
             value={filter}
             onChange={this.handleFilterChange}
           />
+          <Button onClick={this.toggleShowingMore}>
+            {showingMore ? "Less" : "More"}
+          </Button>
         </div>
+        {showingMore && <Panel className="Master-more">More</Panel>}
         <ul className="Master-characters">
           {matches.length > 0 ? (
             matches.map(
