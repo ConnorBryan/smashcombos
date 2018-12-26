@@ -14,7 +14,7 @@ export default function Layout({ basic, children }) {
         <Header />
       </div>
       {!basic && (
-        <div className="Layout-sidebar">
+        <div className={`Layout-sidebar ${basic && "basic"}`}>
           <Master />
         </div>
       )}

@@ -47,7 +47,7 @@ a:focus {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 0 auto;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1100px) {
     grid-template-columns: 1.5fr 3.5fr;
   }
   &.basic {
@@ -64,12 +64,20 @@ a:focus {
     background: $almost-black;
   }
   &-sidebar {
+    display: none;
     grid-area: sidebar;
     max-height: 100vh;
     padding: $spacing-md;
     background: $darker-grey;
     border-right: 1px solid $primary;
     overflow: auto;
+
+    @media (min-width: 1100px) {
+      display: block;
+    }
+    &.basic {
+      display: none;
+    }
   }
   &-main {
     grid-area: main;
