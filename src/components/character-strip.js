@@ -51,7 +51,6 @@ export default function CharacterStrip({
         <div className="CharacterStrip-bottom-label">Tags</div>
         <div className="CharacterStrip-bottom-tags">
           <Tag>{weightClassToTag[weightClass]}</Tag>
-          <Tag>{weightClassToTag[weightClass]}</Tag>
         </div>
       </div>
     </section>
