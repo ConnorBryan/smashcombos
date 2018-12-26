@@ -1,18 +1,10 @@
 import React from "react";
 import Img from "gatsby-image";
 
+import { weightClassToTag } from "../helpers";
 import Panel from "./panel";
 import Tag from "./tag";
 import "./character-strip.scss";
-
-const weightClassToTag = {
-  balloonweight: "Balloonweight",
-  featherweight: "Featherweight",
-  lightweight: "Lightweight",
-  middleweight: "Middleweight",
-  heavyweight: "Heavyweight",
-  superheavyweight: "Super Heavyweight"
-};
 
 export default function CharacterStrip({
   name,
@@ -56,7 +48,11 @@ export default function CharacterStrip({
         </div>
       </div>
       <div className="CharacterStrip-bottom">
-        <Tag>{weightClassToTag[weightClass]}</Tag>
+        <div className="CharacterStrip-bottom-label">Tags</div>
+        <div className="CharacterStrip-bottom-tags">
+          <Tag>{weightClassToTag[weightClass]}</Tag>
+          <Tag>{weightClassToTag[weightClass]}</Tag>
+        </div>
       </div>
     </section>
   );

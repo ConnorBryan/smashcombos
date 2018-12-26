@@ -82,6 +82,7 @@ a:focus {
     grid-area: header;
     min-height: 8vh;
     background: $almost-black;
+    border-bottom: 1px solid $primary;
   }
   &-sidebar {
     display: none;
@@ -108,5 +109,6 @@ a:focus {
     grid-area: footer;
     min-height: 8vh;
     background: $almost-black;
+    border-top: 1px solid $primary;
   }
 }

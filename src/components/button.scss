@@ -3,7 +3,7 @@
 .Button {
   width: 100%;
   height: $spacing-xxl;
-  background: $primary;
+  background: $primary-darker;
   border: 1px solid $primary-lighter;
   color: $almost-white;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
 
   &:focus,
   &:active {
-    background: $primary-darker;
+    background: $primary-darkest;
     border: 1px solid $primary;
   }
 }

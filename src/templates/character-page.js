@@ -1,12 +1,9 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 
+import { getCharacter, getCharacterRender } from "../helpers";
 import { Button, CharacterStrip, Grouping, Layout, Panel } from "../components";
 import "./character-page.scss";
-
-const getCharacter = data => data.markdownRemark.frontmatter;
-
-const getCharacterRender = character => character.render;
 
 export default function CharacterPage({ data }) {
   const character = getCharacter(data);

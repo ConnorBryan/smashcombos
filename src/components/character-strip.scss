@@ -68,12 +68,24 @@
     }
   }
   &-bottom {
-    padding: $spacing-md $spacing-sm;
+    display: flex;
     border-top: 1px solid $primary;
-    overflow-x: auto;
 
     .Tag {
       margin-right: $spacing-sm;
+    }
+    &-label {
+      @include perfectly-centered;
+
+      width: 4rem;
+      text-transform: uppercase;
+      background: $primary-darker;
+      font-weight: bolder;
+    }
+    &-tags {
+      display: flex;
+      padding: $spacing-sm;
+      overflow: auto;
     }
   }
 }

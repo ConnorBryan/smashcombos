@@ -11,13 +11,14 @@
     align-items: center;
     justify-content: space-between;
     padding: $spacing-md;
+    background: $primary-darkest;
     font-size: $font-size-sm;
     text-transform: uppercase;
     cursor: pointer;
 
     &:active,
     &:hover {
-      background: $dark-grey;
+      background: darken($primary-darkest, 5%);
     }
   }
   &-content {

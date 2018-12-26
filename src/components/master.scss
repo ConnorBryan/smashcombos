@@ -18,8 +18,25 @@
     }
   }
   &-more {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: $spacing-md;
     padding: $spacing-lg;
+
+    &-segment {
+      margin-right: $spacing-xxl;
+
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+    &-reset {
+      position: absolute;
+      right: $spacing-md;
+      bottom: $spacing-md;
+      width: 5rem;
+    }
   }
   &-characters {
     &-noMatch {
