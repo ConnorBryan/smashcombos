@@ -14,12 +14,6 @@
       background: $dark-grey;
     }
   }
-  .gatsby-image-wrapper,
-  .gatsby-image-wrapper img {
-    width: 100px !important;
-    height: 100px !important;
-    padding: $spacing-sm;
-  }
   &-top {
     display: flex;
     flex-direction: row;
@@ -28,7 +22,12 @@
       @include perfectly-centered();
 
       flex: 1;
+      padding: $spacing-lg;
       border-right: 1px solid $primary;
+
+      > * {
+        flex: 1;
+      }
     }
     &-details {
       flex: 3;

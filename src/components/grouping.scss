@@ -12,10 +12,12 @@
     justify-content: space-between;
     padding: $spacing-md;
     background: $primary-darkest;
-    font-size: $font-size-sm;
     text-transform: uppercase;
     cursor: pointer;
 
+    h2 {
+      font-size: $font-size-md;
+    }
     &:active,
     &:hover {
       background: darken($primary-darkest, 5%);
