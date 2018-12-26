@@ -4,7 +4,7 @@ import { Layout, Master } from "../components";
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <Layout basic={true}>
       <Master />
     </Layout>
   );

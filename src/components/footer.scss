@@ -1,4 +1,4 @@
-@import '../styles/styles.scss';
+@import "../styles/styles.scss";
 
 .Footer {
   @include perfectly-centered();
@@ -9,4 +9,5 @@
   min-height: $header-height;
   background: $almost-black;
   border-top: 1px solid $primary;
+  color: $almost-white;
 }

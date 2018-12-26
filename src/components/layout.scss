@@ -39,28 +39,46 @@ a:focus {
 }
 
 .Layout {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: $darkest-grey;
-  color: $almost-white;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 0 auto;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1.5fr 3.5fr;
+  }
+  &.basic {
+    grid-template-columns: 0 auto;
+  }
+
+  min-height: 100vh;
   font-family: $font-primary;
+  color: $almost-white;
 
-  &-content {
-    display: flex;
-    min-height: 100vh;
+  &-header {
+    grid-area: header;
+    min-height: 8vh;
+    background: $almost-black;
+  }
+  &-sidebar {
+    grid-area: sidebar;
+    max-height: 100vh;
     padding: $spacing-md;
-
-    &-side {
-      flex: 1;
-      height: 100vh;
-      padding: 0 $spacing-md;
-      background: $darker-grey;
-      overflow: auto;
-    }
-    &-main {
-      flex: 3;
-      background: $dark-grey;
-    }
+    background: $darker-grey;
+    border-right: 1px solid $primary;
+    overflow: auto;
+  }
+  &-main {
+    grid-area: main;
+    padding: $spacing-md;
+    background: $dark-grey;
+  }
+  &-footer {
+    grid-area: footer;
+    min-height: 8vh;
+    background: $almost-black;
   }
 }

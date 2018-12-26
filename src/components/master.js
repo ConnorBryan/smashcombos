@@ -31,8 +31,6 @@ class Master extends Component {
 
   clearFilter = () => this.setState({ filter: "" });
 
-  scrollToTop = () => window.scrollTo(0, 0);
-
   render() {
     const { data } = this.props;
     const { filter } = this.state;
@@ -73,9 +71,6 @@ class Master extends Component {
             </Panel>
           )}
         </ul>
-        <div className="Master-top">
-          <Button onClick={this.scrollToTop}>Top</Button>
-        </div>
       </section>
     );
   }
