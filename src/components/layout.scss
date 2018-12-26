@@ -88,7 +88,8 @@ a:focus {
     display: none;
     grid-area: sidebar;
     max-height: 100vh;
-    background: $darker-grey;
+    padding: $spacing-md;
+    background: $almost-black;
     border-right: 1px solid $primary;
     border-bottom: 1px solid $primary;
     overflow: auto;
