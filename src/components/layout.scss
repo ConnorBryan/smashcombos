@@ -47,7 +47,20 @@ a:focus {
   font-family: $font-primary;
 
   &-content {
+    display: flex;
     min-height: 100vh;
     padding: $spacing-md;
+
+    &-side {
+      flex: 1;
+      height: 100vh;
+      padding: 0 $spacing-md;
+      background: $darker-grey;
+      overflow: auto;
+    }
+    &-main {
+      flex: 3;
+      background: $dark-grey;
+    }
   }
 }

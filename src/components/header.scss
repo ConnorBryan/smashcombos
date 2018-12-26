@@ -13,6 +13,9 @@
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
 
+  img {
+    width: 240px;
+  }
   &-small {
     font-size: 21px;
   }
