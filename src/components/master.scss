@@ -1,14 +1,9 @@
 @import "../styles/styles.scss";
 
 .Master {
-  position: relative;
-
   &-controls {
     display: flex;
-    width: 100%;
-    max-width: 800px;
-    height: 10vh;
-    margin: $spacing-xl 0;
+    margin: $spacing-md 0;
   }
   &-characters {
     &-noMatch {

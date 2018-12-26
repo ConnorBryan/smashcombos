@@ -1,7 +1,8 @@
-@import '../styles/styles.scss';
+@import "../styles/styles.scss";
 
 .CharacterStrip {
   display: flex;
+  flex-direction: column;
   margin-bottom: $spacing-md;
   border: 1px solid $primary;
   background: $darkest-grey;
@@ -19,45 +20,60 @@
     height: 100px !important;
     padding: $spacing-sm;
   }
-  &-image {
-    @include perfectly-centered();
-
-    flex: 1;
-    border-right: 1px solid $primary;
-  }
-  &-details {
-    flex: 3;
+  &-top {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: $spacing-md;
+    flex-direction: row;
 
-    &-name {
-      margin-bottom: $spacing-lg;
-      text-transform: uppercase;
+    &-image {
+      @include perfectly-centered();
+
+      flex: 1;
+      border-right: 1px solid $primary;
     }
-    &-stats {
+    &-details {
+      flex: 3;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      padding: $spacing-md;
 
-      &-shouter {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      &-name {
         justify-content: space-between;
+        margin-bottom: $spacing-lg;
+        text-transform: uppercase;
+      }
+      &-stats {
+        display: flex;
+        flex-direction: column;
 
-        &:first-of-type {
-          margin-bottom: $spacing-md;
-        }
-        &-stat {
-          flex: 3;
-          text-transform: uppercase;
-        }
-        &-count {
-          flex: 1;
-          text-align: right;
+        &-shouter {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          &:first-of-type {
+            margin-bottom: $spacing-md;
+          }
+          &-stat {
+            flex: 3;
+            text-transform: uppercase;
+          }
+          &-count {
+            flex: 1;
+            text-align: right;
+          }
         }
       }
+    }
+  }
+  &-bottom {
+    padding: $spacing-md $spacing-sm;
+    border-top: 1px solid $primary;
+    overflow-x: auto;
+
+    .Tag {
+      margin-right: $spacing-sm;
     }
   }
 }

@@ -1,3 +1,6 @@
+@import "../styles/styles.scss";
+
 .Tag {
-  //
+  border: 1px solid $primary;
+  padding: $spacing-sm;
 }
