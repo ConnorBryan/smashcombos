@@ -2,8 +2,53 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 
 import { getCharacter, getCharacterRender } from "../helpers";
-import { Button, CharacterStrip, Grouping, Layout, Panel } from "../components";
+import downRightArrow from "../img/down-right-arrow.svg";
+import {
+  Button,
+  CharacterStrip,
+  Grouping,
+  Layout,
+  Panel,
+  Value
+} from "../components";
 import "./character-page.scss";
+
+const Arrow = () => (
+  <img
+    className="Arrow"
+    src={downRightArrow}
+    alt="down, right arrow"
+    width="20"
+    height="20"
+  />
+);
+
+const DecoratedInput = ({ input }) => {
+  if (!input) {
+    return null;
+  }
+
+  const inputs = input.split(" ");
+
+  if (input.length === 1) {
+    return <h2>{input}</h2>;
+  }
+
+  const [initial, ...others] = inputs;
+
+  return (
+    <div className="DecoratedInput">
+      <h2>Inputs</h2>
+      <h2>{initial}</h2>
+      {others.map((input, index) => (
+        <div key={index} className="DecoratedInput-entry">
+          <Arrow />
+          {input}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default function CharacterPage({ data }) {
   const character = getCharacter(data);
@@ -53,15 +98,29 @@ export default function CharacterPage({ data }) {
                   superHeavyweight
                 }
               }) => (
-                <Panel key={input}>
-                  <h2>{input}</h2>
+                <Panel key={input} className="CharacterPage-blockGroup">
+                  <div className="CharacterPage-blockGroup-input">
+                    <DecoratedInput input={input} />
+                  </div>
+                  <div className="CharacterPage-blockGroup-percentages" />
                   <ul>
-                    <li>Balloonweight - {balloonweight}</li>
-                    <li>Featherweight - {featherweight}</li>
-                    <li>Lightweight - {lightweight}</li>
-                    <li>Middleweight - {middleweight}</li>
-                    <li>Heavyweight - {heavyweight}</li>
-                    <li>Super Heavyweight - {superHeavyweight}</li>
+                    <li>
+                      <Value label="Balloonweight">{balloonweight}%</Value>
+                    </li>
+                    <li>
+                      <Value label="Featherweight">{featherweight}%</Value>
+                    </li>
+                    <li>
+                      <Value label="Lightweight">{lightweight}%</Value>
+                    </li>
+                    <li>
+                      <Value label="Middleweight">{middleweight}%</Value>
+                    </li>
+                    <li>
+                      <Value label="Super Heavyweight">
+                        {superHeavyweight}%
+                      </Value>
+                    </li>
                   </ul>
                 </Panel>
               )
@@ -84,16 +143,31 @@ export default function CharacterPage({ data }) {
                   superHeavyweight
                 }
               }) => (
-                <Panel key={input}>
-                  <h2>{input}</h2>
-                  <ul>
-                    <li>Balloonweight - {balloonweight}</li>
-                    <li>Featherweight - {featherweight}</li>
-                    <li>Lightweight - {lightweight}</li>
-                    <li>Middleweight - {middleweight}</li>
-                    <li>Heavyweight - {heavyweight}</li>
-                    <li>Super Heavyweight - {superHeavyweight}</li>
-                  </ul>
+                <Panel key={input} className="CharacterPage-blockGroup">
+                  <div className="CharacterPage-blockGroup-input">
+                    <DecoratedInput input={input} />
+                  </div>
+                  <div className="CharacterPage-blockGroup-percentages">
+                    <ul>
+                      <li>
+                        <Value label="Balloonweight">{balloonweight}%</Value>
+                      </li>
+                      <li>
+                        <Value label="Featherweight">{featherweight}%</Value>
+                      </li>
+                      <li>
+                        <Value label="Lightweight">{lightweight}%</Value>
+                      </li>
+                      <li>
+                        <Value label="Middleweight">{middleweight}%</Value>
+                      </li>
+                      <li>
+                        <Value label="Super Heavyweight">
+                          {superHeavyweight}%
+                        </Value>
+                      </li>
+                    </ul>
+                  </div>
                 </Panel>
               )
             )

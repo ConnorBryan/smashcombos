@@ -6,3 +6,4 @@ export { default as Layout } from "./layout";
 export { default as Master } from "./master";
 export { default as Panel } from "./panel";
 export { default as Tag } from "./tag";
+export { default as Value } from "./value";

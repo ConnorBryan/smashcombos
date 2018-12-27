@@ -1,0 +1,23 @@
+@import "../styles/styles.scss";
+
+.Value {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-md;
+  background: $almost-black;
+  border: 2px solid $primary;
+
+  &-label {
+    flex: 2;
+    padding: $spacing-md;
+    border-right: 1px solid $primary;
+    background: $primary-darkest;
+    text-transform: uppercase;
+  }
+  &-content {
+    flex: 1;
+    padding: $spacing-md;
+    height: 100%;
+    text-align: right;
+  }
+}
