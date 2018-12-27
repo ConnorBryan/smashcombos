@@ -1,7 +1,9 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
+import "semantic-ui-css/semantic.min.css";
 
+import { Container } from "semantic-ui-react";
 import Header from "./header";
 import Footer from "./footer";
 import Master from "./master";
@@ -84,7 +86,8 @@ export default function Layout({ basic, children }) {
             <meta property="og:url" content="/" />
             <meta property="og:image" content="/img/og-image.png" />
           </Helmet>
-          <section className={`Layout ${basic && "basic"}`}>
+          <Container>ayy</Container>
+          {/* <section className={`Layout ${basic && "basic"}`}>
             <div className="Layout-header">
               <Header />
             </div>
@@ -97,7 +100,7 @@ export default function Layout({ basic, children }) {
             <div className="Layout-footer">
               <Footer />
             </div>
-          </section>
+          </section> */}
         </React.Fragment>
       )}
     />
