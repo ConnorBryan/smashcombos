@@ -3,11 +3,10 @@
 .CharacterCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
   @media (min-width: 600px) {
     flex-direction: row;
   }
+  justify-content: center;
   margin-bottom: $spacing-lg;
 
   &-profile {
@@ -55,6 +54,23 @@
       border: 1px solid $primary;
     }
   }
+  &-mobile {
+    display: block;
+
+    @media (min-width: 600px) {
+      display: none;
+    }
+  }
+  &-desktop {
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+    }
+  }
+  &-showAttributes {
+    margin-bottom: $spacing-lg;
+  }
   &-attributes {
     display: flex;
     flex-direction: column;
@@ -69,7 +85,9 @@
       margin-bottom: $spacing-lg;
       padding: $spacing-md;
       border: 1px solid $primary;
-      border-right: none;
+      @media (min-width: 600px) {
+        border-right: none;
+      }
       background: $almost-black;
 
       &-name {

@@ -1,54 +1,155 @@
 @import "../styles/styles.scss";
 
-.CharacterPage {
-  flex: 1;
+.DescriptionList {
+  margin-right: $spacing-md;
+  margin-bottom: $spacing-md;
+  border: 1px solid $primary;
+  background: $almost-black;
+  text-align: center;
 
-  &-blockGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 35rem;
+  dl {
+    margin: 0;
 
-    &-input {
-      flex: 1;
-      margin-bottom: $spacing-md;
+    dt {
+      padding: $spacing-md;
+      background: $primary-darker;
+      border-bottom: 1px solid $primary;
+      text-transform: uppercase;
     }
-    &-percentages {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+    dd {
+      margin-inline-start: 0;
+      padding: $spacing-md;
+      border-bottom: 1px solid $primary;
     }
   }
-  &-back {
-    text-align: right;
-  }
-}
-
-.Arrow {
-  filter: invert(100%);
-}
-
-.DecoratedInput {
-  border: 2px solid $primary;
-
-  h2:first-of-type {
-    text-transform: uppercase;
+  h2 {
     padding: $spacing-md;
     background: $primary-darkest;
     border-bottom: 1px solid $primary;
-  }
-  h2 {
-    font-size: $font-size-md;
-    padding: $spacing-md;
-    background: $almost-black;
-  }
-  &-entry {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: $spacing-md;
-    background: $almost-black;
+    text-transform: uppercase;
   }
 }
+
+.CharacterPage {
+  display: flex;
+  flex-direction: column;
+
+  &-profileWrapper {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 600px) {
+      flex-direction: row;
+    }
+  }
+  &-profile {
+    flex: 1;
+    @media (min-width: 600px) {
+      margin-right: $spacing-lg;
+    }
+
+    &-name {
+      margin-bottom: $spacing-lg;
+      padding: $spacing-md;
+      border: 1px solid $primary;
+      border-top: none;
+      background: $primary-darkest;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $font-size-lg;
+    }
+  }
+  &-description {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-bottom: $spacing-lg;
+
+    &-labels {
+      li {
+        display: inline-block;
+        padding: $spacing-md;
+        border: 1px solid $primary;
+        border-bottom: none;
+        background: $almost-black;
+        text-transform: uppercase;
+
+        &.active {
+          background: $primary-darkest;
+        }
+      }
+    }
+    &-content {
+      flex: 1;
+      padding: $spacing-lg;
+      border: 1px solid $primary;
+      background: $almost-black;
+      overflow: auto;
+
+      &-lists {
+        > section {
+          display: flex;
+
+          .DescriptionList {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  &-tags {
+    border: 1px solid $primary;
+  }
+}
+
+// .CharacterPage {
+//   flex: 1;
+
+//   &-blockGroup {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     max-width: 35rem;
+
+//     &-input {
+//       flex: 1;
+//       margin-bottom: $spacing-md;
+//     }
+//     &-percentages {
+//       flex: 1;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-end;
+//     }
+//   }
+//   &-back {
+//     text-align: right;
+//   }
+// }
+
+// .Arrow {
+//   filter: invert(100%);
+// }
+
+// .DecoratedInput {
+//   border: 2px solid $primary;
+
+//   h2:first-of-type {
+//     text-transform: uppercase;
+//     padding: $spacing-md;
+//     background: $primary-darkest;
+//     border-bottom: 1px solid $primary;
+//   }
+//   h2 {
+//     font-size: $font-size-md;
+//     padding: $spacing-md;
+//     background: $almost-black;
+//   }
+//   &-entry {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: $spacing-md;
+//     background: $almost-black;
+//   }
+// }
