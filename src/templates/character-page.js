@@ -27,8 +27,7 @@ export default class CharacterPage extends Component {
       name,
       attributes: {
         weight: { class: weightClass }
-      },
-      combos
+      }
     } = character;
 
     const _combos = [
@@ -141,7 +140,7 @@ export default class CharacterPage extends Component {
         </Segment>
         <Segment attached>
           <Header as="h2" style={{ textTransform: "uppercase" }}>
-            Combos ({combos.length})
+            Combos
           </Header>
           {/* Mobile */}
           <Responsive maxWidth={700}>
@@ -244,7 +243,152 @@ export default class CharacterPage extends Component {
             </Card.Group>
           </Responsive>
           {/* Desktop */}
-          <Responsive minWidth={701}>Derp</Responsive>
+          <Responsive minWidth={701}>
+            <Segment.Group
+              style={{
+                border: "none",
+                boxShadow: "none"
+              }}
+            >
+              {_combos.map(
+                ({
+                  input,
+                  percentages,
+                  damage,
+                  demonstration,
+                  clips,
+                  note,
+                  tags
+                }) => (
+                  <Segment key={input} basic>
+                    <Segment.Group
+                      horizontal
+                      style={{ marginBottom: 0, borderBottom: "none" }}
+                    >
+                      <Segment
+                        style={{
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-between"
+                        }}
+                      >
+                        <Input input={input} />
+                        <Label
+                          size="small"
+                          style={{
+                            alignSelf: "flex-end",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "100%",
+                            margin: 0,
+                            textTransform: "uppercase"
+                          }}
+                        >
+                          Deals {damage}% damage
+                        </Label>
+                      </Segment>
+                      <Segment
+                        style={{
+                          flex: 1
+                        }}
+                      >
+                        <Statistic.Group size="mini" widths={1}>
+                          <Statistic
+                            label="Balloonweight"
+                            value={`${percentages.balloonweight}%`}
+                          />
+                          <Statistic
+                            label="Featherweight"
+                            value={`${percentages.featherweight}%`}
+                          />
+                          <Statistic
+                            label="Lightweight"
+                            value={`${percentages.lightweight}%`}
+                          />
+                          <Statistic
+                            label="Middleweight"
+                            value={`${percentages.middleweight}%`}
+                          />
+                          <Statistic
+                            label="Heavyweight"
+                            value={`${percentages.heavyweight}%`}
+                          />
+                          <Statistic
+                            label="Super Heavyweight"
+                            value={`${percentages.superheavyweight}%`}
+                          />
+                        </Statistic.Group>
+                      </Segment>
+                      <Segment
+                        style={{
+                          flex: 1
+                        }}
+                      >
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Demonstration
+                        </Header>
+                        <Embed url={demonstration} />
+                      </Segment>
+                      <Segment
+                        style={{
+                          flex: 1
+                        }}
+                      >
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Clips
+                        </Header>
+                        {clips.map(({ description, credit, link }) => (
+                          <React.Fragment key={link}>
+                            <Embed url={link} />
+                            <Card.Description>
+                              <Label
+                                style={{ marginTop: "1rem", width: "100%" }}
+                              >
+                                {description} Credit to {credit}.
+                              </Label>
+                            </Card.Description>
+                          </React.Fragment>
+                        ))}
+                      </Segment>
+                    </Segment.Group>
+                    <Segment.Group horizontal style={{ marginTop: 0 }}>
+                      <Segment style={{ flex: 1 }}>
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Notes
+                        </Header>
+                      </Segment>
+                      <Segment
+                        style={{
+                          flex: 1,
+                          overflowX: "auto",
+                          overflowY: "hidden",
+                          whiteSpace: "nowrap"
+                        }}
+                      >
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Tags
+                        </Header>
+                        <ul
+                          style={{
+                            margin: 0,
+                            padding: 0
+                          }}
+                        >
+                          {tags.map(tag => (
+                            <Label as="li" key={tag} tag>
+                              {tag}
+                            </Label>
+                          ))}
+                        </ul>
+                      </Segment>
+                    </Segment.Group>
+                  </Segment>
+                )
+              )}
+            </Segment.Group>
+          </Responsive>
         </Segment>
       </Layout>
     );
