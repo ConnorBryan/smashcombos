@@ -5,7 +5,7 @@ import { Card, Label, Statistic } from "semantic-ui-react";
 
 import { weightClassToTag } from "../helpers";
 
-export default function CharacterItem({
+export default function CharacterCard({
   name,
   slug,
   image,
@@ -16,7 +16,7 @@ export default function CharacterItem({
   combos
 }) {
   return (
-    <Card>
+    <Card as={Link} to={slug}>
       <Image fluid={image.childImageSharp.fluid} />
       <Card.Content
         style={{
@@ -40,14 +40,8 @@ export default function CharacterItem({
         }}
         extra
       >
-        <Statistic>
-          <Statistic.Label>Kill Confirms</Statistic.Label>
-          <Statistic.Value>{killConfirms.length}</Statistic.Value>
-        </Statistic>
-        <Statistic>
-          <Statistic.Label>Combos</Statistic.Label>
-          <Statistic.Value>{combos.length}</Statistic.Value>
-        </Statistic>
+        <Statistic label="Kill Confirms" value={killConfirms.length} />
+        <Statistic label="Combos" value={combos.length} />
       </Card.Content>
       <Card.Content extra>
         <Label tag>{weightClassToTag[weightClass]}</Label>

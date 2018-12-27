@@ -13,7 +13,7 @@ import {
   Select
 } from "semantic-ui-react";
 
-import { CharacterItem, Layout } from "../_components";
+import { CharacterCard, Layout } from "../_components";
 import { getCharacters } from "../helpers";
 
 const SortTypes = {
@@ -142,7 +142,7 @@ export default class IndexPage extends Component {
             {matches.length > 0 ? (
               matches.map(
                 ({ name, render, slug, attributes, killConfirms, combos }) => (
-                  <CharacterItem
+                  <CharacterCard
                     key={name}
                     name={name}
                     image={render}

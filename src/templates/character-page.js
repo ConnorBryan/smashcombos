@@ -1,174 +1,123 @@
 import React, { Component } from "react";
-import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
-
-import { getCharacter, getCharacterRender, weightClassToTag } from "../helpers";
-import downRightArrow from "../img/down-right-arrow.svg";
-import { Layout } from "../_components";
+import { graphql } from "gatsby";
+import Image from "gatsby-image";
 import {
-  Button,
-  CharacterCard,
-  Grouping,
-  Panel,
-  Tagbar,
-  Tag,
-  Value
-} from "../components";
-import "./character-page.scss";
+  Grid,
+  Header,
+  Item,
+  Icon,
+  Label,
+  List,
+  Menu,
+  Segment,
+  Statistic
+} from "semantic-ui-react";
 
-const DescriptionModes = {
-  Description: "Description",
-  Attributes: "Attributes"
-};
+import { Layout } from "../_components";
+import { getCharacter, getCharacterRender, weightClassToTag } from "../helpers";
 
-export default function CharacterPage() {
-  return <Layout />;
+export default class CharacterPage extends Component {
+  render() {
+    const { data } = this.props;
+    const character = getCharacter(data);
+    const image = getCharacterRender(character);
+    const {
+      name,
+      attributes: {
+        weight: { class: weightClass }
+      }
+    } = character;
+
+    return (
+      <Layout>
+        <Segment attached="top">
+          <Grid stackable>
+            <Grid.Column width={4}>
+              <Image
+                fluid={image.childImageSharp.fluid}
+                style={{ maxWidth: "20rem" }}
+              />
+            </Grid.Column>
+            <Grid.Column width={12}>
+              <Header as="h1" style={{ textTransform: "uppercase" }}>
+                {name}
+              </Header>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?
+              </p>
+              <Segment>
+                <List horizontal>
+                  <List.Item>
+                    <List.Header>Tags</List.Header>
+                  </List.Item>
+                  <List.Item>
+                    <Label tag>{weightClassToTag[weightClass]}</Label>
+                  </List.Item>
+                </List>
+              </Segment>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+        <Segment attached="bottom">
+          <Grid stackable>
+            <Grid.Row stretched>
+              <Grid.Column width={4}>
+                <Menu vertical size="large" fluid>
+                  <Menu.Item active style={{ textTransform: "uppercase" }}>
+                    Air Acceleration
+                  </Menu.Item>
+                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                    Air Speed
+                  </Menu.Item>
+                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                    Fall Speed
+                  </Menu.Item>
+                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                    Run Speed
+                  </Menu.Item>
+                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                    Walk Speed
+                  </Menu.Item>
+                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                    Weight
+                  </Menu.Item>
+                </Menu>
+              </Grid.Column>
+              <Grid.Column width={12}>
+                <Header as="h3" style={{ textTransform: "uppercase" }}>
+                  Air Acceleration
+                  <Label>
+                    <Icon name="trophy" />
+                    Rank 1 of 77
+                  </Label>
+                </Header>
+                <Statistic.Group size="huge" widths={3}>
+                  <Statistic label="Max Additional" value="0" />
+                  <Statistic label="Base Value" value="0" />
+                  <Statistic label="Total" value="0" />
+                </Statistic.Group>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
+      </Layout>
+    );
+  }
 }
-
-// export default class CharacterPage extends Component {
-//   state = {
-//     descriptionMode: DescriptionModes.Description
-//   };
-
-//   switchDescriptionMode = descriptionMode => this.setState({ descriptionMode });
-
-//   render() {
-//     const { data } = this.props;
-//     const { descriptionMode } = this.state;
-//     const character = getCharacter(data);
-//     const image = getCharacterRender(character);
-//     const {
-//       name,
-//       attributes: {
-//         weight: { class: weightClass }
-//       },
-//       killConfirms,
-//       combos
-//     } = character;
-
-//     return (
-//       <Layout>
-//         <section className="CharacterPage">
-//           <div className="CharacterPage-profileWrapper">
-//             <div className="CharacterPage-profile">
-//               <Img
-//                 className="CharacterCard-profile-image"
-//                 fluid={image.childImageSharp.fluid}
-//               />
-//               <div className="CharacterPage-profile-name">{name}</div>
-//             </div>
-//             <div className="CharacterPage-description">
-//               <ul className="CharacterPage-description-labels">
-//                 <li
-//                   className={`${descriptionMode ===
-//                     DescriptionModes.Description && "active"}`}
-//                   onClick={() =>
-//                     this.switchDescriptionMode(DescriptionModes.Description)
-//                   }
-//                 >
-//                   Description
-//                 </li>
-//                 <li
-//                   className={`${descriptionMode ===
-//                     DescriptionModes.Attributes && "active"}`}
-//                   onClick={() =>
-//                     this.switchDescriptionMode(DescriptionModes.Attributes)
-//                   }
-//                 >
-//                   Attributes
-//                 </li>
-//               </ul>
-//               <div className="CharacterPage-description-content">
-//                 {descriptionMode === DescriptionModes.Description && (
-//                   <React.Fragment>123</React.Fragment>
-//                 )}
-//                 {descriptionMode === DescriptionModes.Attributes && (
-//                   <section className="CharacterPage-description-content-lists">
-//                     <section>
-//                       <section className="DescriptionList">
-//                         <h2>Air Acceleration</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Max Additional</dt>
-//                           <dd>0.08</dd>
-//                           <dt>Base Value</dt>
-//                           <dd>0.05</dd>
-//                           <dt>Total</dt>
-//                           <dd>0.13</dd>
-//                         </dl>
-//                       </section>
-//                       <section className="DescriptionList">
-//                         <h2>Air Speed</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Max Air Speed</dt>
-//                           <dd>1.344</dd>
-//                         </dl>
-//                       </section>
-//                     </section>
-//                     <section>
-//                       <section className="DescriptionList">
-//                         <h2>Fall Speed</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Max Fall Speed</dt>
-//                           <dd>2.1</dd>
-//                           <dt>Fast Fall Speed</dt>
-//                           <dd>3.36</dd>
-//                           <dt>Speed Increase</dt>
-//                           <dd>60%</dd>
-//                         </dl>
-//                       </section>
-//                       <section className="DescriptionList">
-//                         <h2>Run Speed</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Max Run Speed</dt>
-//                           <dd>3.85</dd>
-//                         </dl>
-//                       </section>
-//                     </section>
-//                     <section>
-//                       <section className="DescriptionList">
-//                         <h2>Walk Speed</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Max Walk Speed</dt>
-//                           <dd>1.575</dd>
-//                         </dl>
-//                       </section>
-//                       <section className="DescriptionList">
-//                         <h2>Weight</h2>
-//                         <dl>
-//                           <dt>Rank</dt>
-//                           <dd>1</dd>
-//                           <dt>Value</dt>
-//                           <dd>135</dd>
-//                         </dl>
-//                       </section>
-//                     </section>
-//                   </section>
-//                 )}
-//               </div>
-//             </div>
-//           </div>
-//           <div className="CharacterPage-section">
-//             <div className="CharacterPage-tags">
-//               <Tagbar>
-//                 <Tag>{weightClassToTag[weightClass]}</Tag>
-//               </Tagbar>
-//             </div>
-//           </div>
-//         </section>
-//       </Layout>
-//     );
-//   }
-// }
 
 export const characterPageQuery = graphql`
   query CharacterPageQuery($id: String!) {

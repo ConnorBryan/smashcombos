@@ -1,3 +1,3 @@
-export { default as CharacterItem } from "./character-item";
+export { default as CharacterCard } from "./character-card";
 export { default as Layout } from "./layout";
 export { default as Navbar } from "./navbar";
