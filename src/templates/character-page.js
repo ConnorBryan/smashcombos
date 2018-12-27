@@ -10,13 +10,13 @@ import {
   Label,
   List,
   Menu,
-  Responsive,
   Segment,
   Statistic
 } from "semantic-ui-react";
 
 import { Input, Layout } from "../_components";
 import { getCharacter, getCharacterRender, weightClassToTag } from "../helpers";
+import "./character-page.scss";
 
 export default class CharacterPage extends Component {
   render() {
@@ -149,7 +149,7 @@ export default class CharacterPage extends Component {
             Combos
           </Header>
           {/* Mobile */}
-          <Responsive maxWidth={700}>
+          <div className="mobile-only">
             <Card.Group>
               {_combos.map(
                 ({
@@ -222,21 +222,25 @@ export default class CharacterPage extends Component {
                       </Header>
                       <Embed url={demonstration} />
                     </Card.Content>
-                    <Card.Content extra>
-                      <Header as="h4" style={{ textTransform: "uppercase" }}>
-                        Clips
-                      </Header>
-                      {clips.map(({ description, credit, link }) => (
-                        <React.Fragment key={link}>
-                          <Embed url={link} />
-                          <Card.Description>
-                            <Label style={{ marginTop: "1rem", width: "100%" }}>
-                              {description} Credit to {credit}.
-                            </Label>
-                          </Card.Description>
-                        </React.Fragment>
-                      ))}
-                    </Card.Content>
+                    {clips.length > 0 && (
+                      <Card.Content extra>
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Clips
+                        </Header>
+                        {clips.map(({ description, credit, link }) => (
+                          <React.Fragment key={link}>
+                            <Embed url={link} />
+                            <Card.Description>
+                              <Label
+                                style={{ marginTop: "1rem", width: "100%" }}
+                              >
+                                {description} Credit to {credit}.
+                              </Label>
+                            </Card.Description>
+                          </React.Fragment>
+                        ))}
+                      </Card.Content>
+                    )}
                     <Card.Content extra>
                       <Header as="h4" style={{ textTransform: "uppercase" }}>
                         Notes
@@ -257,9 +261,9 @@ export default class CharacterPage extends Component {
                 )
               )}
             </Card.Group>
-          </Responsive>
+          </div>
           {/* Desktop */}
-          <Responsive minWidth={701}>
+          <div className="desktop-only">
             <Segment.Group
               style={{
                 border: "none",
@@ -379,27 +383,32 @@ export default class CharacterPage extends Component {
                         </Header>
                         <Embed url={demonstration} />
                       </Segment>
-                      <Segment
-                        style={{
-                          flex: 1
-                        }}
-                      >
-                        <Header as="h4" style={{ textTransform: "uppercase" }}>
-                          Clips
-                        </Header>
-                        {clips.map(({ description, credit, link }) => (
-                          <React.Fragment key={link}>
-                            <Embed url={link} />
-                            <Card.Description>
-                              <Label
-                                style={{ marginTop: "1rem", width: "100%" }}
-                              >
-                                {description} Credit to {credit}.
-                              </Label>
-                            </Card.Description>
-                          </React.Fragment>
-                        ))}
-                      </Segment>
+                      {clips.length > 0 && (
+                        <Segment
+                          style={{
+                            flex: 1
+                          }}
+                        >
+                          <Header
+                            as="h4"
+                            style={{ textTransform: "uppercase" }}
+                          >
+                            Clips
+                          </Header>
+                          {clips.map(({ description, credit, link }) => (
+                            <React.Fragment key={link}>
+                              <Embed url={link} />
+                              <Card.Description>
+                                <Label
+                                  style={{ marginTop: "1rem", width: "100%" }}
+                                >
+                                  {description} Credit to {credit}.
+                                </Label>
+                              </Card.Description>
+                            </React.Fragment>
+                          ))}
+                        </Segment>
+                      )}
                     </Segment.Group>
                     <Segment.Group horizontal style={{ marginTop: 0 }}>
                       <Segment style={{ flex: 1 }}>
@@ -437,7 +446,7 @@ export default class CharacterPage extends Component {
                 )
               )}
             </Segment.Group>
-          </Responsive>
+          </div>
         </Segment>
       </Layout>
     );
