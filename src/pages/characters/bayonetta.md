@@ -20,8 +20,8 @@ attributes:
     rank: '65'
     value: '81'
 killConfirms:
-  - percentages: {}
+  - {}
 combos:
-  - percentages: {}
+  - {}
 ---
 
