@@ -15,50 +15,64 @@ import {
 } from "semantic-ui-react";
 
 import { Input, Layout } from "../_components";
-import { getCharacter, getCharacterRender, weightClassToTag } from "../helpers";
+import {
+  getCharacter,
+  getCharacterRender,
+  weightClassToTag,
+  tagTypeToTag
+} from "../helpers";
 import "./character-page.scss";
 
+const AttributeTypes = {
+  AirAcceleration: 0,
+  AirSpeed: 1,
+  FallSpeed: 2,
+  RunSpeed: 3,
+  WalkSpeed: 4,
+  Weight: 5
+};
+
 export default class CharacterPage extends Component {
+  state = {
+    attribute: AttributeTypes.AirAcceleration
+  };
+
+  switchAttribute = attribute => this.setState({ attribute });
+
   render() {
     const { data } = this.props;
+    const { attribute } = this.state;
     const character = getCharacter(data);
     const image = getCharacterRender(character);
+
     const {
       name,
+      description,
       attributes: {
-        weight: { class: weightClass }
-      }
-    } = character;
-
-    const _combos = [
-      {
-        input: "dthrow nair usmash",
-        percentages: {
-          balloonweight: "30",
-          featherweight: "30",
-          lightweight: "30",
-          middleweight: "30",
-          heavyweight: "30",
-          superheavyweight: "30"
+        airAcceleration: {
+          maxAdditional,
+          baseValue,
+          total,
+          rank: airAccelerationRank
         },
-        damage: "27",
-        diable: false,
-        killConfirm: true,
-        demonstration: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        clips: [
-          {
-            description: "Lorem ipsum dolor amit sit consecutur.",
-            credit: "Jesus",
-            link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          }
-        ],
-        notes: "Lorem ipsum dolor sit amet",
-        tags: ["Fast Faller", "Big Body"]
-      }
-    ];
+        airSpeed: { maxAirSpeed, rank: airSpeedRank },
+        fallSpeed: {
+          maxFallSpeed,
+          fastFallSpeed,
+          speedIncrease,
+          rank: fallSpeedRank
+        },
+        runSpeed: { maxRunSpeed, rank: runSpeedRank },
+        walkSpeed: { maxWalkSpeed, rank: walkSpeedRank },
+        weight: { class: weightClass, value: weightValue, rank: weightRank }
+      },
+      combos,
+      tags = []
+    } = character;
 
     return (
       <Layout>
+        {/* Profile */}
         <Segment attached="top">
           <Grid stackable>
             <Grid.Column width={4} textAlign="center">
@@ -68,20 +82,7 @@ export default class CharacterPage extends Component {
               <Header as="h1" style={{ textTransform: "uppercase" }}>
                 {name}
               </Header>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?
+              {description}
               <Segment>
                 <List horizontal>
                   <List.Item>
@@ -91,12 +92,18 @@ export default class CharacterPage extends Component {
                   </List.Item>
                   <List.Item>
                     <Label tag>{weightClassToTag[weightClass]}</Label>
+                    {tags.map((tag, index) => (
+                      <Label key={index} tag>
+                        {tagTypeToTag[tag]}
+                      </Label>
+                    ))}
                   </List.Item>
                 </List>
               </Segment>
             </Grid.Column>
           </Grid>
         </Segment>
+        {/* Attributes */}
         <Segment attached>
           <Header as="h2" style={{ textTransform: "uppercase" }}>
             Attributes
@@ -105,45 +112,171 @@ export default class CharacterPage extends Component {
             <Grid.Row stretched>
               <Grid.Column width={4}>
                 <Menu vertical size="large" fluid>
-                  <Menu.Item active style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.AirAcceleration}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() =>
+                      this.switchAttribute(AttributeTypes.AirAcceleration)
+                    }
+                  >
                     Air Acceleration
                   </Menu.Item>
-                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.AirSpeed}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() =>
+                      this.switchAttribute(AttributeTypes.AirSpeed)
+                    }
+                  >
                     Air Speed
                   </Menu.Item>
-                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.FallSpeed}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() =>
+                      this.switchAttribute(AttributeTypes.FallSpeed)
+                    }
+                  >
                     Fall Speed
                   </Menu.Item>
-                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.RunSpeed}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() =>
+                      this.switchAttribute(AttributeTypes.RunSpeed)
+                    }
+                  >
                     Run Speed
                   </Menu.Item>
-                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.WalkSpeed}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() =>
+                      this.switchAttribute(AttributeTypes.WalkSpeed)
+                    }
+                  >
                     Walk Speed
                   </Menu.Item>
-                  <Menu.Item style={{ textTransform: "uppercase" }}>
+                  <Menu.Item
+                    active={attribute === AttributeTypes.Weight}
+                    style={{ textTransform: "uppercase" }}
+                    onClick={() => this.switchAttribute(AttributeTypes.Weight)}
+                  >
                     Weight
                   </Menu.Item>
                 </Menu>
               </Grid.Column>
               <Grid.Column width={12}>
                 <Segment>
-                  <Header as="h3" style={{ textTransform: "uppercase" }}>
-                    Air Acceleration
-                    <Label>
-                      <Icon name="trophy" />
-                      Rank 1 of 77
-                    </Label>
-                  </Header>
-                  <Statistic.Group size="huge" widths={3}>
-                    <Statistic label="Max Additional" value="0" />
-                    <Statistic label="Base Value" value="0" />
-                    <Statistic label="Total" value="0" />
-                  </Statistic.Group>
+                  {attribute === AttributeTypes.AirAcceleration && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Air Acceleration
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {airAccelerationRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={3}>
+                        <Statistic
+                          label="Max Additional"
+                          value={maxAdditional}
+                        />
+                        <Statistic label="Base Value" value={baseValue} />
+                        <Statistic label="Total" value={total} />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
+                  {attribute === AttributeTypes.AirSpeed && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Air Speed
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {airSpeedRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={1}>
+                        <Statistic label="Max Air Speed" value={maxAirSpeed} />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
+                  {attribute === AttributeTypes.FallSpeed && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Fall Speed
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {fallSpeedRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={3}>
+                        <Statistic
+                          label="Max Fall Speed"
+                          value={maxFallSpeed}
+                        />
+                        <Statistic
+                          label="Fast Fall Speed"
+                          value={fastFallSpeed}
+                        />
+                        <Statistic
+                          label="Speed Increase"
+                          value={speedIncrease}
+                        />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
+                  {attribute === AttributeTypes.RunSpeed && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Run Speed
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {runSpeedRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={1}>
+                        <Statistic label="Max Run Speed" value={maxRunSpeed} />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
+                  {attribute === AttributeTypes.WalkSpeed && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Walk Speed
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {walkSpeedRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={1}>
+                        <Statistic
+                          label="Max Walk Speed"
+                          value={maxWalkSpeed}
+                        />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
+                  {attribute === AttributeTypes.Weight && (
+                    <React.Fragment>
+                      <Header as="h3" style={{ textTransform: "uppercase" }}>
+                        Weight
+                        <Label>
+                          <Icon name="trophy" />
+                          Rank {weightRank} of 77
+                        </Label>
+                      </Header>
+                      <Statistic.Group size="huge" widths={1}>
+                        <Statistic label="Weight Value" value={weightValue} />
+                      </Statistic.Group>
+                    </React.Fragment>
+                  )}
                 </Segment>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>
+        {/* Combos */}
         <Segment attached>
           <Header as="h2" style={{ textTransform: "uppercase" }}>
             Combos
@@ -151,17 +284,17 @@ export default class CharacterPage extends Component {
           {/* Mobile */}
           <div className="mobile-only">
             <Card.Group>
-              {_combos.map(
+              {combos.map(
                 ({
                   input,
                   percentages,
                   damage,
                   diable,
                   killConfirm,
-                  demonstration,
-                  clips,
+                  demonstration = "",
+                  clips = [],
                   notes,
-                  tags
+                  tags = []
                 }) => (
                   <Card key={input} fluid>
                     <Card.Content>
@@ -197,7 +330,7 @@ export default class CharacterPage extends Component {
                             />
                             <Statistic
                               label="Super Heavyweight"
-                              value={`${percentages.superheavyweight}%`}
+                              value={`${percentages.superHeavyweight}%`}
                             />
                           </Statistic.Group>
                         </Grid.Column>
@@ -270,17 +403,17 @@ export default class CharacterPage extends Component {
                 boxShadow: "none"
               }}
             >
-              {_combos.map(
+              {combos.map(
                 ({
                   input,
                   percentages,
                   damage,
                   killConfirm,
                   diable,
-                  demonstration,
-                  clips,
+                  demonstration = "",
+                  clips = [],
                   notes,
-                  tags
+                  tags = []
                 }) => (
                   <Segment key={input} basic>
                     <Segment.Group
@@ -369,7 +502,7 @@ export default class CharacterPage extends Component {
                           />
                           <Statistic
                             label="Super Heavyweight"
-                            value={`${percentages.superheavyweight}%`}
+                            value={`${percentages.superHeavyweight}%`}
                           />
                         </Statistic.Group>
                       </Segment>
@@ -465,7 +598,32 @@ export const characterPageQuery = graphql`
             }
           }
         }
+        description
         attributes {
+          airAcceleration {
+            maxAdditional
+            baseValue
+            total
+            rank
+          }
+          airSpeed {
+            maxAirSpeed
+            rank
+          }
+          fallSpeed {
+            maxFallSpeed
+            fastFallSpeed
+            speedIncrease
+            rank
+          }
+          runSpeed {
+            maxRunSpeed
+            rank
+          }
+          walkSpeed {
+            maxWalkSpeed
+            rank
+          }
           weight {
             class
             rank

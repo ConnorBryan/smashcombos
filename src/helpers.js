@@ -13,7 +13,66 @@ export const tagTypeToTag = {
   bigBody: "Big Body"
 };
 
-export const getCharacter = data => data.markdownRemark.frontmatter;
+export const characterFields = {
+  name: "",
+  description: "",
+  attributes: {
+    airAcceleration: {
+      maxAdditional: "",
+      baseValue: "",
+      total: "",
+      rank: ""
+    },
+    airSpeed: {
+      maxAirSpeed: "",
+      rank: ""
+    },
+    fallSpeed: {
+      maxFallSpeed: "",
+      fastFallSpeed: "",
+      speedIncrease: "",
+      rank: ""
+    },
+    runSpeed: {
+      maxRunSpeed: "",
+      rank: ""
+    },
+    walkSpeed: {
+      maxWalkSpeed: "",
+      rank: ""
+    },
+    weight: {
+      class: "",
+      value: "",
+      rank: ""
+    }
+  },
+  combos: [],
+  tags: []
+};
+
+export const getCharacter = data => {
+  const character = { ...data.markdownRemark.frontmatter };
+
+  if (!character.attributes) {
+    character.attributes = characterFields.attributes;
+  }
+
+  [
+    "airAcceleration",
+    "airSpeed",
+    "fallSpeed",
+    "runSpeed",
+    "walkSpeed",
+    "weight"
+  ].forEach(attribute => {
+    if (!character.attributes[attribute]) {
+      character.attributes[attribute] = characterFields.attributes[attribute];
+    }
+  });
+
+  return character;
+};
 
 export const getCharacterRender = character => character.render;
 

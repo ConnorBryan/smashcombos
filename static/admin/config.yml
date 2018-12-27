@@ -36,11 +36,141 @@ collections:
           description: An image of the character.,
         }
       - {
+          label: Description,
+          name: description,
+          widget: string,
+          description: A description of the character.,
+        }
+      - {
           label: Attributes,
           name: attributes,
           widget: object,
           fields:
             [
+              {
+                label: Air Acceleration,
+                name: airAcceleration,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Max Additional,
+                      name: maxAdditional,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Base Value,
+                      name: baseValue,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Total,
+                      name: total,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Rank,
+                      name: rank,
+                      widget: number,
+                      description: "...",
+                    },
+                  ],
+              },
+              {
+                label: Air Speed,
+                name: airSpeed,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Max Air Speed,
+                      name: maxAirSpeed,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Rank,
+                      name: rank,
+                      widget: number,
+                      description: "...",
+                    },
+                  ],
+              },
+              {
+                label: Fall Speed,
+                name: fallSpeed,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Max Fall Speed,
+                      name: maxFallSpeed,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Fast Fall Speed,
+                      name: fastFallSpeed,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Speed Increase,
+                      name: speedIncrease,
+                      widget: string,
+                      description: "...",
+                    },
+                    {
+                      label: Rank,
+                      name: rank,
+                      widget: number,
+                      description: "...",
+                    },
+                  ],
+              },
+              {
+                label: Run Speed,
+                name: runSpeed,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Max Run Speed,
+                      name: maxRunSpeed,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Rank,
+                      name: rank,
+                      widget: number,
+                      description: "...",
+                    },
+                  ],
+              },
+              {
+                label: Walk Speed,
+                name: walkSpeed,
+                widget: object,
+                fields:
+                  [
+                    {
+                      label: Max Walk Speed,
+                      name: maxWalkSpeed,
+                      widget: number,
+                      description: "...",
+                    },
+                    {
+                      label: Rank,
+                      name: rank,
+                      widget: number,
+                      description: "...",
+                    },
+                  ],
+              },
               {
                 label: Weight,
                 name: weight,
