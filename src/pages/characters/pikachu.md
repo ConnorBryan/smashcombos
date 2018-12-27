@@ -50,6 +50,7 @@ killConfirms:
 combos:
   - damage: '15'
     demonstration: 'https://youtu.be/Q1Z2sCpbkFo'
+    diable: true
     input: dthrow nair
     percentages:
       balloonweight: '0'
