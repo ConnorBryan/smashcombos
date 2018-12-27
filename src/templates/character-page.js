@@ -18,6 +18,50 @@ import {
 
 import { Layout } from "../_components";
 import { getCharacter, getCharacterRender, weightClassToTag } from "../helpers";
+import downRightArrow from "../img/down-right-arrow.svg";
+
+const Input = ({ input }) => {
+  if (!input) {
+    return null;
+  }
+
+  const inputs = input.split(" ");
+
+  if (input.length === 0) {
+    return <Header as="h3">{inputs[0]}</Header>;
+  }
+
+  const [first, ...rest] = inputs;
+
+  return (
+    <div>
+      <Header as="h2">{first}</Header>
+      {rest.map((input, index) => (
+        <div
+          key={index}
+          style={{
+            display: "flex",
+            alignItems: "center"
+          }}
+        >
+          <img
+            src={downRightArrow}
+            alt="Arrow"
+            style={{ width: "1.5rem", height: "1.5rem", marginRight: "2rem" }}
+          />
+          <Header
+            as="h2"
+            style={{
+              margin: 0
+            }}
+          >
+            {input}
+          </Header>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default class CharacterPage extends Component {
   render() {
@@ -60,11 +104,8 @@ export default class CharacterPage extends Component {
       <Layout>
         <Segment attached="top">
           <Grid stackable>
-            <Grid.Column width={4}>
-              <Image
-                fluid={image.childImageSharp.fluid}
-                style={{ maxWidth: "20rem" }}
-              />
+            <Grid.Column width={4} textAlign="center">
+              <Image fluid={image.childImageSharp.fluid} />
             </Grid.Column>
             <Grid.Column width={12}>
               <Header as="h1" style={{ textTransform: "uppercase" }}>
@@ -146,42 +187,50 @@ export default class CharacterPage extends Component {
           <Header as="h2" style={{ textTransform: "uppercase" }}>
             Combos ({combos.length})
           </Header>
+          {/* Mobile */}
           <Responsive maxWidth={700}>
             <Card.Group>
               {_combos.map(
                 ({ input, percentages, demonstration, clips, note, tags }) => (
                   <Card key={input} fluid>
-                    <Card.Content>{input}</Card.Content>
-                    <Card.Content extra>
-                      <Header as="h4" style={{ textTransform: "uppercase" }}>
-                        Effective at
-                      </Header>
-                      <Statistic.Group size="mini" widths={2}>
-                        <Statistic
-                          label="Balloonweight"
-                          value={`${percentages.balloonweight}%`}
-                        />
-                        <Statistic
-                          label="Featherweight"
-                          value={`${percentages.featherweight}%`}
-                        />
-                        <Statistic
-                          label="Lightweight"
-                          value={`${percentages.lightweight}%`}
-                        />
-                        <Statistic
-                          label="Middleweight"
-                          value={`${percentages.middleweight}%`}
-                        />
-                        <Statistic
-                          label="Heavyweight"
-                          value={`${percentages.heavyweight}%`}
-                        />
-                        <Statistic
-                          label="Super Heavyweight"
-                          value={`${percentages.superheavyweight}%`}
-                        />
-                      </Statistic.Group>
+                    <Card.Content>
+                      <Grid>
+                        <Grid.Column width={8}>
+                          <Input input={input} />
+                        </Grid.Column>
+                        <Grid.Column
+                          width={8}
+                          floated="right"
+                          style={{ paddingRight: "1rem" }}
+                        >
+                          <Statistic.Group size="tiny" widths={1}>
+                            <Statistic
+                              label="Balloonweight"
+                              value={`${percentages.balloonweight}%`}
+                            />
+                            <Statistic
+                              label="Featherweight"
+                              value={`${percentages.featherweight}%`}
+                            />
+                            <Statistic
+                              label="Lightweight"
+                              value={`${percentages.lightweight}%`}
+                            />
+                            <Statistic
+                              label="Middleweight"
+                              value={`${percentages.middleweight}%`}
+                            />
+                            <Statistic
+                              label="Heavyweight"
+                              value={`${percentages.heavyweight}%`}
+                            />
+                            <Statistic
+                              label="Super Heavyweight"
+                              value={`${percentages.superheavyweight}%`}
+                            />
+                          </Statistic.Group>
+                        </Grid.Column>
+                      </Grid>
                     </Card.Content>
                     <Card.Content extra>
                       <Header as="h4" style={{ textTransform: "uppercase" }}>
@@ -209,11 +258,22 @@ export default class CharacterPage extends Component {
                         Notes
                       </Header>
                     </Card.Content>
+                    <Card.Content extra>
+                      <Header as="h4" style={{ textTransform: "uppercase" }}>
+                        Tags
+                      </Header>
+                      {tags.map(tag => (
+                        <Label key={tag} tag>
+                          {tag}
+                        </Label>
+                      ))}
+                    </Card.Content>
                   </Card>
                 )
               )}
             </Card.Group>
           </Responsive>
+          {/* Desktop */}
           <Responsive minWidth={701}>Derp</Responsive>
         </Segment>
       </Layout>
