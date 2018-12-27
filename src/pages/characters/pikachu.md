@@ -48,7 +48,9 @@ killConfirms:
       middleweight: '160'
       superHeavyweight: '160'
 combos:
-  - input: dthrow nair
+  - damage: '15'
+    demonstration: 'https://youtu.be/Q1Z2sCpbkFo'
+    input: dthrow nair
     percentages:
       balloonweight: '0'
       featherweight: '0'
