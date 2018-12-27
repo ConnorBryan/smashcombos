@@ -42,6 +42,8 @@ export default class CharacterPage extends Component {
           superheavyweight: "30"
         },
         damage: "27",
+        diable: false,
+        killConfirm: true,
         demonstration: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         clips: [
           {
@@ -50,7 +52,7 @@ export default class CharacterPage extends Component {
             link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           }
         ],
-        note: "Lorem ipsum dolor sit amet",
+        notes: "Lorem ipsum dolor sit amet",
         tags: ["Fast Faller", "Big Body"]
       }
     ];
@@ -66,27 +68,26 @@ export default class CharacterPage extends Component {
               <Header as="h1" style={{ textTransform: "uppercase" }}>
                 {name}
               </Header>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?
-              </p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
               <Segment>
                 <List horizontal>
                   <List.Item>
-                    <List.Header>Tags</List.Header>
+                    <List.Header style={{ textTransform: "uppercase" }}>
+                      Tags
+                    </List.Header>
                   </List.Item>
                   <List.Item>
                     <Label tag>{weightClassToTag[weightClass]}</Label>
@@ -97,6 +98,9 @@ export default class CharacterPage extends Component {
           </Grid>
         </Segment>
         <Segment attached>
+          <Header as="h2" style={{ textTransform: "uppercase" }}>
+            Attributes
+          </Header>
           <Grid stackable>
             <Grid.Row stretched>
               <Grid.Column width={4}>
@@ -122,18 +126,20 @@ export default class CharacterPage extends Component {
                 </Menu>
               </Grid.Column>
               <Grid.Column width={12}>
-                <Header as="h3" style={{ textTransform: "uppercase" }}>
-                  Air Acceleration
-                  <Label>
-                    <Icon name="trophy" />
-                    Rank 1 of 77
-                  </Label>
-                </Header>
-                <Statistic.Group size="huge" widths={3}>
-                  <Statistic label="Max Additional" value="0" />
-                  <Statistic label="Base Value" value="0" />
-                  <Statistic label="Total" value="0" />
-                </Statistic.Group>
+                <Segment>
+                  <Header as="h3" style={{ textTransform: "uppercase" }}>
+                    Air Acceleration
+                    <Label>
+                      <Icon name="trophy" />
+                      Rank 1 of 77
+                    </Label>
+                  </Header>
+                  <Statistic.Group size="huge" widths={3}>
+                    <Statistic label="Max Additional" value="0" />
+                    <Statistic label="Base Value" value="0" />
+                    <Statistic label="Total" value="0" />
+                  </Statistic.Group>
+                </Segment>
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -150,9 +156,11 @@ export default class CharacterPage extends Component {
                   input,
                   percentages,
                   damage,
+                  diable,
+                  killConfirm,
                   demonstration,
                   clips,
-                  note,
+                  notes,
                   tags
                 }) => (
                   <Card key={input} fluid>
@@ -197,8 +205,15 @@ export default class CharacterPage extends Component {
                     </Card.Content>
                     <Card.Content extra>
                       <Label as="h4" style={{ textTransform: "uppercase" }}>
-                        <Icon name="heart" />
                         Deals {damage}% damage
+                      </Label>
+                      {killConfirm && (
+                        <Label as="h4" style={{ textTransform: "uppercase" }}>
+                          Kill confirm
+                        </Label>
+                      )}
+                      <Label as="h4" style={{ textTransform: "uppercase" }}>
+                        {diable ? "" : "Not"} DI-able
                       </Label>
                     </Card.Content>
                     <Card.Content extra>
@@ -226,6 +241,7 @@ export default class CharacterPage extends Component {
                       <Header as="h4" style={{ textTransform: "uppercase" }}>
                         Notes
                       </Header>
+                      {notes}
                     </Card.Content>
                     <Card.Content extra>
                       <Header as="h4" style={{ textTransform: "uppercase" }}>
@@ -255,9 +271,11 @@ export default class CharacterPage extends Component {
                   input,
                   percentages,
                   damage,
+                  killConfirm,
+                  diable,
                   demonstration,
                   clips,
-                  note,
+                  notes,
                   tags
                 }) => (
                   <Segment key={input} basic>
@@ -274,20 +292,50 @@ export default class CharacterPage extends Component {
                         }}
                       >
                         <Input input={input} />
-                        <Label
-                          size="small"
+                        <div
                           style={{
-                            alignSelf: "flex-end",
                             display: "flex",
+                            flexDirection: "column",
                             alignItems: "center",
                             justifyContent: "center",
-                            width: "100%",
-                            margin: 0,
-                            textTransform: "uppercase"
+                            width: "100%"
                           }}
                         >
-                          Deals {damage}% damage
-                        </Label>
+                          <Label
+                            as="h4"
+                            style={{
+                              width: "100%",
+                              margin: 0,
+                              marginBottom: "0.5rem",
+                              textTransform: "uppercase"
+                            }}
+                          >
+                            Deals {damage}% damage
+                          </Label>
+                          {killConfirm && (
+                            <Label
+                              as="h4"
+                              style={{
+                                width: "100%",
+                                margin: 0,
+                                marginBottom: "0.5rem",
+                                textTransform: "uppercase"
+                              }}
+                            >
+                              Kill confirm
+                            </Label>
+                          )}
+                          <Label
+                            as="h4"
+                            style={{
+                              width: "100%",
+                              margin: 0,
+                              textTransform: "uppercase"
+                            }}
+                          >
+                            {diable ? "" : "Not"} DI-able
+                          </Label>
+                        </div>
                       </Segment>
                       <Segment
                         style={{
@@ -358,6 +406,7 @@ export default class CharacterPage extends Component {
                         <Header as="h4" style={{ textTransform: "uppercase" }}>
                           Notes
                         </Header>
+                        {notes}
                       </Segment>
                       <Segment
                         style={{

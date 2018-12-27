@@ -250,6 +250,39 @@ collections:
                 description: Can the character being attacked utilize directional influence to escape?,
               },
               {
+                label: Demonstration,
+                name: demonstration,
+                widget: string,
+                description: A link to a video showing the combo in training mode.,
+              },
+              {
+                label: Clips,
+                name: clips,
+                widget: list,
+                fields:
+                  [
+                    {
+                      label: Description,
+                      name: description,
+                      widget: string,
+                      description: A description of the context surrounding the clip.,
+                    },
+                    {
+                      label: Credit,
+                      name: credit,
+                      widget: string,
+                      description: Who originally uploaded or performed in the clip?,
+                    },
+                    {
+                      label: Link,
+                      name: link,
+                      widget: string,
+                      description: A link to the clip.,
+                    },
+                  ],
+                description: A list of uses of the combo in real-world scenarios.,
+              },
+              {
                 label: Tags,
                 name: tags,
                 widget: select,
