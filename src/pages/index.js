@@ -4,13 +4,11 @@ import {
   Button,
   Card,
   Dropdown,
-  Grid,
   Header,
   Icon,
   Input,
   Menu,
-  Segment,
-  Select
+  Segment
 } from "semantic-ui-react";
 
 import { CharacterCard, Layout } from "../_components";
