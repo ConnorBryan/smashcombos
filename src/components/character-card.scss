@@ -1,0 +1,89 @@
+@import "../styles/styles.scss";
+
+.CharacterCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+  margin-bottom: $spacing-lg;
+
+  &-profile {
+    flex: 1;
+    margin-right: $spacing-lg;
+
+    &-image {
+      background: $almost-black;
+      border: 1px solid $primary;
+    }
+    &-name {
+      margin-top: $spacing-lg;
+      margin-bottom: $spacing-lg;
+      @media (min-width: 600px) {
+        margin-bottom: 0;
+      }
+      padding: $spacing-md;
+      border: 1px solid $primary;
+      background: $primary-darkest;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-description {
+      margin-top: 0;
+      margin-bottom: $spacing-lg;
+      @media (min-width: 600px) {
+        margin-top: $spacing-lg;
+        margin-bottom: 0;
+      }
+      padding: $spacing-lg;
+      background: $almost-black;
+      border: 1px solid $primary;
+
+      p {
+        margin-bottom: $spacing-md;
+      }
+    }
+    &-tagbar {
+      margin-top: 0;
+      margin-bottom: $spacing-lg;
+      @media (min-width: 600px) {
+        margin-top: $spacing-lg;
+        margin-bottom: 0;
+      }
+      border: 1px solid $primary;
+    }
+  }
+  &-attributes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+
+    &-attribute {
+      margin-right: 0;
+      @media (min-width: 600px) {
+        margin-right: -$spacing-lg;
+      }
+      margin-bottom: $spacing-lg;
+      padding: $spacing-md;
+      border: 1px solid $primary;
+      border-right: none;
+      background: $almost-black;
+
+      &-name {
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-md;
+      }
+      &-values {
+        display: flex;
+
+        .Value:not(:last-of-type) {
+          margin-right: $spacing-md;
+        }
+      }
+    }
+  }
+}

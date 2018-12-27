@@ -5,7 +5,7 @@ import { getCharacter, getCharacterRender } from "../helpers";
 import downRightArrow from "../img/down-right-arrow.svg";
 import {
   Button,
-  CharacterStrip,
+  CharacterCard,
   Grouping,
   Layout,
   Panel,
@@ -60,30 +60,13 @@ export default function CharacterPage({ data }) {
   return (
     <Layout>
       <section className="CharacterPage">
-        <CharacterStrip
+        <CharacterCard
           name={name}
           image={image}
           attributes={attributes}
           killConfirms={killConfirms}
           combos={combos}
         />
-        <Grouping title="Attributes">
-          {attributes ? (
-            Object.entries(attributes).map(
-              ([key, value]) =>
-                key === "weight" && (
-                  <Panel key={key}>
-                    <h2>Weight</h2>
-                    <p>Class: {value.class}</p>
-                    <p>Value: {value.value}</p>
-                    <p>Rank: #{value.rank}</p>
-                  </Panel>
-                )
-            )
-          ) : (
-            <Panel>This character has no listed attributes.</Panel>
-          )}
-        </Grouping>
         <Grouping title="Kill Confirms">
           {hasKillConfirms ? (
             killConfirms.map(
