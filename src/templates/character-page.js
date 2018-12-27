@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Image from "gatsby-image";
 import {
+  Card,
+  Embed,
   Grid,
   Header,
   Item,
@@ -9,6 +11,7 @@ import {
   Label,
   List,
   Menu,
+  Responsive,
   Segment,
   Statistic
 } from "semantic-ui-react";
@@ -25,8 +28,33 @@ export default class CharacterPage extends Component {
       name,
       attributes: {
         weight: { class: weightClass }
-      }
+      },
+      combos
     } = character;
+
+    const _combos = [
+      {
+        input: "dthrow nair usmash",
+        percentages: {
+          balloonweight: "30",
+          featherweight: "30",
+          lightweight: "30",
+          middleweight: "30",
+          heavyweight: "30",
+          superheavyweight: "30"
+        },
+        demonstration: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        clips: [
+          {
+            description: "Lorem ipsum dolor amit sit consecutur.",
+            credit: "Jesus",
+            link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          }
+        ],
+        note: "Lorem ipsum dolor sit amet",
+        tags: ["Fast Faller", "Big Body"]
+      }
+    ];
 
     return (
       <Layout>
@@ -72,7 +100,7 @@ export default class CharacterPage extends Component {
             </Grid.Column>
           </Grid>
         </Segment>
-        <Segment attached="bottom">
+        <Segment attached>
           <Grid stackable>
             <Grid.Row stretched>
               <Grid.Column width={4}>
@@ -113,6 +141,80 @@ export default class CharacterPage extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
+        </Segment>
+        <Segment attached>
+          <Header as="h2" style={{ textTransform: "uppercase" }}>
+            Combos ({combos.length})
+          </Header>
+          <Responsive maxWidth={700}>
+            <Card.Group>
+              {_combos.map(
+                ({ input, percentages, demonstration, clips, note, tags }) => (
+                  <Card key={input} fluid>
+                    <Card.Content>{input}</Card.Content>
+                    <Card.Content extra>
+                      <Header as="h4" style={{ textTransform: "uppercase" }}>
+                        Effective at
+                      </Header>
+                      <Statistic.Group size="mini" widths={2}>
+                        <Statistic
+                          label="Balloonweight"
+                          value={`${percentages.balloonweight}%`}
+                        />
+                        <Statistic
+                          label="Featherweight"
+                          value={`${percentages.featherweight}%`}
+                        />
+                        <Statistic
+                          label="Lightweight"
+                          value={`${percentages.lightweight}%`}
+                        />
+                        <Statistic
+                          label="Middleweight"
+                          value={`${percentages.middleweight}%`}
+                        />
+                        <Statistic
+                          label="Heavyweight"
+                          value={`${percentages.heavyweight}%`}
+                        />
+                        <Statistic
+                          label="Super Heavyweight"
+                          value={`${percentages.superheavyweight}%`}
+                        />
+                      </Statistic.Group>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Header as="h4" style={{ textTransform: "uppercase" }}>
+                        Demonstration
+                      </Header>
+                      <Embed url={demonstration} />
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Header as="h4" style={{ textTransform: "uppercase" }}>
+                        Clips
+                      </Header>
+                      {clips.map(({ description, credit, link }) => (
+                        <React.Fragment key={link}>
+                          <Embed url={link} />
+                          <Card.Description>
+                            <Label style={{ marginTop: "1rem", width: "100%" }}>
+                              {description} Credit to {credit}.
+                            </Label>
+                          </Card.Description>
+                        </React.Fragment>
+                      ))}
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Header as="h4" style={{ textTransform: "uppercase" }}>
+                        Notes
+                      </Header>
+                    </Card.Content>
+                  </Card>
+                )
+              )}
+            </Card.Group>
+          </Responsive>
+          <Responsive minWidth={701}>Derp</Responsive>
         </Segment>
       </Layout>
     );
