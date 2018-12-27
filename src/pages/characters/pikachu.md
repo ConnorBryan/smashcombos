@@ -22,6 +22,18 @@ attributes:
     total: '0.10'
   airSpeed:
     maxAirSpeed: '0.957'
+    rank: '61'
+  fallSpeed:
+    fastFallSpeed: '2.48'
+    maxFallSpeed: '1.55'
+    rank: '45'
+    speedIncrease: 60%
+  runSpeed:
+    maxRunSpeed: '2.039'
+    rank: '17'
+  walkSpeed:
+    maxWalkSpeed: '1.302'
+    rank: '12'
   weight:
     class: featherweight
     rank: '68'
