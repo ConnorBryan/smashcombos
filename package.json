@@ -10,6 +10,7 @@
     "bulma": "^0.7.0",
     "gatsby": "^2.0.66",
     "gatsby-image": "^2.0.23",
+    "gatsby-plugin-less": "^2.0.8",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^3.0.9",
     "gatsby-plugin-purgecss": "^2.4.0",
@@ -22,6 +23,7 @@
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-remark": "^2.1.15",
     "gatsby-transformer-sharp": "^2.1.9",
+    "less": "^3.9.0",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^2.3.1",
@@ -32,6 +34,7 @@
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "semantic-ui-css": "^2.4.1",
+    "semantic-ui-less": "^2.4.1",
     "semantic-ui-react": "^0.84.0",
     "uuid": "^3.2.1"
   },
