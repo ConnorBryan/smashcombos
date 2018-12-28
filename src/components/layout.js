@@ -6,6 +6,7 @@ import { Container } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
 import Navbar from "./navbar";
+import "./layout.scss";
 
 export default function Layout({ children }) {
   return (

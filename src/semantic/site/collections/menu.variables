@@ -10,7 +10,7 @@
 @verticalMargin: @medium;
 @horizontalMargin: 0em;
 @margin: @verticalMargin @horizontalMargin;
-@background: #FFFFFF;
+@background: @almostBlack;
 @fontFamily: @pageFont;
 @itemBackground: none;
 @fontWeight: @normal;
@@ -34,7 +34,7 @@
 
 /* Divider */
 @dividerSize: 1px;
-@dividerBackground: @internalBorderColor;
+@dividerBackground: @purple;
 
 /* Sub Menu */
 @subMenuDistance: 0.5em;
@@ -158,7 +158,7 @@
 ---------------*/
 
 /* Hovered Item */
-@hoverItemBackground: @subtleTransparentBlack;
+@hoverItemBackground: @almostBlack;
 @hoverItemTextColor: @selectedTextColor;
 
 /* Pressed Item */
@@ -167,14 +167,14 @@
 
 
 /* Active Item */
-@activeItemBackground: @transparentBlack;
+@activeItemBackground: @almostBlack;
 @activeItemTextColor: @selectedTextColor;
 @activeItemFontWeight: @normal;
 @activeIconOpacity: 1;
 @activeItemBoxShadow: none;
 
 /* Active Hovered Item */
-@activeHoverItemBackground: @transparentBlack;
+@activeHoverItemBackground: @almostBlack;
 @activeHoverItemColor: @selectedTextColor;
 
 /* Selected Dropdown */
@@ -199,12 +199,10 @@
 /* Vertical */
 @verticalBoxShadow: @boxShadow;
 @verticalPointerWidth: 2px;
-@verticalBackground: #FFFFFF;
+@verticalBackground: @darkerGrey;
 @verticalItemBackground: none;
 @verticalDividerBackground: @dividerBackground;
-
 @verticalActiveBoxShadow: none;
-
 
 /* Secondary */
 @secondaryBackground: none;

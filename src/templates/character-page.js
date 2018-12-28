@@ -83,11 +83,9 @@ export default class CharacterPage extends Component {
                     </List.Header>
                   </List.Item>
                   <List.Item>
-                    <Label tag>{weightClassToTag[weightClass]}</Label>
+                    <Label>{weightClassToTag[weightClass]}</Label>
                     {tags.map((tag, index) => (
-                      <Label key={index} tag>
-                        {tagTypeToTag[tag]}
-                      </Label>
+                      <Label key={index}>{tagTypeToTag[tag]}</Label>
                     ))}
                   </List.Item>
                 </List>
@@ -379,9 +377,7 @@ export default class CharacterPage extends Component {
                         Tags
                       </Header>
                       {(tags || []).map(tag => (
-                        <Label key={tag} tag>
-                          {tag}
-                        </Label>
+                        <Label key={tag}>{tag}</Label>
                       ))}
                     </Card.Content>
                   </Card>
@@ -567,7 +563,7 @@ export default class CharacterPage extends Component {
                           }}
                         >
                           {[].map(tag => (
-                            <Label as="li" key={tag} tag>
+                            <Label as="li" key={tag}>
                               {tag}
                             </Label>
                           ))}

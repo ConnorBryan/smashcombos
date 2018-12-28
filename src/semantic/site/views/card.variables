@@ -13,7 +13,7 @@
 /* Card */
 @fontFamily: @pageFont;
 @display: flex;
-@background: @white;
+@background: @darkerGrey;
 @borderRadius: @defaultBorderRadius;
 @margin: 1em 0em;
 @minHeight: 0px;
@@ -25,7 +25,7 @@
   @shadowBoxShadow,
   @borderShadow
 ;
-@border: none;
+@border: 1px solid @purple;
 @zIndex: '';
 @transition:
   box-shadow @defaultDuration @defaultEasing,
@@ -53,28 +53,27 @@
 
 /* Image */
 @imageBackground: @transparentBlack;
-@imagePadding: 0em;
+@imagePadding: 0.3em;
 @imageBorder: none;
 @imageBoxShadow: none;
-@imageBorder: none;
+@imageBorder: 1px solid @purple;;
 
 /* Content */
 @contentDivider: @borderWidth solid @internalBorderColor;
 @contentMargin: 0em;
-@contentBackground: none;
+@contentBackground: @almostBlack;
 @contentPadding: 1em 1em;
 @contentFontSize: 1em;
 @contentBorderRadius: 0em;
 @contentBoxShadow: none;
-@contentBorder: none;
-
+@contentBorder: 1px solid @purple;
 
 /* Header */
 @headerMargin: '';
 @headerFontWeight: @bold;
-@headerFontSize: @relativeBig;
+@headerFontSize: @relativeHuge;
 @headerLineHeightOffset: -(@lineHeight - 1em) / 2;
-@headerColor: @darkTextColor;
+@headerColor: @textColor;
 
 /* Metadata */
 @metaFontSize: @relativeMedium;
@@ -148,7 +147,7 @@
 --------------------*/
 
 /* Link */
-@linkHoverBackground: @white;
+@linkHoverBackground: @darkGrey;
 @linkHoverBorder: @border;
 @linkHoverZIndex: 5;
 @linkHoverRaiseDistance: 3px;

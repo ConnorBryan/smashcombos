@@ -17,7 +17,12 @@ export default function CharacterCard({
 }) {
   return (
     <Card as={Link} to={slug}>
-      <Image fluid={image.childImageSharp.fluid} />
+      <Image
+        fluid={image.childImageSharp.fluid}
+        style={{
+          borderBottom: "1px solid #738BD6"
+        }}
+      />
       <Card.Content
         style={{
           display: "flex",
@@ -44,7 +49,7 @@ export default function CharacterCard({
         <Statistic label="Combos" value={combos.length} />
       </Card.Content>
       <Card.Content extra>
-        <Label tag>{weightClassToTag[weightClass]}</Label>
+        <Label>{weightClassToTag[weightClass]}</Label>
       </Card.Content>
     </Card>
   );

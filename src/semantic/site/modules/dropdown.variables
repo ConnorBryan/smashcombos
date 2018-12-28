@@ -26,7 +26,7 @@
 @textTransition: none;
 
 /* Menu */
-@menuBackground: #FFFFFF;
+@menuBackground: @almostBlack;
 @menuMargin: 0em;
 @menuPadding: 0em 0em;
 @menuTop: 100%;
@@ -49,7 +49,7 @@
 /* Menu Item */
 @itemFontSize: @medium;
 @itemTextAlign: left;
-@itemBorder: none;
+@itemBorder: 1px solid @purple;
 @itemHeight: auto;
 @itemDivider: none;
 @itemColor: @textColor;
@@ -137,7 +137,7 @@
 @selectionPadding: @selectionVerticalPadding @selectionIconDistance @selectionVerticalPadding @selectionHorizontalPadding;
 @selectionZIndex: 10;
 
-@selectionItemDivider: 1px solid @solidInternalBorderColor;
+@selectionItemDivider: 1px solid @purple;
 @selectionMessagePadding: @selectionItemPadding;
 
 /* <select> */
@@ -189,11 +189,11 @@
 @selectionWidescreenMaxMenuHeight: (@selectionItemHeight * @selectionWidescreenMaxItems);
 
 /* Hover */
-@selectionHoverBorderColor: @selectedBorderColor;
+@selectionHoverBorderColor: @darkerGrey;
 @selectionHoverBoxShadow: none;
 
 /* Focus */
-@selectionFocusBorderColor: @focusedFormMutedBorderColor;
+@selectionFocusBorderColor: @purple;
 @selectionFocusBoxShadow: none;
 @selectionFocusMenuBoxShadow: @raisedShadow;
 
@@ -279,7 +279,7 @@
 --------------------*/
 
 /* Hovered */
-@hoveredItemBackground: @transparentBlack;
+@hoveredItemBackground: @darkGrey;
 @hoveredItemColor: @selectedTextColor;
 @hoveredZIndex: @menuZIndex + 2;
 
@@ -292,13 +292,13 @@
 
 /* Active Menu Item */
 @activeItemZIndex: @menuZIndex + 1;
-@activeItemBackground: transparent;
+@activeItemBackground: @darkerGrey;
 @activeItemBoxShadow: none;
 @activeItemFontWeight: @bold;
 @activeItemColor: @selectedTextColor;
 
 /* Selected */
-@selectedBackground: @subtleTransparentBlack;
+@selectedBackground: @darkGrey;
 @selectedColor: @selectedTextColor;
 
 /* Error */

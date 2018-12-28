@@ -9,9 +9,9 @@
 /* Button */
 @verticalMargin: 0em;
 @horizontalMargin: 0.25em;
-@backgroundColor: #E0E1E2;
+@backgroundColor: @darkerGrey;
 @backgroundImage: none;
-@background: @backgroundColor @backgroundImage;
+@background: @darkerGrey;
 @lineHeight: 1em;
 
 /* Button defaults to using same height as input globally */
@@ -23,7 +23,7 @@
 @tapColor: transparent;
 @fontFamily: @pageFont;
 @fontWeight: @bold;
-@textColor: rgba(0, 0, 0, 0.6);
+@textColor: @almostWhite;
 @textShadow: none;
 @invertedTextShadow: @textShadow;
 @borderRadius: @defaultBorderRadius;
@@ -84,10 +84,10 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: #CACBCD;
+@hoverBackgroundColor: @darkGrey;
 @hoverBackgroundImage: @backgroundImage;
 @hoverBoxShadow: @boxShadow;
-@hoverColor: @hoveredTextColor;
+@hoverColor: @textColor;
 @iconHoverOpacity: 0.85;
 
 /* Focused */

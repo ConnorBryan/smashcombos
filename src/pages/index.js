@@ -102,6 +102,7 @@ export default class IndexPage extends Component {
           </Menu.Item>
           <Menu.Item>
             <Button
+              primary
               fluid
               onClick={this.resetControls}
               style={{ margin: "0 2rem" }}
@@ -127,7 +128,7 @@ export default class IndexPage extends Component {
                 )
               )
             ) : (
-              <Segment placeholder>
+              <Segment placeholder style={{ width: "100%" }}>
                 <Header icon>
                   <Icon name="warning" />
                   No characters match the filter.

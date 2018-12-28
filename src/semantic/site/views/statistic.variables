@@ -28,7 +28,7 @@
 @valueFont: @pageFont;
 @valueFontWeight: @normal;
 @valueLineHeight: 1em;
-@valueColor: @black;
+@valueColor: @textColor;
 @valueTextTransform: uppercase;
 
 /* Label */

@@ -30,7 +30,12 @@ export default function Input({ input }) {
           <img
             src={downRightArrow}
             alt="Arrow"
-            style={{ width: "1.5rem", height: "1.5rem", marginRight: "2rem" }}
+            style={{
+              width: "1.5rem",
+              height: "1.5rem",
+              marginRight: "2rem",
+              filter: "invert(100%)"
+            }}
           />
           <Header
             as="h2"
