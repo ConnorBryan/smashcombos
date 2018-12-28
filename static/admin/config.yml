@@ -261,7 +261,7 @@ collections:
                     },
                     {
                       label: Super Heavyweight,
-                      name: superHeavyweight,
+                      name: superheavyweight,
                       widget: string,
                       description: The percentage at which super heavyweight characters are vulnerable to the kill confirm.,
                     },
@@ -353,7 +353,7 @@ collections:
                     },
                     {
                       label: Super Heavyweight,
-                      name: superHeavyweight,
+                      name: superheavyweight,
                       widget: string,
                       description: The percentage at which super heavyweight characters are vulnerable to the combo.,
                     },

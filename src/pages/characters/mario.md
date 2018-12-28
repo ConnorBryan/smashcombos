@@ -5,25 +5,24 @@ render: /img/mario.png
 attributes:
   weight:
     class: middleweight
-    rank: '27'
-    value: '98'
+    rank: "27"
+    value: "98"
 killConfirms:
-  - input: '1'
+  - input: "1"
     percentages:
-      balloonweight: '1'
-      featherweight: '1'
-      heavyweight: '1'
-      lightweight: '1'
-      middleweight: '1'
-      superHeavyweight: '1'
+      balloonweight: "1"
+      featherweight: "1"
+      heavyweight: "1"
+      lightweight: "1"
+      middleweight: "1"
+      superheavyweight: "1"
 combos:
-  - input: '2'
+  - input: "2"
     percentages:
-      balloonweight: '1'
-      featherweight: '1'
-      heavyweight: '1'
-      lightweight: '1'
-      middleweight: '1'
-      superHeavyweight: '1'
+      balloonweight: "1"
+      featherweight: "1"
+      heavyweight: "1"
+      lightweight: "1"
+      middleweight: "1"
+      superheavyweight: "1"
 ---
-

@@ -175,7 +175,7 @@ export const query = graphql`
                 lightweight
                 middleweight
                 heavyweight
-                superHeavyweight
+                superheavyweight
               }
             }
             combos {
@@ -186,7 +186,7 @@ export const query = graphql`
                 lightweight
                 middleweight
                 heavyweight
-                superHeavyweight
+                superheavyweight
               }
             }
           }

@@ -46,7 +46,7 @@ killConfirms:
       heavyweight: "160"
       lightweight: "160"
       middleweight: "160"
-      superHeavyweight: "160"
+      superheavyweight: "160"
 combos:
   - damage: "15.8"
     demonstration: "https://www.youtube.com/embed/Q1Z2sCpbkFo"
@@ -58,7 +58,7 @@ combos:
       heavyweight: "0"
       lightweight: "0"
       middleweight: "0"
-      superHeavyweight: "0"
+      superheavyweight: "0"
     clips: ""
     tags: ""
     notes: ""
@@ -71,5 +71,5 @@ combos:
       heavyweight: "75"
       lightweight: "75"
       middleweight: "75"
-      superHeavyweight: "75"
+      superheavyweight: "75"
 ---
