@@ -9,7 +9,7 @@
 @verticalAlign: baseline;
 @verticalMargin: 0em;
 @horizontalMargin: @relative2px;
-@backgroundColor: @almostBlack;
+@backgroundColor: darken(@purple, 25);
 @color: @textColor;
 @backgroundImage: none;
 @verticalPadding: 0.5833em; /* medium is not @emSize custom value required */

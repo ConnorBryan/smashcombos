@@ -80,7 +80,7 @@ export default class AttributePanel extends Component {
                     }}
                   >
                     <Statistic.Group
-                      size="large"
+                      size="huge"
                       widths={3}
                       style={{
                         display: "flex",

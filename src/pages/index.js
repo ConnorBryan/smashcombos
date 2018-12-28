@@ -163,8 +163,24 @@ export const query = graphql`
               }
             }
             attributes {
+              airAcceleration {
+                rank
+              }
+              airSpeed {
+                rank
+              }
+              fallSpeed {
+                rank
+              }
+              runSpeed {
+                rank
+              }
+              walkSpeed {
+                rank
+              }
               weight {
                 class
+                rank
               }
             }
             killConfirms {

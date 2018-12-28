@@ -213,7 +213,19 @@ export const SortTypes = {
   FewestKillConfirms: "Fewest Kill Confirms",
   MostKillConfirms: "Most Kill Confirms",
   FewestCombos: "Fewest Combos",
-  MostCombos: "Most Combos"
+  MostCombos: "Most Combos",
+  LowestAirAcceleration: "Lowest Air Acceleration",
+  HighestAirAcceleration: "Highest Air Acceleration",
+  LowestAirSpeed: "Lowest Air Speed",
+  HighestAirSpeed: "Highest Air Speed",
+  LowestFallSpeed: "Lowest Fall Speed",
+  HighestFallSpeed: "Highest Fall Speed",
+  LowestRunSpeed: "Lowest Run Speed",
+  HighestRunSpeed: "Highest Run Speed",
+  LowestWalkSpeed: "Lowest Walk Speed",
+  HighestWalkSpeed: "Highest Walk Speed",
+  LowestWeight: "Lowest Weight",
+  HighestWeight: "Highest Weight"
 };
 
 export const sortFunctions = {
@@ -224,7 +236,37 @@ export const sortFunctions = {
   [SortTypes.MostKillConfirms]: (a, b) =>
     b.killConfirms.length - a.killConfirms.length,
   [SortTypes.FewestCombos]: (a, b) => a.combos.length - b.combos.length,
-  [SortTypes.MostCombos]: (a, b) => b.combos.length - a.combos.length
+  [SortTypes.MostCombos]: (a, b) => b.combos.length - a.combos.length,
+  [SortTypes.LowestAirAcceleration]: (a, b) =>
+    parseInt(b.attributes.airAcceleration.rank) -
+    parseInt(a.attributes.airAcceleration.rank),
+  [SortTypes.HighestAirAcceleration]: (a, b) =>
+    parseInt(a.attributes.airAcceleration.rank) -
+    parseInt(b.attributes.airAcceleration.rank),
+  [SortTypes.LowestAirSpeed]: (a, b) =>
+    parseInt(b.attributes.airSpeed.rank) - parseInt(a.attributes.airSpeed.rank),
+  [SortTypes.HighestAirSpeed]: (a, b) =>
+    parseInt(a.attributes.airSpeed.rank) - parseInt(b.attributes.airSpeed.rank),
+  [SortTypes.LowestFallSpeed]: (a, b) =>
+    parseInt(b.attributes.fallSpeed.rank) -
+    parseInt(a.attributes.fallSpeed.rank),
+  [SortTypes.HighestFallSpeed]: (a, b) =>
+    parseInt(a.attributes.fallSpeed.rank) -
+    parseInt(b.attributes.fallSpeed.rank),
+  [SortTypes.LowestRunSpeed]: (a, b) =>
+    parseInt(b.attributes.runSpeed.rank) - parseInt(a.attributes.runSpeed.rank),
+  [SortTypes.HighestRunSpeed]: (a, b) =>
+    parseInt(a.attributes.runSpeed.rank) - parseInt(b.attributes.runSpeed.rank),
+  [SortTypes.LowestWalkSpeed]: (a, b) =>
+    parseInt(b.attributes.walkSpeed.rank) -
+    parseInt(a.attributes.walkSpeed.rank),
+  [SortTypes.HighestWalkSpeed]: (a, b) =>
+    parseInt(a.attributes.walkSpeed.rank) -
+    parseInt(b.attributes.walkSpeed.rank),
+  [SortTypes.LowestWeight]: (a, b) =>
+    parseInt(b.attributes.weight.rank) - parseInt(a.attributes.weight.rank),
+  [SortTypes.HighestWeight]: (a, b) =>
+    parseInt(a.attributes.weight.rank) - parseInt(b.attributes.weight.rank)
 };
 
 export const WeightClasses = {
