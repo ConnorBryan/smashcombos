@@ -11,6 +11,11 @@ attributes:
   airSpeed:
     maxAirSpeed: "1.029"
     rank: "45"
+  fallSpeed:
+    fastFallSpeed: "2.5"
+    maxFallSpeed: "1.9"
+    rank: "5"
+    speedIncrease: "31.579%"
   weight:
     class: balloonweight
     rank: "77"

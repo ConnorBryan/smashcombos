@@ -15,6 +15,11 @@ attributes:
     class: middleweight
     rank: "25"
     value: "100"
+  fallSpeed:
+    fastFallSpeed: "2.48"
+    maxFallSpeed: "1.55"
+    rank: "45"
+    speedIncrease: "60%"
 killConfirms:
   - percentages: {}
 combos:

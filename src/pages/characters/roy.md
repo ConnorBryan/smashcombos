@@ -11,6 +11,11 @@ attributes:
   airSpeed:
     maxAirSpeed: "1.302"
     rank: "4"
+  fallSpeed:
+    fastFallSpeed: "2.88"
+    maxFallSpeed: "1.8"
+    rank: "10"
+    speedIncrease: "60%"
   weight:
     class: middleweight
     rank: "36"
