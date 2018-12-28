@@ -1,24 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Image from "gatsby-image";
 import {
   Card,
   Embed,
   Grid,
   Header,
   Label,
-  List,
   Segment,
   Statistic
 } from "semantic-ui-react";
 
-import { AttributePanel, Input, Layout } from "../components";
-import {
-  getCharacter,
-  getCharacterRender,
-  weightClassToTag,
-  tagTypeToTag
-} from "../helpers";
+import { CharacterProfile, AttributePanel, Input, Layout } from "../components";
+import { getCharacter, getCharacterRender } from "../helpers";
 import "./character-page.scss";
 
 export default function CharacterPage({ data }) {
@@ -31,35 +24,13 @@ export default function CharacterPage({ data }) {
 
   return (
     <Layout>
-      {/* Profile */}
-      <Segment attached="top">
-        <Grid stackable>
-          <Grid.Column width={4} textAlign="center">
-            <Image fluid={image.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column width={12}>
-            <Header as="h1" style={{ textTransform: "uppercase" }}>
-              {name}
-            </Header>
-            {description}
-            <Segment>
-              <List horizontal>
-                <List.Item>
-                  <List.Header style={{ textTransform: "uppercase" }}>
-                    Tags
-                  </List.Header>
-                </List.Item>
-                <List.Item>
-                  <Label>{weightClassToTag[weightClass]}</Label>
-                  {tags.map((tag, index) => (
-                    <Label key={index}>{tagTypeToTag[tag]}</Label>
-                  ))}
-                </List.Item>
-              </List>
-            </Segment>
-          </Grid.Column>
-        </Grid>
-      </Segment>
+      <CharacterProfile
+        image={image}
+        name={name}
+        description={description}
+        weightClass={weightClass}
+        tags={tags}
+      />
       <AttributePanel attributes={attributes} />
       {/* Combos */}
       <Segment attached>
