@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Mii Brawler
 render: /img/mii-brawler.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.058"
-    rank: "50"
-    total: "0.068"
+    baseValue: '0.01'
+    maxAdditional: '0.058'
+    rank: '50'
+    total: '0.068'
   airSpeed:
-    maxAirSpeed: "1.15"
-    rank: "25"
+    maxAirSpeed: '1.15'
+    rank: '25'
   fallSpeed:
-    fastFallSpeed: "3.072"
-    maxFallSpeed: "1.92"
-    rank: "4"
-    speedIncrease: "60%"
+    fastFallSpeed: '3.072'
+    maxFallSpeed: '1.92'
+    rank: '4'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.92"
-    rank: "23"
+    maxRunSpeed: '1.92'
+    rank: '23'
   walkSpeed:
-    maxWalkSpeed: "1.26"
-    rank: "17"
+    maxWalkSpeed: '1.26'
+    rank: '17'
   weight:
     class: middleweight
-    rank: "40"
-    value: "94"
+    rank: '40'
+    value: '94'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
