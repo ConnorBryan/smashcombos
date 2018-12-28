@@ -8,6 +8,9 @@ attributes:
     maxAdditional: "0.095"
     rank: "8"
     total: "0.105"
+  airSpeed:
+    maxAirSpeed: "1.01"
+    rank: "52"
   weight:
     class: featherweight
     rank: "74"

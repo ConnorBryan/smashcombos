@@ -8,6 +8,9 @@ attributes:
     maxAdditional: "0.07"
     rank: "31"
     total: "0.08"
+  airSpeed:
+    maxAirSpeed: "1.239"
+    rank: "10"
   weight:
     class: lightweight
     rank: "56"
