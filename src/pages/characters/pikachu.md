@@ -18,8 +18,8 @@ attributes:
   airAcceleration:
     baseValue: "0.01"
     maxAdditional: "0.09"
-    rank: "7"
-    total: "0.10"
+    rank: "9"
+    total: "0.1"
   airSpeed:
     maxAirSpeed: "0.957"
     rank: "61"

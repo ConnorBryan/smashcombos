@@ -16,31 +16,30 @@ description: >-
   Knight in Smash 4.
 attributes:
   airAcceleration:
-    baseValue: '0.01'
-    maxAdditional: '0.085'
-    rank: '15'
-    total: '0.095'
+    baseValue: "0.01"
+    maxAdditional: "0.085"
+    rank: "15"
+    total: "0.095"
   airSpeed:
-    maxAirSpeed: '1.019'
-    rank: '49'
+    maxAirSpeed: "1.019"
+    rank: "49"
   fallSpeed:
-    fastFallSpeed: '2.832'
-    maxFallSpeed: '1.77'
-    rank: '17'
+    fastFallSpeed: "2.832"
+    maxFallSpeed: "1.77"
+    rank: "17"
     speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: '1.76'
-    rank: '32'
+    maxRunSpeed: "1.76"
+    rank: "32"
   walkSpeed:
-    maxWalkSpeed: '0.945'
-    rank: '56'
+    maxWalkSpeed: "0.945"
+    rank: "56"
   weight:
     class: featherweight
-    rank: '65'
-    value: '81'
+    rank: "65"
+    value: "81"
 killConfirms:
   - {}
 combos:
   - {}
 ---
-

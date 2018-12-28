@@ -3,13 +3,17 @@ templateKey: character-page
 name: Yoshi
 render: /img/yoshi.png
 attributes:
+  airAcceleration:
+    baseValue: "0.03"
+    maxAdditional: "0.068"
+    rank: "14"
+    total: "0.098"
   weight:
     class: heavyweight
-    rank: '18'
-    value: '104'
+    rank: "18"
+    value: "104"
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
-

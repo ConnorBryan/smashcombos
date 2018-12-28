@@ -3,6 +3,11 @@ templateKey: character-page
 name: Mario
 render: /img/mario.png
 attributes:
+  airAcceleration:
+    baseValue: "0.01"
+    maxAdditional: "0.07"
+    rank: "31"
+    total: "0.08"
   weight:
     class: middleweight
     rank: "27"

@@ -3,6 +3,11 @@ templateKey: character-page
 name: Ness
 render: /img/ness.png
 attributes:
+  airAcceleration:
+    baseValue: "0.01"
+    maxAdditional: "0.09"
+    rank: "9"
+    total: "0.1"
   weight:
     class: middleweight
     rank: "40"

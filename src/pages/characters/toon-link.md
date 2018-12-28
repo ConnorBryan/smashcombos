@@ -3,13 +3,17 @@ templateKey: character-page
 name: Toon Link
 render: /img/toon-link.png
 attributes:
+  airAcceleration:
+    baseValue: "0.01"
+    maxAdditional: "0.08"
+    rank: "21"
+    total: "0.09"
   weight:
     class: middleweight
-    rank: '49'
-    value: '91'
+    rank: "49"
+    value: "91"
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
-

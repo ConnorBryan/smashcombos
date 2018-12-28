@@ -3,13 +3,17 @@ templateKey: character-page
 name: Mii Gunner
 render: /img/mii-gunner.png
 attributes:
+  airAcceleration:
+    baseValue: "0.01"
+    maxAdditional: "0.043"
+    rank: "60"
+    total: "0.053"
   weight:
     class: heavyweight
-    rank: '18'
-    value: '104'
+    rank: "18"
+    value: "104"
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
-

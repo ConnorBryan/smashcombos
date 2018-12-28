@@ -3,13 +3,17 @@ templateKey: character-page
 name: Dark Pit
 render: /img/dark-pit.png
 attributes:
+  airAcceleration:
+    baseValue: "0.01"
+    maxAdditional: "0.065"
+    rank: "41"
+    total: "0.075"
   weight:
     class: middleweight
-    rank: '32'
-    value: '96'
+    rank: "32"
+    value: "96"
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
-
