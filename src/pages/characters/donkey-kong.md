@@ -2,32 +2,42 @@
 templateKey: character-page
 name: Donkey Kong
 render: /img/donkey-kong.png
+description: >-
+  Even though he was already considered the best heavyweight in the previous
+  game, Donkey Kong has received numerous buffs, particularly in his off stage
+  game. Giant Punch no longer makes him helpless when used in air, giving him a
+  new edge guarding option and improvements to his forward throw give him a lot
+  more options out of grab. However, cargo up throw now has more knockback
+  which, while having great kill potential, removes DK's infamous Ding Dong kill
+  confirm. This, along with the nerf in rage, worsens Donkey Kong's kill power
+  when the opponent is at earlier percents.
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.05"
-    rank: "53"
-    total: "0.06"
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
   airSpeed:
-    maxAirSpeed: "1.208"
-    rank: "12"
+    maxAirSpeed: '1.208'
+    rank: '12'
   fallSpeed:
-    fastFallSpeed: "2.608"
-    maxFallSpeed: "1.63"
-    rank: "34"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.608'
+    maxFallSpeed: '1.63'
+    rank: '34'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.873"
-    rank: "26"
+    maxRunSpeed: '1.873'
+    rank: '26'
   walkSpeed:
-    maxWalkSpeed: "1.365"
-    rank: "9"
+    maxWalkSpeed: '1.365'
+    rank: '9'
   weight:
     class: superheavyweight
-    rank: "3"
-    value: "127"
+    rank: '3'
+    value: '127'
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
