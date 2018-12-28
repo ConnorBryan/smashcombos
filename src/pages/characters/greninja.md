@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Greninja
 render: /img/greninja.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.07"
-    rank: "31"
-    total: "0.08"
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
   airSpeed:
-    maxAirSpeed: "1.239"
-    rank: "10"
+    maxAirSpeed: '1.239'
+    rank: '10'
   fallSpeed:
-    fastFallSpeed: "2.96"
-    maxFallSpeed: "1.85"
-    rank: "7"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.96'
+    maxFallSpeed: '1.85'
+    rank: '7'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "2.288"
-    rank: "7"
+    maxRunSpeed: '2.288'
+    rank: '7'
   walkSpeed:
-    maxWalkSpeed: "1.502"
-    rank: "4"
+    maxWalkSpeed: '1.502'
+    rank: '4'
   weight:
     class: lightweight
-    rank: "56"
-    value: "88"
+    rank: '56'
+    value: '88'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
