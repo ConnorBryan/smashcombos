@@ -78,7 +78,7 @@
 /* Metadata */
 @metaFontSize: @relativeMedium;
 @metaSpacing: 0.3em;
-@metaColor: @lightTextColor;
+@metaColor: @textColor;
 
 /* Icons */
 @actionOpacity: 0.75;
@@ -104,7 +104,7 @@
 
 /* Description */
 @descriptionDistance: 0.5em;
-@descriptionColor: rgba(0, 0, 0, 0.68);
+@descriptionColor: @textColor;
 
 /* Content Image */
 @contentImageWidth: '';
@@ -131,7 +131,7 @@
 @extraMargin: 0em 0em;
 @extraPadding: 0.75em 1em;
 @extraBoxShadow: none;
-@extraColor: @lightTextColor;
+@extraColor: @textColor;
 @extraTransition: color @defaultDuration @defaultEasing;
 
 /* Extra Links */

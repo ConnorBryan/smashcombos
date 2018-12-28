@@ -9,6 +9,8 @@ import {
   Segment
 } from "semantic-ui-react";
 
+import { generateEffectivePercentages } from "../helpers";
+import ComboDemonstrationPlaceholder from "./combo-demonstration-placeholder";
 import Input from "./input";
 
 export default function MobileComboList({ combos }) {
@@ -26,14 +28,19 @@ export default function MobileComboList({ combos }) {
             diable,
             killConfirm,
             demonstration = "",
-            clips = [],
+            clips,
             notes,
-            tags = []
+            tags
           }) => (
             <Card key={input} fluid>
               <Card.Content>
                 <Grid>
-                  <Grid.Column width={8}>
+                  <Grid.Column
+                    width={8}
+                    style={{
+                      borderRight: "1px solid #738BD6"
+                    }}
+                  >
                     <Input input={input} />
                   </Grid.Column>
                   <Grid.Column
@@ -42,30 +49,11 @@ export default function MobileComboList({ combos }) {
                     style={{ paddingRight: "1rem" }}
                   >
                     <Statistic.Group size="tiny" widths={1}>
-                      <Statistic
-                        label="Balloonweight"
-                        value={`${percentages.balloonweight}%`}
-                      />
-                      <Statistic
-                        label="Featherweight"
-                        value={`${percentages.featherweight}%`}
-                      />
-                      <Statistic
-                        label="Lightweight"
-                        value={`${percentages.lightweight}%`}
-                      />
-                      <Statistic
-                        label="Middleweight"
-                        value={`${percentages.middleweight}%`}
-                      />
-                      <Statistic
-                        label="Heavyweight"
-                        value={`${percentages.heavyweight}%`}
-                      />
-                      <Statistic
-                        label="Super Heavyweight"
-                        value={`${percentages.superheavyweight}%`}
-                      />
+                      {generateEffectivePercentages(percentages).map(
+                        ({ label, value }) => (
+                          <Statistic key={label} label={label} value={value} />
+                        )
+                      )}
                     </Statistic.Group>
                   </Grid.Column>
                 </Grid>
@@ -83,14 +71,16 @@ export default function MobileComboList({ combos }) {
                   {diable ? "" : "Not"} DI-able
                 </Label>
               </Card.Content>
-              {demonstration && (
-                <Card.Content extra>
-                  <Header as="h4" style={{ textTransform: "uppercase" }}>
-                    Demonstration
-                  </Header>
+              <Card.Content extra>
+                <Header as="h4" style={{ textTransform: "uppercase" }}>
+                  Demonstration
+                </Header>
+                {demonstration ? (
                   <Embed url={demonstration} />
-                </Card.Content>
-              )}
+                ) : (
+                  <ComboDemonstrationPlaceholder />
+                )}
+              </Card.Content>
               {(clips || []).length > 0 && (
                 <Card.Content extra>
                   <Header as="h4" style={{ textTransform: "uppercase" }}>
@@ -110,17 +100,17 @@ export default function MobileComboList({ combos }) {
               )}
               <Card.Content extra>
                 <Header as="h4" style={{ textTransform: "uppercase" }}>
-                  Notes
-                </Header>
-                {notes}
-              </Card.Content>
-              <Card.Content extra>
-                <Header as="h4" style={{ textTransform: "uppercase" }}>
                   Tags
                 </Header>
                 {(tags || []).map(tag => (
                   <Label key={tag}>{tag}</Label>
                 ))}
+              </Card.Content>
+              <Card.Content extra>
+                <Header as="h4" style={{ textTransform: "uppercase" }}>
+                  Notes
+                </Header>
+                {notes || "There are no notes on this combo."}
               </Card.Content>
             </Card>
           )

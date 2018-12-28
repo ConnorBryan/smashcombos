@@ -29,12 +29,16 @@ export default function CharacterPage({ data }) {
         tags={tags}
       />
       <AttributePanel attributes={attributes} />
-      <div className="mobile-only">
-        <MobileComboList combos={combos} />
-      </div>
-      <div className="desktop-only">
-        <DesktopComboList combos={combos} />
-      </div>
+      {combos.length > 0 && (
+        <React.Fragment>
+          <div className="mobile-only">
+            <MobileComboList combos={combos} />
+          </div>
+          <div className="desktop-only">
+            <DesktopComboList combos={combos} />
+          </div>
+        </React.Fragment>
+      )}
     </Layout>
   );
 }

@@ -8,6 +8,8 @@ import {
   Card
 } from "semantic-ui-react";
 
+import { generateEffectivePercentages } from "../helpers";
+import ComboDemonstrationPlaceholder from "./combo-demonstration-placeholder";
 import Input from "./input";
 
 export default function DesktopComboList({ combos }) {
@@ -30,14 +32,19 @@ export default function DesktopComboList({ combos }) {
             killConfirm,
             diable,
             demonstration = "",
-            clips = [],
+            clips,
             notes,
-            tags = []
+            tags
           }) => (
             <Segment key={input} basic>
               <Segment.Group
                 horizontal
-                style={{ marginBottom: 0, borderBottom: "none" }}
+                style={{
+                  marginBottom: 0,
+                  borderBottom: "none",
+                  borderBottomRightRadius: 0,
+                  borderBottomLeftRadius: 0
+                }}
               >
                 <Segment
                   style={{
@@ -98,45 +105,28 @@ export default function DesktopComboList({ combos }) {
                     flex: 1
                   }}
                 >
-                  <Statistic.Group size="mini" widths={1}>
-                    <Statistic
-                      label="Balloonweight"
-                      value={`${percentages.balloonweight}%`}
-                    />
-                    <Statistic
-                      label="Featherweight"
-                      value={`${percentages.featherweight}%`}
-                    />
-                    <Statistic
-                      label="Lightweight"
-                      value={`${percentages.lightweight}%`}
-                    />
-                    <Statistic
-                      label="Middleweight"
-                      value={`${percentages.middleweight}%`}
-                    />
-                    <Statistic
-                      label="Heavyweight"
-                      value={`${percentages.heavyweight}%`}
-                    />
-                    <Statistic
-                      label="Super Heavyweight"
-                      value={`${percentages.superheavyweight}%`}
-                    />
+                  <Statistic.Group size="tiny" widths={1}>
+                    {generateEffectivePercentages(percentages).map(
+                      ({ label, value }) => (
+                        <Statistic key={label} label={label} value={value} />
+                      )
+                    )}
                   </Statistic.Group>
                 </Segment>
-                {demonstration && (
-                  <Segment
-                    style={{
-                      flex: 1
-                    }}
-                  >
-                    <Header as="h4" style={{ textTransform: "uppercase" }}>
-                      Demonstration
-                    </Header>
+                <Segment
+                  style={{
+                    flex: 2
+                  }}
+                >
+                  <Header as="h4" style={{ textTransform: "uppercase" }}>
+                    Demonstration
+                  </Header>
+                  {demonstration ? (
                     <Embed url={demonstration} />
-                  </Segment>
-                )}
+                  ) : (
+                    <ComboDemonstrationPlaceholder />
+                  )}
+                </Segment>
                 {(clips || []).length > 0 && (
                   <Segment
                     style={{
@@ -159,13 +149,10 @@ export default function DesktopComboList({ combos }) {
                   </Segment>
                 )}
               </Segment.Group>
-              <Segment.Group horizontal style={{ marginTop: 0 }}>
-                <Segment style={{ flex: 1 }}>
-                  <Header as="h4" style={{ textTransform: "uppercase" }}>
-                    Notes
-                  </Header>
-                  {notes}
-                </Segment>
+              <Segment.Group
+                horizontal
+                style={{ marginTop: 0, borderRadius: 0 }}
+              >
                 <Segment
                   style={{
                     flex: 1,
@@ -189,6 +176,12 @@ export default function DesktopComboList({ combos }) {
                       </Label>
                     ))}
                   </ul>
+                </Segment>
+                <Segment style={{ flex: 1 }}>
+                  <Header as="h4" style={{ textTransform: "uppercase" }}>
+                    Notes
+                  </Header>
+                  {notes || "There are no notes on this combo."}
                 </Segment>
               </Segment.Group>
             </Segment>
