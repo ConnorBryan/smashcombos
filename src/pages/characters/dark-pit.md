@@ -16,6 +16,9 @@ attributes:
     maxFallSpeed: "1.48"
     rank: "53"
     speedIncrease: "60%"
+  walkSpeed:
+    maxWalkSpeed: "1.259"
+    rank: "20"
   runSpeed:
     maxRunSpeed: "1.828"
     rank: "28"
