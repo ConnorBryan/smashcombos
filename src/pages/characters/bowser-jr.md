@@ -2,7 +2,14 @@
 templateKey: character-page
 name: Bowser Jr.
 render: /img/bowser-jr.png
-description: ...
+description: >-
+  While Bowser Jr. did not receive as many direct changes to his standard
+  moveset compared to the rest of the cast, he did obtain some notable
+  improvements due to his attributes and special moves. Overall, Bowser Jr.'s
+  moveset and gimmicks has been retooled to be more consistent and significantly
+  less situational that in Smash 4, allowing him to zone opponents more
+  effectively. As of now, it is unknown how his changes will affect him compared
+  to the rest of the cast.
 attributes:
   airAcceleration:
     baseValue: '0.01'
