@@ -34,6 +34,8 @@ attributes:
     class: middleweight
     rank: '25'
     value: '100'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:
