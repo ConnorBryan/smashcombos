@@ -13,6 +13,15 @@ export const tagTypeToTag = {
   bigBody: "Big Body"
 };
 
+export const AttributeTypes = {
+  AirAcceleration: 0,
+  AirSpeed: 1,
+  FallSpeed: 2,
+  RunSpeed: 3,
+  WalkSpeed: 4,
+  Weight: 5
+};
+
 export const characterFields = {
   name: "",
   description: "",
@@ -112,3 +121,33 @@ export const getFilteredCharacters = (characters, filter) =>
   characters.filter(({ name }) =>
     name.toLowerCase().includes(filter.toLowerCase())
   );
+
+export const SortTypes = {
+  AtoZ: "A-Z",
+  ZtoA: "Z-A",
+  FewestKillConfirms: "Fewest Kill Confirms",
+  MostKillConfirms: "Most Kill Confirms",
+  FewestCombos: "Fewest Combos",
+  MostCombos: "Most Combos"
+};
+
+export const sortFunctions = {
+  [SortTypes.AtoZ]: (a, b) => a.name.localeCompare(b.name),
+  [SortTypes.ZtoA]: (a, b) => b.name.localeCompare(a.name),
+  [SortTypes.FewestKillConfirms]: (a, b) =>
+    a.killConfirms.length - b.killConfirms.length,
+  [SortTypes.MostKillConfirms]: (a, b) =>
+    b.killConfirms.length - a.killConfirms.length,
+  [SortTypes.FewestCombos]: (a, b) => a.combos.length - b.combos.length,
+  [SortTypes.MostCombos]: (a, b) => b.combos.length - a.combos.length
+};
+
+export const WeightClasses = {
+  All: "All weight classes",
+  Balloonweight: "balloonweight",
+  Featherweight: "featherweight",
+  Lightweight: "lightweight",
+  Middleweight: "middleweight",
+  Heavyweight: "heavyweight",
+  "Super Heavyweight": "superheavyweight"
+};

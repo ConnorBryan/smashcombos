@@ -14,23 +14,15 @@ import {
   Statistic
 } from "semantic-ui-react";
 
-import { Input, Layout } from "../_components";
+import { Input, Layout } from "../components";
 import {
   getCharacter,
   getCharacterRender,
+  AttributeTypes,
   weightClassToTag,
   tagTypeToTag
 } from "../helpers";
 import "./character-page.scss";
-
-const AttributeTypes = {
-  AirAcceleration: 0,
-  AirSpeed: 1,
-  FallSpeed: 2,
-  RunSpeed: 3,
-  WalkSpeed: 4,
-  Weight: 5
-};
 
 export default class CharacterPage extends Component {
   state = {

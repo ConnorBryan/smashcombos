@@ -1,19 +1,17 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
-import "semantic-ui-css/semantic.min.css";
 
 import { Container } from "semantic-ui-react";
-import Header from "./header";
-import Footer from "./footer";
-import Master from "./master";
-import "./layout.scss";
+import "semantic-ui-css/semantic.min.css";
 
-export default function Layout({ basic, children }) {
+import Navbar from "./navbar";
+
+export default function Layout({ children }) {
   return (
     <StaticQuery
       query={graphql`
-        query HeadingQuery {
+        query HeadQuery {
           site {
             siteMetadata {
               title
@@ -86,21 +84,16 @@ export default function Layout({ basic, children }) {
             <meta property="og:url" content="/" />
             <meta property="og:image" content="/img/og-image.png" />
           </Helmet>
-          <Container>ayy</Container>
-          {/* <section className={`Layout ${basic && "basic"}`}>
-            <div className="Layout-header">
-              <Header />
-            </div>
-            {!basic && (
-              <div className={`Layout-sidebar ${basic && "basic"}`}>
-                <Master />
-              </div>
-            )}
-            <div className="Layout-main">{children}</div>
-            <div className="Layout-footer">
-              <Footer />
-            </div>
-          </section> */}
+          <React.Fragment>
+            <Navbar />
+            <Container
+              style={{
+                marginTop: "7rem"
+              }}
+            >
+              {children}
+            </Container>
+          </React.Fragment>
         </React.Fragment>
       )}
     />

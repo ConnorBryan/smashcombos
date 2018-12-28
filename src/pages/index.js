@@ -11,38 +11,13 @@ import {
   Segment
 } from "semantic-ui-react";
 
-import { CharacterCard, Layout } from "../_components";
-import { getCharacters } from "../helpers";
-
-const SortTypes = {
-  AtoZ: "A-Z",
-  ZtoA: "Z-A",
-  FewestKillConfirms: "Fewest Kill Confirms",
-  MostKillConfirms: "Most Kill Confirms",
-  FewestCombos: "Fewest Combos",
-  MostCombos: "Most Combos"
-};
-
-const sortFunctions = {
-  [SortTypes.AtoZ]: (a, b) => a.name.localeCompare(b.name),
-  [SortTypes.ZtoA]: (a, b) => b.name.localeCompare(a.name),
-  [SortTypes.FewestKillConfirms]: (a, b) =>
-    a.killConfirms.length - b.killConfirms.length,
-  [SortTypes.MostKillConfirms]: (a, b) =>
-    b.killConfirms.length - a.killConfirms.length,
-  [SortTypes.FewestCombos]: (a, b) => a.combos.length - b.combos.length,
-  [SortTypes.MostCombos]: (a, b) => b.combos.length - a.combos.length
-};
-
-const WeightClasses = {
-  All: "All weight classes",
-  Balloonweight: "balloonweight",
-  Featherweight: "featherweight",
-  Lightweight: "lightweight",
-  Middleweight: "middleweight",
-  Heavyweight: "heavyweight",
-  "Super Heavyweight": "superheavyweight"
-};
+import { CharacterCard, Layout } from "../components";
+import {
+  getCharacters,
+  SortTypes,
+  sortFunctions,
+  WeightClasses
+} from "../helpers";
 
 const getInitialState = () => ({
   filter: "",
