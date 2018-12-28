@@ -122,8 +122,8 @@
 @dimmerColor: '';
 
 /* Additional Content */
-@extraDivider: 1px solid rgba(0, 0, 0, 0.05);
-@extraBackground: none;
+@extraDivider: 1px solid @purple;
+@extraBackground: @almostBlack;
 @extraPosition: static;
 @extraWidth: auto;
 @extraTop: 0em;

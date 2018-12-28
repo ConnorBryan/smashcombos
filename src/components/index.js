@@ -1,3 +1,4 @@
+export { default as AttributePanel } from "./attribute-panel";
 export { default as CharacterCard } from "./character-card";
 export { default as Input } from "./input";
 export { default as Layout } from "./layout";

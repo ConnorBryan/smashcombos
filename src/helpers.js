@@ -14,12 +14,12 @@ export const tagTypeToTag = {
 };
 
 export const AttributeTypes = {
-  AirAcceleration: 0,
-  AirSpeed: 1,
-  FallSpeed: 2,
-  RunSpeed: 3,
-  WalkSpeed: 4,
-  Weight: 5
+  AirAcceleration: "airAcceleration",
+  AirSpeed: "airSpeed",
+  FallSpeed: "fallSpeed",
+  RunSpeed: "runSpeed",
+  WalkSpeed: "walkSpeed",
+  Weight: "weight"
 };
 
 export const characterFields = {
@@ -58,6 +58,85 @@ export const characterFields = {
   },
   combos: [],
   tags: []
+};
+
+export const attributeToInformationHash = {
+  [AttributeTypes.AirAcceleration]: {
+    name: "Air Acceleration",
+    value: "airAcceleration",
+    fields: [
+      {
+        label: "Max Additional",
+        value: "maxAdditional"
+      },
+      {
+        label: "Base Value",
+        value: "baseValue"
+      },
+      {
+        label: "Total",
+        value: "total"
+      }
+    ]
+  },
+  [AttributeTypes.AirSpeed]: {
+    name: "Air Speed",
+    value: "airSpeed",
+    fields: [
+      {
+        label: "Max Air Speed",
+        value: "maxAirSpeed"
+      }
+    ]
+  },
+  [AttributeTypes.FallSpeed]: {
+    name: "Fall Speed",
+    value: "fallSpeed",
+    fields: [
+      {
+        label: "Max Fall Speed",
+        value: "maxFallSpeed"
+      },
+      {
+        label: "Fast Fall Speed",
+        value: "fastFallSpeed"
+      },
+      {
+        label: "Speed Increase",
+        value: "speedIncrease"
+      }
+    ]
+  },
+  [AttributeTypes.RunSpeed]: {
+    name: "Run Speed",
+    value: "runSpeed",
+    fields: [
+      {
+        label: "Max Run Speed",
+        value: "maxRunSpeed"
+      }
+    ]
+  },
+  [AttributeTypes.WalkSpeed]: {
+    name: "Walk Speed",
+    value: "walkSpeed",
+    fields: [
+      {
+        label: "Max Walk Speed",
+        value: "maxWalkSpeed"
+      }
+    ]
+  },
+  [AttributeTypes.Weight]: {
+    name: "Weight",
+    value: "weight",
+    fields: [
+      {
+        label: "Weight Value",
+        value: "value"
+      }
+    ]
+  }
 };
 
 export const getCharacter = data => {

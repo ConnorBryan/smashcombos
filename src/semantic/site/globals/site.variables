@@ -93,10 +93,10 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: #85B7D9;
+@focusedFormBorderColor: @purple;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #96C8DA;
+@focusedFormMutedBorderColor: @purple;
 
 /*-------------------
         Sizes
