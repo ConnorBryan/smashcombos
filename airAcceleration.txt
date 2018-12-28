@@ -1,0 +1,1027 @@
+
+CHARACTER
+---
+
+
+  airAcceleration:
+    baseValue: 'BASE VALUE'
+    maxAdditional: 'MAX ADDITIONAL'
+    rank: 'RANK'
+    total: 'TOTAL'
+
+
+---
+
+Jigglypuff
+---
+
+
+  airAcceleration:
+    baseValue: '0.05'
+    maxAdditional: '0.08'
+    rank: '1'
+    total: '0.13'
+
+
+---
+
+Wario
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.08'
+    rank: '2'
+    total: '0.12'
+
+
+---
+
+Peach
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.08'
+    rank: '2'
+    total: '0.12'
+
+
+---
+
+Daisy
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.08'
+    rank: '2'
+    total: '0.12'
+
+
+---
+
+Palutena
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.105'
+    rank: '5'
+    total: '0.115'
+
+
+---
+
+Rosalina
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.1'
+    rank: '6'
+    total: '0.11'
+
+
+---
+
+Mega Man
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.1'
+    rank: '6'
+    total: '0.11'
+
+
+---
+
+Squirtle
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.095'
+    rank: '8'
+    total: '0.105'
+
+
+---
+
+Mr. Game & Watch
+---
+
+
+  airAcceleration:
+    baseValue: '0.07'
+    maxAdditional: '0.03'
+    rank: '9'
+    total: '0.1'
+
+
+---
+
+Pichu
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.09'
+    rank: '9'
+    total: '0.1'
+
+
+---
+
+Falco
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.09'
+    rank: '9'
+    total: '0.1'
+
+
+---
+
+Pikachu
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.09'
+    rank: '9'
+    total: '0.1'
+
+
+---
+
+Ness
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.09'
+    rank: '9'
+    total: '0.1'
+
+
+---
+
+Yoshi
+---
+
+
+  airAcceleration:
+    baseValue: '0.03'
+    maxAdditional: '0.068'
+    rank: '14'
+    total: '0.098'
+
+
+---
+
+Kirby
+---
+
+
+  airAcceleration:
+    baseValue: '0.03'
+    maxAdditional: '0.065'
+    rank: '15'
+    total: '0.095'
+
+
+---
+
+Zero Suit Samus
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.085'
+    rank: '15'
+    total: '0.095'
+
+
+---
+
+Bayonetta
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.085'
+    rank: '15'
+    total: '0.095'
+
+
+---
+
+Lucas
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.085'
+    rank: '15'
+    total: '0.095'
+
+
+---
+
+Ivysaur
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.085'
+    rank: '15'
+    total: '0.095'
+
+
+---
+
+Nana
+---
+
+
+  airAcceleration:
+    baseValue: '0.0105'
+    maxAdditional: '0.084'
+    rank: '20'
+    total: '0.0945'
+
+
+---
+
+Wolf
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Fox
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Sheik
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Wii Fit Trainer
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Lucario
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Popo
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Toon Link
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Samus
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.05'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+Dark Samus
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.05'
+    rank: '21'
+    total: '0.09'
+
+
+---
+
+R.O.B.
+---
+
+
+  airAcceleration:
+    baseValue: '0.04'
+    maxAdditional: '0.045'
+    rank: '30'
+    total: '0.085'
+
+
+---
+
+Greninja
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Bowser Jr
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Robin
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Inkling
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Mario
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Duck Hunt
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Marth
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Lucina
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Olimar
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+PAC-MAN
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
+
+
+---
+
+Captain Falcon
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.065'
+    rank: '41'
+    total: '0.075'
+
+
+---
+
+Meta Knight
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.065'
+    rank: '41'
+    total: '0.075'
+
+
+---
+
+Pit
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.065'
+    rank: '41'
+    total: '0.075'
+
+
+---
+
+Dark Pit
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.065'
+    rank: '41'
+    total: '0.075'
+
+
+---
+
+Luigi
+---
+
+
+  airAcceleration:
+    baseValue: '0'
+    maxAdditional: '0.075'
+    rank: '41'
+    total: '0.075'
+
+
+---
+
+Mewtwo
+---
+
+
+  airAcceleration:
+    baseValue: '0.02'
+    maxAdditional: '0.05'
+    rank: '46'
+    total: '0.07'
+
+
+---
+
+Incineroar
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.06'
+    rank: '46'
+    total: '0.07'
+
+
+---
+
+Cloud
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.06'
+    rank: '46'
+    total: '0.07'
+
+
+---
+
+Ridley
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.06'
+    rank: '46'
+    total: '0.07'
+
+
+---
+
+Mii Brawler
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.058'
+    rank: '50'
+    total: '0.068'
+
+
+---
+
+Zelda
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.055'
+    rank: '51'
+    total: '0.065'
+
+
+---
+
+Dr Mario
+---
+
+
+  airAcceleration:
+    baseValue: '0.007648'
+    maxAdditional: '0.053536'
+    rank: '52'
+    total: '0.061184'
+
+
+---
+
+Young Link
+---
+
+
+  airAcceleration:
+    baseValue: '0.02'
+    maxAdditional: '0.04'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Charizard
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Mii Swordfighter
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Piranha Plant
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Donkey Kong
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Villager
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Isabelle
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.05'
+    rank: '53'
+    total: '0.06'
+
+
+---
+
+Mii Gunner
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.043'
+    rank: '60'
+    total: '0.053'
+
+
+---
+
+Roy
+---
+
+
+  airAcceleration:
+    baseValue: '0.02'
+    maxAdditional: '0.03'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Chrom
+---
+
+
+  airAcceleration:
+    baseValue: '0.02'
+    maxAdditional: '0.03'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Bowser
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Shulk
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Dedede
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Link
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Ike
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Corrin
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Sonic
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+King K. Rool
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.04'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Diddy Kong
+---
+
+
+  airAcceleration:
+    baseValue: '0'
+    maxAdditional: '0.05'
+    rank: '61'
+    total: '0.05'
+
+
+---
+
+Little Mac
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.03'
+    rank: '72'
+    total: '0.04'
+
+
+---
+
+Ganondorf
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.03'
+    rank: '72'
+    total: '0.04'
+
+
+---
+
+Ryu
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.025'
+    rank: '74'
+    total: '0.035'
+
+
+---
+
+Ken
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.025'
+    rank: '74'
+    total: '0.035'
+
+
+---
+
+Snake
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.02'
+    rank: '76'
+    total: '0.03'
+
+
+---
+
+Richter
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.02'
+    rank: '76'
+    total: '0.03'
+
+
+---
+
+Simon
+---
+
+
+  airAcceleration:
+    baseValue: '0.01'
+    maxAdditional: '0.02'
+    rank: '76'
+    total: '0.03'
+
+
+---
