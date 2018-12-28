@@ -48,8 +48,8 @@ killConfirms:
       middleweight: '160'
       superHeavyweight: '160'
 combos:
-  - damage: '15'
-    demonstration: 'https://youtu.be/Q1Z2sCpbkFo'
+  - damage: '15.8'
+    demonstration: 'https://www.youtube.com/embed/Q1Z2sCpbkFo'
     diable: true
     input: dthrow nair
     percentages:
