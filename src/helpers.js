@@ -71,6 +71,24 @@ export const getCharacter = data => {
     }
   });
 
+  if (!character.killConfirms) {
+    character.killConfirms = [];
+  }
+
+  if (!character.combos) {
+    character.combos = [];
+  }
+
+  if (!character.tags) {
+    character.tags = [];
+  }
+
+  // Remove false combos.
+  character.killConfirms = character.killConfirms.filter(
+    killConfirm => killConfirm.input
+  );
+  character.combos = character.combos.filter(combo => combo.input);
+
   return character;
 };
 
@@ -82,7 +100,12 @@ export const getCharacters = data =>
     .filter(({ fields: { slug } }) => slug.includes("characters"))
     .map(({ fields: { slug }, frontmatter }) => ({
       slug,
-      ...frontmatter
+      ...frontmatter,
+      // Remove false combos.
+      killConfirms: frontmatter.killConfirms.filter(
+        killConfirm => killConfirm.input
+      ),
+      combos: frontmatter.combos.filter(combo => combo.input)
     }));
 
 export const getFilteredCharacters = (characters, filter) =>

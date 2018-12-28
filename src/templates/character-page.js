@@ -67,7 +67,7 @@ export default class CharacterPage extends Component {
         weight: { class: weightClass, value: weightValue, rank: weightRank }
       },
       combos,
-      tags = []
+      tags
     } = character;
 
     return (
@@ -349,13 +349,15 @@ export default class CharacterPage extends Component {
                         {diable ? "" : "Not"} DI-able
                       </Label>
                     </Card.Content>
-                    <Card.Content extra>
-                      <Header as="h4" style={{ textTransform: "uppercase" }}>
-                        Demonstration
-                      </Header>
-                      <Embed url={demonstration} />
-                    </Card.Content>
-                    {clips.length > 0 && (
+                    {demonstration && (
+                      <Card.Content extra>
+                        <Header as="h4" style={{ textTransform: "uppercase" }}>
+                          Demonstration
+                        </Header>
+                        <Embed url={demonstration} />
+                      </Card.Content>
+                    )}
+                    {(clips || []).length > 0 && (
                       <Card.Content extra>
                         <Header as="h4" style={{ textTransform: "uppercase" }}>
                           Clips
@@ -384,7 +386,7 @@ export default class CharacterPage extends Component {
                       <Header as="h4" style={{ textTransform: "uppercase" }}>
                         Tags
                       </Header>
-                      {tags.map(tag => (
+                      {(tags || []).map(tag => (
                         <Label key={tag} tag>
                           {tag}
                         </Label>
@@ -506,17 +508,22 @@ export default class CharacterPage extends Component {
                           />
                         </Statistic.Group>
                       </Segment>
-                      <Segment
-                        style={{
-                          flex: 1
-                        }}
-                      >
-                        <Header as="h4" style={{ textTransform: "uppercase" }}>
-                          Demonstration
-                        </Header>
-                        <Embed url={demonstration} />
-                      </Segment>
-                      {clips.length > 0 && (
+                      {demonstration && (
+                        <Segment
+                          style={{
+                            flex: 1
+                          }}
+                        >
+                          <Header
+                            as="h4"
+                            style={{ textTransform: "uppercase" }}
+                          >
+                            Demonstration
+                          </Header>
+                          <Embed url={demonstration} />
+                        </Segment>
+                      )}
+                      {(clips || []).length > 0 && (
                         <Segment
                           style={{
                             flex: 1
@@ -528,7 +535,7 @@ export default class CharacterPage extends Component {
                           >
                             Clips
                           </Header>
-                          {clips.map(({ description, credit, link }) => (
+                          {[].map(({ description, credit, link }) => (
                             <React.Fragment key={link}>
                               <Embed url={link} />
                               <Card.Description>
@@ -567,7 +574,7 @@ export default class CharacterPage extends Component {
                             padding: 0
                           }}
                         >
-                          {tags.map(tag => (
+                          {[].map(tag => (
                             <Label as="li" key={tag} tag>
                               {tag}
                             </Label>
@@ -651,6 +658,13 @@ export const characterPageQuery = graphql`
             heavyweight
             superHeavyweight
           }
+          damage
+          killConfirm
+          diable
+          demonstration
+          clips
+          tags
+          notes
         }
       }
     }

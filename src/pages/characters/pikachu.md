@@ -16,57 +16,60 @@ description: >-
   long run.
 attributes:
   airAcceleration:
-    baseValue: '0.01'
-    maxAdditional: '0.09'
-    rank: '7'
-    total: '0.10'
+    baseValue: "0.01"
+    maxAdditional: "0.09"
+    rank: "7"
+    total: "0.10"
   airSpeed:
-    maxAirSpeed: '0.957'
-    rank: '61'
+    maxAirSpeed: "0.957"
+    rank: "61"
   fallSpeed:
-    fastFallSpeed: '2.48'
-    maxFallSpeed: '1.55'
-    rank: '45'
+    fastFallSpeed: "2.48"
+    maxFallSpeed: "1.55"
+    rank: "45"
     speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: '2.039'
-    rank: '17'
+    maxRunSpeed: "2.039"
+    rank: "17"
   walkSpeed:
-    maxWalkSpeed: '1.302'
-    rank: '12'
+    maxWalkSpeed: "1.302"
+    rank: "12"
   weight:
     class: featherweight
-    rank: '68'
-    value: '79'
+    rank: "68"
+    value: "79"
 killConfirms:
   - input: upthrow
     percentages:
-      balloonweight: '160'
-      featherweight: '160'
-      heavyweight: '160'
-      lightweight: '160'
-      middleweight: '160'
-      superHeavyweight: '160'
+      balloonweight: "160"
+      featherweight: "160"
+      heavyweight: "160"
+      lightweight: "160"
+      middleweight: "160"
+      superHeavyweight: "160"
 combos:
-  - damage: '15.8'
-    demonstration: 'https://www.youtube.com/embed/Q1Z2sCpbkFo'
+  - damage: "15.8"
+    demonstration: "https://www.youtube.com/embed/Q1Z2sCpbkFo"
     diable: true
     input: dthrow nair
     percentages:
-      balloonweight: '0'
-      featherweight: '0'
-      heavyweight: '0'
-      lightweight: '0'
-      middleweight: '0'
-      superHeavyweight: '0'
+      balloonweight: "0"
+      featherweight: "0"
+      heavyweight: "0"
+      lightweight: "0"
+      middleweight: "0"
+      superHeavyweight: "0"
+    clips: ""
+    tags: ""
+    notes: ""
   - input: uthrow dspecial
     killConfirm: true
+    diable: true
     percentages:
-      balloonweight: '75'
-      featherweight: '75'
-      heavyweight: '75'
-      lightweight: '75'
-      middleweight: '75'
-      superHeavyweight: '75'
+      balloonweight: "75"
+      featherweight: "75"
+      heavyweight: "75"
+      lightweight: "75"
+      middleweight: "75"
+      superHeavyweight: "75"
 ---
-

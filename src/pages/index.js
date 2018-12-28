@@ -46,7 +46,7 @@ const WeightClasses = {
 
 const getInitialState = () => ({
   filter: "",
-  sort: SortTypes.AtoZ,
+  sort: SortTypes.MostCombos,
   weightClass: WeightClasses.All
 });
 

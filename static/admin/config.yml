@@ -56,25 +56,25 @@ collections:
                     {
                       label: Max Additional,
                       name: maxAdditional,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Base Value,
                       name: baseValue,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Total,
                       name: total,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                   ],
@@ -88,13 +88,13 @@ collections:
                     {
                       label: Max Air Speed,
                       name: maxAirSpeed,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                   ],
@@ -108,13 +108,13 @@ collections:
                     {
                       label: Max Fall Speed,
                       name: maxFallSpeed,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Fast Fall Speed,
                       name: fastFallSpeed,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
@@ -126,7 +126,7 @@ collections:
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                   ],
@@ -140,13 +140,13 @@ collections:
                     {
                       label: Max Run Speed,
                       name: maxRunSpeed,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                   ],
@@ -160,13 +160,13 @@ collections:
                     {
                       label: Max Walk Speed,
                       name: maxWalkSpeed,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: "...",
                     },
                   ],
@@ -195,13 +195,13 @@ collections:
                     {
                       label: Value,
                       name: value,
-                      widget: number,
+                      widget: string,
                       description: The character's weight value in units,
                     },
                     {
                       label: Rank,
                       name: rank,
-                      widget: number,
+                      widget: string,
                       description: The placement of the character in regards to weight compared to the rest of the cast.,
                     },
                   ],
@@ -363,7 +363,7 @@ collections:
               {
                 label: Damage,
                 name: damage,
-                widget: number,
+                widget: string,
                 description: Damage dealt by the combo.,
               },
               {
