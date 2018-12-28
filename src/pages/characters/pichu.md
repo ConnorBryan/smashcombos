@@ -19,6 +19,9 @@ attributes:
   runSpeed:
     maxRunSpeed: "1.892"
     rank: "25"
+  walkSpeed:
+    maxWalkSpeed: "1.302"
+    rank: "12"
   weight:
     class: balloonweight
     rank: "77"

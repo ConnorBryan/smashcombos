@@ -19,6 +19,9 @@ attributes:
   runSpeed:
     maxRunSpeed: "1.595"
     rank: "54"
+  walkSpeed:
+    maxWalkSpeed: "0.882"
+    rank: "70"
   weight:
     class: heavyweight
     rank: "16"
