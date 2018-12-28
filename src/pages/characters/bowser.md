@@ -33,6 +33,9 @@ attributes:
     class: superheavyweight
     rank: '1'
     value: '135'
+tags:
+  - fastFaller
+  - bigBody
 killConfirms:
   - percentages: {}
 combos:
