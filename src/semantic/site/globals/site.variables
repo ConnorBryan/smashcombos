@@ -121,7 +121,7 @@
         Page
 --------------------*/
 
-@pageBackground      : #FFFFFF;
+@pageBackground      : #111;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
