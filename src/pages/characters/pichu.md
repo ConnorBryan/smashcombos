@@ -16,6 +16,9 @@ attributes:
     maxFallSpeed: "1.9"
     rank: "5"
     speedIncrease: "31.579%"
+  runSpeed:
+    maxRunSpeed: "1.892"
+    rank: "25"
   weight:
     class: balloonweight
     rank: "77"

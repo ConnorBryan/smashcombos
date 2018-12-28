@@ -11,6 +11,9 @@ attributes:
   airSpeed:
     maxAirSpeed: "0.935"
     rank: "65"
+  runSpeed:
+    maxRunSpeed: "1.828"
+    rank: "28"
   weight:
     class: middleweight
     rank: "32"

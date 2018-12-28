@@ -16,6 +16,9 @@ attributes:
     maxFallSpeed: "1.95"
     rank: "2"
     speedIncrease: "60%"
+  runSpeed:
+    maxRunSpeed: "1.496"
+    rank: "67"
   weight:
     class: superheavyweight
     rank: "3"

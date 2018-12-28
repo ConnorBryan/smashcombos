@@ -11,15 +11,18 @@ attributes:
   airSpeed:
     maxAirSpeed: "1.17"
     rank: "18"
-  weight:
-    class: middleweight
-    rank: "25"
-    value: "100"
   fallSpeed:
     fastFallSpeed: "2.48"
     maxFallSpeed: "1.55"
     rank: "45"
     speedIncrease: "60%"
+  runSpeed:
+    maxRunSpeed: "1.58"
+    rank: "59"
+  weight:
+    class: middleweight
+    rank: "25"
+    value: "100"
 killConfirms:
   - percentages: {}
 combos:
