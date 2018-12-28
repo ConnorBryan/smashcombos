@@ -2,32 +2,41 @@
 templateKey: character-page
 name: Cloud
 render: /img/cloud.png
+description: >-
+  Cloud has been nerfed overall from his transition into Ultimate. While his
+  recovery is safer and his aerials have less landing lag, his range and damage
+  output have been nerfed, worsening his combo game, and his smash attacks have
+  more ending lag. His most significant nerf is to the changes of his Limit
+  Break, which disappears if not used up in 15 seconds; this means that Cloud
+  has to be more cautious of his Limit. He also will lose a bit of its charge if
+  he is attacked while charging, meaning Cloud has to play safer while doing so.
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.06"
-    rank: "46"
-    total: "0.07"
+    baseValue: '0.01'
+    maxAdditional: '0.06'
+    rank: '46'
+    total: '0.07'
   airSpeed:
-    maxAirSpeed: "1.155"
-    rank: "19"
+    maxAirSpeed: '1.155'
+    rank: '19'
   fallSpeed:
-    fastFallSpeed: "2.688"
-    maxFallSpeed: "1.68"
-    rank: "25"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.688'
+    maxFallSpeed: '1.68'
+    rank: '25'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "2.167"
-    rank: "11"
+    maxRunSpeed: '2.167'
+    rank: '11'
   walkSpeed:
-    maxWalkSpeed: "1.155"
-    rank: "34"
+    maxWalkSpeed: '1.155'
+    rank: '34'
   weight:
     class: middleweight
-    rank: "25"
-    value: "100"
+    rank: '25'
+    value: '100'
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
