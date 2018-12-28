@@ -2,32 +2,39 @@
 templateKey: character-page
 name: Daisy
 render: /img/daisy.png
+description: >-
+  As with certain other Echo Fighters, Daisy is functionally nearly identical to
+  Peach, with her main differences, aside from different visual effects such as
+  flowers instead of hearts, being slightly different animations that affect her
+  size of her hurtbox. As a result, she is essentially a cosmetic choice for
+  players who prefer either character.
 attributes:
   airAcceleration:
-    baseValue: "0.04"
-    maxAdditional: "0.08"
-    rank: "2"
-    total: "0.12"
+    baseValue: '0.04'
+    maxAdditional: '0.08'
+    rank: '2'
+    total: '0.12'
   airSpeed:
-    maxAirSpeed: "1.029"
-    rank: "45"
+    maxAirSpeed: '1.029'
+    rank: '45'
   fallSpeed:
-    fastFallSpeed: "1.904"
-    maxFallSpeed: "1.19"
-    rank: "75"
-    speedIncrease: "60%"
+    fastFallSpeed: '1.904'
+    maxFallSpeed: '1.19'
+    rank: '75'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.595"
-    rank: "54"
+    maxRunSpeed: '1.595'
+    rank: '54'
   walkSpeed:
-    maxWalkSpeed: "0.924"
-    rank: "59"
+    maxWalkSpeed: '0.924'
+    rank: '59'
   weight:
     class: lightweight
-    rank: "54"
-    value: "89"
+    rank: '54'
+    value: '89'
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
