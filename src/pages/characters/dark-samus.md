@@ -33,6 +33,8 @@ attributes:
     class: heavyweight
     rank: '8'
     value: '108'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
