@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import {
   Button,
-  Card,
   Dropdown,
   Grid,
   Header,
@@ -13,7 +12,7 @@ import {
   Sticky
 } from "semantic-ui-react";
 
-import { CharacterCard, CharacterItem, Layout } from "../components";
+import { CharacterItem, Layout } from "../components";
 import {
   getCharacters,
   SortTypes,
@@ -73,18 +72,29 @@ export default class IndexPage extends Component {
         }
       );
     const characterItems =
-      matches.length > 0 &&
-      matches.map(
-        ({ name, render, slug, attributes, killConfirms, combos }) => (
-          <CharacterItem
-            key={name}
-            name={name}
-            image={render}
-            slug={slug}
-            killConfirmCount={killConfirms.length}
-            comboCount={combos.length}
-          />
+      matches.length > 0 ? (
+        matches.map(
+          ({ name, render, slug, attributes, killConfirms, combos }) => (
+            <CharacterItem
+              key={name}
+              name={name}
+              image={render}
+              slug={slug}
+              killConfirmCount={killConfirms.length}
+              comboCount={combos.length}
+            />
+          )
         )
+      ) : (
+        <Segment placeholder style={{ width: "100%" }}>
+          <Header icon>
+            <Icon name="warning" />
+            No characters match the filter.
+          </Header>
+          <Button primary onClick={this.resetControls}>
+            Clear Filter
+          </Button>
+        </Segment>
       );
 
     return (
@@ -159,33 +169,6 @@ export default class IndexPage extends Component {
                 <div className="desktop-only">{characterItems}</div>
               </Grid.Column>
             </Grid>
-            {/* <Card.Group stackable itemsPerRow={4}>
-            {matches.length > 0 ? (
-              matches.map(
-                ({ name, render, slug, attributes, killConfirms, combos }) => (
-                  <CharacterCard
-                    key={name}
-                    name={name}
-                    image={render}
-                    slug={slug}
-                    attributes={attributes}
-                    killConfirms={killConfirms}
-                    combos={combos}
-                  />
-                )
-              )
-            ) : (
-              <Segment placeholder style={{ width: "100%" }}>
-                <Header icon>
-                  <Icon name="warning" />
-                  No characters match the filter.
-                </Header>
-                <Button primary onClick={this.resetControls}>
-                  Clear Filter
-                </Button>
-              </Segment>
-            )}
-          </Card.Group> */}
           </Segment>
         </div>
       </Layout>
