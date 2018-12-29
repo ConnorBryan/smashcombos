@@ -211,6 +211,31 @@ collections:
           description: Statistical values for various categories.,
         }
       - {
+          label: Tags,
+          name: tags,
+          widget: select,
+          multiple: true,
+          options:
+            [
+              {
+                label: Floatie,
+                value: floatie,
+                description: Characters that fall to the ground slowly.,
+              },
+              {
+                label: Fast Faller,
+                value: fastFaller,
+                description: Characters that fall to the ground quickly.,
+              },
+              {
+                label: Big Body,
+                value: bigBody,
+                description: Characters that have larger hitboxes.,
+              },
+            ],
+          description: A list of different types of characters the kill confirm works against.,
+        }
+      - {
           label: Kill Confirms,
           label_singular: Kill Confirm,
           name: killConfirms,
