@@ -4,20 +4,23 @@ import {
   Button,
   Card,
   Dropdown,
+  Grid,
   Header,
   Icon,
   Input,
   Menu,
-  Segment
+  Segment,
+  Sticky
 } from "semantic-ui-react";
 
-import { CharacterCard, Layout } from "../components";
+import { CharacterCard, CharacterItem, Layout } from "../components";
 import {
   getCharacters,
   SortTypes,
   sortFunctions,
   WeightClasses
 } from "../helpers";
+import "./index.scss";
 
 const getInitialState = () => ({
   filter: "",
@@ -26,7 +29,10 @@ const getInitialState = () => ({
 });
 
 export default class IndexPage extends Component {
-  state = getInitialState();
+  state = {
+    ...getInitialState(),
+    pushed: false
+  };
 
   resetControls = () => this.setState(getInitialState());
 
@@ -40,9 +46,16 @@ export default class IndexPage extends Component {
   handleWeightClassChange = (_, { value: weightClass }) =>
     this.setState({ weightClass });
 
+  handleContextRef = contextRef => this.setState({ contextRef });
+
+  setPushed = pushed =>
+    this.setState({
+      pushed
+    });
+
   render() {
     const { data } = this.props;
-    const { filter, sort, weightClass } = this.state;
+    const { filter, sort, weightClass, contextRef, pushed } = this.state;
     const characters = getCharacters(data);
     const matches = characters
       .filter(({ name }) => name.toLowerCase().includes(filter.toLowerCase()))
@@ -59,60 +72,94 @@ export default class IndexPage extends Component {
           );
         }
       );
+    const characterItems =
+      matches.length > 0 &&
+      matches.map(
+        ({ name, render, slug, attributes, killConfirms, combos }) => (
+          <CharacterItem
+            key={name}
+            name={name}
+            image={render}
+            slug={slug}
+            killConfirmCount={killConfirms.length}
+            comboCount={combos.length}
+          />
+        )
+      );
 
     return (
       <Layout>
-        <Menu size="large" widths={4} stackable>
-          <Menu.Item>
-            <Input
-              placeholder="Filter characters..."
-              value={filter}
-              icon="filter"
-              style={{ margin: "0 2rem" }}
-              onChange={this.handleFilterChange}
-            />
-          </Menu.Item>
-          <Menu.Item>
-            <Dropdown
-              fluid
-              selection
-              style={{ margin: "0 2rem" }}
-              value={sort}
-              options={Object.entries(SortTypes).map(([key, value]) => ({
-                key,
-                value,
-                text: value
-              }))}
-              onChange={this.handleSortChange}
-            />
-          </Menu.Item>
-          <Menu.Item>
-            <Dropdown
-              fluid
-              selection
-              style={{ margin: "0 2rem" }}
-              value={weightClass}
-              options={Object.entries(WeightClasses).map(([key, value]) => ({
-                key,
-                value,
-                text: key
-              }))}
-              onChange={this.handleWeightClassChange}
-            />
-          </Menu.Item>
-          <Menu.Item>
-            <Button
-              primary
-              fluid
-              onClick={this.resetControls}
-              style={{ margin: "0 2rem" }}
-            >
-              Clear Filter
-            </Button>
-          </Menu.Item>
-        </Menu>
-        <Segment basic>
-          <Card.Group stackable itemsPerRow={4}>
+        <div ref={this.handleContextRef}>
+          <Segment basic>
+            <Grid>
+              <Grid.Column mobile={16} tablet={16} computer={6}>
+                <Sticky
+                  context={contextRef}
+                  offset={100}
+                  onStick={() => this.setPushed(true)}
+                  onUnstick={() => this.setPushed(false)}
+                >
+                  <Menu size="huge" vertical fluid>
+                    <Menu.Item>
+                      <Input
+                        placeholder="Filter characters..."
+                        value={filter}
+                        icon="filter"
+                        onChange={this.handleFilterChange}
+                      />
+                    </Menu.Item>
+                    <Menu.Item>
+                      <Dropdown
+                        fluid
+                        selection
+                        value={sort}
+                        options={Object.entries(SortTypes).map(
+                          ([key, value]) => ({
+                            key,
+                            value,
+                            text: value
+                          })
+                        )}
+                        onChange={this.handleSortChange}
+                      />
+                    </Menu.Item>
+                    <Menu.Item>
+                      <Dropdown
+                        fluid
+                        selection
+                        value={weightClass}
+                        options={Object.entries(WeightClasses).map(
+                          ([key, value]) => ({
+                            key,
+                            value,
+                            text: key
+                          })
+                        )}
+                        onChange={this.handleWeightClassChange}
+                      />
+                    </Menu.Item>
+                    <Menu.Item>
+                      <Button primary fluid onClick={this.resetControls}>
+                        Clear Filter
+                      </Button>
+                    </Menu.Item>
+                  </Menu>
+                </Sticky>
+              </Grid.Column>
+              <Grid.Column mobile={16} tablet={16} computer={10}>
+                <div className="mobile-only">
+                  <Segment.Group
+                    style={{
+                      marginTop: pushed ? "30vh" : 0
+                    }}
+                  >
+                    {characterItems}
+                  </Segment.Group>
+                </div>
+                <div className="desktop-only">{characterItems}</div>
+              </Grid.Column>
+            </Grid>
+            {/* <Card.Group stackable itemsPerRow={4}>
             {matches.length > 0 ? (
               matches.map(
                 ({ name, render, slug, attributes, killConfirms, combos }) => (
@@ -138,8 +185,9 @@ export default class IndexPage extends Component {
                 </Button>
               </Segment>
             )}
-          </Card.Group>
-        </Segment>
+          </Card.Group> */}
+          </Segment>
+        </div>
       </Layout>
     );
   }
