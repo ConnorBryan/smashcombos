@@ -32,6 +32,8 @@ attributes:
     class: lightweight
     rank: '54'
     value: '89'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
