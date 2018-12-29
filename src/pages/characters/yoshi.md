@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Yoshi
 render: /img/yoshi.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.03"
-    maxAdditional: "0.068"
-    rank: "14"
-    total: "0.098"
+    baseValue: '0.03'
+    maxAdditional: '0.068'
+    rank: '14'
+    total: '0.098'
   airSpeed:
-    maxAirSpeed: "1.344"
-    rank: "1"
+    maxAirSpeed: '1.344'
+    rank: '1'
   fallSpeed:
-    fastFallSpeed: "2.064"
-    maxFallSpeed: "1.29"
-    rank: "71"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.064'
+    maxFallSpeed: '1.29'
+    rank: '71'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "2.046"
-    rank: "16"
+    maxRunSpeed: '2.046'
+    rank: '16'
   walkSpeed:
-    maxWalkSpeed: "1.208"
-    rank: "26"
+    maxWalkSpeed: '1.208'
+    rank: '26'
   weight:
     class: heavyweight
-    rank: "18"
-    value: "104"
+    rank: '18'
+    value: '104'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+

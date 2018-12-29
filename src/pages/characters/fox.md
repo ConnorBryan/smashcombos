@@ -43,6 +43,8 @@ attributes:
     class: featherweight
     rank: '72'
     value: '77'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:

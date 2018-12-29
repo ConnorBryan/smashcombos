@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Ivysaur
 render: /img/pokemon-trainer.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.085"
-    rank: "15"
-    total: "0.095"
+    baseValue: '0.01'
+    maxAdditional: '0.085'
+    rank: '15'
+    total: '0.095'
   airSpeed:
-    maxAirSpeed: "0.998"
-    rank: "56"
+    maxAirSpeed: '0.998'
+    rank: '56'
   fallSpeed:
-    fastFallSpeed: "2.208"
-    maxFallSpeed: "1.38"
-    rank: "56"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.208'
+    maxFallSpeed: '1.38'
+    rank: '56'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.595"
-    rank: "54"
+    maxRunSpeed: '1.595'
+    rank: '54'
   walkSpeed:
-    maxWalkSpeed: "1.103"
-    rank: "45"
+    maxWalkSpeed: '1.103'
+    rank: '45'
   weight:
     class: middleweight
-    rank: "32"
-    value: "96"
+    rank: '32'
+    value: '96'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+

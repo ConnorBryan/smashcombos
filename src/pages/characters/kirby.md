@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Kirby
 render: /img/kirby.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.03"
-    maxAdditional: "0.065"
-    rank: "15"
-    total: "0.095"
+    baseValue: '0.03'
+    maxAdditional: '0.065'
+    rank: '15'
+    total: '0.095'
   airSpeed:
-    maxAirSpeed: "0.84"
-    rank: "74"
+    maxAirSpeed: '0.84'
+    rank: '74'
   fallSpeed:
-    fastFallSpeed: "1.968"
-    maxFallSpeed: "1.23"
-    rank: "73"
-    speedIncrease: "60%"
+    fastFallSpeed: '1.968'
+    maxFallSpeed: '1.23'
+    rank: '73'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.727"
-    rank: "37"
+    maxRunSpeed: '1.727'
+    rank: '37'
   walkSpeed:
-    maxWalkSpeed: "0.977"
-    rank: "55"
+    maxWalkSpeed: '0.977'
+    rank: '55'
   weight:
     class: featherweight
-    rank: "68"
-    value: "79"
+    rank: '68'
+    value: '79'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+

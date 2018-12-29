@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Sheik
 render: /img/sheik.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.08"
-    rank: "21"
-    total: "0.09"
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
   airSpeed:
-    maxAirSpeed: "1.155"
-    rank: "19"
+    maxAirSpeed: '1.155'
+    rank: '19'
   fallSpeed:
-    fastFallSpeed: "2.8"
-    maxFallSpeed: "1.75"
-    rank: "20"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.8'
+    maxFallSpeed: '1.75'
+    rank: '20'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "2.42"
-    rank: "4"
+    maxRunSpeed: '2.42'
+    rank: '4'
   walkSpeed:
-    maxWalkSpeed: "1.47"
-    rank: "5"
+    maxWalkSpeed: '1.47'
+    rank: '5'
   weight:
     class: featherweight
-    rank: "71"
-    value: "78"
+    rank: '71'
+    value: '78'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+

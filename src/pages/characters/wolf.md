@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Wolf
 render: /img/wolf.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.08"
-    rank: "21"
-    total: "0.09"
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
   airSpeed:
-    maxAirSpeed: "1.281"
-    rank: "6"
+    maxAirSpeed: '1.281'
+    rank: '6'
   fallSpeed:
-    fastFallSpeed: "2.88"
-    maxFallSpeed: "1.8"
-    rank: "10"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.88'
+    maxFallSpeed: '1.8'
+    rank: '10'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.54"
-    rank: "61"
+    maxRunSpeed: '1.54'
+    rank: '61'
   walkSpeed:
-    maxWalkSpeed: "1.208"
-    rank: "26"
+    maxWalkSpeed: '1.208'
+    rank: '26'
   weight:
     class: middleweight
-    rank: "45"
-    value: "92"
+    rank: '45'
+    value: '92'
+tags:
+  - fastFaller
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+

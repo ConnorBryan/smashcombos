@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Olimar
 render: /img/olimar.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.07"
-    rank: "31"
-    total: "0.08"
+    baseValue: '0.01'
+    maxAdditional: '0.07'
+    rank: '31'
+    total: '0.08'
   airSpeed:
-    maxAirSpeed: "0.861"
-    rank: "73"
+    maxAirSpeed: '0.861'
+    rank: '73'
   fallSpeed:
-    fastFallSpeed: "2.16"
-    maxFallSpeed: "1.35"
-    rank: "59"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.16'
+    maxFallSpeed: '1.35'
+    rank: '59'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.617"
-    rank: "50"
+    maxRunSpeed: '1.617'
+    rank: '50'
   walkSpeed:
-    maxWalkSpeed: "0.945"
-    rank: "56"
+    maxWalkSpeed: '0.945'
+    rank: '56'
   weight:
     class: featherweight
-    rank: "68"
-    value: "79"
+    rank: '68'
+    value: '79'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
