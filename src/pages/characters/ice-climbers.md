@@ -2,32 +2,36 @@
 templateKey: character-page
 name: Ice Climbers
 render: /img/ice-climbers.png
+description: ...
 attributes:
   airAcceleration:
-    baseValue: "0.01"
-    maxAdditional: "0.08"
-    rank: "21"
-    total: "0.09"
+    baseValue: '0.01'
+    maxAdditional: '0.08'
+    rank: '21'
+    total: '0.09'
   airSpeed:
-    maxAirSpeed: "0.83"
-    rank: "75"
+    maxAirSpeed: '0.83'
+    rank: '75'
   fallSpeed:
-    fastFallSpeed: "2.08"
-    maxFallSpeed: "1.3"
-    rank: "68"
-    speedIncrease: "60%"
+    fastFallSpeed: '2.08'
+    maxFallSpeed: '1.3'
+    rank: '68'
+    speedIncrease: 60%
   runSpeed:
-    maxRunSpeed: "1.53"
-    rank: "63"
+    maxRunSpeed: '1.53'
+    rank: '63'
   walkSpeed:
-    maxWalkSpeed: "1.008"
-    rank: "52"
+    maxWalkSpeed: '1.008'
+    rank: '52'
   weight:
     class: middleweight
-    rank: "45"
-    value: "92"
+    rank: '45'
+    value: '92'
+tags:
+  - floatie
 killConfirms:
   - percentages: {}
 combos:
   - percentages: {}
 ---
+
