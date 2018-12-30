@@ -14,6 +14,7 @@ import {
   Dropdown,
   Responsive
 } from "semantic-ui-react";
+import "./character-select.scss";
 
 import {
   getCharacters,
@@ -256,14 +257,7 @@ export default class CharacterSelect extends Component {
             </Menu>
           );
           const list = (
-            <List
-              celled
-              selection
-              style={{
-                height: "80vh",
-                overflow: "auto"
-              }}
-            >
+            <List className="sc-list" celled selection>
               <Header as="h3" textAlign="right">
                 Showing {matches.length} of {characters.length}
               </Header>
@@ -331,6 +325,7 @@ export default class CharacterSelect extends Component {
                       width="wide"
                       visible={optionsVisible}
                       style={{
+                        maxWidth: "80vw",
                         boxShadow: "none"
                       }}
                     >
