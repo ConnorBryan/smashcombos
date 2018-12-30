@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Image from "gatsby-image";
 import { List } from "semantic-ui-react";
 
+import * as styles from "../styles";
 import Tagbar from "./tagbar";
 
 export default function CharacterSelectEntry({
@@ -38,10 +39,9 @@ export default function CharacterSelectEntry({
         <List.Header
           as="h2"
           style={{
+            ...styles.fancyText,
             width: "100%",
-            textAlign: "right",
-            textTransform: "uppercase",
-            letterSpacing: "0.33rem"
+            textAlign: "right"
           }}
         >
           {name}

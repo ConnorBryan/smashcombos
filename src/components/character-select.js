@@ -157,8 +157,7 @@ export default class CharacterSelect extends Component {
               <Menu.Item
                 header
                 style={{
-                  textTransform: "uppercase",
-                  letterSpacing: "0.33rem",
+                  ...styles.fancyText,
                   color: "#eee"
                 }}
               >
@@ -185,8 +184,7 @@ export default class CharacterSelect extends Component {
               <Menu.Item
                 header
                 style={{
-                  textTransform: "uppercase",
-                  letterSpacing: "0.33rem",
+                  ...styles.fancyText,
                   color: "#eee"
                 }}
               >

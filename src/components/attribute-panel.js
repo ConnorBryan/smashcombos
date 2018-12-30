@@ -5,10 +5,12 @@ import {
   Grid,
   Menu,
   Label,
+  List,
   Icon,
   Statistic
 } from "semantic-ui-react";
 
+import * as styles from "../styles";
 import { AttributeTypes, attributeToInformationHash } from "../helpers";
 
 export default class AttributePanel extends Component {
@@ -35,19 +37,19 @@ export default class AttributePanel extends Component {
 
     return (
       <Segment attached>
-        <Header as="h2" style={{ textTransform: "uppercase" }}>
+        <Header as="h2" style={styles.fancyText}>
           Attributes
         </Header>
         <Grid stackable>
           <Grid.Row>
             <Grid.Column width={4}>
-              <Menu vertical size="large">
+              <Menu vertical size="large" fluid>
                 {Object.entries(attributeToInformationHash).map(
                   ([key, { name }]) => (
                     <Menu.Item
                       key={name}
                       active={attribute === key}
-                      style={{ textTransform: "uppercase" }}
+                      style={styles.fancyText}
                       onClick={() => this.switchAttribute(key)}
                     >
                       {name}
@@ -57,41 +59,25 @@ export default class AttributePanel extends Component {
               </Menu>
             </Grid.Column>
             <Grid.Column width={12}>
-              <Segment
-                style={{
-                  display: "flex",
-                  flexDirection: "column"
-                }}
-              >
+              <Segment basic>
                 <React.Fragment>
-                  <Header as="h3" style={{ textTransform: "uppercase" }}>
+                  <Header as="h3" style={styles.fancyText}>
                     {name}
-                    <Label>
-                      <Icon name="trophy" />
-                      Rank {rank} of 77
-                    </Label>
                   </Header>
-                  <div
-                    style={{
-                      flex: 1,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center"
-                    }}
-                  >
-                    <Statistic.Group
-                      widths={1}
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        width: "100%"
-                      }}
-                    >
-                      {fields.map(({ label, value }) => (
-                        <Statistic key={label} label={label} value={value} />
-                      ))}
-                    </Statistic.Group>
-                  </div>
+                  <List size="huge" relaxed>
+                    <List.Item>
+                      <Label size="large">
+                        <Icon name="trophy" />
+                        Rank {rank} of 77
+                      </Label>
+                    </List.Item>
+                    {fields.map(({ label, value }) => (
+                      <List.Item key={label}>
+                        <List.Header>{label}</List.Header>
+                        <List.Content>{value}</List.Content>
+                      </List.Item>
+                    ))}
+                  </List>
                 </React.Fragment>
               </Segment>
             </Grid.Column>

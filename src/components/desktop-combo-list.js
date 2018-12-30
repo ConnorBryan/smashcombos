@@ -9,13 +9,14 @@ import {
 } from "semantic-ui-react";
 
 import { generateEffectivePercentages } from "../helpers";
+import * as styles from "../styles";
 import ComboDemonstrationPlaceholder from "./combo-demonstration-placeholder";
 import Input from "./input";
 
 export default function DesktopComboList({ combos }) {
   return (
     <Segment attached>
-      <Header as="h2" style={{ textTransform: "uppercase" }}>
+      <Header as="h2" style={styles.fancyText}>
         Combos
       </Header>
       <Segment.Group

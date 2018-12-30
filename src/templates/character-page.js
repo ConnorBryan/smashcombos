@@ -27,6 +27,7 @@ export default function CharacterPage({ data }) {
         description={description}
         weightClass={weightClass}
         tags={tags}
+        attributes={attributes}
       />
       <AttributePanel attributes={attributes} />
       {combos.length > 0 && (
