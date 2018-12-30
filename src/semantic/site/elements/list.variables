@@ -128,11 +128,11 @@
 /* Selection List States */
 @selectionListBackground: transparent;
 @selectionListColor: @unselectedTextColor;
-@selectionListHoverBackground: @subtleTransparentBlack;
+@selectionListHoverBackground: @darkerGrey;
 @selectionListHoverColor: @hoveredTextColor;
 @selectionListDownBackground: @transparentBlack;
 @selectionListDownColor: @pressedTextColor;
-@selectionListActiveBackground: @transparentBlack;
+@selectionListActiveBackground: @darkerGrey;
 @selectionListActiveColor: @selectedTextColor;
 
 /* Inverted Selection List */

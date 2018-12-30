@@ -14,13 +14,13 @@ export default function CharacterItem({
     <Link to={slug}>
       <Segment style={{ marginBottom: "2rem" }}>
         <Grid>
-          <Grid.Column width={6}>
+          <Grid.Column width={4}>
             <Image fluid={image.childImageSharp.fluid} />
           </Grid.Column>
-          <Grid.Column width={10}>
+          <Grid.Column width={4} verticalAlign="middle">
             <Header
               as="h1"
-              textAlign="right"
+              textAlign="center"
               style={{
                 textTransform: "uppercase",
                 letterSpacing: "0.4rem"
@@ -28,15 +28,17 @@ export default function CharacterItem({
             >
               {name}
             </Header>
-            <Statistic.Group
-              size="huge"
-              widths={2}
-              horizontal
-              style={{
-                alignItems: "flex-end",
-                justifyContent: "flex-end"
-              }}
-            >
+          </Grid.Column>
+          <Grid.Column
+            width={8}
+            verticalAlign="middle"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <Statistic.Group size="medium">
               <Statistic
                 size="huge"
                 label="Kill Confirms"
