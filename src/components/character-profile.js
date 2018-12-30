@@ -4,7 +4,6 @@ import { Segment, Grid, Header } from "semantic-ui-react";
 
 import { weightClassToTag } from "../helpers";
 import * as styles from "../styles";
-import AttributePanel from "./attribute-panel";
 import Tagbar from "./tagbar";
 
 export default function CharacterProfile({

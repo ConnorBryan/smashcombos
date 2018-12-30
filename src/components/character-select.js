@@ -14,13 +14,14 @@ import {
   Responsive
 } from "semantic-ui-react";
 
-import CharacterSelectEntry from "./character-select-entry";
+import * as styles from "../styles";
 import {
   getCharacters,
   SortTypes,
   sortFunctions,
   WeightClasses
 } from "../helpers";
+import CharacterSelectEntry from "./character-select-entry";
 import "./character-select.scss";
 
 const getInitialState = () => ({

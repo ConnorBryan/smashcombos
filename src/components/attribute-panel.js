@@ -6,8 +6,7 @@ import {
   Menu,
   Label,
   List,
-  Icon,
-  Statistic
+  Icon
 } from "semantic-ui-react";
 
 import * as styles from "../styles";
