@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "gatsby-image";
-import { Segment, Grid, Header, List, Label } from "semantic-ui-react";
+import { Segment, Grid, Header } from "semantic-ui-react";
 
-import { weightClassToTag, tagTypeToTag } from "../helpers";
+import { weightClassToTag } from "../helpers";
+import Tagbar from "./tagbar";
 
 export default function CharacterProfile({
   image,
@@ -22,20 +23,8 @@ export default function CharacterProfile({
             {name}
           </Header>
           {description}
-          <Segment>
-            <List horizontal>
-              <List.Item>
-                <List.Header style={{ textTransform: "uppercase" }}>
-                  Tags
-                </List.Header>
-              </List.Item>
-              <List.Item>
-                <Label>{weightClassToTag[weightClass]}</Label>
-                {tags.map((tag, index) => (
-                  <Label key={index}>{tagTypeToTag[tag]}</Label>
-                ))}
-              </List.Item>
-            </List>
+          <Segment basic>
+            <Tagbar tags={[weightClassToTag[weightClass], ...tags]} />
           </Segment>
         </Grid.Column>
       </Grid>

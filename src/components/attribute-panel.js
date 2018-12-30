@@ -39,9 +39,9 @@ export default class AttributePanel extends Component {
           Attributes
         </Header>
         <Grid stackable>
-          <Grid.Row stretched>
+          <Grid.Row>
             <Grid.Column width={4}>
-              <Menu vertical size="large" fluid>
+              <Menu vertical size="large">
                 {Object.entries(attributeToInformationHash).map(
                   ([key, { name }]) => (
                     <Menu.Item
@@ -80,8 +80,7 @@ export default class AttributePanel extends Component {
                     }}
                   >
                     <Statistic.Group
-                      size="huge"
-                      widths={3}
+                      widths={1}
                       style={{
                         display: "flex",
                         justifyContent: "center",

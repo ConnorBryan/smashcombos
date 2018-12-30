@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
-import Image from "gatsby-image";
+import { StaticQuery, graphql } from "gatsby";
 import {
   Grid,
   Segment,
@@ -14,53 +13,15 @@ import {
   Dropdown,
   Responsive
 } from "semantic-ui-react";
-import "./character-select.scss";
 
+import CharacterSelectEntry from "./character-select-entry";
 import {
   getCharacters,
   SortTypes,
   sortFunctions,
   WeightClasses
 } from "../helpers";
-
-function CharacterSelectEntry({
-  name,
-  render: {
-    childImageSharp: { fluid: image }
-  },
-  slug
-}) {
-  return (
-    <List.Item
-      as={Link}
-      to={slug}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        padding: "1rem"
-      }}
-    >
-      <Image
-        fluid={image}
-        style={{
-          width: "100px",
-          height: "100px"
-        }}
-      />
-      <List.Header
-        as="h2"
-        style={{
-          width: "100%",
-          textAlign: "right",
-          textTransform: "uppercase",
-          letterSpacing: "0.33rem"
-        }}
-      >
-        {name}
-      </List.Header>
-    </List.Item>
-  );
-}
+import "./character-select.scss";
 
 const getInitialState = () => ({
   filter: "",
@@ -137,6 +98,7 @@ export default class CharacterSelect extends Component {
                         rank
                       }
                     }
+                    tags
                     killConfirms {
                       input
                       percentages {
@@ -259,7 +221,7 @@ export default class CharacterSelect extends Component {
           const list = (
             <List className="sc-list" celled selection>
               <Header as="h3" textAlign="right">
-                Showing {matches.length} of {characters.length}
+                Showing {matches.length} of {characters.length} characters
               </Header>
               {matches.length > 0 ? (
                 matches.map(character => (
