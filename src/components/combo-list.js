@@ -54,7 +54,7 @@ export default function ComboList({ combos }) {
                 <Grid.Column mobile={16} tablet={16} computer={3}>
                   <Segment basic>
                     <Input input={input} />
-                    <Label fluid style={{ marginTop: "2rem" }}>
+                    <Label style={{ marginTop: "2rem" }}>
                       {damage}%
                       <Label.Detail
                         style={{

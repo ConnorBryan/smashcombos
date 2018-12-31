@@ -7,3 +7,4 @@ export { default as Input } from "./input";
 export { default as Layout } from "./layout";
 export { default as Navbar } from "./navbar";
 export { default as Tagbar } from "./tagbar";
+export { default as UserProvider } from "./user-provider";

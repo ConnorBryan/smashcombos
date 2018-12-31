@@ -5,6 +5,7 @@ import { Container } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
 import Navbar from "./navbar";
+import UserProvider, { UserContext } from "./user-provider";
 
 export default function Layout({ children }) {
   return (
@@ -20,7 +21,7 @@ export default function Layout({ children }) {
         }
       `}
       render={data => (
-        <React.Fragment>
+        <UserProvider>
           <Helmet>
             <html lang="en" />
             <title>
@@ -84,7 +85,9 @@ export default function Layout({ children }) {
             <meta property="og:image" content="/img/og-image.png" />
           </Helmet>
           <React.Fragment>
-            <Navbar />
+            <UserContext.Consumer>
+              {({ user }) => <Navbar user={user} />}
+            </UserContext.Consumer>
             <Container
               style={{
                 margin: "7rem 0"
@@ -93,7 +96,7 @@ export default function Layout({ children }) {
               {children}
             </Container>
           </React.Fragment>
-        </React.Fragment>
+        </UserProvider>
       )}
     />
   );
