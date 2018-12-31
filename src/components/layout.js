@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
-import { Container, Menu, Sidebar, Responsive } from "semantic-ui-react";
+import { Container, Menu, Sidebar } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
 import * as styles from "../styles";
@@ -9,6 +9,7 @@ import Navbar from "./navbar";
 import SiteActions from "./site-actions";
 import UserProvider, { UserContext } from "./user-provider";
 import MenuProvider, { MenuContext } from "./menu-provider";
+import "./layout.less";
 
 export default function Layout({ children }) {
   return (
@@ -103,31 +104,29 @@ export default function Layout({ children }) {
                             margin: "7rem 0"
                           }}
                         >
-                          <Responsive maxWidth={991}>
-                            <Sidebar.Pushable>
-                              <Sidebar
-                                as={Menu}
-                                animation="overlay"
-                                vertical
-                                visible={isOpen}
-                                width="wide"
-                                fluid
-                                style={{
-                                  background: "#111"
-                                }}
+                          <Sidebar.Pushable className="mobile-only">
+                            <Sidebar
+                              as={Menu}
+                              animation="overlay"
+                              vertical
+                              visible={isOpen}
+                              width="wide"
+                              fluid
+                              style={{
+                                background: "#111"
+                              }}
+                            >
+                              <SiteActions user={user} closeMenu={close} />
+                              <Menu.Item
+                                style={styles.fancyText}
+                                onClick={close}
                               >
-                                <SiteActions user={user} closeMenu={close} />
-                                <Menu.Item
-                                  style={styles.fancyText}
-                                  onClick={close}
-                                >
-                                  Close
-                                </Menu.Item>
-                              </Sidebar>
-                              <Sidebar.Pusher>{children}</Sidebar.Pusher>
-                            </Sidebar.Pushable>
-                          </Responsive>
-                          <Responsive minWidth={992}>{children}</Responsive>
+                                Close
+                              </Menu.Item>
+                            </Sidebar>
+                            <Sidebar.Pusher>{children}</Sidebar.Pusher>
+                          </Sidebar.Pushable>
+                          <div className="desktop-only">{children}</div>
                         </Container>
                       </React.Fragment>
                     )}

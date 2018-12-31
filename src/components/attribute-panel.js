@@ -6,8 +6,7 @@ import {
   Menu,
   Label,
   List,
-  Icon,
-  Responsive
+  Icon
 } from "semantic-ui-react";
 
 import * as styles from "../styles";
@@ -104,7 +103,7 @@ export default class AttributePanel extends Component {
             </Segment>
           </Grid.Column>
           <Grid.Column mobile={16} tablet={16} computer={8}>
-            <Responsive as={KillMovesPanel} minWidth={992} basic />
+            <KillMovesPanel className="desktop-only" basic />
           </Grid.Column>
         </Grid>
       </Segment>

@@ -10,8 +10,7 @@ import {
   Input,
   List,
   Sidebar,
-  Dropdown,
-  Responsive
+  Dropdown
 } from "semantic-ui-react";
 
 import * as styles from "../styles";
@@ -24,7 +23,6 @@ import {
   weightClassesToPhrasesHash
 } from "../helpers";
 import CharacterSelectEntry from "./character-select-entry";
-import "./character-select.scss";
 
 const getInitialState = () => ({
   filter: "",
@@ -211,19 +209,20 @@ export default class CharacterSelect extends Component {
                   />
                 </Menu.Item>
                 <Menu.Item fitted>
-                  <Responsive maxWidth={991}>
-                    <Button.Group widths={2}>
-                      <Button onClick={this.reset}>Clear</Button>
-                      <Button primary onClick={this.hideOptions}>
-                        Close
-                      </Button>
-                    </Button.Group>
-                  </Responsive>
-                  <Responsive minWidth={992}>
-                    <Button fluid size="large" onClick={this.reset}>
-                      Clear
+                  <Button.Group className="mobile-only" widths={2}>
+                    <Button onClick={this.reset}>Clear</Button>
+                    <Button primary onClick={this.hideOptions}>
+                      Close
                     </Button>
-                  </Responsive>
+                  </Button.Group>
+                  <Button
+                    className="desktop-only"
+                    fluid
+                    size="large"
+                    onClick={this.reset}
+                  >
+                    Clear
+                  </Button>
                 </Menu.Item>
                 <Menu.Item>
                   <Button
@@ -311,38 +310,34 @@ export default class CharacterSelect extends Component {
                     icon="filter"
                     onChange={this.handleFilterChange}
                   />
-                  <Responsive maxWidth={991}>
-                    <Menu.Menu position="right">
-                      <Menu.Item>
-                        <Button
-                          primary
-                          icon="bars"
-                          onClick={this.toggleOptions}
-                        />
-                      </Menu.Item>
-                    </Menu.Menu>
-                  </Responsive>
+                  <Menu.Menu className="mobile-only" position="right">
+                    <Menu.Item>
+                      <Button
+                        primary
+                        icon="bars"
+                        onClick={this.toggleOptions}
+                      />
+                    </Menu.Item>
+                  </Menu.Menu>
                 </Menu>
-                <Responsive minWidth={991}>{menu}</Responsive>
+                <div className="desktop-only">{menu}</div>
               </Grid.Column>
               <Grid.Column mobile={16} tablet={16} computer={10}>
-                <Responsive maxWidth={991}>
-                  <Sidebar.Pushable>
-                    <Sidebar
-                      animation="overlay"
-                      width="wide"
-                      visible={optionsVisible}
-                      style={{
-                        maxWidth: "80vw",
-                        boxShadow: "none"
-                      }}
-                    >
-                      {menu}
-                    </Sidebar>
-                    {list}
-                  </Sidebar.Pushable>
-                </Responsive>
-                <Responsive minWidth={992}>{list}</Responsive>
+                <Sidebar.Pushable className="mobile-only">
+                  <Sidebar
+                    animation="overlay"
+                    width="wide"
+                    visible={optionsVisible}
+                    style={{
+                      maxWidth: "80vw",
+                      boxShadow: "none"
+                    }}
+                  >
+                    {menu}
+                  </Sidebar>
+                  {list}
+                </Sidebar.Pushable>
+                <div className="desktop-only">{list}</div>
               </Grid.Column>
             </Grid>
           );
