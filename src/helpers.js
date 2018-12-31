@@ -228,6 +228,27 @@ export const SortTypes = {
   HighestWeight: "Highest Weight"
 };
 
+export const sortTypesToPhrasesHash = {
+  [SortTypes.AtoZ]: "alphabetically, ascending",
+  [SortTypes.ZtoA]: "alphabetically, descending",
+  [SortTypes.FewestKillConfirms]: "by kill confirm count, low to high",
+  [SortTypes.MostKillConfirms]: "by kill confirm count, high to low",
+  [SortTypes.FewestCombos]: "by combo count, low to high",
+  [SortTypes.MostCombos]: "by combo count, high to low",
+  [SortTypes.LowestAirAcceleration]: "by air acceleration, low to high",
+  [SortTypes.HighestAirAcceleration]: "by air acceleration, high to low",
+  [SortTypes.LowestAirSpeed]: "by air speed, low to high",
+  [SortTypes.HighestAirSpeed]: "by air speed, high to low",
+  [SortTypes.LowestFallSpeed]: "by fall speed, low to high",
+  [SortTypes.HighestFallSpeed]: "by fall speed, high to low",
+  [SortTypes.LowestRunSpeed]: "by run speed, low to high",
+  [SortTypes.HighestRunSpeed]: "by run speed, high to low",
+  [SortTypes.LowestWalkSpeed]: "by walk speed, low to high",
+  [SortTypes.HighestWalkSpeed]: "by walk speed, high to low",
+  [SortTypes.LowestWeight]: "by weight, low to high",
+  [SortTypes.HighestWeight]: "by weight, high to low"
+};
+
 export const sortFunctions = {
   [SortTypes.AtoZ]: (a, b) => a.name.localeCompare(b.name),
   [SortTypes.ZtoA]: (a, b) => b.name.localeCompare(a.name),
@@ -277,4 +298,14 @@ export const WeightClasses = {
   Middleweight: "middleweight",
   Heavyweight: "heavyweight",
   "Super Heavyweight": "superheavyweight"
+};
+
+export const weightClassesToPhrasesHash = {
+  [WeightClasses.All]: "from all weight classes",
+  [WeightClasses.Balloonweight]: "from the balloonweight class",
+  [WeightClasses.Featherweight]: "from the feaherweight class",
+  [WeightClasses.Lightweight]: "from the lightweight class",
+  [WeightClasses.Middleweight]: "from the middleweight class",
+  [WeightClasses.Heavyweight]: "from the heavyweight class",
+  [WeightClasses["Super Heavyweight"]]: "from the super heavyweight class"
 };

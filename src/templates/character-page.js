@@ -42,6 +42,7 @@ export const characterPageQuery = graphql`
           }
         }
         description
+        tags
         attributes {
           airAcceleration {
             maxAdditional

@@ -14,6 +14,9 @@ export default function CharacterSelectEntry({
   slug,
   tags
 }) {
+  if (tags) {
+    console.log(name, tags);
+  }
   return (
     <List.Item
       as={Link}

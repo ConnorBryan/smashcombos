@@ -19,7 +19,9 @@ import {
   getCharacters,
   SortTypes,
   sortFunctions,
-  WeightClasses
+  WeightClasses,
+  sortTypesToPhrasesHash,
+  weightClassesToPhrasesHash
 } from "../helpers";
 import CharacterSelectEntry from "./character-select-entry";
 import "./character-select.scss";
@@ -218,34 +220,51 @@ export default class CharacterSelect extends Component {
             </Menu>
           );
           const list = (
-            <List className="sc-list" celled selection>
-              <Header as="h3" textAlign="right">
-                Showing {matches.length} of {characters.length} characters
+            <React.Fragment>
+              <Header
+                as="h5"
+                textAlign="right"
+                style={{
+                  marginBottom: 0,
+                  paddingBottom: "1rem",
+                  borderBottom: "1px solid #7289D8"
+                }}
+              >
+                Showing {matches.length} of {characters.length} characters,
+                <br /> {weightClassesToPhrasesHash[weightClass]}, sorted{" "}
+                {sortTypesToPhrasesHash[sort]}.
               </Header>
-              {matches.length > 0 ? (
-                matches.map(character => (
-                  <CharacterSelectEntry key={character.name} {...character} />
-                ))
-              ) : (
-                <List.Item>
-                  <Segment placeholder style={{ width: "100%" }}>
-                    <Header icon>
-                      <Icon name="warning" />
-                      No characters match the filter.
-                    </Header>
-                    <Button
-                      primary
-                      onClick={this.reset}
-                      style={{
-                        marginTop: "1rem"
-                      }}
-                    >
-                      Clear Filter
-                    </Button>
-                  </Segment>
-                </List.Item>
-              )}
-            </List>
+              <List
+                className="sc-list"
+                divided
+                selection
+                style={{ marginTop: 0 }}
+              >
+                {matches.length > 0 ? (
+                  matches.map(character => (
+                    <CharacterSelectEntry key={character.name} {...character} />
+                  ))
+                ) : (
+                  <List.Item>
+                    <Segment placeholder style={{ width: "100%" }}>
+                      <Header icon>
+                        <Icon name="warning" />
+                        No characters match the filter.
+                      </Header>
+                      <Button
+                        primary
+                        onClick={this.reset}
+                        style={{
+                          marginTop: "1rem"
+                        }}
+                      >
+                        Clear Filter
+                      </Button>
+                    </Segment>
+                  </List.Item>
+                )}
+              </List>
+            </React.Fragment>
           );
 
           return (
