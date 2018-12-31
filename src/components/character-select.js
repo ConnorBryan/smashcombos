@@ -150,84 +150,108 @@ export default class CharacterSelect extends Component {
               }
             );
           const menu = (
-            <Menu
-              vertical
-              fluid
-              style={{
-                background: "#111"
-              }}
-            >
-              <Menu.Item
-                header
+            <React.Fragment>
+              <Menu
+                vertical
+                fluid
                 style={{
-                  ...styles.fancyText,
-                  color: "#eee"
+                  background: "#111"
                 }}
               >
-                Weight class
-              </Menu.Item>
-              <Menu.Item>
-                <Dropdown
-                  fluid
-                  selection
-                  options={Object.entries(WeightClasses).map(
-                    ([key, value]) => ({
+                <Menu.Item
+                  header
+                  style={{
+                    ...styles.fancyText,
+                    color: "#eee"
+                  }}
+                >
+                  Weight class
+                </Menu.Item>
+                <Menu.Item>
+                  <Dropdown
+                    fluid
+                    selection
+                    options={Object.entries(WeightClasses).map(
+                      ([key, value]) => ({
+                        key,
+                        value,
+                        text: key
+                      })
+                    )}
+                    value={weightClass}
+                    onChange={this.handleWeightClassChange}
+                    style={{
+                      margin: "1rem 0"
+                    }}
+                  />
+                </Menu.Item>
+                <Menu.Item
+                  header
+                  style={{
+                    ...styles.fancyText,
+                    color: "#eee"
+                  }}
+                >
+                  Sort by
+                </Menu.Item>
+                <Menu.Item>
+                  <Dropdown
+                    fluid
+                    selection
+                    options={Object.entries(SortTypes).map(([key, value]) => ({
                       key,
                       value,
-                      text: key
-                    })
-                  )}
-                  value={weightClass}
-                  onChange={this.handleWeightClassChange}
-                  style={{
-                    margin: "1rem 0"
-                  }}
-                />
-              </Menu.Item>
-              <Menu.Item
-                header
-                style={{
-                  ...styles.fancyText,
-                  color: "#eee"
-                }}
-              >
-                Sort by
-              </Menu.Item>
-              <Menu.Item>
-                <Dropdown
-                  fluid
-                  selection
-                  options={Object.entries(SortTypes).map(([key, value]) => ({
-                    key,
-                    value,
-                    text: value
-                  }))}
-                  value={sort}
-                  onChange={this.handleSortChange}
-                  style={{
-                    margin: "1rem 0"
-                  }}
-                />
-              </Menu.Item>
-              <Menu.Item fitted>
-                <Button.Group widths={2}>
-                  <Button onClick={this.reset}>Clear</Button>
-                  <Button primary onClick={this.hideOptions}>
-                    Close
+                      text: value
+                    }))}
+                    value={sort}
+                    onChange={this.handleSortChange}
+                    style={{
+                      margin: "1rem 0"
+                    }}
+                  />
+                </Menu.Item>
+                <Menu.Item fitted>
+                  <Responsive maxWidth={991}>
+                    <Button.Group widths={2}>
+                      <Button onClick={this.reset}>Clear</Button>
+                      <Button primary onClick={this.hideOptions}>
+                        Close
+                      </Button>
+                    </Button.Group>
+                  </Responsive>
+                  <Responsive minWidth={992}>
+                    <Button fluid size="large" onClick={this.reset}>
+                      Clear
+                    </Button>
+                  </Responsive>
+                </Menu.Item>
+                <Menu.Item>
+                  <Button
+                    as="a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.gg/EMVEzhS"
+                    primary
+                    size="huge"
+                    icon
+                    fluid
+                  >
+                    <Icon name="discord" /> Join the Discord
                   </Button>
-                </Button.Group>
-              </Menu.Item>
-            </Menu>
+                </Menu.Item>
+              </Menu>
+            </React.Fragment>
           );
           const list = (
             <React.Fragment>
               <Header
-                as="h5"
+                as="p"
                 textAlign="right"
                 style={{
                   marginBottom: 0,
                   paddingBottom: "1rem",
-                  borderBottom: "1px solid #7289D8"
+                  borderBottom: "1px solid #7289D8",
+                  fontSize: "12px"
                 }}
               >
                 Showing {matches.length} of {characters.length} characters,

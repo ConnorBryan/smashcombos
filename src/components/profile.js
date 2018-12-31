@@ -4,6 +4,7 @@ import { Segment, Grid, Header } from "semantic-ui-react";
 
 import { weightClassToTag } from "../helpers";
 import * as styles from "../styles";
+import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
 
 export default function CharacterProfile({
@@ -34,22 +35,27 @@ export default function CharacterProfile({
             <Header
               as="h3"
               style={{
-                ...styles.fancyText,
-                marginBottom: 0
+                ...styles.fancyText
               }}
             >
               Description
             </Header>
-            <div
-              style={{
-                maxWidth: "50rem",
-                paddingLeft: "1rem",
-                borderLeft: "1px solid #738BD6",
-                lineHeight: 1.7
-              }}
-            >
-              {description}
-            </div>
+            {description && description !== "..." ? (
+              <div
+                style={{
+                  maxWidth: "50rem",
+                  paddingLeft: "1rem",
+                  borderLeft: "1px solid #738BD6",
+                  lineHeight: 1.7
+                }}
+              >
+                {description}
+              </div>
+            ) : (
+              <PlaceholderPanel action="Add a description">
+                This character has no description.
+              </PlaceholderPanel>
+            )}
             <div
               style={{
                 marginTop: "2rem"
