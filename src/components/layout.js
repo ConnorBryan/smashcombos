@@ -100,8 +100,9 @@ export default function Layout({ children }) {
                       <React.Fragment>
                         <Navbar user={user} toggleMenu={toggle} />
                         <Container
+                          className="layout"
                           style={{
-                            margin: "7rem 0"
+                            marginTop: "7rem"
                           }}
                         >
                           <Sidebar.Pushable className="mobile-only">
