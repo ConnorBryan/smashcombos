@@ -19,8 +19,18 @@ export default class UserProvider extends Component {
       }
     }
 
-    netlifyIdentity.on("login", user => this.setState({ user }));
-    netlifyIdentity.on("logout", () => this.setState({ user: null }));
+    netlifyIdentity.on("login", user => {
+      console.log("Login callback");
+      this.setState({ user });
+    });
+    netlifyIdentity.on("logout", () => {
+      console.log("Logout callback");
+      setTimeout(() => {
+        console.log("Closing window.");
+        netlifyIdentity.close();
+      }, 2000);
+      this.setState({ user: null });
+    });
   }
 
   render() {
