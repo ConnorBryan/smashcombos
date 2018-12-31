@@ -8,7 +8,9 @@ export default function Tagbar({ tags }) {
   return (
     <List horizontal>
       <List.Item>
-        <List.Header style={styles.fancyText}>Tags</List.Header>
+        <List.Header as="h3" style={styles.fancyText}>
+          Tags
+        </List.Header>
       </List.Item>
       {(tags || []).map(tag => (
         <List.Item key={tag}>

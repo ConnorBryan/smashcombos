@@ -1,7 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
-
 import { Container } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
@@ -88,7 +87,7 @@ export default function Layout({ children }) {
             <Navbar />
             <Container
               style={{
-                marginTop: "7rem"
+                margin: "7rem 0"
               }}
             >
               {children}

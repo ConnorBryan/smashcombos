@@ -1,13 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import {
-  CharacterProfile,
-  AttributePanel,
-  Layout,
-  MobileComboList,
-  DesktopComboList
-} from "../components";
+import { Profile, AttributePanel, Layout, ComboList } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 import "./character-page.scss";
 
@@ -21,7 +15,7 @@ export default function CharacterPage({ data }) {
 
   return (
     <Layout>
-      <CharacterProfile
+      <Profile
         image={image}
         name={name}
         description={description}
@@ -30,16 +24,7 @@ export default function CharacterPage({ data }) {
         attributes={attributes}
       />
       <AttributePanel attributes={attributes} />
-      {combos.length > 0 && (
-        <React.Fragment>
-          <div className="mobile-only">
-            <MobileComboList combos={combos} />
-          </div>
-          <div className="desktop-only">
-            <DesktopComboList combos={combos} />
-          </div>
-        </React.Fragment>
-      )}
+      {combos.length > 0 && <ComboList combos={combos} />}
     </Layout>
   );
 }
