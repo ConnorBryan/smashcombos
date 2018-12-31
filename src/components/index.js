@@ -6,5 +6,6 @@ export { default as ComboList } from "./combo-list";
 export { default as Input } from "./input";
 export { default as Layout } from "./layout";
 export { default as Navbar } from "./navbar";
+export { default as SiteActions } from "./site-actions";
 export { default as Tagbar } from "./tagbar";
 export { default as UserProvider } from "./user-provider";

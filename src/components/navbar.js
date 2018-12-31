@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Container, Header, Image, Menu } from "semantic-ui-react";
-import netlifyIdentity from "netlify-identity-widget";
+import { Container, Icon, Image, Menu, Responsive } from "semantic-ui-react";
 
-import * as styles from "../styles";
 import logo from "../img/logo.svg";
+import SiteActions from "./site-actions";
 
-export default function Navbar({ user }) {
-  console.log("\n\n\n", "user", user, "\n\n\n");
+export default function Navbar({ user, toggleMenu }) {
   return (
     <Menu
       fixed="top"
@@ -27,39 +25,19 @@ export default function Navbar({ user }) {
         >
           <Image size="small" src={logo} style={{ marginRight: "1.5em" }} />
         </Menu.Item>
-        <Menu.Menu position="right">
-          {user ? (
-            <React.Fragment>
-              <Menu.Item>
-                <Header as="h5">
-                  Welcome,
-                  <br /> {user.user_metadata.full_name}.
-                </Header>
-              </Menu.Item>
-              <Menu.Item
-                onClick={() => netlifyIdentity.logout()}
-                style={styles.fancyText}
-              >
-                Sign out
-              </Menu.Item>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <Menu.Item
-                onClick={() => netlifyIdentity.open("login")}
-                style={styles.fancyText}
-              >
-                Sign in
-              </Menu.Item>
-              <Menu.Item
-                onClick={() => netlifyIdentity.open("signup")}
-                style={styles.fancyText}
-              >
-                Sign up
-              </Menu.Item>
-            </React.Fragment>
-          )}
-        </Menu.Menu>
+        <Responsive
+          maxWidth={991}
+          as={Menu.Menu}
+          onClick={toggleMenu}
+          position="right"
+        >
+          <Menu.Item>
+            <Icon size="large" style={{ margin: 0 }} name="bars" />
+          </Menu.Item>
+        </Responsive>
+        <Responsive as={Menu.Menu} minWidth={992} position="right">
+          <SiteActions user={user} />
+        </Responsive>
       </Container>
     </Menu>
   );
