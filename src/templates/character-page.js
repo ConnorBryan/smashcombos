@@ -1,7 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Responsive } from "semantic-ui-react";
 
-import { Profile, AttributePanel, Layout, ComboList } from "../components";
+import {
+  AttributePanel,
+  ComboList,
+  Layout,
+  KillMovesPanel,
+  Profile
+} from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 import "./character-page.scss";
 
@@ -24,7 +31,8 @@ export default function CharacterPage({ data }) {
         attributes={attributes}
       />
       <AttributePanel attributes={attributes} />
-      {combos.length > 0 && <ComboList combos={combos} />}
+      <Responsive as={KillMovesPanel} maxWidth={991} basic attached />
+      <ComboList combos={combos} />
     </Layout>
   );
 }

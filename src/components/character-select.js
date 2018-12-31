@@ -242,7 +242,11 @@ export default class CharacterSelect extends Component {
               >
                 {matches.length > 0 ? (
                   matches.map(character => (
-                    <CharacterSelectEntry key={character.name} {...character} />
+                    <CharacterSelectEntry
+                      key={character.name}
+                      {...character}
+                      comboCount={character.combos.length}
+                    />
                   ))
                 ) : (
                   <List.Item>

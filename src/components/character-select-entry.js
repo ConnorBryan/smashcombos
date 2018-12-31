@@ -4,6 +4,7 @@ import Image from "gatsby-image";
 import { List } from "semantic-ui-react";
 
 import * as styles from "../styles";
+import { weightClassToTag } from "../helpers";
 import Tagbar from "./tagbar";
 
 export default function CharacterSelectEntry({
@@ -11,12 +12,13 @@ export default function CharacterSelectEntry({
   render: {
     childImageSharp: { fluid: image }
   },
+  attributes: {
+    weight: { class: weightClass }
+  },
   slug,
-  tags
+  tags,
+  comboCount
 }) {
-  if (tags) {
-    console.log(name, tags);
-  }
   return (
     <List.Item
       as={Link}
@@ -36,7 +38,8 @@ export default function CharacterSelectEntry({
           fluid={image}
           style={{
             width: "100px",
-            height: "100px"
+            height: "100px",
+            marginRight: "1rem"
           }}
         />
         <List.Header
@@ -48,6 +51,17 @@ export default function CharacterSelectEntry({
           }}
         >
           {name}
+          <br />{" "}
+          <span
+            style={{
+              paddingLeft: "1rem",
+              borderLeft: "1px solid #738BD6",
+              fontSize: "16px",
+              color: "#738BD6"
+            }}
+          >
+            {comboCount} {comboCount === 1 ? "Combo" : "Combos"}
+          </span>
         </List.Header>
       </List.Content>
       <List.Content
@@ -57,7 +71,7 @@ export default function CharacterSelectEntry({
           whiteSpace: "nowrap"
         }}
       >
-        <Tagbar tags={tags} />
+        <Tagbar tags={[weightClassToTag[weightClass], ...(tags || [])]} />
       </List.Content>
     </List.Item>
   );

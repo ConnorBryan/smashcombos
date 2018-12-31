@@ -25,13 +25,13 @@ export default function Navbar({ user, toggleMenu }) {
         >
           <Image size="small" src={logo} style={{ marginRight: "1.5em" }} />
         </Menu.Item>
-        <Responsive
-          maxWidth={991}
-          as={Menu.Menu}
-          onClick={toggleMenu}
-          position="right"
-        >
-          <Menu.Item>
+        <Responsive maxWidth={991} as={Menu.Menu} position="right">
+          <Menu.Item
+            onClick={() => {
+              toggleMenu();
+              window.scrollTo(0, 0);
+            }}
+          >
             <Icon size="large" style={{ margin: 0 }} name="bars" />
           </Menu.Item>
         </Responsive>
