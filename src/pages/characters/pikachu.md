@@ -59,8 +59,6 @@ combos:
       lightweight: "0"
       middleweight: "0"
       superheavyweight: "0"
-    clips: ""
-    tags: ""
     notes: ""
   - input: uthrow dspecial
     killConfirm: true
