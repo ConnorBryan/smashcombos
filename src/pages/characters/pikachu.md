@@ -70,4 +70,6 @@ combos:
       lightweight: "75"
       middleweight: "75"
       superheavyweight: "75"
+    tags:
+      - fastFaller
 ---

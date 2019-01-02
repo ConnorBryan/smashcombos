@@ -105,7 +105,6 @@ export const characterPageQuery = graphql`
           killConfirm
           diable
           demonstration
-          clips
           tags
           notes
         }

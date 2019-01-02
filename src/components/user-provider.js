@@ -20,15 +20,10 @@ export default class UserProvider extends Component {
     }
 
     netlifyIdentity.on("login", user => {
-      setTimeout(() => {
-        console.log("Closing window.");
-        netlifyIdentity.close();
-      }, 2000);
+      netlifyIdentity.close();
       this.setState({ user });
     });
-    netlifyIdentity.on("logout", () => {
-      this.setState({ user: null });
-    });
+    netlifyIdentity.on("logout", () => this.setState({ user: null }));
   }
 
   render() {
