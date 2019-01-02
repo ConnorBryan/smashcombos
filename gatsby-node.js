@@ -1,6 +1,5 @@
-const _ = require("lodash");
 const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const slugify = require("slugify");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
 exports.createPages = ({ actions, graphql }) => {
@@ -8,16 +7,11 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allCharactersJson {
         edges {
           node {
             id
-            fields {
-              slug
-            }
-            frontmatter {
-              templateKey
-            }
+            slug
           }
         }
       }
@@ -28,43 +22,22 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    const charcters = result.data.allMarkdownRemark.edges;
+    const characters = result.data.allCharactersJson.edges;
 
-    charcters.forEach(
-      ({
-        node: {
-          id,
-          frontmatter: { templateKey },
-          fields: { slug }
+    characters.forEach(({ node: { id, slug } }) => {
+      createPage({
+        path: slug,
+        component: path.resolve(`src/templates/character-page.js`),
+        context: {
+          id
         }
-      }) => {
-        createPage({
-          path: slug,
-          component: path.resolve(`src/templates/${String(templateKey)}.js`),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        });
-      }
-    );
+      });
+    });
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  fmImagesToRelative(node); // convert image paths for gatsby images
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-
-    createNodeField({
-      name: `slug`,
-      node,
-      value
-    });
-  }
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
 };
 
 exports.onCreateWebpackConfig = ({ stage, actions }) => {

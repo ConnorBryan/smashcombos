@@ -63,64 +63,60 @@ export default class CharacterSelect extends Component {
       <StaticQuery
         query={graphql`
           query CharacterSelectQuery {
-            allMarkdownRemark {
+            allCharactersJson {
               edges {
                 node {
-                  fields {
-                    slug
+                  name
+                  render {
+                    childImageSharp {
+                      fluid(maxWidth: 100, quality: 72) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
                   }
-                  frontmatter {
-                    name
-                    render {
-                      childImageSharp {
-                        fluid(maxWidth: 100, quality: 72) {
-                          ...GatsbyImageSharpFluid
-                        }
-                      }
+                  slug
+                  attributes {
+                    airAcceleration {
+                      rank
                     }
-                    attributes {
-                      airAcceleration {
-                        rank
-                      }
-                      airSpeed {
-                        rank
-                      }
-                      fallSpeed {
-                        rank
-                      }
-                      runSpeed {
-                        rank
-                      }
-                      walkSpeed {
-                        rank
-                      }
-                      weight {
-                        class
-                        rank
-                      }
+                    airSpeed {
+                      rank
                     }
-                    tags
-                    killConfirms {
-                      input
-                      percentages {
-                        balloonweight
-                        featherweight
-                        lightweight
-                        middleweight
-                        heavyweight
-                        superheavyweight
-                      }
+                    fallSpeed {
+                      rank
                     }
-                    combos {
-                      input
-                      percentages {
-                        balloonweight
-                        featherweight
-                        lightweight
-                        middleweight
-                        heavyweight
-                        superheavyweight
-                      }
+                    runSpeed {
+                      rank
+                    }
+                    walkSpeed {
+                      rank
+                    }
+                    weight {
+                      class
+                      rank
+                    }
+                  }
+                  tags
+                  killConfirms {
+                    input
+                    percentages {
+                      balloonweight
+                      featherweight
+                      lightweight
+                      middleweight
+                      heavyweight
+                      superheavyweight
+                    }
+                  }
+                  combos {
+                    input
+                    percentages {
+                      balloonweight
+                      featherweight
+                      lightweight
+                      middleweight
+                      heavyweight
+                      superheavyweight
                     }
                   }
                 }

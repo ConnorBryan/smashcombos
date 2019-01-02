@@ -37,77 +37,75 @@ export default function CharacterPage({ data }) {
 
 export const characterPageQuery = graphql`
   query CharacterPageQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        name
-        render {
-          childImageSharp {
-            fluid(maxWidth: 1075, quality: 72) {
-              ...GatsbyImageSharpFluid
-            }
+    charactersJson(id: { eq: $id }) {
+      name
+      render {
+        childImageSharp {
+          fluid(maxWidth: 1075, quality: 72) {
+            ...GatsbyImageSharpFluid
           }
         }
-        description
+      }
+      description
+      tags
+      attributes {
+        airAcceleration {
+          maxAdditional
+          baseValue
+          total
+          rank
+        }
+        airSpeed {
+          maxAirSpeed
+          rank
+        }
+        fallSpeed {
+          maxFallSpeed
+          fastFallSpeed
+          speedIncrease
+          rank
+        }
+        runSpeed {
+          maxRunSpeed
+          rank
+        }
+        walkSpeed {
+          maxWalkSpeed
+          rank
+        }
+        weight {
+          class
+          rank
+          value
+        }
+      }
+      killConfirms {
+        input
+        percentages {
+          balloonweight
+          featherweight
+          lightweight
+          middleweight
+          heavyweight
+          superheavyweight
+        }
+      }
+      combos {
+        input
+        percentages {
+          balloonweight
+          featherweight
+          lightweight
+          middleweight
+          heavyweight
+          superheavyweight
+        }
+        damage
+        killConfirm
+        diable
+        demonstration
         tags
-        attributes {
-          airAcceleration {
-            maxAdditional
-            baseValue
-            total
-            rank
-          }
-          airSpeed {
-            maxAirSpeed
-            rank
-          }
-          fallSpeed {
-            maxFallSpeed
-            fastFallSpeed
-            speedIncrease
-            rank
-          }
-          runSpeed {
-            maxRunSpeed
-            rank
-          }
-          walkSpeed {
-            maxWalkSpeed
-            rank
-          }
-          weight {
-            class
-            rank
-            value
-          }
-        }
-        killConfirms {
-          input
-          percentages {
-            balloonweight
-            featherweight
-            lightweight
-            middleweight
-            heavyweight
-            superheavyweight
-          }
-        }
-        combos {
-          input
-          percentages {
-            balloonweight
-            featherweight
-            lightweight
-            middleweight
-            heavyweight
-            superheavyweight
-          }
-          damage
-          killConfirm
-          diable
-          demonstration
-          tags
-          notes
-        }
+        notes
       }
     }
   }

@@ -146,7 +146,7 @@ export const attributeToInformationHash = {
 };
 
 export const getCharacter = data => {
-  const character = { ...data.markdownRemark.frontmatter };
+  const character = { ...data.charactersJson };
 
   if (!character.attributes) {
     character.attributes = characterFields.attributes;
@@ -189,17 +189,16 @@ export const getCharacter = data => {
 export const getCharacterRender = character => character.render;
 
 export const getCharacters = data =>
-  data.allMarkdownRemark.edges
+  data.allCharactersJson.edges
     .map(({ node }) => node)
-    .filter(({ fields: { slug } }) => slug.includes("characters"))
-    .map(({ fields: { slug }, frontmatter }) => ({
-      slug,
-      ...frontmatter,
+    // .filter(({ fields: { slug } }) => slug.includes("characters"))
+    .map(character => ({
+      ...character,
       // Remove false combos.
-      killConfirms: frontmatter.killConfirms.filter(
+      killConfirms: character.killConfirms.filter(
         killConfirm => killConfirm.input
       ),
-      combos: frontmatter.combos.filter(combo => combo.input)
+      combos: character.combos.filter(combo => combo.input)
     }));
 
 export const getFilteredCharacters = (characters, filter) =>

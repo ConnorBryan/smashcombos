@@ -13,16 +13,12 @@ collections:
     label: "Characters"
     label_singular: "Character"
     identifier_field: "name"
-    folder: "src/pages/characters"
+    folder: "src/characters"
     create: true
     slug: "{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "character-page",
-        }
+      - { label: ID, name: id, widget: string }
+      - { label: Slug, name: slug, widget: string }
       - {
           label: Name,
           name: name,
