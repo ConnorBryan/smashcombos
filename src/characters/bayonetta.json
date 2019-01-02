@@ -21,8 +21,8 @@
     "weight": { "class": "featherweight", "rank": "65", "value": "81" }
   },
   "tags": ["fastFaller"],
-  "killConfirms": [{}],
-  "combos": [{}],
+  "killConfirms": [],
+  "combos": [],
   "preview": "",
   "content": "\n\n",
   "basename": "bayonetta",
