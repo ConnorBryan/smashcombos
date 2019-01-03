@@ -85,9 +85,8 @@ export default class AttributePanel extends Component {
                             <List.Item
                               key={label}
                               style={{
-                                marginBottom: "0.5rem",
-                                paddingLeft: "1rem",
-                                borderLeft: "1px solid #738BD6"
+                                ...styles.fancyPanel,
+                                marginBottom: "0.5rem"
                               }}
                             >
                               <List.Header>{label}</List.Header>

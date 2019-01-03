@@ -231,13 +231,7 @@ export default function EditCharacterPage({ data }) {
                             <Header as="h4" style={styles.fancyText}>
                               Percentages
                             </Header>
-                            <Segment
-                              basic
-                              style={{
-                                paddingLeft: "1rem",
-                                borderLeft: "1px solid #738BD6"
-                              }}
-                            >
+                            <Segment basic style={styles.fancyPanel}>
                               <Form.Field>
                                 <Header as="h5" style={styles.fancyText}>
                                   Balloonweight

@@ -54,8 +54,7 @@ export default function CharacterSelectEntry({
           <br />{" "}
           <span
             style={{
-              paddingLeft: "1rem",
-              borderLeft: "1px solid #738BD6",
+              ...styles.fancyPanel,
               fontSize: "16px",
               color: "#738BD6"
             }}

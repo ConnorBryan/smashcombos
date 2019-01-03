@@ -16,7 +16,9 @@ export const generateEffectivePercentages = percentages =>
 export const tagTypeToTag = {
   floatie: "Floatie",
   fastFaller: "Fast Faller",
-  bigBody: "Big Body"
+  bigBody: "Big Body",
+  diable: "DI-able",
+  killConfirm: "Kill Confirm"
 };
 
 export const AttributeTypes = {
