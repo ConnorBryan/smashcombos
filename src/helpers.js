@@ -201,8 +201,6 @@ export const getFilteredCharacters = (characters, filter) =>
 export const SortTypes = {
   AtoZ: "A-Z",
   ZtoA: "Z-A",
-  FewestKillConfirms: "Fewest Kill Confirms",
-  MostKillConfirms: "Most Kill Confirms",
   FewestCombos: "Fewest Combos",
   MostCombos: "Most Combos",
   LowestAirAcceleration: "Lowest Air Acceleration",
@@ -284,6 +282,20 @@ export const WeightClasses = {
   Heavyweight: "heavyweight",
   "Super Heavyweight": "superheavyweight"
 };
+
+export const weightClassLabelsAndValues = Object.entries(WeightClasses).reduce(
+  (prev, [key, value]) => {
+    if (key !== "All") {
+      prev.push({
+        label: key,
+        value
+      });
+    }
+
+    return prev;
+  },
+  []
+);
 
 export const weightClassesToPhrasesHash = {
   [WeightClasses.All]: "from all weight classes",
