@@ -19,6 +19,7 @@ export default function CharacterProfile({
   return (
     <Segment
       attached="top"
+      padded="very"
       style={{
         position: "relative"
       }}
@@ -28,38 +29,38 @@ export default function CharacterProfile({
       </Header>
       <Segment basic style={styles.noSidePadding}>
         <Grid stackable>
-          <Grid.Column width={4} textAlign="center">
+          <Grid.Column mobile={16} tablet={16} computer={6} textAlign="center">
             <Image fluid={image.childImageSharp.fluid} />
           </Grid.Column>
-          <Grid.Column
-            width={12}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between"
-            }}
-          >
-            <Header as="h3" style={styles.fancyText}>
-              Description
-            </Header>
-            {description && description !== "..." ? (
-              <div
-                style={{
-                  ...styles.fancyPanel,
-                  maxWidth: "50rem",
-                  lineHeight: 1.7
-                }}
-              >
-                {description}
-              </div>
-            ) : (
-              <PlaceholderPanel action="Add a description">
-                This character has no description.
-              </PlaceholderPanel>
-            )}
+          <Grid.Column mobile={16} tablet={16} computer={10}>
             <div
               style={{
-                marginTop: "2rem"
+                ...styles.fancyPanel,
+                paddingLeft: "2rem"
+              }}
+            >
+              <Header as="h2" style={styles.fancyText}>
+                Description
+              </Header>
+              {description && description !== "..." ? (
+                <div
+                  style={{
+                    maxWidth: "40rem",
+                    lineHeight: 1.6,
+                    fontSize: "1.2em"
+                  }}
+                >
+                  {description}
+                </div>
+              ) : (
+                <PlaceholderPanel action="Add a description">
+                  This character has no description.
+                </PlaceholderPanel>
+              )}
+            </div>
+            <div
+              style={{
+                marginTop: "3rem"
               }}
             >
               <Tagbar tags={[weightClassToTag[weightClass], ...tags]} />

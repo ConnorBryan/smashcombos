@@ -30,7 +30,7 @@ export default function CharacterPage({ data }) {
         attributes={attributes}
       />
       <AttributePanel attributes={attributes} />
-      <KillMovesPanel className="mobile-only" attached basic />
+      <KillMovesPanel className="mobile-only" attached basic padded="very" />
       <ComboList combos={combos} />
     </Layout>
   );

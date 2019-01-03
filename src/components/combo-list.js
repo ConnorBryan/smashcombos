@@ -7,7 +7,7 @@ import ComboListEntry from "./combo-list-entry";
 
 export default function ComboList({ combos }) {
   return (
-    <Segment attached basic>
+    <Segment attached basic padded="very">
       <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
         Combos
       </Header>
