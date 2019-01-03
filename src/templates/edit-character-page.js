@@ -272,7 +272,7 @@ export const editCharacterPageQuery = graphql`
       name
       render {
         childImageSharp {
-          fluid(maxWidth: 256, quality: 72) {
+          fluid(maxWidth: 1075, quality: 72) {
             ...GatsbyImageSharpFluid
           }
         }
