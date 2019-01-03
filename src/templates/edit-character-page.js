@@ -413,17 +413,6 @@ export const editCharacterPageQuery = graphql`
           value
         }
       }
-      killConfirms {
-        input
-        percentages {
-          balloonweight
-          featherweight
-          lightweight
-          middleweight
-          heavyweight
-          superheavyweight
-        }
-      }
       combos {
         input
         percentages {
@@ -435,8 +424,6 @@ export const editCharacterPageQuery = graphql`
           superheavyweight
         }
         damage
-        killConfirm
-        diable
         demonstration
         tags
         notes

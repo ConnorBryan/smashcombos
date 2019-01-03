@@ -165,10 +165,6 @@ export const getCharacter = data => {
     }
   });
 
-  if (!character.killConfirms) {
-    character.killConfirms = [];
-  }
-
   if (!character.combos) {
     character.combos = [];
   }
@@ -178,9 +174,6 @@ export const getCharacter = data => {
   }
 
   // Remove false combos.
-  character.killConfirms = character.killConfirms.filter(
-    killConfirm => killConfirm.input
-  );
   character.combos = character.combos.filter(combo => combo.input);
 
   return character;
@@ -195,9 +188,6 @@ export const getCharacters = data =>
     .map(character => ({
       ...character,
       // Remove false combos.
-      killConfirms: character.killConfirms.filter(
-        killConfirm => killConfirm.input
-      ),
       combos: character.combos.filter(combo => combo.input)
     }));
 
@@ -230,8 +220,6 @@ export const SortTypes = {
 export const sortTypesToPhrasesHash = {
   [SortTypes.AtoZ]: "alphabetically, ascending",
   [SortTypes.ZtoA]: "alphabetically, descending",
-  [SortTypes.FewestKillConfirms]: "by kill confirm count, low to high",
-  [SortTypes.MostKillConfirms]: "by kill confirm count, high to low",
   [SortTypes.FewestCombos]: "by combo count, low to high",
   [SortTypes.MostCombos]: "by combo count, high to low",
   [SortTypes.LowestAirAcceleration]: "by air acceleration, low to high",
@@ -251,10 +239,6 @@ export const sortTypesToPhrasesHash = {
 export const sortFunctions = {
   [SortTypes.AtoZ]: (a, b) => a.name.localeCompare(b.name),
   [SortTypes.ZtoA]: (a, b) => b.name.localeCompare(a.name),
-  [SortTypes.FewestKillConfirms]: (a, b) =>
-    a.killConfirms.length - b.killConfirms.length,
-  [SortTypes.MostKillConfirms]: (a, b) =>
-    b.killConfirms.length - a.killConfirms.length,
   [SortTypes.FewestCombos]: (a, b) => a.combos.length - b.combos.length,
   [SortTypes.MostCombos]: (a, b) => b.combos.length - a.combos.length,
   [SortTypes.LowestAirAcceleration]: (a, b) =>

@@ -30,8 +30,6 @@ export default class ComboListEntry extends Component {
       index,
       input,
       damage,
-      diable,
-      killConfirm,
       percentages,
       demonstration,
       tags,
@@ -39,11 +37,6 @@ export default class ComboListEntry extends Component {
       total
     } = this.props;
     const { isVisible } = this.state;
-    const allTags = [
-      ...(killConfirm ? ["Kill Confirm"] : []),
-      `${diable ? "" : "Not"} DI-able`,
-      ...(tags || [])
-    ];
 
     return (
       <Segment
@@ -89,7 +82,7 @@ export default class ComboListEntry extends Component {
           {isVisible && (
             <Grid.Column mobile={16} tablet={16} computer={13}>
               <Segment basic>
-                <Tagbar tags={allTags} />
+                <Tagbar tags={tags || []} />
               </Segment>
               <Segment basic>
                 <Header as="h3" style={styles.fancyText}>

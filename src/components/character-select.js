@@ -97,17 +97,6 @@ export default class CharacterSelect extends Component {
                     }
                   }
                   tags
-                  killConfirms {
-                    input
-                    percentages {
-                      balloonweight
-                      featherweight
-                      lightweight
-                      middleweight
-                      heavyweight
-                      superheavyweight
-                    }
-                  }
                   combos {
                     input
                     percentages {

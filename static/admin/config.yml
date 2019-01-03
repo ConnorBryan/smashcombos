@@ -233,98 +233,6 @@ collections:
           description: A list of different types of characters the kill confirm works against.,
         }
       - {
-          label: Kill Confirms,
-          label_singular: Kill Confirm,
-          name: killConfirms,
-          widget: list,
-          fields:
-            [
-              {
-                label: Input,
-                name: input,
-                widget: string,
-                description: The input for the attack which triggers the kill confirm.,
-              },
-              {
-                label: Percentages,
-                name: percentages,
-                widget: object,
-                fields:
-                  [
-                    {
-                      label: Balloonweight,
-                      name: balloonweight,
-                      widget: string,
-                      description: The percentage at which balloonweight characters are vulnerable to the kill confirm.,
-                    },
-                    {
-                      label: Featherweight,
-                      name: featherweight,
-                      widget: string,
-                      description: The percentage at which featherweight characters are vulnerable to the kill confirm.,
-                    },
-                    {
-                      label: Lightweight,
-                      name: lightweight,
-                      widget: string,
-                      description: The percentage at which lightweight characters are vulnerable to the kill confirm.,
-                    },
-                    {
-                      label: Middleweight,
-                      name: middleweight,
-                      widget: string,
-                      description: The percentage at which middleweight characters are vulnerable to the kill confirm.,
-                    },
-                    {
-                      label: Heavyweight,
-                      name: heavyweight,
-                      widget: string,
-                      description: The percentage at which heavyweight characters are vulnerable to the kill confirm.,
-                    },
-                    {
-                      label: Super Heavyweight,
-                      name: superheavyweight,
-                      widget: string,
-                      description: The percentage at which super heavyweight characters are vulnerable to the kill confirm.,
-                    },
-                  ],
-                description: The percentage values at which the kill confirm will work.,
-              },
-              {
-                label: Tags,
-                name: tags,
-                widget: select,
-                multiple: true,
-                options:
-                  [
-                    {
-                      label: Floatie,
-                      value: floatie,
-                      description: Characters that fall to the ground slowly.,
-                    },
-                    {
-                      label: Fast Faller,
-                      value: fastFaller,
-                      description: Characters that fall to the ground quickly.,
-                    },
-                    {
-                      label: Big Body,
-                      value: bigBody,
-                      description: Characters that have larger hitboxes.,
-                    },
-                  ],
-                description: A list of different types of characters the kill confirm works against.,
-              },
-              {
-                label: Notes,
-                name: notes,
-                widget: string,
-                description: Additional information related to the kill confirm.,
-              },
-            ],
-          description: Single attacks the character can use that will result in a guaranteed kill.,
-        }
-      - {
           label: Combos,
           label_singular: Combo,
           name: combos,
@@ -389,50 +297,10 @@ collections:
                 description: Damage dealt by the combo.,
               },
               {
-                label: Kill Confirm,
-                name: killConfirm,
-                widget: boolean,
-                description: If executed correctly,
-                is the combo a guaranteed kill?,
-              },
-              {
-                label: DI-able,
-                name: diable,
-                widget: boolean,
-                description: Can the character being attacked utilize directional influence to escape?,
-              },
-              {
                 label: Demonstration,
                 name: demonstration,
                 widget: string,
                 description: A link to a video showing the combo in training mode.,
-              },
-              {
-                label: Clips,
-                name: clips,
-                widget: list,
-                fields:
-                  [
-                    {
-                      label: Description,
-                      name: description,
-                      widget: string,
-                      description: A description of the context surrounding the clip.,
-                    },
-                    {
-                      label: Credit,
-                      name: credit,
-                      widget: string,
-                      description: Who originally uploaded or performed in the clip?,
-                    },
-                    {
-                      label: Link,
-                      name: link,
-                      widget: string,
-                      description: A link to the clip.,
-                    },
-                  ],
-                description: A list of uses of the combo in real-world scenarios.,
               },
               {
                 label: Tags,
@@ -441,6 +309,17 @@ collections:
                 multiple: true,
                 options:
                   [
+                    {
+                      label: DI-able,
+                      value: diable,
+                      description: Can the combo be directionally influenced?,
+                    },
+                    {
+                      label: Kill Confirm,
+                      value: killConfirm,
+                      description: If executed correctly,
+                      does the combo result in a kill?,
+                    },
                     {
                       label: Floatie,
                       value: floatie,
