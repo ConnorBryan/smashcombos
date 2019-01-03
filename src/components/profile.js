@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "gatsby";
 import Image from "gatsby-image";
-import { Segment, Grid, Header } from "semantic-ui-react";
+import { Segment, Button, Grid, Header } from "semantic-ui-react";
 
 import { weightClassToTag } from "../helpers";
 import * as styles from "../styles";
@@ -8,6 +9,7 @@ import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
 
 export default function CharacterProfile({
+  slug,
   image,
   name,
   description,
@@ -15,7 +17,12 @@ export default function CharacterProfile({
   tags
 }) {
   return (
-    <Segment attached="top">
+    <Segment
+      attached="top"
+      style={{
+        position: "relative"
+      }}
+    >
       <Header as="h1" style={styles.fancyText}>
         {name}
       </Header>
@@ -32,12 +39,7 @@ export default function CharacterProfile({
               justifyContent: "space-between"
             }}
           >
-            <Header
-              as="h3"
-              style={{
-                ...styles.fancyText
-              }}
-            >
+            <Header as="h3" style={styles.fancyText}>
               Description
             </Header>
             {description && description !== "..." ? (
@@ -66,6 +68,17 @@ export default function CharacterProfile({
           </Grid.Column>
         </Grid>
       </Segment>
+      <Button
+        as={Link}
+        to={`/${slug}/edit`}
+        style={{
+          position: "absolute",
+          top: "1rem",
+          right: "1rem"
+        }}
+      >
+        Edit
+      </Button>
     </Segment>
   );
 }

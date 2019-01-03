@@ -3,7 +3,7 @@
 *******************************/
 
 @checkboxSize: 17px;
-@checkboxColor: @textColor;
+@checkboxColor: @purple;
 @checkboxLineHeight: @checkboxSize;
 
 
@@ -11,7 +11,7 @@
 @labelDistance: 1.85714em; /* 26px @ 14/em */
 
 /* Checkbox */
-@checkboxBackground: @white;
+@checkboxBackground: @almostBlack;
 @checkboxBorder: 1px solid @solidBorderColor;
 @checkboxBorderRadius: @3px;
 @checkboxTransition:
@@ -37,33 +37,33 @@
 --------------------*/
 
 /* Hover */
-@checkboxHoverBackground: @checkboxBackground;
-@checkboxHoverBorderColor: @selectedBorderColor;
-@labelHoverColor: @hoveredTextColor;
+@checkboxHoverBackground: @almostBlack;
+@checkboxHoverBorderColor: @purple;
+@labelHoverColor: @textColor;
 
 /* Pressed */
-@checkboxPressedBackground: @offWhite;
+@checkboxPressedBackground: @almostBlack;
 @checkboxPressedBorderColor: @selectedBorderColor;
-@checkboxPressedColor: @selectedTextColor;
-@labelPressedColor: @selectedTextColor;
+@checkboxPressedColor: @textColor;
+@labelPressedColor: @textColor;
 
 /* Focus */
-@checkboxFocusBackground: @white;
-@checkboxFocusBorderColor: @focusedFormMutedBorderColor;
-@checkboxFocusCheckColor: @selectedTextColor;
-@labelFocusColor: @selectedTextColor;
+@checkboxFocusBackground: @almostBlack;
+@checkboxFocusBorderColor: @purple;
+@checkboxFocusCheckColor: @textColor;
+@labelFocusColor: @textColor;
 
 /* Active */
-@labelActiveColor: @selectedTextColor;
-@checkboxActiveBackground: @white;
-@checkboxActiveBorderColor: @selectedBorderColor;
-@checkboxActiveCheckColor: @selectedTextColor;
+@labelActiveColor: @textColor;
+@checkboxActiveBackground: @almostBlack;
+@checkboxActiveBorderColor: @purple;
+@checkboxActiveCheckColor: @textColor;
 @checkboxActiveCheckOpacity: 1;
 
 /* Active Focus */
-@checkboxActiveFocusBackground: @white;
-@checkboxActiveFocusBorderColor: @checkboxFocusBorderColor;
-@checkboxActiveFocusCheckColor: @selectedTextColor;
+@checkboxActiveFocusBackground: @almostBlack;
+@checkboxActiveFocusBorderColor: @purple;
+@checkboxActiveFocusCheckColor: @textColor;
 
 /* Indeterminate */
 @checkboxIndeterminateBackground: @checkboxActiveBackground;

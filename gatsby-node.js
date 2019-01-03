@@ -25,9 +25,19 @@ exports.createPages = ({ actions, graphql }) => {
     const characters = result.data.allCharactersJson.edges;
 
     characters.forEach(({ node: { id, slug } }) => {
+      // View
       createPage({
         path: slug,
         component: path.resolve(`src/templates/character-page.js`),
+        context: {
+          id
+        }
+      });
+
+      // Edit
+      createPage({
+        path: `${slug}/edit`,
+        component: path.resolve("src/templates/edit-character-page.js"),
         context: {
           id
         }

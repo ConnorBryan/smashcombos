@@ -13,7 +13,7 @@ import { getCharacter, getCharacterRender } from "../helpers";
 export default function CharacterPage({ data }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
-  const { name, description, attributes, combos, tags } = character;
+  const { name, slug, description, attributes, combos, tags } = character;
   const {
     weight: { class: weightClass }
   } = attributes;
@@ -21,6 +21,7 @@ export default function CharacterPage({ data }) {
   return (
     <Layout>
       <Profile
+        slug={slug}
         image={image}
         name={name}
         description={description}
@@ -39,6 +40,7 @@ export const characterPageQuery = graphql`
   query CharacterPageQuery($id: String!) {
     charactersJson(id: { eq: $id }) {
       name
+      slug
       render {
         childImageSharp {
           fluid(maxWidth: 1075, quality: 72) {
