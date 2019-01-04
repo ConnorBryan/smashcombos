@@ -7,9 +7,18 @@ import { attackTypes, attackModifiers } from "../constants";
 
 export default class InputScreen extends Component {
   state = {
-    input: "",
+    input: this.props.input,
     modifiers: ""
   };
+
+  componentDidUpdate(_, { input: prevInput }) {
+    const { update } = this.props;
+    const { input } = this.state;
+
+    if (input !== prevInput) {
+      update(input);
+    }
+  }
 
   addMove = (_, { value }) =>
     this.setState(prevState => ({
@@ -70,7 +79,6 @@ export default class InputScreen extends Component {
           }}
         >
           <Dropdown
-            attached
             text="Modifiers"
             fluid
             labeled

@@ -6,20 +6,36 @@ import { InputScreen } from "./components";
 import { comboTags, comboPercentages } from "./constants";
 
 export default class ComboCreator extends Component {
-  state = {
+  static defaultProps = {
     input: "",
     damage: "",
-    tags: comboTags.reduce((prev, { value }) => {
-      prev[value] = false;
-      return prev;
-    }, {}),
+    tags: [],
     percentages: comboPercentages.reduce((prev, { value }) => {
       prev[value] = "";
       return prev;
     }, {}),
     demonstration: "",
-    notes: ""
+    notes: "",
+    onSubmit: values => console.log(values)
   };
+
+  constructor(props) {
+    super(props);
+
+    this.state = this.getInitialState();
+  }
+
+  getInitialState = () => ({
+    input: this.props.input,
+    damage: this.props.damage,
+    tags: comboTags.reduce((prev, { value }) => {
+      prev[value] = this.props.tags.includes(value);
+      return prev;
+    }, {}),
+    percentages: this.props.percentages,
+    demonstration: this.props.demonstration,
+    notes: this.props.notes
+  });
 
   updateInput = input => this.setState({ input });
 
@@ -46,6 +62,19 @@ export default class ComboCreator extends Component {
 
   updateNotes = (_, { value: notes }) => this.setState({ notes });
 
+  reset = () => this.setState(this.getInitialState());
+
+  handleSubmit = () => {
+    const { onSubmit } = this.props;
+
+    onSubmit({
+      ...this.state,
+      tags: Object.entries(this.state.tags)
+        .map(([key, value]) => value && key)
+        .filter(Boolean)
+    });
+  };
+
   render() {
     const {
       input,
@@ -59,7 +88,7 @@ export default class ComboCreator extends Component {
     return (
       <Segment basic>
         <InputScreen input={input} update={this.updateInput} />
-        <Form>
+        <Form onSubmit={this.handleSubmit}>
           <Grid>
             <Grid.Column mobile={16} tablet={8} computer={4}>
               <Form.Input
@@ -166,8 +195,12 @@ export default class ComboCreator extends Component {
                     alignSelf: "flex-end"
                   }}
                 >
-                  <Button>Reset</Button>
-                  <Button primary>Send</Button>
+                  <Button type="button" onClick={this.reset}>
+                    Reset
+                  </Button>
+                  <Button type="submit" primary>
+                    Confirm
+                  </Button>
                 </Button.Group>
               </Form.Field>
             </Grid.Column>

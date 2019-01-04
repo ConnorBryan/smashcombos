@@ -14,8 +14,7 @@ import {
   Tab
 } from "semantic-ui-react";
 
-import { Layout } from "../components";
-import { ComboCreator } from "../modules";
+import { AddComboTab, Layout } from "../components";
 import {
   getCharacter,
   getCharacterRender,
@@ -305,7 +304,7 @@ export default function EditCharacterPage({ data }) {
             menuItem: "Add Combo",
             render: () => (
               <Tab.Pane>
-                <ComboCreator />
+                <AddComboTab />
               </Tab.Pane>
             )
           }

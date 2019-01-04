@@ -34,7 +34,8 @@ export default class ComboListEntry extends Component {
       demonstration,
       tags,
       notes,
-      total
+      total,
+      basic
     } = this.props;
     const { isVisible } = this.state;
 
@@ -48,19 +49,21 @@ export default class ComboListEntry extends Component {
           borderBottom: index === total ? "" : "1px solid #7289D8"
         }}
       >
-        <Button
-          icon
-          onClick={this.toggleVisibility}
-          style={{
-            position: "absolute",
-            top: "1rem",
-            right: "1rem",
-            zIndex: 2,
-            width: "8rem"
-          }}
-        >
-          {isVisible ? "Hide" : "Show"}
-        </Button>
+        {!basic && (
+          <Button
+            icon
+            onClick={this.toggleVisibility}
+            style={{
+              position: "absolute",
+              top: "1rem",
+              right: "1rem",
+              zIndex: 2,
+              width: "8rem"
+            }}
+          >
+            {isVisible ? "Hide" : "Show"}
+          </Button>
+        )}
         <Grid>
           <Grid.Column mobile={16} tablet={16} computer={3}>
             <Segment basic>
@@ -132,7 +135,7 @@ export default class ComboListEntry extends Component {
                 {demonstration ? (
                   <Embed url={demonstration} />
                 ) : (
-                  <PlaceholderPanel action="Upload demonstration">
+                  <PlaceholderPanel action="Upload demonstration" basic={basic}>
                     This combo does not have a demonstration.
                   </PlaceholderPanel>
                 )}

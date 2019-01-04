@@ -5,6 +5,7 @@ export default function PlaceholderPanel({
   icon = "warning",
   action,
   children,
+  basic,
   ...rest
 }) {
   return (
@@ -18,15 +19,17 @@ export default function PlaceholderPanel({
           }}
         />
         {children}
-        <Button
-          size="large"
-          primary
-          style={{
-            marginTop: "2rem"
-          }}
-        >
-          {action}
-        </Button>
+        {!basic && (
+          <Button
+            size="large"
+            primary
+            style={{
+              marginTop: "2rem"
+            }}
+          >
+            {action}
+          </Button>
+        )}
       </Header>
     </Segment>
   );
