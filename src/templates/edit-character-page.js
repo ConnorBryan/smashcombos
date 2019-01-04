@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Image from "gatsby-image";
 import { Formik, Field } from "formik";
 import {
   Form,
@@ -14,7 +13,7 @@ import {
   Tab
 } from "semantic-ui-react";
 
-import { AddComboTab, Layout } from "../components";
+import { AddComboTab, CharacterPortrait, Layout } from "../components";
 import {
   getCharacter,
   getCharacterRender,
@@ -44,10 +43,21 @@ export default function EditCharacterPage({ data }) {
 
   return (
     <Layout>
+      <CharacterPortrait
+        name={name}
+        image={image}
+        style={{
+          marginBottom: "2rem"
+        }}
+      />
       <Tab
         panes={[
           {
             menuItem: "Basic Information",
+            grid: {
+              paneWidth: 16,
+              tabWidth: 4
+            },
             render: () => (
               <Tab.Pane>
                 <Formik
@@ -81,13 +91,6 @@ export default function EditCharacterPage({ data }) {
                     values
                   }) => (
                     <React.Fragment>
-                      <Header as="h1" style={styles.fancyText}>
-                        Editing {name}
-                      </Header>
-                      <Image
-                        fluid={image.childImageSharp.fluid}
-                        style={{ width: "256px", marginBottom: "3rem" }}
-                      />
                       <Form onReset={handleReset} onSubmit={handleSubmit}>
                         {/* Description */}
                         <Form.Field style={{ marginBottom: "3rem" }}>
@@ -301,7 +304,15 @@ export default function EditCharacterPage({ data }) {
             )
           },
           {
-            menuItem: "Add Combo",
+            menuItem: {
+              key: "addCombo",
+              icon: "plus",
+              content: "Add Combo"
+            },
+            grid: {
+              paneWidth: 16,
+              tabWidth: 4
+            },
             render: () => (
               <Tab.Pane>
                 <AddComboTab />

@@ -231,6 +231,7 @@ export default class CharacterSelect extends Component {
               <Header
                 as="p"
                 textAlign="right"
+                className="desktop-only"
                 style={{
                   marginBottom: 0,
                   paddingBottom: "1rem",
@@ -282,29 +283,31 @@ export default class CharacterSelect extends Component {
           return (
             <Grid>
               <Grid.Column mobile={16} tablet={16} computer={6}>
-                <Menu
+                <div
                   style={{
-                    border: "none",
-                    boxShadow: "none"
+                    display: "flex",
+                    alignItems: "center"
                   }}
                 >
                   <Input
-                    style={{ width: "100%" }}
+                    style={{ flex: 3, width: "100%" }}
                     size="huge"
                     placeholder="Filter characters..."
                     icon="filter"
                     onChange={this.handleFilterChange}
                   />
-                  <Menu.Menu className="mobile-only" position="right">
-                    <Menu.Item>
-                      <Button
-                        primary
-                        icon="bars"
-                        onClick={this.toggleOptions}
-                      />
-                    </Menu.Item>
-                  </Menu.Menu>
-                </Menu>
+                  <div
+                    className="mobile-only"
+                    style={{ flex: 1, textAlign: "right" }}
+                  >
+                    <Button
+                      primary
+                      size="huge"
+                      icon="sort"
+                      onClick={this.toggleOptions}
+                    />
+                  </div>
+                </div>
                 <div className="desktop-only">{menu}</div>
               </Grid.Column>
               <Grid.Column mobile={16} tablet={16} computer={10}>

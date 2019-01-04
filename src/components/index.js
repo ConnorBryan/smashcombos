@@ -1,6 +1,7 @@
 export { default as AddComboTab } from "./add-combo-tab";
 export { default as AttributePanel } from "./attribute-panel";
 export { default as Profile } from "./profile";
+export { default as CharacterPortrait } from "./character-portrait";
 export { default as CharacterSelect } from "./character-select";
 export { default as CharacterSelectEntry } from "./character-select-entry";
 export { default as ComboList } from "./combo-list";

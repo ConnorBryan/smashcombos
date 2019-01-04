@@ -40,8 +40,8 @@ export default class AddComboTab extends Component {
     const { combo, confirming } = this.state;
 
     return confirming ? (
-      <Segment basic padded="very">
-        <Segment padded="very">
+      <Segment basic>
+        <Segment>
           <Header as="h2" style={styles.fancyText}>
             Verify combo
           </Header>
