@@ -54,7 +54,7 @@
 @resultTitleMargin: -@headerLineHeightOffset 0em 0em;
 @resultTitleFontWeight: @bold;
 @resultTitleFontSize: @relativeMedium;
-@resultTitleColor: @darkTextColor;
+@resultTitleColor: @textColor;
 
 /* Description */
 @resultDescriptionFontSize: @relativeSmall;
@@ -108,8 +108,8 @@
 @resultActiveBorderLeft: @internalBorderColor;
 @resultActiveBackground: @darkWhite;
 @resultActiveBoxShadow: none;
-@resultActiveTitleColor: @darkTextColor;
-@resultActiveDescriptionColor: @darkTextColor;
+@resultActiveTitleColor: @textColor;
+@resultActiveDescriptionColor: @textColor;
 @resultsZIndex: 998;
 
 

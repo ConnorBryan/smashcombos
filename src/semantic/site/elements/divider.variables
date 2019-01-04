@@ -17,7 +17,7 @@
 /* Text */
 @letterSpacing: 0.05em;
 @fontWeight: @bold;
-@color: @darkTextColor;
+@color: @textColor;
 @textTransform: uppercase;
 
 /*-------------------

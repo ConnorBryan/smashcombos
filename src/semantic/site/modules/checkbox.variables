@@ -49,7 +49,7 @@
 
 /* Focus */
 @checkboxFocusBackground: @almostBlack;
-@checkboxFocusBorderColor: @purple;
+@checkboxFocusBorderColor: #eee;
 @checkboxFocusCheckColor: @textColor;
 @labelFocusColor: @textColor;
 
@@ -62,7 +62,7 @@
 
 /* Active Focus */
 @checkboxActiveFocusBackground: @almostBlack;
-@checkboxActiveFocusBorderColor: @purple;
+@checkboxActiveFocusBorderColor: #eee;
 @checkboxActiveFocusCheckColor: @textColor;
 
 /* Indeterminate */

@@ -59,7 +59,7 @@
 @itemFontWeight: @normal;
 @itemLineHeight: 1em;
 @itemLineHeightOffset: (@itemLineHeight - 1em);
-@itemTextTransform: none;
+@itemTextTransform: uppercase;
 @itemBoxShadow: none;
 
 /* Sub Menu */
@@ -72,7 +72,7 @@
 @subMenuZIndex: 21;
 
 /* Menu Header */
-@menuHeaderColor: @darkTextColor;
+@menuHeaderColor: @textColor;
 @menuHeaderFontSize: @relative11px;
 @menuHeaderFontWeight: @bold;
 @menuHeaderTextTransform: uppercase;
@@ -279,7 +279,7 @@
 --------------------*/
 
 /* Hovered */
-@hoveredItemBackground: @darkerGrey;
+@hoveredItemBackground: @almostBlack;
 @hoveredItemColor: @selectedTextColor;
 @hoveredZIndex: @menuZIndex + 2;
 
@@ -298,8 +298,8 @@
 @activeItemColor: @selectedTextColor;
 
 /* Selected */
-@selectedBackground: @darkGrey;
-@selectedColor: @selectedTextColor;
+@selectedBackground: @almostBlack;
+@selectedColor: @textColor;
 
 /* Error */
 @errorLabelBackground: #EACBCB;

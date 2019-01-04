@@ -8,7 +8,7 @@
 
 @stepMargin: 1em 0em;
 @stepsBorderRadius: @defaultBorderRadius;
-@stepsBackground: '';
+@stepsBackground: @almostBlack;
 @stepsBoxShadow: none;
 @stepsBorder: 1px solid @borderColor;
 
@@ -32,8 +32,7 @@
 @lineHeight: @relativeLarge;
 @alignItems: center;
 @justifyContent: center;
-@backgroundColor: @white;
-@background: @backgroundColor;
+@backgroundColor: @almostBlack;
 @borderRadius: 0em;
 @borderWidth: 1px;
 @boxShadow: none;
@@ -49,7 +48,7 @@
 @titleFontFamily: @headerFont;
 @titleFontWeight: @bold;
 @titleFontSize: @relativeLarge;
-@titleColor: @darkTextColor;
+@titleColor: @textColor;
 
 /* Description */
 @descriptionDistance: 0.25em;
@@ -108,21 +107,21 @@
 @completedColor: @positiveColor;
 
 /* Hover */
-@hoverBackground: @offWhite;
-@hoverColor: @hoveredTextColor;
+@hoverBackground: @purple;
+@hoverColor: #eee;
 
 /* Down */
 @downBackground: @darkWhite;
-@downColor: @pressedTextColor;
+@downColor: @purple;
 
 /* Active */
-@activeBackground: @darkWhite;
-@activeColor: @linkColor;
+@activeBackground: @purple;
+@activeColor: #eee;
 @activeIconColor: @darkTextColor;
 
 /* Active + Hover */
-@activeHoverBackground: @lightGrey;
-@activeHoverColor: @textColor;
+@activeHoverBackground: @purple;
+@activeHoverColor: #eee;
 
 
 /* Disabled */

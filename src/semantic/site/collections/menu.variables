@@ -12,7 +12,7 @@
 @margin: @verticalMargin @horizontalMargin;
 @background: @almostBlack;
 @fontFamily: @pageFont;
-@itemBackground: none;
+@itemBackground: @darkerGrey;
 @fontWeight: @normal;
 @borderWidth: 1px;
 @border: @borderWidth solid @borderColor;
@@ -135,7 +135,7 @@
 @dropdownItemPadding: @relativeMini @relativeLarge;
 @dropdownItemBackground: transparent;
 @dropdownItemColor: @textColor;
-@dropdownItemTextTransform: none;
+@dropdownItemTextTransform: uppercase;
 @dropdownItemFontWeight: @normal;
 @dropdownItemBoxShadow: none;
 @dropdownItemTransition: none;
@@ -257,7 +257,7 @@
 @secondaryPointingActiveHoverBorderColor: @secondaryPointingActiveBorderColor;
 @secondaryPointingActiveHoverTextColor: @secondaryPointingActiveTextColor;
 
-@secondaryPointingHeaderColor: @darkTextColor;
+@secondaryPointingHeaderColor: @textColor;
 @secondaryVerticalPointingItemMargin: 0em -@secondaryPointingBorderWidth 0em 0em;
 
 
@@ -321,8 +321,8 @@
 @tabularFluidOffset: 1px;
 @tabularFluidWidth: calc(100% + (@tabularFluidOffset * 2));
 
-@tabularActiveBackground: none @white;
-@tabularActiveColor: @selectedTextColor;
+@tabularActiveBackground: @almostBlack;
+@tabularActiveColor: @purple;
 @tabularActiveBoxShadow: none;
 @tabularActiveWeight: @bold;
 
@@ -357,7 +357,7 @@
 @textMenuActiveItemColor: @selectedTextColor;
 
 @textMenuHeaderSize: @relativeSmall;
-@textMenuHeaderColor: @darkTextColor;
+@textMenuHeaderColor: @textColor;
 @textMenuHeaderFontWeight: @bold;
 @textMenuHeaderTextTransform: uppercase;
 
