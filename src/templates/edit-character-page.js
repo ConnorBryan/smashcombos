@@ -13,18 +13,22 @@ import {
 import { getCharacter, getCharacterRender } from "../helpers";
 
 export default class EditCharacterPage extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    activeIndex: 0
+  };
 
+  componentDidMount() {
     const {
       location: { search }
-    } = props;
+    } = this.props;
     const { tab } = queryString.parse(search);
     const tabOrder = ["editProfile", "editCombos", "addCombo"];
 
-    this.state = {
-      activeIndex: tab ? tabOrder.indexOf(tab) : 0
-    };
+    if (tab) {
+      this.setState({
+        activeIndex: tabOrder.indexOf(tab)
+      });
+    }
   }
 
   handleTabChange = (_, { activeIndex }) => this.setState({ activeIndex });
@@ -101,31 +105,33 @@ export default class EditCharacterPage extends Component {
             }}
           />
         </Link>
-        <Tab
-          className="mobile-only"
-          activeIndex={activeIndex}
-          onTabChange={this.handleTabChange}
-          menu={{
-            style: {
-              display: "flex",
-              flexDirection: "column"
-            }
-          }}
-          panes={panes}
-          style={{
-            marginBottom: "3rem",
-            border: "none"
-          }}
-        />
-        <Tab
-          className="desktop-only"
-          activeIndex={activeIndex}
-          onTabChange={this.handleTabChange}
-          panes={panes}
-          style={{
-            marginBottom: "3rem"
-          }}
-        />
+        <div className="mobile-only">
+          <Tab
+            activeIndex={activeIndex}
+            onTabChange={this.handleTabChange}
+            menu={{
+              style: {
+                display: "flex",
+                flexDirection: "column"
+              }
+            }}
+            panes={panes}
+            style={{
+              marginBottom: "3rem",
+              border: "none"
+            }}
+          />
+        </div>
+        <div className="desktop-only">
+          <Tab
+            activeIndex={activeIndex}
+            onTabChange={this.handleTabChange}
+            panes={panes}
+            style={{
+              marginBottom: "3rem"
+            }}
+          />
+        </div>
       </Layout>
     );
   }

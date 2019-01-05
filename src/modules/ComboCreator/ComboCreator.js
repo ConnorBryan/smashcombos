@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
+import * as styles from "../../styles";
 import { InputScreen } from "./components";
 import { comboTags, comboPercentages } from "./constants";
 
@@ -13,6 +14,10 @@ export default class ComboCreator extends Component {
     super(props);
 
     this.state = this.getInitialState();
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ foo: true }), 4000);
   }
 
   getInitialState = () => ({
@@ -165,6 +170,9 @@ export default class ComboCreator extends Component {
                 value={demonstration}
                 onChange={this.updateDemonstration}
                 tabIndex={1 + comboTags.length + comboPercentages.length + 2}
+                style={{
+                  maxWidth: "20rem"
+                }}
               />
               <Form.TextArea
                 label="Notes"
