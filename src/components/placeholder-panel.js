@@ -9,7 +9,12 @@ export default function PlaceholderPanel({
   ...rest
 }) {
   return (
-    <Segment placeholder style={{ width: "100%", height: "90%" }} {...rest}>
+    <Segment
+      placeholder
+      basic={basic}
+      {...rest}
+      style={{ width: "100%", height: "90%" }}
+    >
       <Header icon>
         <Icon
           name={icon}

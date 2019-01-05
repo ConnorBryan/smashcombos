@@ -31,7 +31,7 @@ export default function CharacterPage({ data }) {
       />
       <AttributePanel attributes={attributes} />
       <KillMovesPanel className="mobile-only" basic />
-      <ComboList combos={combos} />
+      <ComboList slug={slug} combos={combos} />
     </Layout>
   );
 }

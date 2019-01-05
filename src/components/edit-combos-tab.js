@@ -5,6 +5,7 @@ import { ComboCreator } from "../modules";
 import ComboListEntry from "./combo-list-entry";
 import ConfirmChanges from "./confirm-changes";
 import Input from "./input";
+import PlaceholderPanel from "./placeholder-panel";
 
 export default class EditCombosTab extends Component {
   state = {
@@ -55,12 +56,16 @@ export default class EditCombosTab extends Component {
               />
             )}
           </React.Fragment>
-        ) : (
+        ) : combos.length > 0 ? (
           combos.map(combo => (
             <Button key={combo.input} onClick={() => this.editCombo(combo)}>
               <Input input={combo.input} />
             </Button>
           ))
+        ) : (
+          <PlaceholderPanel icon="plus" basic>
+            This character doesn't have any listed combos.
+          </PlaceholderPanel>
         )}
       </Segment>
     );
