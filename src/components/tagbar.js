@@ -4,9 +4,9 @@ import { Label, List } from "semantic-ui-react";
 import { tagTypeToTag } from "../helpers";
 import * as styles from "../styles";
 
-export default function Tagbar({ tags }) {
+export default function Tagbar({ tags, ...rest }) {
   return (
-    <List horizontal>
+    <List horizontal {...rest}>
       <List.Item>
         <List.Header as="h3" style={styles.fancyText}>
           Tags

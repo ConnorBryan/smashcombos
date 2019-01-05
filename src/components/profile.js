@@ -17,16 +17,25 @@ export default function CharacterProfile({
   weightClass,
   tags
 }) {
-  const grid = (
-    <Grid stackable>
+  return (
+    <Grid
+      style={{
+        marginBottom: "2rem"
+      }}
+    >
       {!basic && (
         <Grid.Column width={16}>
-          <Button as={Link} to={`/${slug}/edit`} floated="right">
+          <Button
+            as={Link}
+            to={`/${slug}/edit`}
+            floated="right"
+            style={{ width: "8rem" }}
+          >
             Edit
           </Button>
         </Grid.Column>
       )}
-      <Grid.Column mobile={16} tablet={16} computer={6}>
+      <Grid.Column mobile={16} tablet={16} computer={6} verticalAlign="middle">
         <CharacterPortrait name={name} image={image} />
       </Grid.Column>
       <Grid.Column mobile={16} tablet={16} computer={10}>
@@ -49,28 +58,14 @@ export default function CharacterProfile({
               This character has no description.
             </PlaceholderPanel>
           )}
-        </Segment>
-        <Segment
-          basic
-          style={{
-            marginTop: "3rem"
-          }}
-        >
-          <Tagbar tags={[weightClassToTag[weightClass], ...tags]} />
+          <Tagbar
+            tags={[weightClassToTag[weightClass], ...tags]}
+            style={{
+              marginTop: "2rem"
+            }}
+          />
         </Segment>
       </Grid.Column>
     </Grid>
-  );
-  return (
-    <React.Fragment>
-      <div className="mobile-only">
-        <Segment basic>{grid}</Segment>
-      </div>
-      <div className="desktop-only">
-        <Segment attached={basic ? false : "top"} basic={basic}>
-          {grid}
-        </Segment>
-      </div>
-    </React.Fragment>
   );
 }
