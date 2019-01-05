@@ -49,96 +49,100 @@ export default class EditProfileTab extends Component {
       return prev;
     }, {});
 
-    return confirming ? (
+    return (
       <Segment basic>
-        <Header as="h2" style={styles.fancyText}>
-          Verify profile
-        </Header>
-        <p>
-          Does this look good? If so, press "Continue" below. If not, press
-          "Make changes" to update the profile.
-        </p>
-        <Button.Group>
-          <Button onClick={this.toggleConfirming}>Make changes</Button>
-          <Button onClick={this.continue} primary>
-            Continue
-          </Button>
-        </Button.Group>
-        <Profile
-          basic
-          slug={slug}
-          name={name}
-          image={image}
-          description={description}
-          tags={tags}
-          weightClass={weightClass}
-        />
-      </Segment>
-    ) : (
-      <Formik
-        initialValues={{
-          description,
-          tags: tagHash
-        }}
-        onSubmit={this.updateProfile}
-        render={({ handleReset, handleSubmit }) => (
-          <Form onReset={handleReset} onSubmit={handleSubmit}>
-            <Grid>
-              <Grid.Column mobile={16} tablet={8} computer={8}>
-                <Field
-                  name="description"
-                  render={({ field, form }) => (
-                    <Form.TextArea
-                      {...field}
-                      label="Description"
-                      spellCheck={false}
-                      style={{
-                        width: "100%",
-                        height: "15rem"
-                      }}
-                    />
-                  )}
-                />
-              </Grid.Column>
-              <Grid.Column
-                mobile={16}
-                tablet={8}
-                computer={8}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between"
-                }}
-              >
-                <Form.Group grouped>
-                  <label>Tags</label>
-                  {["fastFaller", "floatie", "bigBody"].map(tag => (
+        {confirming ? (
+          <React.Fragment>
+            <Header as="h2" style={styles.fancyText}>
+              Verify profile
+            </Header>
+            <p>
+              Does this look good? If so, press "Continue" below. If not, press
+              "Make changes" to update the profile.
+            </p>
+            <Button.Group>
+              <Button onClick={this.toggleConfirming}>Make changes</Button>
+              <Button onClick={this.continue} primary>
+                Continue
+              </Button>
+            </Button.Group>
+            <Profile
+              basic
+              slug={slug}
+              name={name}
+              image={image}
+              description={description}
+              tags={tags}
+              weightClass={weightClass}
+            />
+          </React.Fragment>
+        ) : (
+          <Formik
+            initialValues={{
+              description,
+              tags: tagHash
+            }}
+            onSubmit={this.updateProfile}
+            render={({ handleReset, handleSubmit }) => (
+              <Form onReset={handleReset} onSubmit={handleSubmit}>
+                <Grid>
+                  <Grid.Column mobile={16} tablet={8} computer={8}>
                     <Field
-                      key={tag}
-                      name={`tags.${tag}`}
+                      name="description"
                       render={({ field, form }) => (
-                        <Form.Checkbox
-                          checked={field.value}
-                          label={tagTypeToTag[tag]}
-                          onChange={(_, { checked }) =>
-                            form.setFieldValue(`tags.${tag}`, checked)
-                          }
+                        <Form.TextArea
+                          {...field}
+                          label="Description"
+                          spellCheck={false}
+                          style={{
+                            width: "100%",
+                            height: "15rem"
+                          }}
                         />
                       )}
                     />
-                  ))}
-                </Form.Group>
-                <Button.Group widths={2} fluid>
-                  <Button type="reset">Reset</Button>
-                  <Button type="submit" primary>
-                    Confirm
-                  </Button>
-                </Button.Group>
-              </Grid.Column>
-            </Grid>
-          </Form>
+                  </Grid.Column>
+                  <Grid.Column
+                    mobile={16}
+                    tablet={8}
+                    computer={8}
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between"
+                    }}
+                  >
+                    <Form.Group grouped>
+                      <label>Tags</label>
+                      {["fastFaller", "floatie", "bigBody"].map(tag => (
+                        <Field
+                          key={tag}
+                          name={`tags.${tag}`}
+                          render={({ field, form }) => (
+                            <Form.Checkbox
+                              checked={field.value}
+                              label={tagTypeToTag[tag]}
+                              onChange={(_, { checked }) =>
+                                form.setFieldValue(`tags.${tag}`, checked)
+                              }
+                            />
+                          )}
+                        />
+                      ))}
+                    </Form.Group>
+                    <Button.Group widths={2} fluid>
+                      <Button type="reset">Reset</Button>
+                      <Button type="submit" primary>
+                        Confirm
+                      </Button>
+                    </Button.Group>
+                  </Grid.Column>
+                </Grid>
+              </Form>
+            )}
+          />
         )}
-      />
+      </Segment>
     );
   }
 }
