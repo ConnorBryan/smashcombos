@@ -45,7 +45,7 @@ export default function CharacterProfile({
               {description}
             </div>
           ) : (
-            <PlaceholderPanel action="Add a description">
+            <PlaceholderPanel>
               This character has no description.
             </PlaceholderPanel>
           )}

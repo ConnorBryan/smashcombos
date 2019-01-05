@@ -18,7 +18,7 @@ export default class ComboCreator extends Component {
 
   getInitialState = () => ({
     input: this.props.input || "",
-    damage: this.props.damage || "",
+    damage: this.props.damage || "0",
     tags: comboTags.reduce((prev, { value }) => {
       prev[value] = (this.props.tags || []).includes(value);
       return prev;
@@ -26,7 +26,7 @@ export default class ComboCreator extends Component {
     percentages:
       this.props.percentages ||
       comboPercentages.reduce((prev, { value }) => {
-        prev[value] = "";
+        prev[value] = "0";
         return prev;
       }, {}),
     demonstration: this.props.demonstration || "",

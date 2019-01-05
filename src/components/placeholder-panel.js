@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "gatsby";
 import { Segment, Header, Icon, Button } from "semantic-ui-react";
+
+import * as styles from "../styles";
 
 export default function PlaceholderPanel({
   icon = "warning",
@@ -24,17 +27,6 @@ export default function PlaceholderPanel({
           }}
         />
         {children}
-        {!basic && (
-          <Button
-            size="large"
-            primary
-            style={{
-              marginTop: "2rem"
-            }}
-          >
-            {action}
-          </Button>
-        )}
       </Header>
     </Segment>
   );

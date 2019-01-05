@@ -59,7 +59,6 @@ export default class EditCharacterPage extends Component {
         <Tab
           activeIndex={activeIndex}
           onTabChange={this.handleTabChange}
-          renderActiveOnly
           panes={[
             {
               menuItem: {

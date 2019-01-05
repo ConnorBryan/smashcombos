@@ -12,7 +12,7 @@ export default function KillMovesPanel({ killMoves = [], ...rest }) {
       </Header>
       <Segment basic style={styles.noSidePadding}>
         {killMoves.length > 0 ? null : (
-          <PlaceholderPanel icon="lightning" action="Add a kill move">
+          <PlaceholderPanel icon="lightning">
             This character has no kill moves.
           </PlaceholderPanel>
         )}

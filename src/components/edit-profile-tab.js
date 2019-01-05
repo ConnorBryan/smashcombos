@@ -9,8 +9,8 @@ import Profile from "./profile";
 export default class EditProfileTab extends Component {
   state = {
     profile: {
-      description: this.props.description,
-      tags: this.props.tags
+      description: this.props.description || "",
+      tags: this.props.tags || []
     },
     confirming: false
   };

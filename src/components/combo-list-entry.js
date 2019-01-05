@@ -152,10 +152,7 @@ export default class ComboListEntry extends Component {
                   {demonstration ? (
                     <Embed url={demonstration} />
                   ) : (
-                    <PlaceholderPanel
-                      action="Upload demonstration"
-                      basic={basic}
-                    >
+                    <PlaceholderPanel basic={basic}>
                       This combo does not have a demonstration.
                     </PlaceholderPanel>
                   )}
