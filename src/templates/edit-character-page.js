@@ -44,6 +44,51 @@ export default class EditCharacterPage extends Component {
       tags,
       combos
     } = character;
+    const panes = [
+      {
+        menuItem: {
+          key: "editProfile",
+          icon: "user",
+          content: "Profile"
+        },
+        render: () => (
+          <Tab.Pane>
+            <EditProfileTab
+              slug={slug}
+              name={name}
+              image={image}
+              weightClass={weightClass}
+              description={description}
+              tags={tags}
+            />
+          </Tab.Pane>
+        )
+      },
+      {
+        menuItem: {
+          key: "editCombos",
+          icon: "pencil",
+          content: "Edit Combos"
+        },
+        render: () => (
+          <Tab.Pane>
+            <EditCombosTab combos={combos} />
+          </Tab.Pane>
+        )
+      },
+      {
+        menuItem: {
+          key: "addCombo",
+          icon: "plus",
+          content: "Add Combo"
+        },
+        render: () => (
+          <Tab.Pane>
+            <AddComboTab />
+          </Tab.Pane>
+        )
+      }
+    ];
 
     return (
       <Layout>
@@ -57,53 +102,26 @@ export default class EditCharacterPage extends Component {
           />
         </Link>
         <Tab
+          className="mobile-only"
           activeIndex={activeIndex}
           onTabChange={this.handleTabChange}
-          panes={[
-            {
-              menuItem: {
-                key: "editProfile",
-                icon: "user",
-                content: "Profile"
-              },
-              render: () => (
-                <Tab.Pane>
-                  <EditProfileTab
-                    slug={slug}
-                    name={name}
-                    image={image}
-                    weightClass={weightClass}
-                    description={description}
-                    tags={tags}
-                  />
-                </Tab.Pane>
-              )
-            },
-            {
-              menuItem: {
-                key: "editCombos",
-                icon: "pencil",
-                content: "Edit Combos"
-              },
-              render: () => (
-                <Tab.Pane>
-                  <EditCombosTab combos={combos} />
-                </Tab.Pane>
-              )
-            },
-            {
-              menuItem: {
-                key: "addCombo",
-                icon: "plus",
-                content: "Add Combo"
-              },
-              render: () => (
-                <Tab.Pane>
-                  <AddComboTab />
-                </Tab.Pane>
-              )
+          menu={{
+            style: {
+              display: "flex",
+              flexDirection: "column"
             }
-          ]}
+          }}
+          panes={panes}
+          style={{
+            marginBottom: "3rem",
+            border: "none"
+          }}
+        />
+        <Tab
+          className="desktop-only"
+          activeIndex={activeIndex}
+          onTabChange={this.handleTabChange}
+          panes={panes}
           style={{
             marginBottom: "3rem"
           }}

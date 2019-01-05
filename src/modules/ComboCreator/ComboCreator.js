@@ -113,10 +113,8 @@ export default class ComboCreator extends Component {
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={6}>
               <Form.Group grouped>
-                <label>Percentages</label>
                 <div
                   style={{
-                    ...styles.fancyPanel,
                     display: "flex",
                     marginTop: "0.5rem"
                   }}
