@@ -1,304 +1,56 @@
 import React from "react";
-import { graphql } from "gatsby";
-import { Formik, Field } from "formik";
+import { Link, graphql } from "gatsby";
+import { Tab } from "semantic-ui-react";
+
 import {
-  Form,
-  TextArea,
-  Header,
-  Button,
-  Checkbox,
-  Input,
-  Segment,
-  Icon,
-  Tab
-} from "semantic-ui-react";
-
-import { AddComboTab, CharacterPortrait, Layout } from "../components";
-import {
-  getCharacter,
-  getCharacterRender,
-  tagTypeToTag,
-  weightClassLabelsAndValues
-} from "../helpers";
-import * as styles from "../styles";
-
-const CharacterFieldHeader = ({ children }) => (
-  <Header as="h3" style={styles.fancyText}>
-    {children}
-  </Header>
-);
-
-const ComboFieldHeader = ({ children }) => (
-  <Header as="h4" style={styles.fancyText}>
-    {children}
-  </Header>
-);
+  AddComboTab,
+  CharacterPortrait,
+  EditProfileTab,
+  Layout
+} from "../components";
+import { getCharacter, getCharacterRender } from "../helpers";
 
 export default function EditCharacterPage({ data }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
-  const { name, description, tags, combos } = character;
-  const characterTagTypes = ["floatie", "fastFaller", "bigBody"];
-  const comboTagTypes = [...characterTagTypes, "diable", "killConfirm"];
+  const {
+    name,
+    slug,
+    attributes: {
+      weight: { class: weightClass }
+    },
+    description,
+    tags
+  } = character;
 
   return (
     <Layout>
-      <CharacterPortrait
-        name={name}
-        image={image}
-        style={{
-          marginBottom: "2rem"
-        }}
-      />
+      <Link to={slug}>
+        <CharacterPortrait
+          name={`Editing ${name}`}
+          image={image}
+          style={{
+            marginBottom: "2rem"
+          }}
+        />
+      </Link>
       <Tab
         panes={[
           {
-            menuItem: "Basic Information",
-            grid: {
-              paneWidth: 16,
-              tabWidth: 4
+            menuItem: {
+              key: "editProfile",
+              icon: "user",
+              content: "Profile"
             },
             render: () => (
               <Tab.Pane>
-                <Formik
-                  initialValues={{
-                    description,
-                    tags: {
-                      fastFaller: tags.includes("fastFaller"),
-                      floatie: tags.includes("floatie"),
-                      bigBody: tags.includes("bigBody")
-                    },
-                    combos: combos.map(combo => ({
-                      ...combo,
-                      damage: combo.damage || "0",
-                      tags: {
-                        killConfirm: (combo.tags || []).includes("killConfirm"),
-                        diable: (combo.tags || []).includes("diable"),
-                        fastFaller: (combo.tags || []).includes("fastFaller"),
-                        floatie: (combo.tags || []).includes("floatie"),
-                        bigBody: (combo.tags || []).includes("bigBody")
-                      },
-                      demonstration: combo.demonstration || "",
-                      notes: combo.notes || ""
-                    }))
-                  }}
-                  onSubmit={console.log}
-                  render={({
-                    handleSubmit,
-                    handleReset,
-                    handleChange,
-                    setFieldValue,
-                    values
-                  }) => (
-                    <React.Fragment>
-                      <Form onReset={handleReset} onSubmit={handleSubmit}>
-                        {/* Description */}
-                        <Form.Field style={{ marginBottom: "3rem" }}>
-                          <CharacterFieldHeader>
-                            Description
-                          </CharacterFieldHeader>
-                          <Field
-                            name="description"
-                            render={({ field }) => (
-                              <TextArea
-                                {...field}
-                                spellCheck={false}
-                                style={{
-                                  width: "50rem",
-                                  height: "15rem"
-                                }}
-                              />
-                            )}
-                          />
-                        </Form.Field>
-
-                        {/* Tags */}
-                        <Form.Field style={{ marginBottom: "3rem" }}>
-                          <CharacterFieldHeader>Tags</CharacterFieldHeader>
-                          {characterTagTypes.map(tag => (
-                            <Form.Field key={tag}>
-                              <Field
-                                name={`tags.${tag}`}
-                                render={({ field }) => (
-                                  <Checkbox
-                                    checked={field.value}
-                                    label={tagTypeToTag[tag]}
-                                    onChange={(_, { checked }) =>
-                                      setFieldValue(`tags.${tag}`, checked)
-                                    }
-                                  />
-                                )}
-                              />
-                            </Form.Field>
-                          ))}
-                        </Form.Field>
-
-                        {/* Combos */}
-                        <Form.Field style={{ marginBottom: "3rem" }}>
-                          <CharacterFieldHeader>Combos</CharacterFieldHeader>
-                          {values.combos.map((combo, index) => (
-                            <Form.Field key={index}>
-                              <Segment>
-                                <Field
-                                  name={`combos[${index}]`}
-                                  render={({
-                                    field: {
-                                      value: {
-                                        input,
-                                        damage,
-                                        tags,
-                                        percentages,
-                                        demonstration,
-                                        notes
-                                      }
-                                    }
-                                  }) => (
-                                    <React.Fragment>
-                                      {/* Combo Input */}
-                                      <Form.Field>
-                                        <ComboFieldHeader>
-                                          Input
-                                        </ComboFieldHeader>
-                                        <TextArea
-                                          value={input}
-                                          onChange={(_, { value: input }) =>
-                                            setFieldValue(
-                                              `combos[${index}].input`,
-                                              input
-                                            )
-                                          }
-                                        />
-                                      </Form.Field>
-
-                                      {/* Combo Damage */}
-                                      <Form.Field>
-                                        <ComboFieldHeader>
-                                          Damage Dealt
-                                        </ComboFieldHeader>
-                                        <Input
-                                          value={damage}
-                                          onChange={(_, { value }) =>
-                                            setFieldValue(
-                                              `combos[${index}].damage`,
-                                              value
-                                            )
-                                          }
-                                        />
-                                      </Form.Field>
-
-                                      {/* Combo Tags */}
-                                      <Form.Field>
-                                        <ComboFieldHeader>
-                                          Tags
-                                        </ComboFieldHeader>
-                                        {comboTagTypes.map(tag => (
-                                          <Form.Field key={tag}>
-                                            <Checkbox
-                                              checked={tags[tag]}
-                                              label={tagTypeToTag[tag]}
-                                              onChange={(_, { checked }) =>
-                                                setFieldValue(
-                                                  `combos[${index}].tags.${tag}`,
-                                                  checked
-                                                )
-                                              }
-                                            />
-                                          </Form.Field>
-                                        ))}
-                                      </Form.Field>
-
-                                      {/* Combo Percentages */}
-                                      <Form.Field>
-                                        <ComboFieldHeader>
-                                          Percentages
-                                        </ComboFieldHeader>
-                                        <Segment
-                                          basic
-                                          style={styles.fancyPanel}
-                                        >
-                                          {weightClassLabelsAndValues.map(
-                                            ({ label, value }) => (
-                                              <Form.Field key={value}>
-                                                <Header
-                                                  as="h5"
-                                                  style={styles.fancyText}
-                                                >
-                                                  {label}
-                                                </Header>
-                                                <Input
-                                                  value={percentages[value]}
-                                                  onChange={(
-                                                    _,
-                                                    { value: changedValue }
-                                                  ) =>
-                                                    setFieldValue(
-                                                      `combos[${index}].percentages.${value}`,
-                                                      changedValue
-                                                    )
-                                                  }
-                                                />
-                                              </Form.Field>
-                                            )
-                                          )}
-                                        </Segment>
-                                      </Form.Field>
-
-                                      {/* Combo Demonstration */}
-                                      <Form.Field>
-                                        <Header
-                                          as="h4"
-                                          style={styles.fancyText}
-                                        >
-                                          Demonstration
-                                        </Header>
-                                        <Input
-                                          value={demonstration}
-                                          onChange={(_, { value }) =>
-                                            setFieldValue(
-                                              `combos[${index}].demonstration`,
-                                              value
-                                            )
-                                          }
-                                        />
-                                      </Form.Field>
-
-                                      {/* Combo Notes */}
-                                      <Form.Field>
-                                        <Header
-                                          as="h4"
-                                          style={styles.fancyText}
-                                        >
-                                          Notes
-                                        </Header>
-                                        <TextArea
-                                          value={notes}
-                                          onChange={(_, { value }) =>
-                                            setFieldValue(
-                                              `combos[${index}].notes`,
-                                              value
-                                            )
-                                          }
-                                        />
-                                      </Form.Field>
-                                    </React.Fragment>
-                                  )}
-                                />
-                              </Segment>
-                            </Form.Field>
-                          ))}
-                          <Button primary icon type="button" size="huge">
-                            <Icon name="plus" /> Add a combo
-                          </Button>
-                        </Form.Field>
-
-                        {/* Controls */}
-                        <Button.Group>
-                          <Button type="reset">Reset</Button>
-                          <Button primary>Send</Button>
-                        </Button.Group>
-                      </Form>
-                    </React.Fragment>
-                  )}
+                <EditProfileTab
+                  slug={slug}
+                  name={name}
+                  image={image}
+                  weightClass={weightClass}
+                  description={description}
+                  tags={tags}
                 />
               </Tab.Pane>
             )
@@ -309,10 +61,6 @@ export default function EditCharacterPage({ data }) {
               icon: "plus",
               content: "Add Combo"
             },
-            grid: {
-              paneWidth: 16,
-              tabWidth: 4
-            },
             render: () => (
               <Tab.Pane>
                 <AddComboTab />
@@ -320,6 +68,9 @@ export default function EditCharacterPage({ data }) {
             )
           }
         ]}
+        style={{
+          marginBottom: "3rem"
+        }}
       />
     </Layout>
   );
@@ -329,6 +80,7 @@ export const editCharacterPageQuery = graphql`
   query EditCharacterPageQuery($id: String!) {
     charactersJson(id: { eq: $id }) {
       name
+      slug
       render {
         childImageSharp {
           fluid(maxWidth: 1075, quality: 72) {

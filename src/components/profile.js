@@ -9,6 +9,7 @@ import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
 
 export default function CharacterProfile({
+  basic,
   slug,
   image,
   name,
@@ -17,13 +18,15 @@ export default function CharacterProfile({
   tags
 }) {
   return (
-    <Segment attached="top">
+    <Segment attached={basic ? false : "top"} padded="very" basic={basic}>
       <Grid stackable>
-        <Grid.Column width={16} style={{ padding: 0 }}>
-          <Button as={Link} to={`/${slug}/edit`} floated="right">
-            Edit
-          </Button>
-        </Grid.Column>
+        {!basic && (
+          <Grid.Column width={16} style={{ padding: 0 }}>
+            <Button as={Link} to={`/${slug}/edit`} floated="right">
+              Edit
+            </Button>
+          </Grid.Column>
+        )}
         <Grid.Column
           mobile={16}
           tablet={16}
