@@ -84,7 +84,7 @@ export default class EditProfileTab extends Component {
         render={({ handleReset, handleSubmit }) => (
           <Form onReset={handleReset} onSubmit={handleSubmit}>
             <Grid>
-              <Grid.Column mobile={12} tablet={8} computer={8}>
+              <Grid.Column mobile={16} tablet={8} computer={8}>
                 <Field
                   name="description"
                   render={({ field, form }) => (
@@ -93,6 +93,7 @@ export default class EditProfileTab extends Component {
                       label="Description"
                       spellCheck={false}
                       style={{
+                        width: "100%",
                         height: "15rem"
                       }}
                     />
@@ -100,7 +101,7 @@ export default class EditProfileTab extends Component {
                 />
               </Grid.Column>
               <Grid.Column
-                mobile={12}
+                mobile={16}
                 tablet={8}
                 computer={8}
                 style={{
@@ -113,6 +114,7 @@ export default class EditProfileTab extends Component {
                   <label>Tags</label>
                   {["fastFaller", "floatie", "bigBody"].map(tag => (
                     <Field
+                      key={tag}
                       name={`tags.${tag}`}
                       render={({ field, form }) => (
                         <Form.Checkbox
@@ -126,7 +128,7 @@ export default class EditProfileTab extends Component {
                     />
                   ))}
                 </Form.Group>
-                <Button.Group widths={2}>
+                <Button.Group widths={2} fluid>
                   <Button type="reset">Reset</Button>
                   <Button type="submit" primary>
                     Confirm

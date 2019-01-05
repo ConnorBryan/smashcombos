@@ -18,21 +18,16 @@ export default function CharacterProfile({
   tags
 }) {
   return (
-    <Segment attached={basic ? false : "top"} padded="very" basic={basic}>
+    <Segment attached={basic ? false : "top"} basic={basic}>
       <Grid stackable>
         {!basic && (
-          <Grid.Column width={16} style={{ padding: 0 }}>
+          <Grid.Column width={16}>
             <Button as={Link} to={`/${slug}/edit`} floated="right">
               Edit
             </Button>
           </Grid.Column>
         )}
-        <Grid.Column
-          mobile={16}
-          tablet={16}
-          computer={6}
-          style={styles.noSidePadding}
-        >
+        <Grid.Column mobile={16} tablet={16} computer={6}>
           <CharacterPortrait name={name} image={image} />
         </Grid.Column>
         <Grid.Column mobile={16} tablet={16} computer={10}>
