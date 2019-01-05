@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
-import * as styles from "../../styles";
 import { InputScreen } from "./components";
 import { comboTags, comboPercentages } from "./constants";
 
@@ -112,55 +111,52 @@ export default class ComboCreator extends Component {
               </Form.Group>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={6}>
-              <Form.Group grouped>
-                <div
-                  style={{
-                    display: "flex",
-                    marginTop: "0.5rem"
-                  }}
-                >
-                  <div style={{ marginRight: "1rem" }}>
-                    {comboPercentages.map(
-                      ({ label, value }, index) =>
-                        index < 3 && (
-                          <Form.Input
-                            required
-                            key={label}
-                            label={label}
-                            icon="percent"
-                            value={percentages[value]}
-                            onChange={this.updatePercentages(value)}
-                            tabIndex={1 + comboTags.length + index + 1}
-                            style={{
-                              maxWidth: "10rem",
-                              marginBottom: index !== 2 ? "1rem" : 0
-                            }}
-                          />
-                        )
-                    )}
-                  </div>
-                  <div>
-                    {comboPercentages.map(
-                      ({ label, value }, index) =>
-                        index > 2 && (
-                          <Form.Input
-                            required
-                            key={label}
-                            label={label}
-                            icon="percent"
-                            value={percentages[value]}
-                            onChange={this.updatePercentages(value)}
-                            tabIndex={1 + comboTags.length + index + 3}
-                            style={{
-                              maxWidth: "10rem",
-                              marginBottom: index !== 5 ? "1rem" : 0
-                            }}
-                          />
-                        )
-                    )}
-                  </div>
+              <div
+                style={{
+                  display: "flex"
+                }}
+              >
+                <div style={{ marginRight: "1rem" }}>
+                  {comboPercentages.map(
+                    ({ label, value }, index) =>
+                      index < 3 && (
+                        <Form.Input
+                          required
+                          key={label}
+                          label={label}
+                          icon="percent"
+                          value={percentages[value]}
+                          onChange={this.updatePercentages(value)}
+                          tabIndex={1 + comboTags.length + index + 1}
+                          style={{
+                            maxWidth: "10rem",
+                            marginBottom: index !== 2 ? "1rem" : 0
+                          }}
+                        />
+                      )
+                  )}
                 </div>
-              </Form.Group>
+                <div>
+                  {comboPercentages.map(
+                    ({ label, value }, index) =>
+                      index > 2 && (
+                        <Form.Input
+                          required
+                          key={label}
+                          label={label}
+                          icon="percent"
+                          value={percentages[value]}
+                          onChange={this.updatePercentages(value)}
+                          tabIndex={1 + comboTags.length + index + 3}
+                          style={{
+                            maxWidth: "10rem",
+                            marginBottom: index !== 5 ? "1rem" : 0
+                          }}
+                        />
+                      )
+                  )}
+                </div>
+              </div>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={16} computer={6}>
               <Form.Input
@@ -169,9 +165,6 @@ export default class ComboCreator extends Component {
                 value={demonstration}
                 onChange={this.updateDemonstration}
                 tabIndex={1 + comboTags.length + comboPercentages.length + 2}
-                style={{
-                  maxWidth: "20rem"
-                }}
               />
               <Form.TextArea
                 label="Notes"

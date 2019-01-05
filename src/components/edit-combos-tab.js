@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Segment } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 
 import { ComboCreator } from "../modules";
 import ComboListEntry from "./combo-list-entry";

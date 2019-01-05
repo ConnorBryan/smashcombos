@@ -1,8 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Segment, Header, Icon, Button } from "semantic-ui-react";
-
-import * as styles from "../styles";
+import { Segment, Header, Icon } from "semantic-ui-react";
 
 export default function PlaceholderPanel({
   icon = "warning",
