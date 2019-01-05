@@ -34,7 +34,7 @@ export default class EditCombosTab extends Component {
     const { confirming, editing } = this.state;
 
     return (
-      <Segment basic>
+      <React.Fragment>
         {editing ? (
           <React.Fragment>
             <Button onClick={this.stopEditingCombo}>Cancel</Button>
@@ -67,7 +67,7 @@ export default class EditCombosTab extends Component {
             This character doesn't have any listed combos.
           </PlaceholderPanel>
         )}
-      </Segment>
+      </React.Fragment>
     );
   }
 }
