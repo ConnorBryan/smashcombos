@@ -6,8 +6,8 @@ import PlaceholderPanel from "./placeholder-panel";
 import ComboListEntry from "./combo-list-entry";
 
 export default function ComboList({ combos }) {
-  return (
-    <Segment attached basic padded="very">
+  const content = (
+    <React.Fragment>
       <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
         Combos
       </Header>
@@ -25,6 +25,16 @@ export default function ComboList({ combos }) {
           This character doesn't have any listed combos.
         </PlaceholderPanel>
       )}
-    </Segment>
+    </React.Fragment>
+  );
+  return (
+    <React.Fragment>
+      <div className="mobile-only">
+        <Segment basic>{content}</Segment>
+      </div>
+      <div className="desktop-only">
+        <Segment attached>{content}</Segment>
+      </div>
+    </React.Fragment>
   );
 }

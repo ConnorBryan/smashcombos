@@ -7,15 +7,6 @@ import { comboTags, comboPercentages } from "./constants";
 
 export default class ComboCreator extends Component {
   static defaultProps = {
-    input: "",
-    damage: "",
-    tags: [],
-    percentages: comboPercentages.reduce((prev, { value }) => {
-      prev[value] = "";
-      return prev;
-    }, {}),
-    demonstration: "",
-    notes: "",
     onSubmit: values => console.log(values)
   };
 
@@ -26,15 +17,20 @@ export default class ComboCreator extends Component {
   }
 
   getInitialState = () => ({
-    input: this.props.input,
-    damage: this.props.damage,
+    input: this.props.input || "",
+    damage: this.props.damage || "",
     tags: comboTags.reduce((prev, { value }) => {
-      prev[value] = this.props.tags.includes(value);
+      prev[value] = (this.props.tags || []).includes(value);
       return prev;
     }, {}),
-    percentages: this.props.percentages,
-    demonstration: this.props.demonstration,
-    notes: this.props.notes
+    percentages:
+      this.props.percentages ||
+      comboPercentages.reduce((prev, { value }) => {
+        prev[value] = "";
+        return prev;
+      }, {}),
+    demonstration: this.props.demonstration || "",
+    notes: this.props.notes || ""
   });
 
   updateInput = input => this.setState({ input });

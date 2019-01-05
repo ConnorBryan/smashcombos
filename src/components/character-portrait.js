@@ -5,22 +5,31 @@ import { Label, Segment } from "semantic-ui-react";
 import * as styles from "../styles";
 
 export default function CharacterPortrait({ image, name, ...rest }) {
+  const styling = {
+    ...styles.noSidePadding,
+    ...styles.perfectlyCentered
+  };
+  const imageNode = (
+    <Image
+      fluid={image.childImageSharp.fluid}
+      style={{
+        width: "20rem"
+      }}
+    />
+  );
+
   return (
     <div {...rest}>
-      <Segment
-        attached="top"
-        style={{
-          ...styles.noSidePadding,
-          ...styles.perfectlyCentered
-        }}
-      >
-        <Image
-          fluid={image.childImageSharp.fluid}
-          style={{
-            width: "20rem"
-          }}
-        />
-      </Segment>
+      <div className="mobile-only">
+        <Segment basic style={styling}>
+          {imageNode}
+        </Segment>
+      </div>
+      <div className="desktop-only">
+        <Segment attached="top" style={styling}>
+          {imageNode}
+        </Segment>
+      </div>
       <Label
         style={{
           ...styles.fancyText,

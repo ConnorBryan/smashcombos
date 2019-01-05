@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Button, Header, Segment } from "semantic-ui-react";
 
-import * as styles from "../styles";
 import { ComboCreator } from "../modules";
 import ComboListEntry from "./combo-list-entry";
+import ConfirmChanges from "./confirm-changes";
 
 export default class AddComboTab extends Component {
   state = {
@@ -40,24 +39,13 @@ export default class AddComboTab extends Component {
     const { combo, confirming } = this.state;
 
     return confirming ? (
-      <Segment basic>
-        <Segment>
-          <Header as="h2" style={styles.fancyText}>
-            Verify combo
-          </Header>
-          <p>
-            Does this look good? If so, press "Continue" below. If not, press
-            "Make changes" to update the combo.
-          </p>
-          <Button.Group>
-            <Button onClick={this.toggleConfirming}>Make changes</Button>
-            <Button onClick={this.continue} primary>
-              Continue
-            </Button>
-          </Button.Group>
-        </Segment>
+      <ConfirmChanges
+        title="combo"
+        onMakeChanges={this.toggleConfirming}
+        onContinue={this.continue}
+      >
         <ComboListEntry basic {...combo} />
-      </Segment>
+      </ConfirmChanges>
     ) : (
       <ComboCreator
         {...combo}

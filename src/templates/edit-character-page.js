@@ -5,6 +5,7 @@ import { Tab } from "semantic-ui-react";
 import {
   AddComboTab,
   CharacterPortrait,
+  EditCombosTab,
   EditProfileTab,
   Layout
 } from "../components";
@@ -20,7 +21,8 @@ export default function EditCharacterPage({ data }) {
       weight: { class: weightClass }
     },
     description,
-    tags
+    tags,
+    combos
   } = character;
 
   return (
@@ -52,6 +54,18 @@ export default function EditCharacterPage({ data }) {
                   description={description}
                   tags={tags}
                 />
+              </Tab.Pane>
+            )
+          },
+          {
+            menuItem: {
+              key: "editCombos",
+              icon: "pencil",
+              content: "Edit Combos"
+            },
+            render: () => (
+              <Tab.Pane>
+                <EditCombosTab combos={combos} />
               </Tab.Pane>
             )
           },

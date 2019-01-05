@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Formik, Field } from "formik";
-import { Button, Form, Grid, Header, Segment } from "semantic-ui-react";
+import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
-import * as styles from "../styles";
 import { tagTypeToTag } from "../helpers";
+import ConfirmChanges from "./confirm-changes";
 import Profile from "./profile";
 
 export default class EditProfileTab extends Component {
@@ -50,22 +50,13 @@ export default class EditProfileTab extends Component {
     }, {});
 
     return (
-      <Segment basic>
+      <React.Fragment>
         {confirming ? (
-          <React.Fragment>
-            <Header as="h2" style={styles.fancyText}>
-              Verify profile
-            </Header>
-            <p>
-              Does this look good? If so, press "Continue" below. If not, press
-              "Make changes" to update the profile.
-            </p>
-            <Button.Group>
-              <Button onClick={this.toggleConfirming}>Make changes</Button>
-              <Button onClick={this.continue} primary>
-                Continue
-              </Button>
-            </Button.Group>
+          <ConfirmChanges
+            title="profile"
+            onMakeChanges={this.toggleConfirming}
+            onContinue={this.continue}
+          >
             <Profile
               basic
               slug={slug}
@@ -75,7 +66,7 @@ export default class EditProfileTab extends Component {
               tags={tags}
               weightClass={weightClass}
             />
-          </React.Fragment>
+          </ConfirmChanges>
         ) : (
           <Formik
             initialValues={{
@@ -84,65 +75,67 @@ export default class EditProfileTab extends Component {
             }}
             onSubmit={this.updateProfile}
             render={({ handleReset, handleSubmit }) => (
-              <Form onReset={handleReset} onSubmit={handleSubmit}>
-                <Grid>
-                  <Grid.Column mobile={16} tablet={8} computer={8}>
-                    <Field
-                      name="description"
-                      render={({ field, form }) => (
-                        <Form.TextArea
-                          {...field}
-                          label="Description"
-                          spellCheck={false}
-                          style={{
-                            width: "100%",
-                            height: "15rem"
-                          }}
-                        />
-                      )}
-                    />
-                  </Grid.Column>
-                  <Grid.Column
-                    mobile={16}
-                    tablet={8}
-                    computer={8}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between"
-                    }}
-                  >
-                    <Form.Group grouped>
-                      <label>Tags</label>
-                      {["fastFaller", "floatie", "bigBody"].map(tag => (
-                        <Field
-                          key={tag}
-                          name={`tags.${tag}`}
-                          render={({ field, form }) => (
-                            <Form.Checkbox
-                              checked={field.value}
-                              label={tagTypeToTag[tag]}
-                              onChange={(_, { checked }) =>
-                                form.setFieldValue(`tags.${tag}`, checked)
-                              }
-                            />
-                          )}
-                        />
-                      ))}
-                    </Form.Group>
-                    <Button.Group widths={2} fluid>
-                      <Button type="reset">Reset</Button>
-                      <Button type="submit" primary>
-                        Confirm
-                      </Button>
-                    </Button.Group>
-                  </Grid.Column>
-                </Grid>
-              </Form>
+              <Segment basic>
+                <Form onReset={handleReset} onSubmit={handleSubmit}>
+                  <Grid>
+                    <Grid.Column mobile={16} tablet={8} computer={8}>
+                      <Field
+                        name="description"
+                        render={({ field, form }) => (
+                          <Form.TextArea
+                            {...field}
+                            label="Description"
+                            spellCheck={false}
+                            style={{
+                              width: "100%",
+                              height: "15rem"
+                            }}
+                          />
+                        )}
+                      />
+                    </Grid.Column>
+                    <Grid.Column
+                      mobile={16}
+                      tablet={8}
+                      computer={8}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between"
+                      }}
+                    >
+                      <Form.Group grouped>
+                        <label>Tags</label>
+                        {["fastFaller", "floatie", "bigBody"].map(tag => (
+                          <Field
+                            key={tag}
+                            name={`tags.${tag}`}
+                            render={({ field, form }) => (
+                              <Form.Checkbox
+                                checked={field.value}
+                                label={tagTypeToTag[tag]}
+                                onChange={(_, { checked }) =>
+                                  form.setFieldValue(`tags.${tag}`, checked)
+                                }
+                              />
+                            )}
+                          />
+                        ))}
+                      </Form.Group>
+                      <Button.Group widths={2} fluid>
+                        <Button type="reset">Reset</Button>
+                        <Button type="submit" primary>
+                          Confirm
+                        </Button>
+                      </Button.Group>
+                    </Grid.Column>
+                  </Grid>
+                </Form>
+              </Segment>
             )}
           />
         )}
-      </Segment>
+      </React.Fragment>
     );
   }
 }

@@ -6,7 +6,7 @@ import PlaceholderPanel from "./placeholder-panel";
 
 export default function KillMovesPanel({ killMoves = [], ...rest }) {
   return (
-    <Segment {...rest}>
+    <Segment basic {...rest}>
       <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
         Kill Moves
       </Header>
