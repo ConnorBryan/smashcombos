@@ -135,7 +135,7 @@
 @dropdownItemPadding: @relativeMini @relativeLarge;
 @dropdownItemBackground: transparent;
 @dropdownItemColor: @textColor;
-@dropdownItemTextTransform: uppercase;
+@dropdownItemTextTransform: none;
 @dropdownItemFontWeight: @normal;
 @dropdownItemBoxShadow: none;
 @dropdownItemTransition: none;

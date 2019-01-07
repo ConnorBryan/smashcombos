@@ -7,7 +7,6 @@ export { default as CharacterSelectEntry } from "./character-select-entry";
 export { default as ComboList } from "./combo-list";
 export { default as ComboListEntry } from "./combo-list-entry";
 export { default as ConfirmChanges } from "./confirm-changes";
-export { default as EditCombosTab } from "./edit-combos-tab";
 export { default as EditProfileTab } from "./edit-profile-tab";
 export { default as Input } from "./input";
 export { default as Layout } from "./layout";

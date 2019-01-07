@@ -6,7 +6,6 @@ import queryString from "query-string";
 import {
   AddComboTab,
   CharacterPortrait,
-  EditCombosTab,
   EditProfileTab,
   Layout
 } from "../components";
@@ -22,7 +21,7 @@ export default class EditCharacterPage extends Component {
       location: { search }
     } = this.props;
     const { tab } = queryString.parse(search);
-    const tabOrder = ["editProfile", "editCombos", "addCombo"];
+    const tabOrder = ["editProfile", "addCombo"];
 
     if (tab) {
       this.setState({
@@ -45,15 +44,14 @@ export default class EditCharacterPage extends Component {
         weight: { class: weightClass }
       },
       description,
-      tags,
-      combos
+      tags
     } = character;
     const panes = [
       {
         menuItem: {
           key: "editProfile",
           icon: "user",
-          content: "Profile"
+          content: "Edit Profile"
         },
         render: () => (
           <Tab.Pane>
@@ -65,18 +63,6 @@ export default class EditCharacterPage extends Component {
               description={description}
               tags={tags}
             />
-          </Tab.Pane>
-        )
-      },
-      {
-        menuItem: {
-          key: "editCombos",
-          icon: "pencil",
-          content: "Edit Combos"
-        },
-        render: () => (
-          <Tab.Pane>
-            <EditCombosTab combos={combos} />
           </Tab.Pane>
         )
       },

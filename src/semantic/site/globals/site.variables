@@ -45,7 +45,7 @@
 @relativeBorderRadius: @relative4px;
 @absoluteBorderRadius: @4px;
 
-@defaultBorderRadius: @absoluteBorderRadius;
+@defaultBorderRadius: 0;
 
 /*-------------------
     Brand Colors

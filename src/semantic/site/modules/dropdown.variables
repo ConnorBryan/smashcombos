@@ -59,7 +59,7 @@
 @itemFontWeight: @normal;
 @itemLineHeight: 1em;
 @itemLineHeightOffset: (@itemLineHeight - 1em);
-@itemTextTransform: uppercase;
+@itemTextTransform: none;
 @itemBoxShadow: none;
 
 /* Sub Menu */
@@ -298,8 +298,8 @@
 @activeItemColor: @selectedTextColor;
 
 /* Selected */
-@selectedBackground: @almostBlack;
-@selectedColor: @textColor;
+@selectedBackground: @purple;
+@selectedColor: #eee;
 
 /* Error */
 @errorLabelBackground: #EACBCB;

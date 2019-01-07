@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
-import * as styles from "../../styles";
 import { InputScreen } from "./components";
 import { comboTags, comboPercentages } from "./constants";
 
@@ -14,10 +13,6 @@ export default class ComboCreator extends Component {
     super(props);
 
     this.state = this.getInitialState();
-  }
-
-  componentDidMount() {
-    setTimeout(() => this.setState({ foo: true }), 4000);
   }
 
   getInitialState = () => ({
@@ -163,27 +158,41 @@ export default class ComboCreator extends Component {
                 </div>
               </div>
             </Grid.Column>
-            <Grid.Column mobile={16} tablet={16} computer={6}>
-              <Form.Input
-                label="Demonstration"
-                icon="video"
-                value={demonstration}
-                onChange={this.updateDemonstration}
-                tabIndex={1 + comboTags.length + comboPercentages.length + 2}
-                style={{
-                  maxWidth: "20rem"
-                }}
-              />
-              <Form.TextArea
-                label="Notes"
-                value={notes}
-                onChange={this.updateNotes}
-                tabIndex={1 + comboTags.length + comboPercentages.length + 3}
+            <Grid.Column
+              mobile={16}
+              tablet={16}
+              computer={6}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between"
+              }}
+            >
+              <Form.Group
+                grouped
                 style={{
                   maxWidth: "450px"
                 }}
-              />
-              <Form.Field>
+              >
+                <Form.Input
+                  label="Demonstration"
+                  icon="video"
+                  value={demonstration}
+                  onChange={this.updateDemonstration}
+                  tabIndex={1 + comboTags.length + comboPercentages.length + 2}
+                />
+                <Form.TextArea
+                  label="Notes"
+                  value={notes}
+                  onChange={this.updateNotes}
+                  tabIndex={1 + comboTags.length + comboPercentages.length + 3}
+                />
+              </Form.Group>
+              <Form.Field
+                style={{
+                  maxWidth: "450px"
+                }}
+              >
                 <Button.Group
                   widths={2}
                   style={{

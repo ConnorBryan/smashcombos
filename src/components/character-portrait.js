@@ -7,7 +7,8 @@ import * as styles from "../styles";
 export default function CharacterPortrait({ image, name, ...rest }) {
   const styling = {
     ...styles.noSidePadding,
-    ...styles.perfectlyCentered
+    ...styles.perfectlyCentered,
+    borderBottom: "none"
   };
   const imageNode = (
     <Image
