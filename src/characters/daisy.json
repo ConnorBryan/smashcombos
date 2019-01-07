@@ -1,1 +1,50 @@
-{"name":"Daisy","render":"../../static/img/daisy.png","description":"As with certain other Echo Fighters, Daisy is functionally nearly identical to Peach, with her main differences, aside from different visual effects such as flowers instead of hearts, being slightly different animations that affect her size of her hurtbox. As a result, she is essentially a cosmetic choice for players who prefer either character.","attributes":{"airAcceleration":{"baseValue":"0.04","maxAdditional":"0.08","rank":"2","total":"0.12"},"airSpeed":{"maxAirSpeed":"1.029","rank":"45"},"fallSpeed":{"fastFallSpeed":"1.904","maxFallSpeed":"1.19","rank":"75","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.595","rank":"54"},"walkSpeed":{"maxWalkSpeed":"0.924","rank":"59"},"weight":{"class":"lightweight","rank":"54","value":"89"}},"tags":["floatie"],"combos":[{"percentages":{},"uuid":"9b9c37fb-15c3-4a21-bf4d-31cd8b174117"}],"preview":"","content":"\n\n","basename":"daisy","id":"197a117c-d9f7-453d-b395-a295cbfeed1a","slug":"daisy"}
+{
+  "name": "Daisy",
+  "render": "../../static/img/daisy.png",
+  "description": "As with certain other Echo Fighters, Daisy is functionally nearly identical to Peach, with her main differences, aside from different visual effects such as flowers instead of hearts, being slightly different animations that affect her size of her hurtbox. As a result, she is essentially a cosmetic choice for players who prefer either character.",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.04",
+      "maxAdditional": "0.08",
+      "rank": "2",
+      "total": "0.12"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.029",
+      "rank": "45"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "1.904",
+      "maxFallSpeed": "1.19",
+      "rank": "75",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.595",
+      "rank": "54"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "0.924",
+      "rank": "59"
+    },
+    "weight": {
+      "class": "lightweight",
+      "rank": "54",
+      "value": "89"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [
+    {
+      "percentages": {},
+      "uuid": "9b9c37fb-15c3-4a21-bf4d-31cd8b174117"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "daisy",
+  "id": "197a117c-d9f7-453d-b395-a295cbfeed1a",
+  "slug": "daisy"
+}

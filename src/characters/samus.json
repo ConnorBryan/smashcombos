@@ -1,1 +1,50 @@
-{"name":"Samus","render":"../../static/img/samus.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.04","maxAdditional":"0.05","rank":"21","total":"0.09"},"airSpeed":{"maxAirSpeed":"1.103","rank":"33"},"fallSpeed":{"fastFallSpeed":"2.168","maxFallSpeed":"1.33","rank":"63","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.654","rank":"44"},"walkSpeed":{"maxWalkSpeed":"1.115","rank":"42"},"weight":{"class":"heavyweight","rank":"8","value":"108"}},"tags":["floatie"],"combos":[{"percentages":{},"uuid":"7caba5c4-4fc8-45ea-a6df-d9f999e6df4c"}],"preview":"","content":"\n\n","basename":"samus","id":"d45f4301-2535-4c9e-9608-327e672159d7","slug":"samus"}
+{
+  "name": "Samus",
+  "render": "../../static/img/samus.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.04",
+      "maxAdditional": "0.05",
+      "rank": "21",
+      "total": "0.09"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.103",
+      "rank": "33"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.168",
+      "maxFallSpeed": "1.33",
+      "rank": "63",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.654",
+      "rank": "44"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.115",
+      "rank": "42"
+    },
+    "weight": {
+      "class": "heavyweight",
+      "rank": "8",
+      "value": "108"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [
+    {
+      "percentages": {},
+      "uuid": "7caba5c4-4fc8-45ea-a6df-d9f999e6df4c"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "samus",
+  "id": "d45f4301-2535-4c9e-9608-327e672159d7",
+  "slug": "samus"
+}

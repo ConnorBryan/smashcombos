@@ -1,1 +1,50 @@
-{"name":"Jigglypuff","render":"../../static/img/jigglypuff.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.05","maxAdditional":"0.08","rank":"1","total":"0.13"},"airSpeed":{"maxAirSpeed":"1.332","rank":"2"},"fallSpeed":{"fastFallSpeed":"1.568","maxFallSpeed":"0.98","rank":"77","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.271","rank":"75"},"walkSpeed":{"maxWalkSpeed":"0.735","rank":"76"},"weight":{"class":"balloonweight","rank":"76","value":"68"}},"tags":["floatie"],"combos":[{"percentages":{},"uuid":"56a055d0-78e5-4e6e-8b9a-12ffbabd2bbc"}],"preview":"","content":"\n\n","basename":"jigglypuff","id":"db1b7911-07ae-4318-902e-b1f8aab78cf0","slug":"jigglypuff"}
+{
+  "name": "Jigglypuff",
+  "render": "../../static/img/jigglypuff.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.05",
+      "maxAdditional": "0.08",
+      "rank": "1",
+      "total": "0.13"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.332",
+      "rank": "2"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "1.568",
+      "maxFallSpeed": "0.98",
+      "rank": "77",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.271",
+      "rank": "75"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "0.735",
+      "rank": "76"
+    },
+    "weight": {
+      "class": "balloonweight",
+      "rank": "76",
+      "value": "68"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [
+    {
+      "percentages": {},
+      "uuid": "56a055d0-78e5-4e6e-8b9a-12ffbabd2bbc"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "jigglypuff",
+  "id": "db1b7911-07ae-4318-902e-b1f8aab78cf0",
+  "slug": "jigglypuff"
+}

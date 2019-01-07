@@ -9,18 +9,33 @@
       "rank": "9",
       "total": "0.1"
     },
-    "airSpeed": { "maxAirSpeed": "1.007", "rank": "53" },
+    "airSpeed": {
+      "maxAirSpeed": "1.007",
+      "rank": "53"
+    },
     "fallSpeed": {
       "fastFallSpeed": "2.096",
       "maxFallSpeed": "1.31",
       "rank": "67",
       "speedIncrease": "60%"
     },
-    "runSpeed": { "maxRunSpeed": "1.609", "rank": "51" },
-    "walkSpeed": { "maxWalkSpeed": "0.907", "rank": "65" },
-    "weight": { "class": "middleweight", "rank": "40", "value": "94" }
+    "runSpeed": {
+      "maxRunSpeed": "1.609",
+      "rank": "51"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "0.907",
+      "rank": "65"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "40",
+      "value": "94"
+    }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "input": "dthrow sh+fair dj+fair",

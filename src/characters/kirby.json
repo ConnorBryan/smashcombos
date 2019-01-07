@@ -1,1 +1,50 @@
-{"name":"Kirby","render":"../../static/img/kirby.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.03","maxAdditional":"0.065","rank":"15","total":"0.095"},"airSpeed":{"maxAirSpeed":"0.84","rank":"74"},"fallSpeed":{"fastFallSpeed":"1.968","maxFallSpeed":"1.23","rank":"73","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.727","rank":"37"},"walkSpeed":{"maxWalkSpeed":"0.977","rank":"55"},"weight":{"class":"featherweight","rank":"68","value":"79"}},"tags":["floatie"],"combos":[{"percentages":{},"uuid":"72c3fc31-7656-4922-ad81-ed9a3819412b"}],"preview":"","content":"\n\n","basename":"kirby","id":"b473710f-637d-4006-a761-839ef67b8cde","slug":"kirby"}
+{
+  "name": "Kirby",
+  "render": "../../static/img/kirby.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.03",
+      "maxAdditional": "0.065",
+      "rank": "15",
+      "total": "0.095"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "0.84",
+      "rank": "74"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "1.968",
+      "maxFallSpeed": "1.23",
+      "rank": "73",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.727",
+      "rank": "37"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "0.977",
+      "rank": "55"
+    },
+    "weight": {
+      "class": "featherweight",
+      "rank": "68",
+      "value": "79"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [
+    {
+      "percentages": {},
+      "uuid": "72c3fc31-7656-4922-ad81-ed9a3819412b"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "kirby",
+  "id": "b473710f-637d-4006-a761-839ef67b8cde",
+  "slug": "kirby"
+}
