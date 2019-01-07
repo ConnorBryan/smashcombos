@@ -240,6 +240,12 @@ collections:
           fields:
             [
               {
+                label: UUID,
+                name: uuid,
+                widget: string,
+                description: A unique identifier for the combo.,
+              },
+              {
                 label: Input,
                 name: input,
                 widget: string,
