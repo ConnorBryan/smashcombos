@@ -74,7 +74,7 @@ export default class EditCharacterPage extends Component {
         },
         render: () => (
           <Tab.Pane>
-            <AddComboTab />
+            <AddComboTab character={character} />
           </Tab.Pane>
         )
       }

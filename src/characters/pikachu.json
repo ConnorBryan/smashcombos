@@ -58,24 +58,7 @@
         "middleweight": "75",
         "superheavyweight": "75"
       },
-      "tags": [
-        "fastFaller"
-      ]
-    },
-    {
-      "input": "sspecial",
-      "damage": "10",
-      "tags": [],
-      "percentages": {
-        "balloonweight": "2",
-        "featherweight": "22",
-        "lightweight": "2",
-        "middleweight": "2",
-        "heavyweight": "2",
-        "superheavyweight": "2"
-      },
-      "demonstration": "",
-      "notes": ""
+      "tags": ["fastFaller"]
     }
   ],
   "preview": "",
