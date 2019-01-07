@@ -63,6 +63,21 @@
         "fastFaller"
       ],
       "uuid": "3b234ef3-f800-4830-b6f6-1a3b0b5d3377"
+    },
+    {
+      "input": "uthrow usmash",
+      "damage": "20",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "2",
+        "featherweight": "2",
+        "lightweight": "2",
+        "middleweight": "2",
+        "heavyweight": "2",
+        "superheavyweight": "2"
+      },
+      "demonstration": "",
+      "notes": ""
     }
   ],
   "preview": "",
