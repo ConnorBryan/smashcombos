@@ -55,6 +55,23 @@
       },
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=52",
       "notes": "Credit to Beefy Smash Doods. Works from 0-10% on Heavyweight and Super Heavyweights if you perform another sh+dair into ff+nair before continuing. Adding/removing pummeling can enable this combo when it otherwise wouldn't work."
+    },
+    {
+      "input": "dthrow sh+rising+dair ff+dair uspecial",
+      "damage": "59",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "15-30",
+        "featherweight": "15-30",
+        "lightweight": "15-30",
+        "middleweight": "15-45%",
+        "heavyweight": "15-45%",
+        "superheavyweight": "Med"
+      },
+      "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=158",
+      "notes": "Credit to Beefy Smash Doods. Adding/removing pummeling can enable this combo when it otherwise wouldn't work."
     }
   ],
   "preview": "",
