@@ -51,18 +51,20 @@
     },
     {
       "input": "uthrow dspecial",
-      "percentages": {
-        "balloonweight": "75",
-        "featherweight": "75",
-        "heavyweight": "75",
-        "lightweight": "75",
-        "middleweight": "75",
-        "superheavyweight": "75"
-      },
+      "damage": "10",
       "tags": [
         "fastFaller"
       ],
-      "uuid": "3b234ef3-f800-4830-b6f6-1a3b0b5d3377"
+      "percentages": {
+        "balloonweight": "75",
+        "featherweight": "75",
+        "lightweight": "75",
+        "middleweight": "75",
+        "heavyweight": "75",
+        "superheavyweight": "75"
+      },
+      "demonstration": "",
+      "notes": ""
     }
   ],
   "preview": "",
