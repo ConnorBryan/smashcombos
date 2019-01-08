@@ -40,6 +40,21 @@
     {
       "percentages": {},
       "uuid": "a678eeb1-5499-4b44-8b3a-77f54e4703ea"
+    },
+    {
+      "input": "fair dashatk",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Low",
+        "featherweight": "Low",
+        "lightweight": "Low",
+        "middleweight": "Low",
+        "heavyweight": "Low",
+        "superheavyweight": "Low"
+      },
+      "demonstration": "",
+      "notes": "Credit to Plague von Karma#1661"
     }
   ],
   "preview": "",
