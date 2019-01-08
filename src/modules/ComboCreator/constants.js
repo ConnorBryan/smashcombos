@@ -129,6 +129,18 @@ export const attackModifiers = [
   {
     name: "attack canceled",
     term: "ac"
+  },
+  {
+    name: "fast fall",
+    term: "ff"
+  },
+  {
+    name: "rising",
+    term: "rising"
+  },
+  {
+    name: "falling",
+    term: "falling"
   }
 ];
 
