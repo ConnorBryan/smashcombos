@@ -35,19 +35,19 @@
   },
   "combos": [
     {
+      "input": "dthrow nair fair",
       "damage": "15.8",
-      "demonstration": "https://www.youtube.com/embed/Q1Z2sCpbkFo",
-      "input": "dthrow nair",
+      "tags": [],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
-        "heavyweight": "0",
         "lightweight": "0",
         "middleweight": "0",
+        "heavyweight": "0",
         "superheavyweight": "0"
       },
-      "notes": "",
-      "uuid": "0f9920f9-b8ad-4092-b5c0-0378afea53d3"
+      "demonstration": "https://www.youtube.com/embed/Q1Z2sCpbkFo",
+      "notes": ""
     },
     {
       "input": "uthrow dspecial",
