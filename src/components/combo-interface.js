@@ -35,7 +35,7 @@ export default class ComboInterface extends Component {
     const { onContinue } = this.props;
     const { combo } = this.state;
 
-    onContinue(combo);
+    onContinue(combo, this.toggleConfirming);
   };
 
   render() {

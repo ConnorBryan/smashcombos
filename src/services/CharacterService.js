@@ -10,8 +10,6 @@ export class CharacterService {
       tags
     });
 
-    console.log("\n\n\n", "data.success", data.success, "\n\n\n");
-
     return data.success;
   }
 

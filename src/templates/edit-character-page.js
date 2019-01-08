@@ -9,6 +9,7 @@ import {
   EditProfileTab,
   Layout
 } from "../components";
+import { MessageContext } from "../components/message-provider";
 import { getCharacter, getCharacterRender } from "../helpers";
 
 export default class EditCharacterPage extends Component {
@@ -33,7 +34,7 @@ export default class EditCharacterPage extends Component {
   handleTabChange = (_, { activeIndex }) => this.setState({ activeIndex });
 
   render() {
-    const { data, navigate } = this.props;
+    const { data } = this.props;
     const { activeIndex } = this.state;
     const character = getCharacter(data);
     const image = getCharacterRender(character);
@@ -55,15 +56,19 @@ export default class EditCharacterPage extends Component {
         },
         render: () => (
           <Tab.Pane>
-            <EditProfileTab
-              slug={slug}
-              name={name}
-              image={image}
-              weightClass={weightClass}
-              description={description}
-              tags={tags}
-              navigate={navigate}
-            />
+            <MessageContext.Consumer>
+              {({ showMessage }) => (
+                <EditProfileTab
+                  slug={slug}
+                  name={name}
+                  image={image}
+                  weightClass={weightClass}
+                  description={description}
+                  tags={tags}
+                  showMessage={showMessage}
+                />
+              )}
+            </MessageContext.Consumer>
           </Tab.Pane>
         )
       },
@@ -75,7 +80,11 @@ export default class EditCharacterPage extends Component {
         },
         render: () => (
           <Tab.Pane>
-            <AddComboTab character={character} navigate={navigate} />
+            <MessageContext.Consumer>
+              {({ showMessage }) => (
+                <AddComboTab character={character} showMessage={showMessage} />
+              )}
+            </MessageContext.Consumer>
           </Tab.Pane>
         )
       }

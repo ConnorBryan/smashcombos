@@ -36,19 +36,25 @@ export default class EditProfileTab extends Component {
   };
 
   continue = async () => {
-    const { name, slug, navigate } = this.props;
+    const { name, slug, showMessage } = this.props;
     const {
       profile: { description, tags }
     } = this.state;
     const success = await CharacterService.editProfile(slug, description, tags);
 
-    navigate(slug, {
-      state: {
-        message: success
-          ? `Successfully edited ${name}'s profile.`
-          : `Unable to edit ${name}'s profile. Please try again later.`
-      }
-    });
+    showMessage(
+      success
+        ? {
+            header: `Successfully edited ${name}'s profile.`,
+            content: `The change will be reviewed as soon as possible`
+          }
+        : {
+            header: `Unable to edit ${name}'s profile.`,
+            content: `Please try again later.`
+          }
+    );
+
+    this.toggleConfirming();
   };
 
   render() {

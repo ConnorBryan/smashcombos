@@ -11,6 +11,7 @@ export { default as ConfirmChanges } from "./confirm-changes";
 export { default as EditProfileTab } from "./edit-profile-tab";
 export { default as Input } from "./input";
 export { default as Layout } from "./layout";
+export { default as MessageProvider } from "./message-provider";
 export { default as Navbar } from "./navbar";
 export { default as KillMovesPanel } from "./kill-moves-panel";
 export { default as PlaceholderPanel } from "./placeholder-panel";

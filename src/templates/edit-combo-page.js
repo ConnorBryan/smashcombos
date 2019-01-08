@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, graphql } from "gatsby";
 
 import { CharacterPortrait, ComboInterface, Layout } from "../components";
+import { MessageContext } from "../components/message-provider";
 import { getCharacter, getCharacterRender } from "../helpers";
 import { CharacterService } from "../services";
 
@@ -9,8 +10,7 @@ export default class EditComboPage extends Component {
   render() {
     const {
       data,
-      pageContext: { uuid },
-      navigate
+      pageContext: { uuid }
     } = this.props;
     const character = getCharacter(data);
     const image = getCharacterRender(character);
@@ -28,20 +28,35 @@ export default class EditComboPage extends Component {
             }}
           />
         </Link>
-        <ComboInterface
-          combo={combo}
-          onContinue={async combo => {
-            const success = await CharacterService.editCombo(slug, uuid, combo);
+        <MessageContext.Consumer>
+          {({ showMessage }) => (
+            <ComboInterface
+              combo={combo}
+              onContinue={async (combo, toggleConfirming) => {
+                const success = await CharacterService.editCombo(
+                  slug,
+                  uuid,
+                  combo
+                );
 
-            navigate(slug, {
-              state: {
-                message: success
-                  ? `Successfully edited one of ${name}'s combos.`
-                  : `Unable to edit one of ${name}'s combos. Please try again later.`
-              }
-            });
-          }}
-        />
+                showMessage(
+                  success
+                    ? {
+                        header: `Successfully edited one of ${name}'s combos.`,
+                        content:
+                          "The change will be reviewed as soon as possible."
+                      }
+                    : {
+                        header: `Unable to edit one of ${name}'s combos.`,
+                        content: "Please try again later."
+                      }
+                );
+
+                toggleConfirming();
+              }}
+            />
+          )}
+        </MessageContext.Consumer>
       </Layout>
     );
   }
