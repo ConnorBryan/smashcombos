@@ -40,6 +40,21 @@
     {
       "percentages": {},
       "uuid": "4f273adf-b417-4181-bb7f-acb183eb5420"
+    },
+    {
+      "input": "dthrow sh+rising+dair ff+nair sh+rising+dair ff+dair uspecial",
+      "damage": "80.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-20",
+        "featherweight": "0-20",
+        "lightweight": "0-20",
+        "middleweight": "0-20",
+        "heavyweight": "N/A",
+        "superheavyweight": "N/A"
+      },
+      "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=52",
+      "notes": "Credit to Beefy Smash Doods. Works from 0-10% on Heavyweight and Super Heavyweights if you perform another sh+dair into ff+nair before continuing. Adding/removing pummeling can enable this combo when it otherwise wouldn't work."
     }
   ],
   "preview": "",
