@@ -33,7 +33,7 @@ export default class EditCharacterPage extends Component {
   handleTabChange = (_, { activeIndex }) => this.setState({ activeIndex });
 
   render() {
-    const { data } = this.props;
+    const { data, navigate } = this.props;
     const { activeIndex } = this.state;
     const character = getCharacter(data);
     const image = getCharacterRender(character);
@@ -62,6 +62,7 @@ export default class EditCharacterPage extends Component {
               weightClass={weightClass}
               description={description}
               tags={tags}
+              navigate={navigate}
             />
           </Tab.Pane>
         )
@@ -74,7 +75,7 @@ export default class EditCharacterPage extends Component {
         },
         render: () => (
           <Tab.Pane>
-            <AddComboTab character={character} />
+            <AddComboTab character={character} navigate={navigate} />
           </Tab.Pane>
         )
       }

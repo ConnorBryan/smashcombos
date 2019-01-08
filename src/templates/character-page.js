@@ -10,7 +10,7 @@ import {
 } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 
-export default function CharacterPage({ data }) {
+export default function CharacterPage({ data, location: { state } }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
   const { name, slug, description, attributes, combos, tags } = character;
@@ -82,6 +82,7 @@ export const characterPageQuery = graphql`
         }
       }
       combos {
+        uuid
         input
         percentages {
           balloonweight

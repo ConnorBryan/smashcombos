@@ -12,6 +12,9 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slug
+            combos {
+              uuid
+            }
           }
         }
       }
@@ -24,7 +27,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     const characters = result.data.allCharactersJson.edges;
 
-    characters.forEach(({ node: { id, slug } }) => {
+    characters.forEach(({ node: { id, slug, combos } }) => {
       // View
       createPage({
         path: slug,
@@ -42,6 +45,18 @@ exports.createPages = ({ actions, graphql }) => {
           id
         }
       });
+
+      // Edit combos
+      combos.forEach(({ uuid }) =>
+        createPage({
+          path: `${slug}/combos/${uuid}`,
+          component: path.resolve("src/templates/edit-combo-page.js"),
+          context: {
+            id,
+            uuid
+          }
+        })
+      );
     });
   });
 };

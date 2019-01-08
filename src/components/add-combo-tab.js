@@ -1,65 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 
-import { ComboCreator } from "../modules";
 import { CharacterService } from "../services";
-import ComboListEntry from "./combo-list-entry";
-import ConfirmChanges from "./confirm-changes";
+import ComboInterface from "./combo-interface";
 
-export default class AddComboTab extends Component {
-  state = {
-    combo: {
-      input: "",
-      damage: "",
-      tags: [],
-      percentages: {
-        balloonweight: "",
-        featherweight: "",
-        lightweight: "",
-        middleweight: "",
-        heavyweight: "",
-        superheavyweight: ""
-      },
-      demonstration: "",
-      notes: ""
-    },
-    confirming: false
-  };
+export default function AddComboTab({ character: { name, slug } }, navigate) {
+  return (
+    <ComboInterface
+      onContinue={async combo => {
+        const success = await CharacterService.addCombo(slug, combo);
 
-  toggleConfirming = () =>
-    this.setState(prevState => ({
-      confirming: !prevState.confirming
-    }));
-
-  updateCombo = combo => this.setState({ combo });
-
-  continue = () => {
-    const {
-      character: { slug }
-    } = this.props;
-    const { combo } = this.state;
-
-    CharacterService.addCombo(slug, combo);
-  };
-
-  render() {
-    const { combo, confirming } = this.state;
-
-    return confirming ? (
-      <ConfirmChanges
-        title="combo"
-        onMakeChanges={this.toggleConfirming}
-        onContinue={this.continue}
-      >
-        <ComboListEntry basic {...combo} />
-      </ConfirmChanges>
-    ) : (
-      <ComboCreator
-        {...combo}
-        onSubmit={values => {
-          this.updateCombo(values);
-          this.toggleConfirming();
-        }}
-      />
-    );
-  }
+        navigate(slug, {
+          state: {
+            message: success
+              ? `Successfully added a combo for ${name}.`
+              : `Unable to add a combo for ${name}. Please try again later.`
+          }
+        });
+      }}
+    />
+  );
 }

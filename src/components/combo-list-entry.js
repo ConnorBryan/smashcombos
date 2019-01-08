@@ -37,7 +37,8 @@ export default class ComboListEntry extends Component {
       notes,
       total,
       basic,
-      slug
+      slug,
+      uuid
     } = this.props;
     const { isVisible } = this.state;
 
@@ -63,7 +64,7 @@ export default class ComboListEntry extends Component {
                 <Button.Group floated="right">
                   <Button
                     as={Link}
-                    to={`/${slug}/edit?tab=editCombos`}
+                    to={`/${slug}/combos/${uuid}`}
                     style={{
                       width: "8rem",
                       marginRight: "1rem"

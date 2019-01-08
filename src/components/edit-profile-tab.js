@@ -3,6 +3,7 @@ import { Formik, Field } from "formik";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
 import { tagTypeToTag } from "../helpers";
+import { CharacterService } from "../services";
 import ConfirmChanges from "./confirm-changes";
 import Profile from "./profile";
 
@@ -34,8 +35,20 @@ export default class EditProfileTab extends Component {
     this.toggleConfirming();
   };
 
-  continue = () => {
-    // Pass
+  continue = async () => {
+    const { name, slug, navigate } = this.props;
+    const {
+      profile: { description, tags }
+    } = this.state;
+    const success = await CharacterService.editProfile(slug, description, tags);
+
+    navigate(slug, {
+      state: {
+        message: success
+          ? `Successfully edited ${name}'s profile.`
+          : `Unable to edit ${name}'s profile. Please try again later.`
+      }
+    });
   };
 
   render() {
