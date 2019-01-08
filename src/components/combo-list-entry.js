@@ -83,7 +83,7 @@ export default class ComboListEntry extends Component {
                 </Button.Group>
               </Grid.Column>
             )}
-            <Grid.Column mobile={16} tablet={16} computer={3}>
+            <Grid.Column mobile={16} tablet={16} computer={4}>
               <Segment basic>
                 <Input input={input} />
                 {damage != null && isVisible && (
@@ -101,7 +101,7 @@ export default class ComboListEntry extends Component {
               </Segment>
             </Grid.Column>
             {isVisible && (
-              <Grid.Column mobile={16} tablet={16} computer={13}>
+              <Grid.Column mobile={16} tablet={16} computer={12}>
                 <Segment basic>
                   <Tagbar tags={tags || []} />
                 </Segment>
