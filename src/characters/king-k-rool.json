@@ -33,9 +33,7 @@
       "value": "133"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -54,7 +52,8 @@
         "superheavyweight": "Low"
       },
       "demonstration": "",
-      "notes": "Credit to Plague von Karma#1661"
+      "notes": "Credit to Plague von Karma#1661",
+      "uuid": "d8747c71-d931-4889-968b-0cf733a6a3cf"
     }
   ],
   "preview": "",

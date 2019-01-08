@@ -1,4 +1,5 @@
 import axios from "axios";
+import uuid from "uuid/v4";
 
 const URL_BASE = "https://smashcombos.xyz";
 
@@ -16,7 +17,10 @@ export class CharacterService {
   static async addCombo(name, combo) {
     const url = `${URL_BASE}/characters/${name}/combos`;
     const { data } = await axios.post(url, {
-      combo
+      combo: {
+        ...combo,
+        uuid: uuid()
+      }
     });
 
     return data.success;

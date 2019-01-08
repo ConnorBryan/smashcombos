@@ -33,9 +33,7 @@
       "value": "97"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},
@@ -54,14 +52,13 @@
         "superheavyweight": "N/A"
       },
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=52",
-      "notes": "Credit to Beefy Smash Doods. Works from 0-10% on Heavyweight and Super Heavyweights if you perform another sh+dair into ff+nair before continuing. Adding/removing pummeling can enable this combo when it otherwise wouldn't work."
+      "notes": "Credit to Beefy Smash Doods. Works from 0-10% on Heavyweight and Super Heavyweights if you perform another sh+dair into ff+nair before continuing. Adding/removing pummeling can enable this combo when it otherwise wouldn't work.",
+      "uuid": "5f335bbc-395f-41a8-a3a0-26974eaa0eaf"
     },
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
@@ -71,7 +68,8 @@
         "superheavyweight": "Med"
       },
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=158",
-      "notes": "Credit to Beefy Smash Doods. Adding/removing pummeling can enable this combo when it otherwise wouldn't work."
+      "notes": "Credit to Beefy Smash Doods. Adding/removing pummeling can enable this combo when it otherwise wouldn't work.",
+      "uuid": "99a94cd6-9ea3-4fa7-978c-6300a043b118"
     }
   ],
   "preview": "",
