@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL_BASE = "http://localhost:3000";
+const URL_BASE = "http://68.183.96.138:1337";
 
 export class CharacterService {
   static async editProfile(name, description, tags) {
