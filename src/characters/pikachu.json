@@ -63,6 +63,21 @@
         "fastFaller"
       ],
       "uuid": "3b234ef3-f800-4830-b6f6-1a3b0b5d3377"
+    },
+    {
+      "input": "jab dj+glideatk",
+      "damage": "20",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "10",
+        "featherweight": "10",
+        "lightweight": "10",
+        "middleweight": "10",
+        "heavyweight": "10",
+        "superheavyweight": "10"
+      },
+      "demonstration": "",
+      "notes": ""
     }
   ],
   "preview": "",
