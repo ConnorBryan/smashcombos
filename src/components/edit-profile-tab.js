@@ -46,7 +46,7 @@ export default class EditProfileTab extends Component {
       success
         ? {
             header: `Successfully edited ${name}'s profile.`,
-            content: `The change will be reviewed as soon as possible`
+            content: `The change will be reviewed as soon as possible.`
           }
         : {
             header: `Unable to edit ${name}'s profile.`,
