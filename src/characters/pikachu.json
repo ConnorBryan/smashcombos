@@ -63,6 +63,21 @@
         "fastFaller"
       ],
       "uuid": "3b234ef3-f800-4830-b6f6-1a3b0b5d3377"
+    },
+    {
+      "input": "usmash",
+      "damage": "10",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "1",
+        "featherweight": "1",
+        "lightweight": "1",
+        "middleweight": "11",
+        "heavyweight": "1",
+        "superheavyweight": "1"
+      },
+      "demonstration": "",
+      "notes": ""
     }
   ],
   "preview": "",
