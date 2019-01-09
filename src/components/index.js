@@ -1,6 +1,5 @@
 export { default as AddComboTab } from "./add-combo-tab";
 export { default as Attributes } from "./attributes";
-export { default as AttributePanel } from "./attribute-panel";
 export { default as Profile } from "./profile";
 export { default as CharacterPortrait } from "./character-portrait";
 export { default as CharacterSelect } from "./character-select";
@@ -14,7 +13,6 @@ export { default as Input } from "./input";
 export { default as Layout } from "./layout";
 export { default as MessageProvider } from "./message-provider";
 export { default as Navbar } from "./navbar";
-export { default as KillMovesPanel } from "./kill-moves-panel";
 export { default as PlaceholderPanel } from "./placeholder-panel";
 export { default as SiteActions } from "./site-actions";
 export { default as Tagbar } from "./tagbar";

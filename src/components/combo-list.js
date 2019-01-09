@@ -30,65 +30,55 @@ export default class ComboList extends Component {
 
   render() {
     const { slug, combos } = this.props;
-    const content = (
-      <React.Fragment>
-        <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
-          Combos
-        </Header>
-        <Segment basic>
-          {combos.length > 0 ? (
-            <Card.Group itemsPerRow={2} stackable>
-              <MessageContext.Consumer>
-                {({ showMessage }) =>
-                  combos.map((combo, index) => (
-                    <ComboListCard
-                      key={combo.input}
-                      {...combo}
-                      slug={slug}
-                      total={combos.length - 1}
-                      index={index}
-                      comboRef={this.comboRefs[combo.uuid]}
-                      showMessage={showMessage}
-                    />
-                  ))
-                }
-              </MessageContext.Consumer>
-            </Card.Group>
-          ) : (
-            <PlaceholderPanel icon="plus" basic>
-              This character doesn't have any listed combos.
-            </PlaceholderPanel>
-          )}
-        </Segment>
-      </React.Fragment>
-    );
-    const button = (
-      <Link to={`/${slug}/edit?tab=addCombo`}>
-        <Button
-          icon
-          primary
-          size="huge"
-          attached="bottom"
-          style={{
-            ...styles.fancyText,
-            marginBottom: "3rem"
-          }}
-        >
-          <Icon name="plus" /> Add a combo
-        </Button>
-      </Link>
-    );
 
     return (
       <React.Fragment>
-        <div className="mobile-only">
-          <Segment basic>{content}</Segment>
-          {button}
-        </div>
-        <div className="desktop-only">
-          <Segment attached>{content}</Segment>
-          {button}
-        </div>
+        <Segment basic>
+          <React.Fragment>
+            <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
+              Combos
+            </Header>
+            <Segment basic>
+              {combos.length > 0 ? (
+                <Card.Group itemsPerRow={2} stackable>
+                  <MessageContext.Consumer>
+                    {({ showMessage }) =>
+                      combos.map((combo, index) => (
+                        <ComboListCard
+                          key={combo.input}
+                          {...combo}
+                          slug={slug}
+                          total={combos.length - 1}
+                          index={index}
+                          comboRef={this.comboRefs[combo.uuid]}
+                          showMessage={showMessage}
+                        />
+                      ))
+                    }
+                  </MessageContext.Consumer>
+                </Card.Group>
+              ) : (
+                <PlaceholderPanel icon="plus" basic>
+                  This character doesn't have any listed combos.
+                </PlaceholderPanel>
+              )}
+            </Segment>
+          </React.Fragment>
+        </Segment>
+        <Link to={`/${slug}/edit?tab=addCombo`}>
+          <Button
+            icon
+            primary
+            size="huge"
+            attached="bottom"
+            style={{
+              ...styles.fancyText,
+              marginBottom: "3rem"
+            }}
+          >
+            <Icon name="plus" /> Add a combo
+          </Button>
+        </Link>
       </React.Fragment>
     );
   }

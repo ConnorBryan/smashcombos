@@ -1,14 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import {
-  Attributes,
-  AttributePanel,
-  ComboList,
-  Layout,
-  KillMovesPanel,
-  Profile
-} from "../components";
+import { Attributes, ComboList, Layout, Profile } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 
 export default function CharacterPage({ data, location: { search } }) {
@@ -31,8 +24,6 @@ export default function CharacterPage({ data, location: { search } }) {
         attributes={attributes}
       />
       <Attributes attributes={attributes} />
-      <AttributePanel attributes={attributes} />
-      <KillMovesPanel className="mobile-only" basic />
       <ComboList slug={slug} combos={combos} query={search} />
     </Layout>
   );
