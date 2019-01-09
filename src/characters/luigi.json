@@ -33,7 +33,9 @@
       "value": "97"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,18 +60,19 @@
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
         "lightweight": "15-30",
-        "middleweight": "15-45%",
-        "heavyweight": "15-45%",
+        "middleweight": "15-45",
+        "heavyweight": "15-45",
         "superheavyweight": "Med"
       },
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=158",
-      "notes": "Credit to Beefy Smash Doods. Adding/removing pummeling can enable this combo when it otherwise wouldn't work.",
-      "uuid": "99a94cd6-9ea3-4fa7-978c-6300a043b118"
+      "notes": "Credit to Beefy Smash Doods. Adding pummeling can enable this combo when it otherwise wouldn't work."
     }
   ],
   "preview": "",
