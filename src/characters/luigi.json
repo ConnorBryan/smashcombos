@@ -1,7 +1,7 @@
 {
   "name": "Luigi",
   "render": "../../static/img/luigi.png",
-  "description": "...",
+  "description": "The Ultimate transition was really benefic for Luigi. Not only he's overall buffed in terms of speed and damage, but he also got a notorious 0-to-death, consisting of DThrows startups and finishing in almost whatever the player wants. Yes, even UpB. That's simple : Get grabbed, and you lose a stock.\n\nEven out of this 0-to-death, DThrow combos into every single move and his grab is now a tether. The only regret would be his DownB (Unfamous Mash B) which no longers has utility for recovering\nA must-play for any combos fan.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0",
@@ -33,7 +33,9 @@
       "value": "97"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +60,9 @@
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
