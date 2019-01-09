@@ -10,7 +10,7 @@ import {
 } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 
-export default function CharacterPage({ data, location: { state } }) {
+export default function CharacterPage({ data, location: { search } }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
   const { name, slug, description, attributes, combos, tags } = character;
@@ -31,7 +31,7 @@ export default function CharacterPage({ data, location: { state } }) {
       />
       <AttributePanel attributes={attributes} />
       <KillMovesPanel className="mobile-only" basic />
-      <ComboList slug={slug} combos={combos} />
+      <ComboList slug={slug} combos={combos} query={search} />
     </Layout>
   );
 }

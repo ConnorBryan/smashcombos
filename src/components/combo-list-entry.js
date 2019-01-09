@@ -10,7 +10,7 @@ import {
   List
 } from "semantic-ui-react";
 
-import { generateEffectivePercentages } from "../helpers";
+import { generateEffectivePercentages, copyToClipboard } from "../helpers";
 import * as styles from "../styles";
 import Input from "./input";
 import PlaceholderPanel from "./placeholder-panel";
@@ -26,6 +26,18 @@ export default class ComboListEntry extends Component {
       isVisible: !prevState.isVisible
     }));
 
+  share = () => {
+    const { slug, uuid, showMessage } = this.props;
+    const url = `https://smashcombos.com/${slug}?combo=${uuid}`;
+
+    copyToClipboard(url);
+
+    showMessage({
+      header: `Copied shareable link for this combo.`,
+      content: `Paste from the clipboard to share the link.`
+    });
+  };
+
   render() {
     const {
       index,
@@ -38,12 +50,13 @@ export default class ComboListEntry extends Component {
       total,
       basic,
       slug,
-      uuid
+      uuid,
+      comboRef
     } = this.props;
     const { isVisible } = this.state;
 
     return (
-      <React.Fragment>
+      <div ref={comboRef} id={uuid}>
         <Segment
           key={input}
           basic
@@ -62,16 +75,6 @@ export default class ComboListEntry extends Component {
                 }}
               >
                 <Button.Group floated="right">
-                  <Button
-                    as={Link}
-                    to={`/${slug}/combos/${uuid}`}
-                    style={{
-                      width: "8rem",
-                      marginRight: "1rem"
-                    }}
-                  >
-                    Edit
-                  </Button>
                   <Button
                     onClick={this.toggleVisibility}
                     style={{
@@ -98,6 +101,28 @@ export default class ComboListEntry extends Component {
                     </Label.Detail>
                   </Label>
                 )}
+                <Segment basic style={styles.noSidePadding}>
+                  <Button
+                    onClick={this.share}
+                    style={{
+                      width: "8rem",
+                      marginRight: "1rem",
+                      marginBottom: "1rem"
+                    }}
+                  >
+                    Share
+                  </Button>
+                  <Button
+                    as={Link}
+                    to={`/${slug}/combos/${uuid}`}
+                    style={{
+                      width: "8rem",
+                      marginRight: "1rem"
+                    }}
+                  >
+                    Edit
+                  </Button>
+                </Segment>
               </Segment>
             </Grid.Column>
             {isVisible && (
@@ -168,7 +193,7 @@ export default class ComboListEntry extends Component {
             )}
           </Grid>
         </Segment>
-      </React.Fragment>
+      </div>
     );
   }
 }
