@@ -1,7 +1,7 @@
 {
   "name": "Luigi",
   "render": "../../static/img/luigi.png",
-  "description": "...",
+  "description": "A",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0",
@@ -33,7 +33,9 @@
       "value": "97"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +60,9 @@
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
