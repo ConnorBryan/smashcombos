@@ -11,8 +11,8 @@
 @firstMargin: 0em 0em (@labelHeight + @verticalSpacing);
 @lastMargin: 0em 0em (@labelHeight);
 
-@background: @strongTransparentBlack;
-@border: none;
+@background: #000;
+@border: 1px solid #333;
 @boxShadow: none;
 @padding: 0em;
 @borderRadius: @defaultBorderRadius;
@@ -40,7 +40,7 @@
 @progressLeft: auto;
 @progressBottom: auto;
 @progressOffset: -0.5em;
-@progressColor: @invertedLightTextColor;
+@progressColor: #000;
 @progressTextShadow: none;
 @progressFontWeight: @bold;
 @progressTextAlign: left;
@@ -48,7 +48,7 @@
 /* Label */
 @labelWidth: 100%;
 @labelHeight: 1.5em;
-@labelSize: 1em;
+@labelSize: 2em;
 @labelPosition: absolute;
 @labelTop: 100%;
 @labelLeft: 0%;

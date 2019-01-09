@@ -13,6 +13,7 @@ export { default as Input } from "./input";
 export { default as Layout } from "./layout";
 export { default as MessageProvider } from "./message-provider";
 export { default as Navbar } from "./navbar";
+export { default as PercentBar } from "./percent-bar";
 export { default as PlaceholderPanel } from "./placeholder-panel";
 export { default as SiteActions } from "./site-actions";
 export { default as Tagbar } from "./tagbar";

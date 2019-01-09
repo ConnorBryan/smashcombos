@@ -35,7 +35,14 @@ export default class ComboList extends Component {
       <React.Fragment>
         <Segment basic>
           <React.Fragment>
-            <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
+            <Header
+              as="h2"
+              style={{
+                ...styles.fancyText,
+                marginBottom: "2rem",
+                color: "#7289D8"
+              }}
+            >
               Combos
             </Header>
             <Segment basic>

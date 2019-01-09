@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import { Button, Card, Embed, Label, List, Ref } from "semantic-ui-react";
+import { Button, Card, Embed, Header, List, Ref } from "semantic-ui-react";
 
 import { copyToClipboard, generateEffectivePercentages } from "../helpers";
 import * as styles from "../styles";
 import Input from "./input";
+import PercentBar from "./percent-bar";
 import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
 
@@ -76,42 +77,43 @@ export default class ComboListCard extends Component {
               {/* Damage */}
               {damage != null && isVisible && (
                 <Card.Content extra>
-                  <Label
-                    size="large"
+                  <Card.Header
+                    as="h5"
+                    content="Damage"
+                    style={styles.fancyText}
+                  />
+                  <div
                     style={{
-                      width: "100%",
-                      textAlign: "center"
+                      display: "flex",
+                      alignItems: "center"
                     }}
                   >
-                    {damage}%
-                    <Label.Detail
+                    <PercentBar
+                      value={damage}
                       style={{
-                        textTransform: "uppercase"
+                        flex: 4,
+                        marginBottom: 0
+                      }}
+                    />
+                    <div
+                      style={{
+                        ...styles.perfectlyCentered,
+                        paddingLeft: "1rem"
                       }}
                     >
-                      damage
-                    </Label.Detail>
-                  </Label>
+                      <Header
+                        as="h3"
+                        content={`${parseFloat(damage).toFixed(1)}%`}
+                        textAlign="right"
+                        style={{
+                          ...styles.fancyText,
+                          flex: 1
+                        }}
+                      />
+                    </div>
+                  </div>
                 </Card.Content>
               )}
-              {/* Actions */}
-              <Card.Content extra>
-                <Button.Group widths={2}>
-                  <Button
-                    onClick={this.share}
-                    content="Share"
-                    style={{
-                      marginRight: "10px",
-                      marginLeft: "-5px"
-                    }}
-                  />
-                  <Button
-                    as={Link}
-                    to={`/${slug}/combos/${uuid}`}
-                    content="Edit"
-                  />
-                </Button.Group>
-              </Card.Content>
               {/* Tags */}
               <Card.Content
                 extra
@@ -178,6 +180,24 @@ export default class ComboListCard extends Component {
               >
                 <Card.Header as="h5" content="Notes" style={styles.fancyText} />
                 {notes || "There are no notes on this combo."}
+              </Card.Content>
+              {/* Actions */}
+              <Card.Content extra>
+                <Button.Group widths={2}>
+                  <Button
+                    onClick={this.share}
+                    content="Share"
+                    style={{
+                      marginRight: "10px",
+                      marginLeft: "-5px"
+                    }}
+                  />
+                  <Button
+                    as={Link}
+                    to={`/${slug}/combos/${uuid}`}
+                    content="Edit"
+                  />
+                </Button.Group>
               </Card.Content>
             </React.Fragment>
           )}

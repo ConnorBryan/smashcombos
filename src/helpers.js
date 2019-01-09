@@ -328,3 +328,41 @@ export const copyToClipboard = str => {
     document.getSelection().addRange(selected); // Restore the original selection
   }
 };
+
+export const PercentageThresholds = {
+  Error: 0,
+  VeryLow: 1,
+  Low: 2,
+  Medium: 3,
+  High: 4,
+  VeryHigh: 5
+};
+
+export const getPercentageThreshhold = value => {
+  const int = parseInt(value);
+
+  if (isNaN(int) || int < 0) {
+    return PercentageThresholds.Error;
+  } else if (value >= 0 && value <= 20) {
+    return PercentageThresholds.VeryLow;
+  } else if (value >= 21 && value <= 40) {
+    return PercentageThresholds.Low;
+  } else if (value >= 41 && value <= 60) {
+    return PercentageThresholds.Medium;
+  } else if (value >= 61 && value <= 80) {
+    return PercentageThresholds.High;
+  } else {
+    return PercentageThresholds.VeryHigh;
+  }
+};
+
+export const percentageThresholdToColor = percentageThreshold => {
+  return {
+    [PercentageThresholds.Error]: "grey",
+    [PercentageThresholds.VeryLow]: "green",
+    [PercentageThresholds.Low]: "olive",
+    [PercentageThresholds.Medium]: "yellow",
+    [PercentageThresholds.High]: "orange",
+    [PercentageThresholds.VeryHigh]: "red"
+  }[percentageThreshold];
+};
