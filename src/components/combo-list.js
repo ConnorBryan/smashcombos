@@ -74,7 +74,9 @@ export default class ComboList extends Component {
                         index={index}
                         comboRef={this.comboRefs[combo.uuid]}
                         showMessage={showMessage}
-                        active={combo.uuid === activeComboUuid}
+                        active={
+                          activeComboUuid && combo.uuid === activeComboUuid
+                        }
                       />
                     ))
                   }
