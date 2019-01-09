@@ -75,7 +75,7 @@ export default class ComboListCard extends Component {
           {isVisible && (
             <React.Fragment>
               {/* Damage */}
-              {damage != null && isVisible && (
+              {damage != null && (
                 <Card.Content extra>
                   <Card.Header
                     as="h5"
