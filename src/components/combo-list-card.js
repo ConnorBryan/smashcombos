@@ -41,7 +41,8 @@ export default class ComboListCard extends Component {
       percentages,
       demonstration,
       notes,
-      comboRef
+      comboRef,
+      active
     } = this.props;
     const { isVisible } = this.state;
 
@@ -49,7 +50,8 @@ export default class ComboListCard extends Component {
       <Ref innerRef={comboRef}>
         <Card
           style={{
-            height: isVisible ? "auto" : "200px"
+            height: isVisible ? "auto" : "200px",
+            border: active ? "2px solid #eee" : "1px solid #738BD6"
           }}
         >
           {/* Input */}

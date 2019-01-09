@@ -9,6 +9,10 @@ import ComboListCard from "./combo-list-card";
 import { MessageContext } from "./message-provider";
 
 export default class ComboList extends Component {
+  state = {
+    activeComboUuid: null
+  };
+
   comboRefs = this.props.combos.reduce((prev, next) => {
     prev[next.uuid] = React.createRef();
     return prev;
@@ -24,12 +28,18 @@ export default class ComboList extends Component {
 
     if (combo) {
       this.comboRefs[combo].current.scrollIntoView();
+
       window.scrollBy(0, -100);
+
+      this.setState({
+        activeComboUuid: combo
+      });
     }
   };
 
   render() {
     const { slug, combos } = this.props;
+    const { activeComboUuid } = this.state;
 
     return (
       <React.Fragment>
@@ -39,37 +49,42 @@ export default class ComboList extends Component {
               as="h2"
               style={{
                 ...styles.fancyText,
-                marginBottom: "2rem",
+                marginBottom: 0,
                 color: "#7289D8"
               }}
             >
               Combos
             </Header>
-            <Segment basic>
-              {combos.length > 0 ? (
-                <Card.Group itemsPerRow={2} stackable>
-                  <MessageContext.Consumer>
-                    {({ showMessage }) =>
-                      combos.map((combo, index) => (
-                        <ComboListCard
-                          key={combo.input}
-                          {...combo}
-                          slug={slug}
-                          total={combos.length - 1}
-                          index={index}
-                          comboRef={this.comboRefs[combo.uuid]}
-                          showMessage={showMessage}
-                        />
-                      ))
-                    }
-                  </MessageContext.Consumer>
-                </Card.Group>
-              ) : (
-                <PlaceholderPanel icon="plus" basic>
-                  This character doesn't have any listed combos.
-                </PlaceholderPanel>
-              )}
-            </Segment>
+            {combos.length > 0 ? (
+              <Card.Group
+                itemsPerRow={2}
+                stackable
+                style={{
+                  marginTop: "2rem"
+                }}
+              >
+                <MessageContext.Consumer>
+                  {({ showMessage }) =>
+                    combos.map((combo, index) => (
+                      <ComboListCard
+                        key={combo.input}
+                        {...combo}
+                        slug={slug}
+                        total={combos.length - 1}
+                        index={index}
+                        comboRef={this.comboRefs[combo.uuid]}
+                        showMessage={showMessage}
+                        active={combo.uuid === activeComboUuid}
+                      />
+                    ))
+                  }
+                </MessageContext.Consumer>
+              </Card.Group>
+            ) : (
+              <PlaceholderPanel icon="plus" basic>
+                This character doesn't have any listed combos.
+              </PlaceholderPanel>
+            )}
           </React.Fragment>
         </Segment>
         <Link to={`/${slug}/edit?tab=addCombo`}>
