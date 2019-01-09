@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import { Card } from "semantic-ui-react";
 
 import { ComboCreator } from "../modules";
-import ComboListEntry from "./combo-list-entry";
+import ComboListCard from "./combo-list-card";
 import ConfirmChanges from "./confirm-changes";
 
 export default class ComboInterface extends Component {
@@ -52,8 +53,13 @@ export default class ComboInterface extends Component {
             title="combo"
             onMakeChanges={this.toggleConfirming}
             onContinue={this.continue}
+            horizontal
           >
-            <ComboListEntry basic {...combo} />
+            <div>
+              <Card.Group itemsPerRow={1}>
+                <ComboListCard {...combo} />
+              </Card.Group>
+            </div>
           </ConfirmChanges>
         ) : (
           <ComboCreator

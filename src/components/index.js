@@ -5,7 +5,7 @@ export { default as CharacterPortrait } from "./character-portrait";
 export { default as CharacterSelect } from "./character-select";
 export { default as CharacterSelectEntry } from "./character-select-entry";
 export { default as ComboList } from "./combo-list";
-export { default as ComboListEntry } from "./combo-list-entry";
+export { default as ComboListCard } from "./combo-list-card";
 export { default as ComboInterface } from "./combo-interface";
 export { default as ConfirmChanges } from "./confirm-changes";
 export { default as EditProfileTab } from "./edit-profile-tab";

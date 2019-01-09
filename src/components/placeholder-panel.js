@@ -4,8 +4,8 @@ import { Segment, Header, Icon } from "semantic-ui-react";
 export default function PlaceholderPanel({
   icon = "warning",
   action,
-  children,
   basic,
+  children,
   ...rest
 }) {
   return (
@@ -13,7 +13,7 @@ export default function PlaceholderPanel({
       placeholder
       basic={basic}
       {...rest}
-      style={{ width: "100%", height: "90%" }}
+      style={{ width: "100%", height: "90%", minHeight: "275px" }}
     >
       <Header icon>
         <Icon

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import { Button, Header, Icon, Segment } from "semantic-ui-react";
+import { Button, Card, Header, Icon, Segment } from "semantic-ui-react";
 import queryString from "query-string";
 
 import * as styles from "../styles";
 import PlaceholderPanel from "./placeholder-panel";
+import ComboListCard from "./combo-list-card";
 import ComboListEntry from "./combo-list-entry";
 import { MessageContext } from "./message-provider";
 
@@ -35,27 +36,31 @@ export default class ComboList extends Component {
         <Header as="h2" style={{ ...styles.fancyText, color: "#7289D8" }}>
           Combos
         </Header>
-        {combos.length > 0 ? (
-          <MessageContext.Consumer>
-            {({ showMessage }) =>
-              combos.map((combo, index) => (
-                <ComboListEntry
-                  key={combo.input}
-                  {...combo}
-                  slug={slug}
-                  total={combos.length - 1}
-                  index={index}
-                  comboRef={this.comboRefs[combo.uuid]}
-                  showMessage={showMessage}
-                />
-              ))
-            }
-          </MessageContext.Consumer>
-        ) : (
-          <PlaceholderPanel icon="plus" basic>
-            This character doesn't have any listed combos.
-          </PlaceholderPanel>
-        )}
+        <Segment basic>
+          {combos.length > 0 ? (
+            <Card.Group itemsPerRow={2} stackable>
+              <MessageContext.Consumer>
+                {({ showMessage }) =>
+                  combos.map((combo, index) => (
+                    <ComboListCard
+                      key={combo.input}
+                      {...combo}
+                      slug={slug}
+                      total={combos.length - 1}
+                      index={index}
+                      comboRef={this.comboRefs[combo.uuid]}
+                      showMessage={showMessage}
+                    />
+                  ))
+                }
+              </MessageContext.Consumer>
+            </Card.Group>
+          ) : (
+            <PlaceholderPanel icon="plus" basic>
+              This character doesn't have any listed combos.
+            </PlaceholderPanel>
+          )}
+        </Segment>
       </React.Fragment>
     );
     const button = (
