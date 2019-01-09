@@ -144,7 +144,7 @@ export default function Layout({ children }) {
                       </MenuContext.Consumer>
                       {message && (
                         <Message
-                          size="big"
+                          size="large"
                           style={{
                             position: "fixed",
                             bottom: 0,
@@ -155,9 +155,13 @@ export default function Layout({ children }) {
                             boxShadow: "none"
                           }}
                         >
-                          <Container>
+                          <Container
+                            style={{
+                              padding: "0 1rem"
+                            }}
+                          >
                             <Message
-                              size="big"
+                              size="large"
                               header={message.header}
                               content={message.content}
                               onDismiss={clearMessage}
