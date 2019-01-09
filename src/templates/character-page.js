@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import {
+  Attributes,
   AttributePanel,
   ComboList,
   Layout,
@@ -29,6 +30,7 @@ export default function CharacterPage({ data, location: { search } }) {
         tags={tags}
         attributes={attributes}
       />
+      <Attributes attributes={attributes} />
       <AttributePanel attributes={attributes} />
       <KillMovesPanel className="mobile-only" basic />
       <ComboList slug={slug} combos={combos} query={search} />

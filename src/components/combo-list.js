@@ -6,7 +6,6 @@ import queryString from "query-string";
 import * as styles from "../styles";
 import PlaceholderPanel from "./placeholder-panel";
 import ComboListCard from "./combo-list-card";
-import ComboListEntry from "./combo-list-entry";
 import { MessageContext } from "./message-provider";
 
 export default class ComboList extends Component {
