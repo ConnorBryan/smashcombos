@@ -44,7 +44,7 @@
     },
     {
       "input": "dthrow fair",
-      "damage": "0",
+      "damage": "27",
       "tags": [],
       "percentages": {
         "balloonweight": "0",
@@ -55,7 +55,7 @@
         "superheavyweight": "0"
       },
       "demonstration": "",
-      "notes": "easy to use and free 27% early in a stock",
+      "notes": "Easy to use.",
       "uuid": "ee2a30af-dcbf-41c2-9e2d-2e7a69a2cfd1"
     }
   ],
