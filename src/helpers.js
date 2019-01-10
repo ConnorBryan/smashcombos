@@ -7,7 +7,7 @@ export const weightClassToTag = {
   superheavyweight: "Super Heavyweight"
 };
 
-export const generateEffectivePercentages = percentages =>
+export const generateEffectivePercentages = (percentages = {}) =>
   Object.entries(weightClassToTag).map(([key, value]) => ({
     label: value,
     value: `${percentages[key]}%`
