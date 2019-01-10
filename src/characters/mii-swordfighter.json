@@ -36,6 +36,24 @@
     {
       "percentages": {},
       "uuid": "00f48a82-265f-41e7-aeb9-10ce3fa9c120"
+    },
+    {
+      "input": "nspecial uspecial",
+      "damage": "any",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "60",
+        "featherweight": "75",
+        "lightweight": "80",
+        "middleweight": "80",
+        "heavyweight": "85",
+        "superheavyweight": "90"
+      },
+      "demonstration": "",
+      "notes": "requires nspecial being galestrike and uspecial being hero spin, works on all characters at all percents on late hit.",
+      "uuid": "8444f3bb-2aab-4270-93bb-c016d5978860"
     }
   ],
   "preview": "",
