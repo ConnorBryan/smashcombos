@@ -43,19 +43,18 @@
     },
     {
       "input": "dair dspecial",
-      "damage": "0",
+      "damage": "30.1",
       "tags": [],
       "percentages": {
-        "balloonweight": "0",
-        "featherweight": "0",
-        "lightweight": "0",
-        "middleweight": "0",
-        "heavyweight": "0",
-        "superheavyweight": "0"
+        "balloonweight": "Any",
+        "featherweight": "Any",
+        "lightweight": "Any",
+        "middleweight": "Any",
+        "heavyweight": "Any",
+        "superheavyweight": "Any"
       },
       "demonstration": "",
-      "notes": "",
-      "uuid": "668a832a-ae3a-4a7b-9d80-cf0a89bb3ffc"
+      "notes": ""
     }
   ],
   "preview": "",
