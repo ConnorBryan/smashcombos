@@ -1,7 +1,7 @@
 {
   "name": "Pichu",
   "render": "../../static/img/pichu.png",
-  "description": "...",
+  "description": "DThrow\nSh+Nair\nDThrow\nFrair",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
@@ -34,7 +34,8 @@
     }
   },
   "tags": [
-    "fastFaller"
+    "fastFaller",
+    "floatie"
   ],
   "combos": [
     {
