@@ -43,7 +43,7 @@
     },
     {
       "input": "nair fair",
-      "damage": "50",
+      "damage": "25.5",
       "tags": [
         "killConfirm"
       ],
@@ -56,8 +56,7 @@
         "superheavyweight": "50"
       },
       "demonstration": "",
-      "notes": "Hit a weak hit nair near the ledge and run off fair. This works as a true combo and I haven't seen anyone DI out of this ",
-      "uuid": "d1aa8ea1-b6d7-4e88-a3d5-7925439caa99"
+      "notes": "Hit a weak hit nair near the ledge and run off fair. This works as a true combo and I haven't seen anyone DI out of this "
     }
   ],
   "preview": "",
