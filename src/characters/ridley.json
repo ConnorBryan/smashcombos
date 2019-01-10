@@ -1,7 +1,7 @@
 {
   "name": "Ridley",
   "render": "../../static/img/ridley.png",
-  "description": "...",
+  "description": "Perry\n",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
