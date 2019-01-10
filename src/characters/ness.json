@@ -39,15 +39,18 @@
   "combos": [
     {
       "input": "dthrow sh+fair dj+fair",
+      "damage": "0",
+      "tags": [],
       "percentages": {
         "balloonweight": "0-25",
         "featherweight": "0-25",
-        "heavyweight": "N/A",
         "lightweight": "0-25",
         "middleweight": "0-25",
+        "heavyweight": "N/A",
         "superheavyweight": "N/A"
       },
-      "uuid": "405de651-9fa8-4428-89b4-1655d7761f89"
+      "demonstration": "",
+      "notes": "Fast-fall Fair can be added after the combo if they don't DI out."
     }
   ],
   "preview": "",
