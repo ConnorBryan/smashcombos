@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "726346d6-1229-4f65-9e88-be8fed738263"
+    },
+    {
+      "input": "uthrow uair uspecial",
+      "damage": "39",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "40",
+        "featherweight": "39",
+        "lightweight": "39",
+        "middleweight": "39",
+        "heavyweight": "39",
+        "superheavyweight": "39"
+      },
+      "demonstration": "",
+      "notes": "after uair you kinda have to move forward ",
+      "uuid": "6bdd8c95-c36a-4d40-8136-85c03a6da341"
     }
   ],
   "preview": "",
