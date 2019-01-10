@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "e2c31519-cd88-40c1-810c-9e93c2840a1e"
+    },
+    {
+      "input": "uthrow utilt",
+      "damage": "30.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "c4ef3196-5f57-4cc4-8d25-663a79e994c5"
     }
   ],
   "preview": "",
