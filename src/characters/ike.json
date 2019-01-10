@@ -40,19 +40,18 @@
     },
     {
       "input": "dthrow uspecial",
-      "damage": "20",
+      "damage": "24",
       "tags": [],
       "percentages": {
-        "balloonweight": "?",
-        "featherweight": "?",
-        "lightweight": "?",
-        "middleweight": "?",
-        "heavyweight": "?",
-        "superheavyweight": "?"
+        "balloonweight": "0-50",
+        "featherweight": "0-50",
+        "lightweight": "0-50",
+        "middleweight": "0-50",
+        "heavyweight": "0-50",
+        "superheavyweight": "0-50"
       },
       "demonstration": "",
-      "notes": "",
-      "uuid": "816a491f-a929-4b1a-8628-dcaceb70fb82"
+      "notes": ""
     }
   ],
   "preview": "",
