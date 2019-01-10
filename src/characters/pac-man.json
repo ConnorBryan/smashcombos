@@ -33,9 +33,7 @@
       "value": "95"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},
@@ -44,9 +42,7 @@
     {
       "input": "uair sh+fair ff+falling+uair sh+fair ff+falling+uair fh+fair nspecial",
       "damage": "74",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "13",
@@ -58,24 +54,6 @@
       "demonstration": "https://gfycat.com/longdelightfulankole",
       "notes": "On most stages, you would have to hit this near the edge to carry the opponent all the way across the stage, otherwise you can't follow up after the second SH-Fair. First up air needs to be falling, final neutral special is key. Since all the other fruits are too slow, I think key is the only real finisher. As far as I can tell, it doesn't work on balloon weights, and is difficult to pull off on featherweights depending on their character's size. https://gfycat.com/longdelightfulankole",
       "uuid": "84e5de69-ab36-43dc-bc49-004e5b36af09"
-    },
-    {
-      "input": "uair sh+fair ff+falling+uair sh+fair ff+falling+uair fh+fair nspecial",
-      "damage": "74",
-      "tags": [
-        "killConfirm"
-      ],
-      "percentages": {
-        "balloonweight": "0",
-        "featherweight": "13",
-        "lightweight": "17",
-        "middleweight": "20",
-        "heavyweight": "25",
-        "superheavyweight": "29"
-      },
-      "demonstration": "https://gfycat.com/longdelightfulankole",
-      "notes": "On most stages, you would have to hit this near the edge to carry the opponent all the way across the stage, otherwise you can't follow up after the second SH-Fair. First up air needs to be falling, final neutral special is key. Since all the other fruits are too slow, I think key is the only real finisher. As far as I can tell, it doesn't work on balloon weights, and is difficult to pull off on featherweights depending on their character's size. https://gfycat.com/longdelightfulankole",
-      "uuid": "d6b5f88d-eb76-4d2e-bccb-5801e702f4e4"
     }
   ],
   "preview": "",
