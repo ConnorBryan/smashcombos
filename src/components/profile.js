@@ -7,6 +7,7 @@ import * as styles from "../styles";
 import CharacterPortrait from "./character-portrait";
 import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
+import { fancyPanel } from "../styles";
 
 export default function CharacterProfile({
   basic,
@@ -46,6 +47,7 @@ export default function CharacterProfile({
           {description && description !== "..." ? (
             <div
               style={{
+                ...fancyPanel,
                 maxWidth: "40rem",
                 lineHeight: 1.6,
                 fontSize: "1.2em"

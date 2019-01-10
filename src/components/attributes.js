@@ -99,12 +99,22 @@ export default class Attributes extends Component {
               as="h2"
               style={{
                 ...styles.fancyText,
-                marginBottom: "2rem",
+                marginBottom: 0,
                 color: "#7289D8"
               }}
             >
               Attributes
             </Header>
+            <p
+              style={{
+                ...styles.fancyPanel,
+                marginTop: "1rem",
+                marginBottom: "2rem",
+                fontSize: "1.2rem"
+              }}
+            >
+              Statistic information available across a range of categories.
+            </p>
             <div className="mobile-only">
               <Dropdown
                 fluid
