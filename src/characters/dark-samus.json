@@ -43,8 +43,10 @@
     },
     {
       "input": "uthrow uair uspecial",
-      "damage": "39",
-      "tags": [],
+      "damage": "35.8",
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "40",
         "featherweight": "39",
@@ -54,8 +56,7 @@
         "superheavyweight": "39"
       },
       "demonstration": "",
-      "notes": "after uair you kinda have to move forward ",
-      "uuid": "6bdd8c95-c36a-4d40-8136-85c03a6da341"
+      "notes": "after uair you kinda have to move forward "
     }
   ],
   "preview": "",
