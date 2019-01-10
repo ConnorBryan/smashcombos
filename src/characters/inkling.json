@@ -40,7 +40,9 @@
     {
       "input": "uthrow dj+uair",
       "damage": "21",
-      "tags": [],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "90-100",
         "featherweight": "95-110",
@@ -50,8 +52,7 @@
         "superheavyweight": "135-160"
       },
       "demonstration": "",
-      "notes": "https://docs.google.com/spreadsheets/d/1zIOsvvQO8lpUG67xVyPcqjAGmEd5ftY5HNjqBSIEhUU/edit#gid=0",
-      "uuid": "2fce124c-fa43-4c36-a108-7df93756db55"
+      "notes": "https://docs.google.com/spreadsheets/d/1zIOsvvQO8lpUG67xVyPcqjAGmEd5ftY5HNjqBSIEhUU/edit#gid=0"
     }
   ],
   "preview": "",
