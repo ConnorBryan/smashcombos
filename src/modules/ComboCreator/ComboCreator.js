@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Button, Form, Grid, Segment } from "semantic-ui-react";
+import { Button, Form, Grid, Input, Segment } from "semantic-ui-react";
 
+import * as styles from "../../styles";
 import { InputScreen } from "./components";
 import { comboTags, comboPercentages } from "./constants";
 
@@ -86,17 +87,28 @@ export default class ComboCreator extends Component {
         <Form onSubmit={this.handleSubmit}>
           <Grid>
             <Grid.Column mobile={16} tablet={8} computer={4}>
-              <Form.Input
-                required
-                label="Damage"
-                icon="percent"
-                value={damage}
-                onChange={this.updateDamage}
-                tabIndex={1}
-                style={{
-                  maxWidth: "10rem"
-                }}
-              />
+              <Form.Field>
+                <label>Damage Dealt</label>
+                <p
+                  style={{
+                    ...styles.fancyPanel,
+                    marginTop: "1rem",
+                    marginBottom: "2rem"
+                  }}
+                >
+                  How much damage does the combo do to the opponent?
+                </p>
+                <Input
+                  required
+                  icon="percent"
+                  value={damage}
+                  onChange={this.updateDamage}
+                  tabIndex={1}
+                  style={{
+                    maxWidth: "10rem"
+                  }}
+                />
+              </Form.Field>
               <Form.Group grouped>
                 <label>Tags</label>
                 {comboTags.map(({ label, value }, index) => (
@@ -111,6 +123,15 @@ export default class ComboCreator extends Component {
               </Form.Group>
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={6}>
+              <p
+                style={{
+                  ...styles.fancyPanel,
+                  marginTop: "1rem",
+                  marginBottom: "2rem"
+                }}
+              >
+                At what percentage ranges does the combo work?
+              </p>
               <div
                 style={{
                   display: "flex"
