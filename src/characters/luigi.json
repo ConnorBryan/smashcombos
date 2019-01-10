@@ -74,6 +74,24 @@
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=158",
       "notes": "Credit to Beefy Smash Doods. Adding pummeling can enable this combo when it otherwise wouldn't work.",
       "uuid": "5f335bbc-395f-41a8-a3a0-26974eaa0eag"
+    },
+    {
+      "input": "",
+      "damage": "1",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "asdf",
+        "featherweight": "asdf",
+        "lightweight": "asdf",
+        "middleweight": "asdf",
+        "heavyweight": "asdf",
+        "superheavyweight": "asdf"
+      },
+      "demonstration": "a",
+      "notes": "a",
+      "uuid": "520e89fb-808c-4af8-86bc-359ebfe2648c"
     }
   ],
   "preview": "",
