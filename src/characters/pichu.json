@@ -1,7 +1,7 @@
 {
   "name": "Pichu",
   "render": "../../static/img/pichu.png",
-  "description": "...",
+  "description": "...Pichu has the potential to outclass Pikachu on the tier lists due to insane damage output and combo game. He's also tiny which makes him harder to hit and enables him to low profile attacks with his crouch or crouching attacks. However, this all comes at a cost. Pichu is the lightest character in the game, and can easily be KO'd by 60%. And though it's not much, he hurts himself whenever he performs an attack involving electricity. Play extra cautiously unless you want your stocks erased.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
