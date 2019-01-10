@@ -34,15 +34,9 @@
   },
   "combos": [
     {
-      "percentages": {},
-      "uuid": "2c0a7873-b898-4ef3-8347-5c071bc208b4"
-    },
-    {
       "input": "uair utilt utilt uair",
       "damage": "X",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "X",
         "featherweight": "X",
@@ -54,6 +48,22 @@
       "demonstration": "",
       "notes": "Works best with late up air or fast fall up air. This confirms into tilt at mid percent and lower (not sure if high percent). The follow ups change as percent goes up but at least one uptilt is usually possible.",
       "uuid": "b417ab03-034f-47da-9d41-b9d09ebbd6b2"
+    },
+    {
+      "input": "grab pummel dthrow uair",
+      "damage": "0-5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-5",
+        "lightweight": "0-5",
+        "middleweight": "0-5",
+        "heavyweight": "0-5",
+        "superheavyweight": "0-5"
+      },
+      "demonstration": "",
+      "notes": "combo works on most character's 5% and below. Anything after and the throw will send them too far away for a true follow up.",
+      "uuid": "45e17157-2cc1-4a49-a12f-50227beb1366"
     }
   ],
   "preview": "",
