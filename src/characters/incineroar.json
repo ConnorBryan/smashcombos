@@ -40,6 +40,24 @@
     {
       "percentages": {},
       "uuid": "fdc012cc-17b0-4ca2-9427-f38fbf8f4172"
+    },
+    {
+      "input": "dthrow sh+fh+dj+fair",
+      "damage": "26.4",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0 to 55 to (+dash)90",
+        "featherweight": "0 to 80 to (+dash)125",
+        "lightweight": "0 to 85 to (+dash)130",
+        "middleweight": "0 to 90 to (+dash)135",
+        "heavyweight": "0 to 95 to (+dash)140",
+        "superheavyweight": "0 to 105 to (+dash)155"
+      },
+      "demonstration": "",
+      "notes": "Depending on percent, may need a short hop, full hop, or double jump. Inputting a dash right after the throw also allows it to combo into even higher percents (although the timing window gets shorter and shorter as well as the opponents ability to DI). Percents vary slightly on Floaties and Fast Fallers.",
+      "uuid": "ab732698-b79a-4370-a16b-8a294d5c458c"
     }
   ],
   "preview": "",
