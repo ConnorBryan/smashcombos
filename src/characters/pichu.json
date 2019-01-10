@@ -56,6 +56,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "f247dbe2-fcdc-4147-8cfd-5f67d9230afb"
+    },
+    {
+      "input": "dtilt utilt utilt sh+uair dj+fair",
+      "damage": "41.2",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-8",
+        "lightweight": "0-12",
+        "middleweight": "0-15",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "",
+      "notes": "For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.",
+      "uuid": "c55a4bab-b62c-4d31-9c7b-bd3458736472"
     }
   ],
   "preview": "",
