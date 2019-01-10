@@ -57,6 +57,24 @@
       },
       "demonstration": "",
       "notes": "Hit a weak hit nair near the ledge and run off fair. This works as a true combo and I haven't seen anyone DI out of this "
+    },
+    {
+      "input": "nair ftilt utilt utilt uair",
+      "damage": "40",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "0-15",
+        "lightweight": "0-15",
+        "middleweight": "0-15",
+        "heavyweight": "0-25",
+        "superheavyweight": "0-30"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "49820372-6edc-4741-b20b-e62d9dacc90f"
     }
   ],
   "preview": "",
