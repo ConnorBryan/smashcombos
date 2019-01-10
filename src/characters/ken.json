@@ -1,7 +1,7 @@
 {
   "name": "Ken",
   "render": "../../static/img/placeholder.png",
-  "description": "...",
+  "description": "A slightly less beefy Ryu with high combo potentiaI. Due to the changes to the special cancel system, Ken can convert into a Shoryuken from any stray Jab, Nair, Uair, you name it. Ken's Shoryu is supposedly weaker than Ryu's, but still kills pretty well. Not to say he doesn't have combos, though.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
@@ -43,5 +43,6 @@
   "content": "\n",
   "basename": "ken",
   "id": "29daee6d-baa5-45c8-95d4-e8dc14a24f10",
-  "slug": "ken"
+  "slug": "ken",
+  "tags": []
 }
