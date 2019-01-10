@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "56a055d0-78e5-4e6e-8b9a-12ffbabd2bbc"
+    },
+    {
+      "input": "dair dspecial",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "668a832a-ae3a-4a7b-9d80-cf0a89bb3ffc"
     }
   ],
   "preview": "",
