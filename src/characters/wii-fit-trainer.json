@@ -43,7 +43,7 @@
     },
     {
       "input": "dthrow bair",
-      "damage": "0",
+      "damage": "19.6",
       "tags": [],
       "percentages": {
         "balloonweight": "20",
@@ -54,8 +54,7 @@
         "superheavyweight": "35"
       },
       "demonstration": "",
-      "notes": "Low percents",
-      "uuid": "6ecc0782-9fbf-454b-bda2-c6765f33974f"
+      "notes": "Low percents"
     }
   ],
   "preview": "",
