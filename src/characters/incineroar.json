@@ -58,6 +58,22 @@
       "demonstration": "",
       "notes": "Depending on percent, may need a short hop, full hop, or double jump. Inputting a dash right after the throw also allows it to combo into even higher percents (although the timing window gets shorter and shorter as well as the opponents ability to DI). Percents vary slightly on Floaties and Fast Fallers.",
       "uuid": "ab732698-b79a-4370-a16b-8a294d5c458c"
+    },
+    {
+      "input": "dthrow sh+nspecial",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Rather than the traditional fair, at 0% you can downthrow into a shorthop darkest lariat to maximise your damage.",
+      "uuid": "86d03ace-3155-4f28-890b-c52fc0a5a09f"
     }
   ],
   "preview": "",
