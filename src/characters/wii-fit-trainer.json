@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "2f100e40-e723-44db-8c2e-2f687b4b6bb0"
+    },
+    {
+      "input": "dthrow bair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "20",
+        "featherweight": "10",
+        "lightweight": "10",
+        "middleweight": "20",
+        "heavyweight": "30",
+        "superheavyweight": "35"
+      },
+      "demonstration": "",
+      "notes": "Low percents",
+      "uuid": "683bf8c1-63ea-41ac-ba8a-45533186291d"
     }
   ],
   "preview": "",
