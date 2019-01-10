@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "2c0a7873-b898-4ef3-8347-5c071bc208b4"
+    },
+    {
+      "input": "grab pummel dthrow uair",
+      "damage": "0-5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-5",
+        "lightweight": "0-5",
+        "middleweight": "0-5",
+        "heavyweight": "0-5",
+        "superheavyweight": "0-5"
+      },
+      "demonstration": "",
+      "notes": "combo works on most character's 5% and below. Anything after and the throw will send them too far away for a true follow up.",
+      "uuid": "45e17157-2cc1-4a49-a12f-50227beb1366"
     }
   ],
   "preview": "",
