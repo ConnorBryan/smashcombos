@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "0d9b2cb9-8a40-4137-a88a-1e8ea4b9495b"
+    },
+    {
+      "input": "dthrow sh+uair dj+fair",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "30",
+        "featherweight": "30",
+        "lightweight": "30",
+        "middleweight": "30",
+        "heavyweight": "30",
+        "superheavyweight": "30"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f247dbe2-fcdc-4147-8cfd-5f67d9230afb"
     }
   ],
   "preview": "",
