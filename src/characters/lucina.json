@@ -36,6 +36,24 @@
     {
       "percentages": {},
       "uuid": "2c0a7873-b898-4ef3-8347-5c071bc208b4"
+    },
+    {
+      "input": "uair utilt utilt uair",
+      "damage": "X",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "X",
+        "featherweight": "X",
+        "lightweight": "X",
+        "middleweight": "X",
+        "heavyweight": "X",
+        "superheavyweight": "X"
+      },
+      "demonstration": "",
+      "notes": "Works best with late up air or fast fall up air. This confirms into tilt at mid percent and lower (not sure if high percent). The follow ups change as percent goes up but at least one uptilt is usually possible.",
+      "uuid": "b417ab03-034f-47da-9d41-b9d09ebbd6b2"
     }
   ],
   "preview": "",
