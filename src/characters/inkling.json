@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "286d4776-a666-4438-8a5d-b6d91a5e19b0"
+    },
+    {
+      "input": "uthrow dj+uair",
+      "damage": "21",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "90-100",
+        "featherweight": "95-110",
+        "lightweight": "100-110",
+        "middleweight": "115-120",
+        "heavyweight": "120-150",
+        "superheavyweight": "135-160"
+      },
+      "demonstration": "",
+      "notes": "https://docs.google.com/spreadsheets/d/1zIOsvvQO8lpUG67xVyPcqjAGmEd5ftY5HNjqBSIEhUU/edit#gid=0",
+      "uuid": "2fce124c-fa43-4c36-a108-7df93756db55"
     }
   ],
   "preview": "",
