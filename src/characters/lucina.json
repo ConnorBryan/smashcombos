@@ -35,21 +35,20 @@
   "combos": [
     {
       "input": "uair utilt utilt uair",
-      "damage": "X",
+      "damage": "43.5",
       "tags": [
         "diable"
       ],
       "percentages": {
-        "balloonweight": "X",
-        "featherweight": "X",
-        "lightweight": "X",
-        "middleweight": "X",
-        "heavyweight": "X",
-        "superheavyweight": "X"
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
       },
       "demonstration": "",
-      "notes": "Works best with late up air or fast fall up air. This confirms into tilt at mid percent and lower (not sure if high percent). The follow ups change as percent goes up but at least one uptilt is usually possible.",
-      "uuid": "b417ab03-034f-47da-9d41-b9d09ebbd6b2"
+      "notes": "Works best with late up air or fast fall up air. This confirms into tilt at mid percent and lower (not sure if high percent). The follow ups change as percent goes up but at least one uptilt is usually possible."
     },
     {
       "input": "grab pummel dthrow uair",
