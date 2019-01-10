@@ -56,7 +56,11 @@ export default class ComboListCard extends Component {
           {/* Damage */}
           {damage != null && (
             <Card.Content extra>
-              <Card.Header as="h5" content="Damage" style={styles.fancyText} />
+              <Card.Header
+                as="h5"
+                content="Damage Dealt"
+                style={styles.fancyText}
+              />
               <div
                 style={{
                   display: "flex",
