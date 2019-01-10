@@ -39,7 +39,7 @@
     },
     {
       "input": "nspecial uspecial",
-      "damage": "any",
+      "damage": "0",
       "tags": [
         "killConfirm"
       ],
@@ -52,8 +52,7 @@
         "superheavyweight": "90"
       },
       "demonstration": "",
-      "notes": "requires nspecial being galestrike and uspecial being hero spin, works on all characters at all percents on late hit.",
-      "uuid": "88f9eb58-e8d1-4e7e-b649-c13136567d78"
+      "notes": "Requires nspecial being galestrike and uspecial being hero spin, works on all characters at all percents on late hit."
     }
   ],
   "preview": "",
