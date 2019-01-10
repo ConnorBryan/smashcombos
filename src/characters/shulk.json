@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "cf6986ca-1ad3-46d6-b90f-7b92c5441f15"
+    },
+    {
+      "input": "dthrow dtilt",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-?",
+        "featherweight": "0-?",
+        "lightweight": "0-?",
+        "middleweight": "0-~50",
+        "heavyweight": "0-+50",
+        "superheavyweight": "0-+50"
+      },
+      "demonstration": "",
+      "notes": "Requires buster art to be activated (at %'s where down tilt stops working, forward tilt should work)",
+      "uuid": "fe774cee-cc25-44e4-8016-0b2a65436772"
     }
   ],
   "preview": "",
