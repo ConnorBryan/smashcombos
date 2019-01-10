@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "80e04893-6d25-4b35-89c9-a980750f607e"
+    },
+    {
+      "input": "grab pummel pummel dthrow uspecial",
+      "damage": "21.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-43",
+        "featherweight": "0-45",
+        "lightweight": "0-57",
+        "middleweight": "0-64",
+        "heavyweight": "0-69",
+        "superheavyweight": "0-70"
+      },
+      "demonstration": "",
+      "notes": "More damage will be done at lower percentages (around 29.2%) especially on heavy characters",
+      "uuid": "4f462fbb-0ece-41d9-9a23-dcaf9d6cc2a2"
     }
   ],
   "preview": "",
