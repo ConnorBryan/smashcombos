@@ -39,7 +39,7 @@
     },
     {
       "input": "dthrow dtilt",
-      "damage": "~30",
+      "damage": "25.2",
       "tags": [],
       "percentages": {
         "balloonweight": "0-?",
