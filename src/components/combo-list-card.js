@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import { Button, Card, Embed, Header, List, Ref } from "semantic-ui-react";
+import { Button, Card, Embed, Header, List, Popup } from "semantic-ui-react";
 
 import { copyToClipboard, generateEffectivePercentages } from "../helpers";
 import * as styles from "../styles";
@@ -10,18 +10,9 @@ import PlaceholderPanel from "./placeholder-panel";
 import Tagbar from "./tagbar";
 
 export default class ComboListCard extends Component {
-  state = {
-    isVisible: true
-  };
-
-  toggleVisibility = () =>
-    this.setState(prevState => ({
-      isVisible: !prevState.isVisible
-    }));
-
   share = () => {
     const { slug, uuid, showMessage } = this.props;
-    const url = `https://smashcombos.com/${slug}?combo=${uuid}`;
+    const url = `https://smashcombos.com/${slug}/combos/${uuid}`;
 
     copyToClipboard(url);
 
@@ -41,81 +32,80 @@ export default class ComboListCard extends Component {
       percentages,
       demonstration,
       notes,
-      comboRef,
-      active
+      basic
     } = this.props;
-    const { isVisible } = this.state;
-
-    return (
-      <Ref innerRef={comboRef}>
-        <Card
+    const linkProps = basic
+      ? {
+          as: Link,
+          to: `/${slug}/combos/${uuid}`
+        }
+      : {};
+    const card = (
+      <Card {...linkProps}>
+        {/* Input */}
+        <Card.Content
           style={{
-            height: isVisible ? "auto" : "200px",
-            border: active ? "2px solid #eee" : "1px solid #738BD6"
+            position: "relative",
+            height: "250px",
+            overflowY: "auto"
           }}
         >
-          {/* Input */}
-          <Card.Content
-            style={{
-              position: "relative",
-              height: "250px",
-              overflowY: "auto"
-            }}
-          >
-            <Input input={input} />
-            <Button
-              onClick={this.toggleVisibility}
-              style={{
-                position: "absolute",
-                top: "0.5rem",
-                right: "0.5rem"
-              }}
-            >
-              {isVisible ? "Hide" : "Show"}
-            </Button>
-          </Card.Content>
-          {isVisible && (
-            <React.Fragment>
-              {/* Damage */}
-              {damage != null && (
-                <Card.Content extra>
-                  <Card.Header
-                    as="h5"
-                    content="Damage"
-                    style={styles.fancyText}
-                  />
-                  <div
+          <Input input={input} />
+        </Card.Content>
+        <React.Fragment>
+          {/* Damage */}
+          {damage != null && (
+            <Card.Content extra>
+              <Card.Header as="h5" content="Damage" style={styles.fancyText} />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center"
+                }}
+              >
+                <PercentBar
+                  value={damage}
+                  style={{
+                    flex: 4,
+                    marginBottom: 0
+                  }}
+                />
+                <div
+                  style={{
+                    ...styles.perfectlyCentered,
+                    paddingLeft: "1rem"
+                  }}
+                >
+                  <Header
+                    as="h3"
+                    content={`${parseFloat(damage).toFixed(1)}%`}
+                    textAlign="right"
                     style={{
-                      display: "flex",
-                      alignItems: "center"
+                      ...styles.fancyText,
+                      flex: 1
                     }}
-                  >
-                    <PercentBar
-                      value={damage}
-                      style={{
-                        flex: 4,
-                        marginBottom: 0
-                      }}
-                    />
-                    <div
-                      style={{
-                        ...styles.perfectlyCentered,
-                        paddingLeft: "1rem"
-                      }}
-                    >
-                      <Header
-                        as="h3"
-                        content={`${parseFloat(damage).toFixed(1)}%`}
-                        textAlign="right"
-                        style={{
-                          ...styles.fancyText,
-                          flex: 1
-                        }}
-                      />
-                    </div>
-                  </div>
-                </Card.Content>
-              )}
+                  />
+                </div>
+              </div>
+            </Card.Content>
+          )}
+          {!basic && (
+            <React.Fragment>
+              {/* Demonstration */}
+              <Card.Content extra>
+                <Card.Header
+                  as="h5"
+                  content="Demonstration"
+                  style={styles.fancyText}
+                />
+                {demonstration ? (
+                  <Embed url={demonstration} />
+                ) : (
+                  <PlaceholderPanel basic>
+                    This combo does not have a demonstration.
+                  </PlaceholderPanel>
+                )}
+              </Card.Content>
               {/* Tags */}
               <Card.Content
                 extra
@@ -157,21 +147,6 @@ export default class ComboListCard extends Component {
                   )}
                 </List>
               </Card.Content>
-              {/* Demonstration */}
-              <Card.Content extra>
-                <Card.Header
-                  as="h5"
-                  content="Demonstration"
-                  style={styles.fancyText}
-                />
-                {demonstration ? (
-                  <Embed url={demonstration} />
-                ) : (
-                  <PlaceholderPanel basic>
-                    This combo does not have a demonstration.
-                  </PlaceholderPanel>
-                )}
-              </Card.Content>
               {/* Notes */}
               <Card.Content
                 extra
@@ -196,15 +171,29 @@ export default class ComboListCard extends Component {
                   />
                   <Button
                     as={Link}
-                    to={`/${slug}/combos/${uuid}`}
+                    to={`/${slug}/combos/${uuid}/edit`}
                     content="Edit"
                   />
                 </Button.Group>
               </Card.Content>
             </React.Fragment>
           )}
-        </Card>
-      </Ref>
+        </React.Fragment>
+      </Card>
+    );
+
+    return (
+      <React.Fragment>
+        {basic ? (
+          <Popup
+            inverted
+            trigger={card}
+            content="View additional information"
+          />
+        ) : (
+          card
+        )}
+      </React.Fragment>
     );
   }
 }

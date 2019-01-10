@@ -46,17 +46,27 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
 
-      // Edit combos
-      combos.forEach(({ uuid }) =>
+      combos.forEach(({ uuid }) => {
+        // View combo
         createPage({
           path: `${slug}/combos/${uuid}`,
+          component: path.resolve("src/templates/view-combo-page.js"),
+          context: {
+            id,
+            uuid
+          }
+        });
+
+        // Edit combo
+        createPage({
+          path: `${slug}/combos/${uuid}/edit`,
           component: path.resolve("src/templates/edit-combo-page.js"),
           context: {
             id,
             uuid
           }
-        })
-      );
+        });
+      });
     });
   });
 };

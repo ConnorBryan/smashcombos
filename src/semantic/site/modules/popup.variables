@@ -73,7 +73,7 @@
 @tooltipFontWeight: @fontWeight;
 @tooltipFontStyle: @fontStyle;
 @tooltipColor: @color;
-@tooltipBorder: @border;
+@tooltipBorder: @purple;
 @tooltipBoxShadow: @boxShadow;
 @tooltipMaxWidth: none;
 @tooltipFontSize: @medium;
@@ -86,7 +86,7 @@
 /* Inverted */
 @tooltipInvertedBackground: @invertedBackground;
 @tooltipInvertedColor: @invertedColor;
-@tooltipInvertedBorder: @invertedBorder;
+@tooltipInvertedBorder: @purple;
 @tooltipInvertedBoxShadow: @invertedBoxShadow;
 @tooltipInvertedHeaderBackground: @invertedHeaderBackground;
 @tooltipInvertedHeaderColor: @invertedHeaderColor;
