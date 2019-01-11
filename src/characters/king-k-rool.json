@@ -33,7 +33,9 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +60,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -68,8 +73,7 @@
         "superheavyweight": "0-20"
       },
       "demonstration": "https://www.youtube.com/embed/yILT_8B6dbc",
-      "notes": "Credit to lto and the King R. Rool character discord at https://discord.gg/QgM3RKc",
-      "uuid": "6b1a491d-9b2a-4fad-b5aa-2a972380c30e"
+      "notes": "Credit to lto#4571 and the King R. Rool character discord at https://discord.gg/QgM3RKc"
     }
   ],
   "preview": "",
