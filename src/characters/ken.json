@@ -37,6 +37,24 @@
     {
       "percentages": {},
       "uuid": "9453cb1d-5d1f-457f-be4b-fc7af4ece3e5"
+    },
+    {
+      "input": "dspecial dair uspecial",
+      "damage": "52",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0 - 280",
+        "featherweight": "0 - 280",
+        "lightweight": "0 - 280",
+        "middleweight": "0 - 280",
+        "heavyweight": "0 - 280",
+        "superheavyweight": "0 - 280"
+      },
+      "demonstration": "",
+      "notes": "A fully charged focus attack into a short hop Dair.\n\nTrue Shoryuken does a little more damage.\n\nThis combo is especially useful, considering the amount of damage the enemy needs to take before the combo is not guaranteed, and amount of damage the attack deals.",
+      "uuid": "f43be0bc-2896-4a67-8755-219f932f39c4"
     }
   ],
   "preview": "",
