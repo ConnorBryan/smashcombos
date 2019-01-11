@@ -55,6 +55,25 @@
       },
       "demonstration": "",
       "notes": "Credit to @PlagueVonKarma and the King R. Rool character discord at https://discord.gg/QgM3RKc"
+    },
+    {
+      "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
+      "damage": "65",
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-20",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "https://www.youtube.com/embed/yILT_8B6dbc",
+      "notes": "",
+      "uuid": "6b1a491d-9b2a-4fad-b5aa-2a972380c30e"
     }
   ],
   "preview": "",
