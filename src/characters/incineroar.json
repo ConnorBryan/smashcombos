@@ -33,7 +33,9 @@
       "value": "116"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -42,7 +44,9 @@
     {
       "input": "dthrow sh+fh+dj+fair",
       "damage": "26.4",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "0 to 55 to (+dash)90",
         "featherweight": "0 to 80 to (+dash)125",
@@ -70,6 +74,22 @@
       "demonstration": "",
       "notes": "Low percent combo in place of the traditional fair you can darkest lariat for a little more damage.",
       "uuid": "82b1dbf8-cf49-40f8-b8a7-cba2d98b00cf"
+    },
+    {
+      "input": "utilt",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5d164905-9aaf-45d9-b6ce-ce3d94866d7a"
     }
   ],
   "preview": "",
