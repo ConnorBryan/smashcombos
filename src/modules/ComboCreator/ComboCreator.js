@@ -99,7 +99,6 @@ export default class ComboCreator extends Component {
                   How much damage does the combo do to the opponent?
                 </p>
                 <Input
-                  required
                   icon="percent"
                   value={damage}
                   onChange={this.updateDamage}
@@ -142,7 +141,6 @@ export default class ComboCreator extends Component {
                     ({ label, value }, index) =>
                       index < 3 && (
                         <Form.Input
-                          required
                           key={label}
                           label={label}
                           icon="percent"
@@ -162,7 +160,6 @@ export default class ComboCreator extends Component {
                     ({ label, value }, index) =>
                       index > 2 && (
                         <Form.Input
-                          required
                           key={label}
                           label={label}
                           icon="percent"
