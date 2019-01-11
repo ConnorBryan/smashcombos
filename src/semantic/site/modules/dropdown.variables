@@ -49,7 +49,7 @@
 /* Menu Item */
 @itemFontSize: @medium;
 @itemTextAlign: left;
-@itemBorder: 1px solid @purple;
+@itemBorder: 1px solid #666;
 @itemHeight: auto;
 @itemDivider: none;
 @itemColor: @textColor;
@@ -137,7 +137,7 @@
 @selectionPadding: @selectionVerticalPadding @selectionIconDistance @selectionVerticalPadding @selectionHorizontalPadding;
 @selectionZIndex: 10;
 
-@selectionItemDivider: 1px solid @purple;
+@selectionItemDivider: 1px solid #333;
 @selectionMessagePadding: @selectionItemPadding;
 
 /* <select> */
@@ -193,7 +193,7 @@
 @selectionHoverBoxShadow: none;
 
 /* Focus */
-@selectionFocusBorderColor: @purple;
+@selectionFocusBorderColor: #eee;
 @selectionFocusBoxShadow: none;
 @selectionFocusMenuBoxShadow: @raisedShadow;
 
@@ -201,12 +201,12 @@
 @selectionVisibleTextFontWeight: @normal;
 @selectionVisibleTextColor: @hoveredTextColor;
 
-@selectionVisibleBorderColor: @focusedFormMutedBorderColor;
+@selectionVisibleBorderColor: #333;
 @selectionVisibleBoxShadow: @raisedShadow;
 @selectionVisibleMenuBoxShadow: @raisedShadow;
 
 /* Visible Hover */
-@selectionActiveHoverBorderColor: @focusedFormMutedBorderColor;
+@selectionActiveHoverBorderColor: #333;
 @selectionActiveHoverBoxShadow: @selectionVisibleBoxShadow;
 @selectionActiveHoverMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 
@@ -322,10 +322,10 @@
 @scrollingMenuItemBorder: none;
 @scrollingMenuRightItemPadding: ~"calc("(@itemHorizontalPadding)~" + "(@scrollbarWidth)~")";
 
-@scrollingMobileMaxItems: 4;
-@scrollingTabletMaxItems: 6;
-@scrollingComputerMaxItems: 8;
-@scrollingWidescreenMaxItems: 12;
+@scrollingMobileMaxItems: 6;
+@scrollingTabletMaxItems: 8;
+@scrollingComputerMaxItems: 10;
+@scrollingWidescreenMaxItems: 14;
 
 @scrollingBorderEMWidth: 0em; /* 0px / em size */
 @scrollingItemHeight: (@itemVerticalPadding * 2) + @itemLineHeight + @scrollingBorderEMWidth;

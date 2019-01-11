@@ -192,12 +192,12 @@ export default class Attributes extends Component {
                 }}
               >
                 <Button
-                  primary
                   fluid
                   as="a"
                   href="http://kuroganehammer.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  size="large"
                   content="Check them out"
                 />
               </Card.Content>

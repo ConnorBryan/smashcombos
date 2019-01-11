@@ -34,7 +34,7 @@
 
 /* Divider */
 @dividerSize: 1px;
-@dividerBackground: @purple;
+@dividerBackground: #222;
 
 /* Sub Menu */
 @subMenuDistance: 0.5em;
@@ -430,7 +430,7 @@
 @attachedHorizontalOffset: -@borderWidth;
 @attachedWidth: calc(100% - (@attachedHorizontalOffset * 2));
 @attachedBoxShadow: none;
-@attachedBorder: @borderWidth solid @solidBorderColor;
+@attachedBorder: @borderWidth solid #333;
 @attachedBottomBoxShadow:
   @boxShadow,
   @attachedBoxShadow

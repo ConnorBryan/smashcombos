@@ -209,14 +209,18 @@ export default class CharacterSelect extends Component {
                     Clear
                   </Button>
                 </Menu.Item>
-                <Menu.Item>
+                <Menu.Item
+                  style={{
+                    padding: 0
+                  }}
+                >
                   <Button
                     as="a"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://discord.gg/EMVEzhS"
                     primary
-                    size="huge"
+                    size="large"
                     icon
                     fluid
                   >
