@@ -193,13 +193,29 @@ export default class CharacterSelect extends Component {
                     }}
                   />
                 </Menu.Item>
+                <Menu.Item fitted className="mobile-only">
+                  <Button
+                    onClick={this.reset}
+                    fluid
+                    style={{
+                      textAlign: "center"
+                    }}
+                  >
+                    Clear
+                  </Button>
+                </Menu.Item>
+                <Menu.Item fitted className="mobile-only">
+                  <Button
+                    onClick={this.hideOptions}
+                    fluid
+                    style={{
+                      textAlign: "center"
+                    }}
+                  >
+                    Close
+                  </Button>
+                </Menu.Item>
                 <Menu.Item fitted>
-                  <Button.Group className="mobile-only" widths={2}>
-                    <Button onClick={this.reset}>Clear</Button>
-                    <Button primary onClick={this.hideOptions}>
-                      Close
-                    </Button>
-                  </Button.Group>
                   <Button
                     className="desktop-only"
                     fluid
