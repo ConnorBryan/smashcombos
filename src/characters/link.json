@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "c7af5424-9f38-4b2f-acc3-282086e1821e"
+    },
+    {
+      "input": "dthrow ac+bair dj+bair",
+      "damage": "33.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-5",
+        "lightweight": "0-5",
+        "middleweight": "0-5",
+        "heavyweight": "0-5",
+        "superheavyweight": "0-30"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8367fbcf-d88b-4d68-b986-fc19576dd22a"
     }
   ],
   "preview": "",
