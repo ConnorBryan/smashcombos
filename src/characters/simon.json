@@ -1,6 +1,6 @@
 {
   "name": "Simon",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/simon.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "107"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},

@@ -1,6 +1,6 @@
 {
   "name": "Isabelle",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/isabelle.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "88"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},

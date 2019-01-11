@@ -1,6 +1,6 @@
 {
   "name": "King K. Rool",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/king-k-rool.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
