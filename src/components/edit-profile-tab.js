@@ -13,12 +13,18 @@ export default class EditProfileTab extends Component {
       description: this.props.description || "",
       tags: this.props.tags || []
     },
-    confirming: false
+    confirming: false,
+    submitting: false
   };
 
   toggleConfirming = () =>
     this.setState(prevState => ({
       confirming: !prevState.confirming
+    }));
+
+  toggleSubmitting = () =>
+    this.setState(prevState => ({
+      submitting: !prevState.submitting
     }));
 
   updateProfile = values => {
@@ -40,7 +46,12 @@ export default class EditProfileTab extends Component {
     const {
       profile: { description, tags }
     } = this.state;
+
+    this.toggleSubmitting();
+
     const success = await CharacterService.editProfile(slug, description, tags);
+
+    this.toggleSubmitting();
 
     showMessage(
       success
@@ -61,7 +72,8 @@ export default class EditProfileTab extends Component {
     const { slug, name, image, weightClass } = this.props;
     const {
       profile: { description, tags },
-      confirming
+      confirming,
+      submitting
     } = this.state;
     const tagHash = tags.reduce((prev, next) => {
       prev[next] = true;
@@ -75,6 +87,7 @@ export default class EditProfileTab extends Component {
             title="profile"
             onMakeChanges={this.toggleConfirming}
             onContinue={this.continue}
+            submitting={submitting}
           >
             <Profile
               basic

@@ -8,7 +8,8 @@ export default function ConfirmChanges({
   children,
   onMakeChanges,
   onContinue,
-  horizontal
+  horizontal,
+  submitting
 }) {
   return (
     <Segment basic>
@@ -24,7 +25,12 @@ export default function ConfirmChanges({
             </p>
             <Button.Group>
               <Button onClick={onMakeChanges}>Make changes</Button>
-              <Button onClick={onContinue} primary>
+              <Button
+                onClick={onContinue}
+                primary
+                disabled={submitting}
+                loading={submitting}
+              >
                 Continue
               </Button>
             </Button.Group>

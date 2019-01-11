@@ -22,7 +22,8 @@ export default class ComboInterface extends Component {
       demonstration: "",
       notes: ""
     },
-    confirming: false
+    confirming: false,
+    submitting: false
   };
 
   toggleConfirming = () =>
@@ -30,17 +31,26 @@ export default class ComboInterface extends Component {
       confirming: !prevState.confirming
     }));
 
+  toggleSubmitting = () =>
+    this.setState(prevState => ({
+      submitting: !prevState.submitting
+    }));
+
   updateCombo = combo => this.setState({ combo });
 
-  continue = () => {
+  continue = async () => {
     const { onContinue } = this.props;
     const { combo } = this.state;
 
-    onContinue(combo, this.toggleConfirming);
+    this.toggleSubmitting();
+
+    await onContinue(combo, this.toggleConfirming);
+
+    this.toggleSubmitting();
   };
 
   render() {
-    const { combo, confirming } = this.state;
+    const { combo, confirming, submitting } = this.state;
 
     return (
       <div
@@ -53,6 +63,7 @@ export default class ComboInterface extends Component {
             title="combo"
             onMakeChanges={this.toggleConfirming}
             onContinue={this.continue}
+            submitting={submitting}
             horizontal
           >
             <div>
