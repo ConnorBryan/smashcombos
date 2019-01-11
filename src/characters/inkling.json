@@ -53,6 +53,27 @@
       },
       "demonstration": "",
       "notes": "https://docs.google.com/spreadsheets/d/1zIOsvvQO8lpUG67xVyPcqjAGmEd5ftY5HNjqBSIEhUU/edit#gid=0"
+    },
+    {
+      "input": "sspecial sh+ff+fsmash",
+      "damage": "34.6",
+      "tags": [
+        "killConfirm",
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0%",
+        "featherweight": "0%",
+        "lightweight": "0%",
+        "middleweight": "0%",
+        "heavyweight": "0%",
+        "superheavyweight": "0%"
+      },
+      "demonstration": "",
+      "notes": "Easier to perform when doing roller -> jump cancel -> diagonal air dodge -> fsmash.",
+      "uuid": "341034ec-eaf8-4a5c-ae45-9859cbd28e40"
     }
   ],
   "preview": "",
