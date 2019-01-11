@@ -10,6 +10,7 @@ import {
   Icon,
   Input,
   List,
+  Loader,
   Sidebar,
   Dropdown
 } from "semantic-ui-react";
@@ -29,7 +30,8 @@ const getInitialState = () => ({
   filter: "",
   sort: SortTypes.MostCombos,
   weightClass: WeightClasses.All,
-  optionsVisible: false
+  optionsVisible: false,
+  initiallyLoaded: false
 });
 
 export default class CharacterSelect extends Component {
@@ -38,7 +40,9 @@ export default class CharacterSelect extends Component {
   input = React.createRef();
 
   componentDidMount() {
-    this.input.current.focus();
+    setTimeout(() =>
+      this.setState({ initiallyLoaded: true }, this.input.current.focus, 500)
+    );
   }
 
   reset = () => this.setState(getInitialState());
@@ -67,7 +71,13 @@ export default class CharacterSelect extends Component {
     }));
 
   render() {
-    const { filter, sort, weightClass, optionsVisible } = this.state;
+    const {
+      filter,
+      sort,
+      weightClass,
+      optionsVisible,
+      initiallyLoaded
+    } = this.state;
 
     return (
       <StaticQuery
@@ -273,40 +283,44 @@ export default class CharacterSelect extends Component {
                 <br /> {weightClassesToPhrasesHash[weightClass]}, sorted{" "}
                 {sortTypesToPhrasesHash[sort]}.
               </Header>
-              <List
-                className="sc-list"
-                divided
-                selection
-                style={{ marginTop: 0 }}
-              >
-                {matches.length > 0 ? (
-                  matches.map(character => (
-                    <CharacterSelectEntry
-                      key={character.name}
-                      {...character}
-                      comboCount={character.combos.length}
-                    />
-                  ))
-                ) : (
-                  <List.Item>
-                    <Segment placeholder style={{ width: "100%" }}>
-                      <Header icon>
-                        <Icon name="warning" />
-                        No characters match the filter.
-                      </Header>
-                      <Button
-                        primary
-                        onClick={this.reset}
-                        style={{
-                          marginTop: "1rem"
-                        }}
-                      >
-                        Clear Filter
-                      </Button>
-                    </Segment>
-                  </List.Item>
-                )}
-              </List>
+              {initiallyLoaded ? (
+                <List
+                  className="sc-list"
+                  divided
+                  selection
+                  style={{ marginTop: 0 }}
+                >
+                  {matches.length > 0 ? (
+                    matches.map(character => (
+                      <CharacterSelectEntry
+                        key={character.name}
+                        {...character}
+                        comboCount={character.combos.length}
+                      />
+                    ))
+                  ) : (
+                    <List.Item>
+                      <Segment placeholder style={{ width: "100%" }}>
+                        <Header icon>
+                          <Icon name="warning" />
+                          No characters match the filter.
+                        </Header>
+                        <Button
+                          primary
+                          onClick={this.reset}
+                          style={{
+                            marginTop: "1rem"
+                          }}
+                        >
+                          Clear Filter
+                        </Button>
+                      </Segment>
+                    </List.Item>
+                  )}
+                </List>
+              ) : (
+                <Loader active />
+              )}
             </React.Fragment>
           );
 
