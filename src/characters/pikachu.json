@@ -51,7 +51,7 @@
     },
     {
       "input": "dthrow dspecial",
-      "damage": "0",
+      "damage": "24",
       "tags": [],
       "percentages": {
         "balloonweight": "35",
