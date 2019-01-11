@@ -152,13 +152,7 @@ export default class ComboListCard extends Component {
                 </List>
               </Card.Content>
               {/* Notes */}
-              <Card.Content
-                extra
-                style={{
-                  height: "150px",
-                  overflowY: "auto"
-                }}
-              >
+              <Card.Content extra>
                 <Card.Header as="h5" content="Notes" style={styles.fancyText} />
                 {notes || "There are no notes on this combo."}
               </Card.Content>

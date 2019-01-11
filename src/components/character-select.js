@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { StaticQuery, graphql } from "gatsby";
+import debounce from "lodash/debounce";
 import {
   Grid,
   Segment,
@@ -34,13 +35,22 @@ const getInitialState = () => ({
 export default class CharacterSelect extends Component {
   state = getInitialState();
 
+  input = React.createRef();
+
+  componentDidMount() {
+    this.input.current.focus();
+  }
+
   reset = () => this.setState(getInitialState());
 
   /** Filtering */
-  handleFilterChange = (_, { value: filter }) =>
-    this.setState({
-      filter
-    });
+  handleFilterChange = debounce(
+    (_, { value: filter }) =>
+      this.setState({
+        filter
+      }),
+    250
+  );
 
   /** Sorting */
   handleWeightClassChange = (_, { value: weightClass }) =>
@@ -315,6 +325,7 @@ export default class CharacterSelect extends Component {
                     placeholder="Filter characters..."
                     icon="filter"
                     onChange={this.handleFilterChange}
+                    ref={this.input}
                   />
                   <div
                     className="mobile-only"

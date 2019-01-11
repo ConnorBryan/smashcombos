@@ -30,6 +30,7 @@
     "less": "^3.9.0",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
+    "lodash.debounce": "^4.0.8",
     "netlify-cms": "^2.3.1",
     "netlify-identity-widget": "^1.5.2",
     "node-sass": "^4.11.0",
