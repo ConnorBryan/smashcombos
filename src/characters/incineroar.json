@@ -1,6 +1,6 @@
 {
   "name": "Incineroar",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/incineroar.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "116"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -44,9 +42,7 @@
     {
       "input": "dthrow sh+fh+dj+fair",
       "damage": "26.4",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0 to 55 to (+dash)90",
         "featherweight": "0 to 80 to (+dash)125",
