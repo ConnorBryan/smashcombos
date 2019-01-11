@@ -48,6 +48,22 @@
       },
       "notes": "",
       "uuid": "0f9920f9-b8ad-4092-b5c0-0378afea53d3"
+    },
+    {
+      "input": "dthrow dspecial",
+      "damage": "24",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "35",
+        "featherweight": "25",
+        "lightweight": "25",
+        "middleweight": "25",
+        "heavyweight": "25",
+        "superheavyweight": "25"
+      },
+      "demonstration": "",
+      "notes": "Works at lower damage",
+      "uuid": "89b54e63-0761-4342-a779-e5e61d1e152a"
     }
   ],
   "preview": "",
