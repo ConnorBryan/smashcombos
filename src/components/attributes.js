@@ -162,9 +162,6 @@ export default class Attributes extends Component {
                     )
                   })
                 )}
-                style={{
-                  marginBottom: "3rem"
-                }}
               />
             </div>
           </Grid.Column>
@@ -172,7 +169,7 @@ export default class Attributes extends Component {
             mobile={16}
             tablet={7}
             computer={7}
-            verticalAlign="middle"
+            verticalAlign="bottom"
           >
             <Card
               fluid

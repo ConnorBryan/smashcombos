@@ -26,14 +26,11 @@ export default function CharacterProfile({
     >
       {!basic && (
         <Grid.Column width={16}>
-          <Button
-            as={Link}
-            to={`/${slug}/edit`}
-            floated="right"
-            style={{ width: "8rem" }}
-          >
-            Edit
-          </Button>
+          <Link to={`/${slug}/edit`}>
+            <Button floated="right" style={{ width: "8rem" }}>
+              Edit
+            </Button>
+          </Link>
         </Grid.Column>
       )}
       <Grid.Column mobile={16} tablet={16} computer={6} verticalAlign="middle">
