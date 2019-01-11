@@ -1,6 +1,6 @@
 {
   "name": "Zelda",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/zelda.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "85"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},

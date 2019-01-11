@@ -1,6 +1,6 @@
 {
   "name": "Ike",
-  "render": "../../static/img/placeholder.png",
+  "render": "../../static/img/ike.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
