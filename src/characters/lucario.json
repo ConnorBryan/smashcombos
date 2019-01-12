@@ -33,20 +33,32 @@
       "value": "92"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
       "uuid": "90c39b62-e86b-4197-8fd5-fc57f8e08b87"
     },
     {
+      "input": "uthrow fh+uair",
+      "damage": "18.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-22",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Combo with Lucario at 0% damage",
+      "uuid": "d3e0a64b-edf4-42e5-b2c1-60823712a588"
+    },
+    {
       "input": "nair dtilt grab uthrow fh+fair dj+uair",
       "damage": "31.5",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
