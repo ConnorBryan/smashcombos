@@ -33,9 +33,7 @@
       "value": "62"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -60,9 +58,7 @@
     {
       "input": "dtilt utilt utilt sh+uair dj+fair",
       "damage": "41.2",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0-5",
         "featherweight": "0-8",
@@ -154,6 +150,22 @@
       "demonstration": "",
       "notes": "Nair must be done right before landing. Can also work against an opponent with higher damage but with less than 3 jabs. Against a Balloonweight/Heavyweight character, a 4th jab is possible at low damage and a 5th jab against a Super Heavyweight character, at 0-25% damage",
       "uuid": "1d1cc6c0-e167-4813-b8b4-13c2ea90bf61"
+    },
+    {
+      "input": "dtilt dtilt usmash",
+      "damage": "31.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "0-6",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5fdc0ce2-e42d-46c7-82c2-fa106f9da38b"
     },
     {
       "input": "dtilt dtilt ftilt",

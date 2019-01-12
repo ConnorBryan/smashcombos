@@ -53,6 +53,38 @@
       "demonstration": "",
       "notes": "Basic throw combo for charizard. Will update after testing this in training",
       "uuid": "f4ce4c7c-c786-4d98-b74b-36cf21576099"
+    },
+    {
+      "input": "dthrow fair",
+      "damage": "19.40",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-17",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "23407ae9-710e-4087-ae30-9b49a41e7ff9"
+    },
+    {
+      "input": "dthrow fair dj+fair",
+      "damage": "19.40",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-17",
+        "heavyweight": "",
+        "superheavyweight": "0-121"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "25e34112-5b23-4030-8e31-e54f96c4a7e3"
     }
   ],
   "preview": "",
