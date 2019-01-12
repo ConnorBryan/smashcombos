@@ -33,11 +33,29 @@
       "value": "88"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "percentages": {},
       "uuid": "6cf299cf-161b-4a2f-954d-283522f661ec"
+    },
+    {
+      "input": "sspecial uair",
+      "damage": "28",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "0-27",
+        "lightweight": "0-20",
+        "middleweight": "0-18",
+        "heavyweight": "0-44",
+        "superheavyweight": "0-47"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5910f578-3f2c-489b-8101-0001dd8cdf93"
     }
   ],
   "preview": "",
