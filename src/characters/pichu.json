@@ -154,6 +154,22 @@
       "demonstration": "",
       "notes": "Nair must be done right before landing. Can also work against an opponent with higher damage but with less than 3 jabs. Against a Balloonweight/Heavyweight character, a 4th jab is possible at low damage and a 5th jab against a Super Heavyweight character, at 0-25% damage",
       "uuid": "1d1cc6c0-e167-4813-b8b4-13c2ea90bf61"
+    },
+    {
+      "input": "",
+      "damage": "20.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Doesn't work ",
+        "featherweight": "Doesn't work ",
+        "lightweight": "0-6",
+        "middleweight": "0-7",
+        "heavyweight": "0-6",
+        "superheavyweight": "0-43 (execpt 42)"
+      },
+      "demonstration": "",
+      "notes": "Against Heavyweight: 2nd Utilt (25.8%)(0-5%)\nAgainst Super Heavyweight: Utilt×2 or more(up to 4)  (according to the opponent's damage)",
+      "uuid": "98a23785-d841-4b8a-9845-d471fc408774"
     }
   ],
   "preview": "",
