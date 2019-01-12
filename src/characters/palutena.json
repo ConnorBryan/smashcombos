@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "169b05bf-4534-487b-9d06-a320d16c8c9b"
+    },
+    {
+      "input": "dthrow sh+nair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5eb1a125-ca07-4ce6-a6ba-07f463602c04"
     }
   ],
   "preview": "",
