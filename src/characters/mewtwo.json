@@ -39,15 +39,15 @@
     },
     {
       "input": "dashatk ftilt",
-      "damage": "25.2/26.4",
+      "damage": "26",
       "tags": [],
       "percentages": {
         "balloonweight": "0",
-        "featherweight": "",
-        "lightweight": "",
-        "middleweight": "",
-        "heavyweight": "",
-        "superheavyweight": "0-1"
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "N/A",
+        "superheavyweight": "0"
       },
       "demonstration": "",
       "notes": "Damage=25.2 on Balloonweight characters and 26.4 on Super Heavyweight characters. Don't work against other categories ",
