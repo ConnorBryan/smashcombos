@@ -43,7 +43,7 @@
     },
     {
       "input": "sspecial uair",
-      "damage": "27.7-29.6",
+      "damage": "28",
       "tags": [],
       "percentages": {
         "balloonweight": "0-15",
@@ -54,7 +54,7 @@
         "superheavyweight": "0-47"
       },
       "demonstration": "",
-      "notes": "sspecial->Up",
+      "notes": "",
       "uuid": "5910f578-3f2c-489b-8101-0001dd8cdf93"
     }
   ],
