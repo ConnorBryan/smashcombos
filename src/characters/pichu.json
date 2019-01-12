@@ -33,9 +33,7 @@
       "value": "62"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -60,9 +58,7 @@
     {
       "input": "dtilt utilt utilt sh+uair dj+fair",
       "damage": "41.2",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0-5",
         "featherweight": "0-8",
@@ -90,6 +86,38 @@
       "demonstration": "",
       "notes": "For Uair, the required height of the jump varies according to the opponent's damages",
       "uuid": "ba057d84-c226-47dd-985d-eb0bf901a2a2"
+    },
+    {
+      "input": "dthrow nair",
+      "damage": "18",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-66",
+        "heavyweight": "",
+        "superheavyweight": "0-85"
+      },
+      "demonstration": "",
+      "notes": "For Nair, the required height of the jump varies according to the opponent's damages",
+      "uuid": "32294181-42b9-4e07-8907-7157d58ea31b"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "16.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-18"
+      },
+      "demonstration": "",
+      "notes": "Impossible against Balloonweight, Featherweight, Lightweight and Middleweight characters",
+      "uuid": "bc0d0c7e-0e72-4bd0-8895-3c8ec79d2df0"
     }
   ],
   "preview": "",
