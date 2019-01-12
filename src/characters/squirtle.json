@@ -33,9 +33,7 @@
       "value": "75"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},
@@ -56,6 +54,22 @@
       "demonstration": "",
       "notes": "First F-tilt must be delayed against Middleweight characters",
       "uuid": "251d1587-184a-44b3-99f2-cfb9f0ce7c8b"
+    },
+    {
+      "input": "ftilt ftilt ftilt",
+      "damage": "16.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-8"
+      },
+      "demonstration": "",
+      "notes": "Can't work against Middleweight characters",
+      "uuid": "50b59975-4d22-4021-8ee8-6015095d37de"
     }
   ],
   "preview": "",
