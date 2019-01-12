@@ -74,6 +74,24 @@
       "demonstration": "",
       "notes": "Easier to perform when doing roller -> jump cancel -> diagonal air dodge -> fsmash.",
       "uuid": "341034ec-eaf8-4a5c-ae45-9859cbd28e40"
+    },
+    {
+      "input": "dthrow jab",
+      "damage": "26",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Works at low percents and gets ink early, doesn't work on high percents except for heavies",
+      "uuid": "8c6055d9-648d-4ad7-ab91-cb3117c94e22"
     }
   ],
   "preview": "",
