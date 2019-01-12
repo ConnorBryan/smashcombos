@@ -37,6 +37,22 @@
     {
       "percentages": {},
       "uuid": "6bab1943-1cfa-4899-bae4-d1827eb17163"
+    },
+    {
+      "input": "dthrow fair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Super basic throw combo for charizard. I’ll update it after I go into training mode and work on it",
+      "uuid": "10e9ad24-c6b3-4cf6-82a0-4457c6b6d3b8"
     }
   ],
   "preview": "",
