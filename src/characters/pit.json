@@ -83,6 +83,22 @@
       "demonstration": "",
       "notes": "Kill confirm. Needs the dair sweet spot.",
       "uuid": "a5dd87cb-34a5-4dfa-8a3d-7405b6a329ba"
+    },
+    {
+      "input": "dtilt ftilt",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "54609b41-e5dd-4df8-b8d2-bbe8eab62b01"
     }
   ],
   "preview": "",
