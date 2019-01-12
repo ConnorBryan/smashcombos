@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
-import { Container, Menu, Message, Sidebar } from "semantic-ui-react";
+import { Container, Menu, Message, Icon, Sidebar } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
 import * as styles from "../styles";
@@ -124,10 +124,12 @@ export default function Layout({ children }) {
                                       }}
                                     >
                                       <Menu.Item
-                                        style={styles.fancyText}
                                         onClick={close}
+                                        style={{
+                                          textAlign: "center"
+                                        }}
                                       >
-                                        Close
+                                        <Icon name="close" /> Close Menu
                                       </Menu.Item>
                                       <SiteActions
                                         user={user}

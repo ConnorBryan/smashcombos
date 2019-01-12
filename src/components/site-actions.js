@@ -1,8 +1,6 @@
 import React from "react";
 import netlifyIdentity from "netlify-identity-widget";
-import { Menu, Header } from "semantic-ui-react";
-
-import * as styles from "../styles";
+import { Menu, Header, Icon } from "semantic-ui-react";
 
 export default function SiteActions({
   className = "",
@@ -22,9 +20,11 @@ export default function SiteActions({
               netlifyIdentity.logout();
               closeMenu();
             }}
-            style={styles.fancyText}
+            style={{
+              textAlign: "center"
+            }}
           >
-            Sign out
+            <Icon name="sign out" /> Sign out
           </Menu.Item>
         </>
       ) : (
@@ -35,9 +35,11 @@ export default function SiteActions({
               netlifyIdentity.open("login");
               closeMenu();
             }}
-            style={styles.fancyText}
+            style={{
+              textAlign: "center"
+            }}
           >
-            Sign in
+            <Icon name="sign in" /> Sign in
           </Menu.Item>
           <Menu.Item
             className={className}
@@ -45,9 +47,11 @@ export default function SiteActions({
               netlifyIdentity.open("signup");
               closeMenu();
             }}
-            style={styles.fancyText}
+            style={{
+              textAlign: "center"
+            }}
           >
-            Sign up
+            <Icon name="user plus" /> Sign up
           </Menu.Item>
         </>
       )}

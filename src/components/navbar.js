@@ -57,6 +57,14 @@ export default function Navbar({ user, toggleMenu }) {
           icon="reddit"
           className="desktop-only"
         />
+        <Menu.Item
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/ConnorBryan/smashcombos"
+          icon="github"
+          className="desktop-only"
+        />
         <Menu.Menu position="right">
           <Menu.Item
             className="mobile-only"

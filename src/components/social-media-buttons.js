@@ -14,7 +14,7 @@ export default function SocialMediaButtons() {
           target="_blank"
           rel="noopener noreferrer"
           href="https://discord.gg/EMVEzhS"
-          primary
+          secondary
           size="large"
           icon
           fluid
@@ -74,6 +74,24 @@ export default function SocialMediaButtons() {
           fluid
         >
           <Icon name="reddit" /> Check us out on Reddit
+        </Button>
+      </Menu.Item>
+      <Menu.Item
+        style={{
+          padding: 0
+        }}
+      >
+        <Button
+          as="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/ConnorBryan/smashcombos"
+          secondary
+          size="large"
+          icon
+          fluid
+        >
+          <Icon name="github" /> See the code on GitHub
         </Button>
       </Menu.Item>
     </>
