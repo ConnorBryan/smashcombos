@@ -99,6 +99,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "54609b41-e5dd-4df8-b8d2-bbe8eab62b01"
+    },
+    {
+      "input": "uthrow uair",
+      "damage": "27.7",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ebcd98f2-e94b-4847-8e0e-33470c4dcce0"
     }
   ],
   "preview": "",
