@@ -52,6 +52,22 @@
       },
       "demonstration": "",
       "notes": ""
+    },
+    {
+      "input": "nair utilt",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "30ce8bff-4bd6-42df-9e3b-4e1624dbc2dc"
     }
   ],
   "preview": "",
