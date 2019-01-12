@@ -2,26 +2,31 @@
   {
     "site": "discord",
     "url": "https://discord.gg/EMVEzhS",
-    "tagline": "Join the Discord"
+    "tagline": "Join the Discord",
+    "color": "#8DA0FC"
   },
   {
     "site": "twitter",
     "url": "https://twitter.com/SmashCombosCom",
-    "tagline": "Follow us on Twitter"
+    "tagline": "Follow us on Twitter",
+    "color": "#60AADB"
   },
   {
     "site": "facebook",
     "url": "https://www.facebook.com/smashcombos/",
-    "tagline": "Like us on Facebook"
+    "tagline": "Like us on Facebook",
+    "color": "#3C589B"
   },
   {
     "site": "reddit",
     "url": "https://www.reddit.com/r/smashcombos/",
-    "tagline": "Check us out on Reddit"
+    "tagline": "Check us out on Reddit",
+    "color": "#FC471E"
   },
   {
     "site": "github",
     "url": "https://github.com/ConnorBryan/smashcombos",
-    "tagline": "See the code on GitHub"
+    "tagline": "See the code on GitHub",
+    "color": "#171515"
   }
 ]
