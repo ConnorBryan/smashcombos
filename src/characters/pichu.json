@@ -74,6 +74,22 @@
       "demonstration": "",
       "notes": "For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.",
       "uuid": "c55a4bab-b62c-4d31-9c7b-bd3458736472"
+    },
+    {
+      "input": "dthrow nair",
+      "damage": "18",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-66",
+        "heavyweight": "",
+        "superheavyweight": "0-85"
+      },
+      "demonstration": "",
+      "notes": "For Nair, the required height of the jump varies according to the opponent's damages",
+      "uuid": "32294181-42b9-4e07-8907-7157d58ea31b"
     }
   ],
   "preview": "",
