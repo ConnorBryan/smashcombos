@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "b8c55572-97dd-4446-b962-98a3e4897d24"
+    },
+    {
+      "input": "nair fsmash",
+      "damage": "31.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-18",
+        "featherweight": "0-19",
+        "lightweight": "0-14",
+        "middleweight": "0-24",
+        "heavyweight": "0-21",
+        "superheavyweight": "4-35"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "858e2cc7-32f9-4251-bccd-714732d617a3"
     }
   ],
   "preview": "",
