@@ -10,9 +10,9 @@ export default function SiteActions({
   closeMenu = () => {}
 }) {
   return (
-    <React.Fragment>
+    <>
       {user ? (
-        <React.Fragment>
+        <>
           <Menu.Item className={className}>
             <Header as="h5">Welcome, {user.user_metadata.full_name}.</Header>
           </Menu.Item>
@@ -26,9 +26,9 @@ export default function SiteActions({
           >
             Sign out
           </Menu.Item>
-        </React.Fragment>
+        </>
       ) : (
-        <React.Fragment>
+        <>
           <Menu.Item
             className={className}
             onClick={() => {
@@ -49,8 +49,8 @@ export default function SiteActions({
           >
             Sign up
           </Menu.Item>
-        </React.Fragment>
+        </>
       )}
-    </React.Fragment>
+    </>
   );
 }

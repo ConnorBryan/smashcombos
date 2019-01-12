@@ -95,15 +95,15 @@ export default function Layout({ children }) {
                 <meta property="og:url" content="/" />
                 <meta property="og:image" content="/img/og-image.png" />
               </Helmet>
-              <React.Fragment>
+              <>
                 <MessageContext.Consumer>
                   {({ message, clearMessage }) => (
-                    <React.Fragment>
+                    <>
                       <MenuContext.Consumer>
                         {({ isOpen, toggle, close }) => (
                           <UserContext.Consumer>
                             {({ user }) => (
-                              <React.Fragment>
+                              <>
                                 <Navbar user={user} toggleMenu={toggle} />
                                 <Container
                                   className="layout"
@@ -139,7 +139,7 @@ export default function Layout({ children }) {
                                   </Sidebar.Pushable>
                                   <div className="desktop-only">{children}</div>
                                 </Container>
-                              </React.Fragment>
+                              </>
                             )}
                           </UserContext.Consumer>
                         )}
@@ -174,10 +174,10 @@ export default function Layout({ children }) {
                           </Container>
                         </Message>
                       )}
-                    </React.Fragment>
+                    </>
                   )}
                 </MessageContext.Consumer>
-              </React.Fragment>
+              </>
             </MenuProvider>
           </UserProvider>
         </MessageProvider>

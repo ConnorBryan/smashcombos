@@ -81,7 +81,7 @@ export default class EditProfileTab extends Component {
     }, {});
 
     return (
-      <React.Fragment>
+      <>
         {confirming ? (
           <ConfirmChanges
             title="profile"
@@ -167,7 +167,7 @@ export default class EditProfileTab extends Component {
             )}
           />
         )}
-      </React.Fragment>
+      </>
     );
   }
 }

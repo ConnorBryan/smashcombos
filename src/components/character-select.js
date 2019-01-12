@@ -154,7 +154,7 @@ export default class CharacterSelect extends Component {
               }
             );
           const menu = (
-            <React.Fragment>
+            <>
               <Menu
                 vertical
                 fluid
@@ -251,10 +251,10 @@ export default class CharacterSelect extends Component {
                   <SocialMediaButtons />
                 </Menu.Menu>
               </Menu>
-            </React.Fragment>
+            </>
           );
           const list = (
-            <React.Fragment>
+            <>
               <Header
                 as="p"
                 textAlign="right"
@@ -308,7 +308,7 @@ export default class CharacterSelect extends Component {
               ) : (
                 <Loader active />
               )}
-            </React.Fragment>
+            </>
           );
 
           return (

@@ -63,9 +63,9 @@ export default class Attributes extends Component {
           >
             <List.Header
               content={
-                <React.Fragment>
+                <>
                   <Icon name="trophy" /> Rank
-                </React.Fragment>
+                </>
               }
             />
             <List.Content

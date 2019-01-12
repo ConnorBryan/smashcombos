@@ -9,9 +9,9 @@ import { MessageContext } from "./message-provider";
 
 export default function ComboList({ slug, combos }) {
   return (
-    <React.Fragment>
+    <>
       <Segment basic>
-        <React.Fragment>
+        <>
           <Header
             as="h2"
             style={{
@@ -59,7 +59,7 @@ export default function ComboList({ slug, combos }) {
               This character doesn't have any listed combos.
             </PlaceholderPanel>
           )}
-        </React.Fragment>
+        </>
       </Segment>
       <Link to={`/${slug}/edit?tab=addCombo`}>
         <Button
@@ -75,6 +75,6 @@ export default function ComboList({ slug, combos }) {
           <Icon name="plus" /> Add a combo
         </Button>
       </Link>
-    </React.Fragment>
+    </>
   );
 }

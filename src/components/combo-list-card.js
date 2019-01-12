@@ -52,7 +52,7 @@ export default class ComboListCard extends Component {
         >
           <Input input={input} />
         </Card.Content>
-        <React.Fragment>
+        <>
           {/* Damage */}
           {damage != null && (
             <Card.Content extra>
@@ -94,7 +94,7 @@ export default class ComboListCard extends Component {
             </Card.Content>
           )}
           {!basic && (
-            <React.Fragment>
+            <>
               {/* Demonstration */}
               <Card.Content extra>
                 <Card.Header
@@ -174,14 +174,14 @@ export default class ComboListCard extends Component {
                   />
                 </Button.Group>
               </Card.Content>
-            </React.Fragment>
+            </>
           )}
-        </React.Fragment>
+        </>
       </Card>
     );
 
     return (
-      <React.Fragment>
+      <>
         {basic ? (
           <Popup
             inverted
@@ -191,7 +191,7 @@ export default class ComboListCard extends Component {
         ) : (
           card
         )}
-      </React.Fragment>
+      </>
     );
   }
 }

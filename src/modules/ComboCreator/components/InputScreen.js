@@ -71,7 +71,7 @@ export default class InputScreen extends Component {
       </Menu>
     );
     const menuColumn = (
-      <React.Fragment>
+      <>
         <Segment
           attached
           style={{
@@ -137,7 +137,7 @@ export default class InputScreen extends Component {
           </Segment>
         ))}
         <div className="mobile-only">{actions}</div>
-      </React.Fragment>
+      </>
     );
 
     return (
