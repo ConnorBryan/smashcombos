@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "66a834c4-c652-4310-b7ab-58764e1c2505"
+    },
+    {
+      "input": "dair usmash",
+      "damage": "33.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "90-150",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Kill confirm. Needs the dair sweet spot.",
+      "uuid": "a5dd87cb-34a5-4dfa-8a3d-7405b6a329ba"
     }
   ],
   "preview": "",
