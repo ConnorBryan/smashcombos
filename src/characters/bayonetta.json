@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "sspecial uspecial sspecial sspecial bair",
+      "damage": "50",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f2cd923b-829b-4432-bdea-3fdc5e915bf1"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "bayonetta",
