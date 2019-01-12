@@ -52,6 +52,22 @@
       },
       "demonstration": "",
       "notes": ""
+    },
+    {
+      "input": "dthrow fair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8ea8d11f-5f38-4275-900a-cf29121bb08d"
     }
   ],
   "preview": "",
