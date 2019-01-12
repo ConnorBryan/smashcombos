@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "66a834c4-c652-4310-b7ab-58764e1c2505"
+    },
+    {
+      "input": "dtilt ftilt",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "54609b41-e5dd-4df8-b8d2-bbe8eab62b01"
     }
   ],
   "preview": "",
