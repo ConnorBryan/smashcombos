@@ -16,5 +16,6 @@ export { default as Navbar } from "./navbar";
 export { default as PercentBar } from "./percent-bar";
 export { default as PlaceholderPanel } from "./placeholder-panel";
 export { default as SiteActions } from "./site-actions";
+export { default as SocialMediaItems } from "./social-media-items";
 export { default as Tagbar } from "./tagbar";
 export { default as UserProvider } from "./user-provider";
