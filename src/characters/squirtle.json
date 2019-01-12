@@ -33,13 +33,59 @@
       "value": "75"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "percentages": {},
       "uuid": "de6cf246-07fa-49ec-8a1e-43202dd835a7"
+    },
+    {
+      "input": "dashatk uspecial",
+      "damage": "24.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-31",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-13",
+        "heavyweight": "",
+        "superheavyweight": "0-29"
+      },
+      "demonstration": "",
+      "notes": "Dash Attack must hit at tip range (when it does 8.8% damage)",
+      "uuid": "d9c1c60d-b8a5-4e68-87ea-e539136cfb59"
+    },
+    {
+      "input": "dthrow ftilt ftilt",
+      "damage": "20.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-8",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-2",
+        "heavyweight": "",
+        "superheavyweight": "0-19"
+      },
+      "demonstration": "",
+      "notes": "First F-tilt must be delayed against Middleweight characters",
+      "uuid": "251d1587-184a-44b3-99f2-cfb9f0ce7c8b"
+    },
+    {
+      "input": "ftilt ftilt ftilt",
+      "damage": "16.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-8"
+      },
+      "demonstration": "",
+      "notes": "Can't work against Middleweight characters",
+      "uuid": "50b59975-4d22-4021-8ee8-6015095d37de"
     }
   ],
   "preview": "",
