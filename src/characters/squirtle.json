@@ -40,6 +40,22 @@
       "uuid": "de6cf246-07fa-49ec-8a1e-43202dd835a7"
     },
     {
+      "input": "dashatk uspecial",
+      "damage": "24.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-31",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-13",
+        "heavyweight": "",
+        "superheavyweight": "0-29"
+      },
+      "demonstration": "",
+      "notes": "Dash Attack must hit at tip range (when it does 8.8% damage)",
+      "uuid": "d9c1c60d-b8a5-4e68-87ea-e539136cfb59"
+    },
+    {
       "input": "dthrow ftilt ftilt",
       "damage": "20.5",
       "tags": [],
