@@ -34,7 +34,8 @@
     }
   },
   "tags": [
-    "fastFaller"
+    "fastFaller",
+    "bigBody"
   ],
   "combos": [
     {
@@ -74,6 +75,22 @@
       },
       "demonstration": "https://www.youtube.com/embed/yILT_8B6dbc",
       "notes": "Credit to lto#4571 and the King R. Rool character discord at https://discord.gg/QgM3RKc"
+    },
+    {
+      "input": "dthrow jab",
+      "damage": "20",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab",
+      "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
     }
   ],
   "preview": "",
