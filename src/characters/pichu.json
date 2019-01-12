@@ -77,14 +77,14 @@
     },
     {
       "input": "dthrow utilt",
-      "damage": "16,3",
+      "damage": "16.3",
       "tags": [],
       "percentages": {
-        "balloonweight": "",
-        "featherweight": "",
-        "lightweight": "",
-        "middleweight": "",
-        "heavyweight": "",
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-18",
         "superheavyweight": "0-18"
       },
       "demonstration": "",
