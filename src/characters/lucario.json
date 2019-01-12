@@ -40,6 +40,24 @@
     {
       "percentages": {},
       "uuid": "90c39b62-e86b-4197-8fd5-fc57f8e08b87"
+    },
+    {
+      "input": "nair dtilt grab uthrow fh+fair dj+uair",
+      "damage": "31.5",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "1fc12266-97e6-42ce-a882-c12e44fff0c1"
     }
   ],
   "preview": "",
