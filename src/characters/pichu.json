@@ -74,6 +74,22 @@
       "demonstration": "",
       "notes": "For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.",
       "uuid": "c55a4bab-b62c-4d31-9c7b-bd3458736472"
+    },
+    {
+      "input": "dthrow uair",
+      "damage": "15.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "20",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "10-78",
+        "heavyweight": "",
+        "superheavyweight": "21-85"
+      },
+      "demonstration": "",
+      "notes": "For Uair, the required height of the jump varies according to the opponent's damages",
+      "uuid": "ba057d84-c226-47dd-985d-eb0bf901a2a2"
     }
   ],
   "preview": "",
