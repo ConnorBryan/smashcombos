@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "e37df251-c80c-4c30-be3f-76c1e8ea32d9"
+    },
+    {
+      "input": "grab uair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "bafa46ce-e848-46b1-8992-e3f62e280561"
     }
   ],
   "preview": "",
