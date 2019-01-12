@@ -8,6 +8,27 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-less",
     "gatsby-transformer-json",
+    /**
+     * The below plugin creates the webmanifest
+     * For reference: https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/?=
+     * 1. This won't work until the `icon` option below has access to a 512x512 png
+     * 2. I made a guess at your `theme_color`by using the color picker.
+     */
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SmashCombos`,
+        short_name: `SmashCombos`,
+        start_url: `/`,
+        background_color: `#111`,
+        theme_color: `#7189d8`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `static/img/apple-touch-icon-180x180.png` // This path is relative to the root of the site.
+      }
+    },
+    "gatsby-plugin-offline",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
