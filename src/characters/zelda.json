@@ -1,7 +1,7 @@
 {
   "name": "Zelda",
   "render": "../../static/img/zelda.png",
-  "description": "...",
+  "description": "short hop fast fall neutral air into up b\n",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
@@ -33,7 +33,11 @@
       "value": "85"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie",
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
