@@ -33,11 +33,31 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "percentages": {},
       "uuid": "8a5a6b13-7d5f-425d-8f18-20760bb8dedf"
+    },
+    {
+      "input": "pummel dthrow dspecial sspecial nspecial fh+fair",
+      "damage": "55",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0-5",
+        "superheavyweight": "0-5"
+      },
+      "demonstration": "",
+      "notes": "Dash right after dthrow before down-B to make it connect.\nExtend side-b after the hit to make it connect a second time at max range. Axe and star connect at the same time. Finish with aerial of choice if you can catch them.\nConsistent in training mode but many possibilities to get out.",
+      "uuid": "a60cfd22-4b4f-42b7-b6bc-f6cec6e2d2e1"
     }
   ],
   "preview": "",
