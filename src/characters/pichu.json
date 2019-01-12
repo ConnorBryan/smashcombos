@@ -138,6 +138,22 @@
       "demonstration": "",
       "notes": "Dash Attack must hit at tip range (6% damage)",
       "uuid": "54fd323b-0411-4b5e-9d95-44975ef640ad"
+    },
+    {
+      "input": "nair jab jab jab",
+      "damage": "12.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "0-17",
+        "lightweight": "0-19",
+        "middleweight": "0-20",
+        "heavyweight": "0-22",
+        "superheavyweight": "0-25"
+      },
+      "demonstration": "",
+      "notes": "Nair must be done right before landing. Can also work against an opponent with higher damage but with less than 3 jabs. Against a Balloonweight/Heavyweight character, a 4th jab is possible at low damage and a 5th jab against a Super Heavyweight character, at 0-25% damage",
+      "uuid": "1d1cc6c0-e167-4813-b8b4-13c2ea90bf61"
     }
   ],
   "preview": "",
