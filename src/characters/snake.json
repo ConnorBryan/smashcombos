@@ -56,6 +56,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "c4ef3196-5f57-4cc4-8d25-663a79e994c5"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "28.2",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "160-999",
+        "featherweight": "160-999",
+        "lightweight": "160-999",
+        "middleweight": "160-999",
+        "heavyweight": "160-999",
+        "superheavyweight": "160-999"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "86e4f845-d7cb-4a4b-862f-7baf03d50e3c"
     }
   ],
   "preview": "",
