@@ -30,7 +30,6 @@ export default class InputScreen extends Component {
     }));
 
   addModifier = (_, { value }) =>
-    this.state.input.length > 0 &&
     this.setState(prevState => ({
       modifiers:
         prevState.modifiers.length === 0
