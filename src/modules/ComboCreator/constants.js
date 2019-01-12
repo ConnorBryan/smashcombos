@@ -128,6 +128,10 @@ export const attackModifiers = [
   },
   {
     name: "attack canceled",
+    term: "atkc"
+  },
+  {
+    name: "auto canceled",
     term: "ac"
   },
   {

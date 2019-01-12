@@ -28,6 +28,7 @@ export default function Navbar({ user, toggleMenu }) {
         </Menu.Item>
         {SOCIAL_MEDIA.map(({ site, url }) => (
           <Menu.Item
+            key={site}
             as="a"
             target="_blank"
             rel="noopener noreferrer"

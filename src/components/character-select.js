@@ -31,12 +31,14 @@ const getInitialState = () => ({
   filter: "",
   sort: SortTypes.MostCombos,
   weightClass: WeightClasses.All,
-  optionsVisible: false,
-  initiallyLoaded: false
+  optionsVisible: false
 });
 
 export default class CharacterSelect extends Component {
-  state = getInitialState();
+  state = {
+    ...getInitialState(),
+    initiallyLoaded: false
+  };
 
   input = React.createRef();
 
