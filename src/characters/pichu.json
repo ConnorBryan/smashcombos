@@ -33,9 +33,7 @@
       "value": "62"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -60,9 +58,7 @@
     {
       "input": "dtilt utilt utilt sh+uair dj+fair",
       "damage": "41.2",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0-5",
         "featherweight": "0-8",
@@ -170,6 +166,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "5fdc0ce2-e42d-46c7-82c2-fa106f9da38b"
+    },
+    {
+      "input": "dtilt dtilt ftilt",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "More powerful than Utilt but self-damages",
+      "uuid": "4da2e865-f583-4fcd-9389-c133b3abd9c5"
     }
   ],
   "preview": "",
