@@ -33,10 +33,10 @@ export default function CharacterProfile({
           </Link>
         </Grid.Column>
       )}
-      <Grid.Column mobile={16} tablet={16} computer={6} verticalAlign="middle">
+      <Grid.Column mobile={16} tablet={16} computer={6} verticalAlign="bottom">
         <CharacterPortrait name={name} image={image} />
       </Grid.Column>
-      <Grid.Column mobile={16} tablet={16} computer={10}>
+      <Grid.Column mobile={16} tablet={16} computer={10} verticalAlign="bottom">
         <Segment basic>
           <Header as="h2" style={styles.fancyText}>
             Description
