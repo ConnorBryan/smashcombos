@@ -74,6 +74,22 @@
       "demonstration": "",
       "notes": "For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.",
       "uuid": "c55a4bab-b62c-4d31-9c7b-bd3458736472"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "16.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-18"
+      },
+      "demonstration": "",
+      "notes": "Impossible against Balloonweight, Featherweight, Lightweight and Middleweight characters",
+      "uuid": "bc0d0c7e-0e72-4bd0-8895-3c8ec79d2df0"
     }
   ],
   "preview": "",
