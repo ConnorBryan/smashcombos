@@ -25,6 +25,7 @@ import {
   weightClassesToPhrasesHash
 } from "../helpers";
 import CharacterSelectEntry from "./character-select-entry";
+import SocialMediaButtons from "./social-media-buttons";
 
 const getInitialState = () => ({
   filter: "",
@@ -245,24 +246,10 @@ export default class CharacterSelect extends Component {
                     Clear
                   </Button>
                 </Menu.Item>
-                <Menu.Item
-                  style={{
-                    padding: 0
-                  }}
-                >
-                  <Button
-                    as="a"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://discord.gg/EMVEzhS"
-                    primary
-                    size="large"
-                    icon
-                    fluid
-                  >
-                    <Icon name="discord" /> Join the Discord
-                  </Button>
-                </Menu.Item>
+                <Menu.Menu>
+                  <Menu.Item header>Social Media</Menu.Item>
+                  <SocialMediaButtons />
+                </Menu.Menu>
               </Menu>
             </React.Fragment>
           );

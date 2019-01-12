@@ -7,6 +7,7 @@ import "semantic-ui-less/semantic.less";
 import * as styles from "../styles";
 import Navbar from "./navbar";
 import SiteActions from "./site-actions";
+import SocialMediaButtons from "./social-media-buttons";
 import UserProvider, { UserContext } from "./user-provider";
 import MenuProvider, { MenuContext } from "./menu-provider";
 import MessageProvider, { MessageContext } from "./message-provider";
@@ -122,16 +123,17 @@ export default function Layout({ children }) {
                                         background: "#111"
                                       }}
                                     >
-                                      <SiteActions
-                                        user={user}
-                                        closeMenu={close}
-                                      />
                                       <Menu.Item
                                         style={styles.fancyText}
                                         onClick={close}
                                       >
                                         Close
                                       </Menu.Item>
+                                      <SiteActions
+                                        user={user}
+                                        closeMenu={close}
+                                      />
+                                      <SocialMediaButtons />
                                     </Sidebar>
                                     <Sidebar.Pusher>{children}</Sidebar.Pusher>
                                   </Sidebar.Pushable>

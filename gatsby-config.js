@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "SmashCombos",
     description:
-      "Attributes, kill confirms and combos for every character in the Super Smash Bros. Ultimate cast."
+      "Attributes and combos for every member of the Smash Ultimate cast."
   },
   plugins: [
     "gatsby-plugin-react-helmet",

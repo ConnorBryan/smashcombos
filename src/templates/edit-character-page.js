@@ -94,7 +94,7 @@ export default class EditCharacterPage extends Component {
       <Layout>
         <Link to={slug}>
           <CharacterPortrait
-            name={`Editing ${name}`}
+            name={`Editing ${name}'s profile`}
             image={image}
             style={{
               marginBottom: "2rem"

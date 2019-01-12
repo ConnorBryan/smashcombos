@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Segment, Button, Grid, Header } from "semantic-ui-react";
+import { Segment, Button, Grid, Header, Icon } from "semantic-ui-react";
 
 import { weightClassToTag } from "../helpers";
 import * as styles from "../styles";
@@ -24,15 +24,6 @@ export default function CharacterProfile({
         marginBottom: "2rem"
       }}
     >
-      {!basic && (
-        <Grid.Column width={16}>
-          <Link to={`/${slug}/edit`}>
-            <Button floated="right" style={{ width: "8rem" }}>
-              Edit
-            </Button>
-          </Link>
-        </Grid.Column>
-      )}
       <Grid.Column mobile={16} tablet={16} computer={6} verticalAlign="bottom">
         <CharacterPortrait name={name} image={image} />
       </Grid.Column>
@@ -57,12 +48,29 @@ export default function CharacterProfile({
               This character has no description.
             </PlaceholderPanel>
           )}
-          <Tagbar
-            tags={[weightClassToTag[weightClass], ...tags]}
+          <div
             style={{
-              marginTop: "2rem"
+              display: "flex",
+              alignItems: "flex-end",
+              justifyContent: "space-between"
             }}
-          />
+          >
+            <Tagbar
+              tags={[weightClassToTag[weightClass], ...tags]}
+              style={{
+                marginTop: "2rem"
+              }}
+            />
+            {!basic && (
+              <Grid.Column width={16}>
+                <Link to={`/${slug}/edit`}>
+                  <Button icon style={{ width: "8rem" }}>
+                    <Icon name="cog" /> Edit Profile
+                  </Button>
+                </Link>
+              </Grid.Column>
+            )}
+          </div>
         </Segment>
       </Grid.Column>
     </Grid>
