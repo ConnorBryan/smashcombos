@@ -33,7 +33,9 @@
       "value": "62"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +60,9 @@
     {
       "input": "dtilt utilt utilt sh+uair dj+fair",
       "damage": "41.2",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "0-5",
         "featherweight": "0-8",
@@ -118,6 +122,22 @@
       "demonstration": "",
       "notes": "Impossible against Balloonweight, Featherweight, Lightweight and Middleweight characters",
       "uuid": "bc0d0c7e-0e72-4bd0-8895-3c8ec79d2df0"
+    },
+    {
+      "input": "dashatk utilt utilt",
+      "damage": "19.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Dash Attack must hit at tip range (6% damage)",
+      "uuid": "54fd323b-0411-4b5e-9d95-44975ef640ad"
     }
   ],
   "preview": "",
