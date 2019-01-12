@@ -33,13 +33,27 @@
       "value": "88"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
       "uuid": "e801d6b3-a1bd-4e20-800a-9f2a12808b05"
+    },
+    {
+      "input": "uspecial bair",
+      "damage": "32.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-35",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-71",
+        "heavyweight": "",
+        "superheavyweight": "0-93"
+      },
+      "demonstration": "",
+      "notes": "Up Special has to be done at the ground. Sometimes, only first hit of Bair connects",
+      "uuid": "dbb0092d-9142-4e29-a19c-7ac7dfb26302"
     },
     {
       "input": "uthrow sh+uspecial",
