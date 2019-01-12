@@ -40,6 +40,22 @@
       "uuid": "e801d6b3-a1bd-4e20-800a-9f2a12808b05"
     },
     {
+      "input": "nspecial ftilt",
+      "damage": "30.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-6",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-18",
+        "heavyweight": "",
+        "superheavyweight": "0-25"
+      },
+      "demonstration": "",
+      "notes": "Neutral Air must be fully charged and at closest range",
+      "uuid": "6661f77e-b9a7-433d-89a4-9a7b8dffc204"
+    },
+    {
       "input": "uspecial bair",
       "damage": "32.1",
       "tags": [],
