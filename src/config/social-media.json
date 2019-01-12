@@ -1,0 +1,27 @@
+[
+  {
+    "site": "discord",
+    "url": "https://discord.gg/EMVEzhS",
+    "tagline": "Join the Discord"
+  },
+  {
+    "site": "twitter",
+    "url": "https://twitter.com/SmashCombosCom",
+    "tagline": "Follow us on Twitter"
+  },
+  {
+    "site": "facebook",
+    "url": "https://www.facebook.com/smashcombos/",
+    "tagline": "Like us on Facebook"
+  },
+  {
+    "site": "reddit",
+    "url": "https://www.reddit.com/r/smashcombos/",
+    "tagline": "Check us out on Reddit"
+  },
+  {
+    "site": "github",
+    "url": "https://github.com/ConnorBryan/smashcombos",
+    "tagline": "See the code on GitHub"
+  }
+]

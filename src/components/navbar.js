@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Container, Icon, Image, Menu } from "semantic-ui-react";
 
+import { SOCIAL_MEDIA } from "../config";
 import logo from "../img/logo.svg";
 import SiteActions from "./site-actions";
 
@@ -25,46 +26,16 @@ export default function Navbar({ user, toggleMenu }) {
         >
           <Image size="small" src={logo} style={{ marginRight: "1.5em" }} />
         </Menu.Item>
-        <Menu.Item
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://discord.gg/EMVEzhS"
-          icon="discord"
-          className="desktop-only"
-        />
-        <Menu.Item
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/SmashCombosCom"
-          icon="twitter"
-          className="desktop-only"
-        />
-        <Menu.Item
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.facebook.com/smashcombos/"
-          icon="facebook"
-          className="desktop-only"
-        />
-        <Menu.Item
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.reddit.com/r/smashcombos/"
-          icon="reddit"
-          className="desktop-only"
-        />
-        <Menu.Item
-          as="a"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/ConnorBryan/smashcombos"
-          icon="github"
-          className="desktop-only"
-        />
+        {SOCIAL_MEDIA.map(({ site, url }) => (
+          <Menu.Item
+            as="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={url}
+            icon={site}
+            className="desktop-only"
+          />
+        ))}
         <Menu.Menu position="right">
           <Menu.Item
             className="mobile-only"

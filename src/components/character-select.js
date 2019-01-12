@@ -15,6 +15,7 @@ import {
   Dropdown
 } from "semantic-ui-react";
 
+import { SOCIAL_MEDIA } from "../config";
 import * as styles from "../styles";
 import {
   getCharacters,
@@ -25,7 +26,6 @@ import {
   weightClassesToPhrasesHash
 } from "../helpers";
 import CharacterSelectEntry from "./character-select-entry";
-import SocialMediaButtons from "./social-media-buttons";
 
 const getInitialState = () => ({
   filter: "",
@@ -246,10 +246,17 @@ export default class CharacterSelect extends Component {
                     Clear
                   </Button>
                 </Menu.Item>
-                <Menu.Menu>
-                  <Menu.Item header>Social Media</Menu.Item>
-                  <SocialMediaButtons />
-                </Menu.Menu>
+                <Menu.Item header />
+                {SOCIAL_MEDIA.map(({ site, url, tagline }) => (
+                  <Menu.Item
+                    key={site}
+                    as="a"
+                    href={url}
+                    style={styles.fancyText}
+                  >
+                    <Icon name={site} /> {tagline}
+                  </Menu.Item>
+                ))}
               </Menu>
             </>
           );

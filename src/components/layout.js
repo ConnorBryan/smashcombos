@@ -4,10 +4,10 @@ import Helmet from "react-helmet";
 import { Container, Menu, Message, Icon, Sidebar } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
+import { SOCIAL_MEDIA } from "../config";
 import * as styles from "../styles";
 import Navbar from "./navbar";
 import SiteActions from "./site-actions";
-import SocialMediaButtons from "./social-media-buttons";
 import UserProvider, { UserContext } from "./user-provider";
 import MenuProvider, { MenuContext } from "./menu-provider";
 import MessageProvider, { MessageContext } from "./message-provider";
@@ -125,9 +125,7 @@ export default function Layout({ children }) {
                                     >
                                       <Menu.Item
                                         onClick={close}
-                                        style={{
-                                          textAlign: "center"
-                                        }}
+                                        style={styles.fancyText}
                                       >
                                         <Icon name="close" /> Close Menu
                                       </Menu.Item>
@@ -135,7 +133,18 @@ export default function Layout({ children }) {
                                         user={user}
                                         closeMenu={close}
                                       />
-                                      <SocialMediaButtons />
+                                      {SOCIAL_MEDIA.map(
+                                        ({ site, url, tagline }) => (
+                                          <Menu.Item
+                                            key={site}
+                                            as="a"
+                                            href={url}
+                                            style={styles.fancyText}
+                                          >
+                                            <Icon name={site} /> {tagline}
+                                          </Menu.Item>
+                                        )
+                                      )}
                                     </Sidebar>
                                     <Sidebar.Pusher>{children}</Sidebar.Pusher>
                                   </Sidebar.Pushable>
