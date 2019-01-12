@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "de6cf246-07fa-49ec-8a1e-43202dd835a7"
+    },
+    {
+      "input": "ftilt ftilt ftilt",
+      "damage": "16.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-8"
+      },
+      "demonstration": "",
+      "notes": "Can't work against Middleweight characters",
+      "uuid": "50b59975-4d22-4021-8ee8-6015095d37de"
     }
   ],
   "preview": "",
