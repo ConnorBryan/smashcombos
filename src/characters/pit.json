@@ -38,9 +38,8 @@
       "uuid": "66a834c4-c652-4310-b7ab-58764e1c2505"
     },
     {
-      "input": "dthrow sh+nair",
-      "damage": "16.7",
-      "tags": [],
+      "input": "dair usmash",
+      "damage": "33.8",
       "percentages": {
         "balloonweight": "",
         "featherweight": "",
@@ -49,9 +48,24 @@
         "heavyweight": "",
         "superheavyweight": ""
       },
-      "demonstration": "",
       "notes": "",
       "uuid": "928dead1-374b-4c9e-9470-e30466c8b42f"
+    },
+    {
+      "input": "dthrow sh+nair",
+      "damage": "16.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "90-150",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Kill confirm. Needs the dair sweet spot.",
+      "uuid": "a5dd87cb-34a5-4dfa-8a3d-7405b6a329ba"
     }
   ],
   "preview": "",
