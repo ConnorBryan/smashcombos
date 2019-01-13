@@ -55,6 +55,24 @@
       },
       "demonstration": "",
       "notes": "Low percents"
+    },
+    {
+      "input": "uthrow sspecial",
+      "damage": "30",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "53f3e782-0725-4585-a492-ae3dc330e03a"
     }
   ],
   "preview": "",
