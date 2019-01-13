@@ -56,6 +56,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "60b350d3-935c-4665-9cae-840f6e585347"
+    },
+    {
+      "input": "dtilt ftilt",
+      "damage": "19.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "95+",
+        "featherweight": "95+",
+        "lightweight": "95+",
+        "middleweight": "95+",
+        "heavyweight": "95+",
+        "superheavyweight": "95+"
+      },
+      "demonstration": "",
+      "notes": "Easy way to space forward tilt for a quick get off me. Tested on ganon, pichu, and Mario ",
+      "uuid": "a10f18e9-a608-47a9-8ae5-b87e8d45a4b5"
     }
   ],
   "preview": "",
