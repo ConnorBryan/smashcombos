@@ -24,7 +24,7 @@ export default class InputScreen extends Component {
     this.setState(prevState => ({
       input:
         prevState.input.length === 0
-          ? value
+          ? `${prevState.modifiers}${value}`
           : `${prevState.input} ${prevState.modifiers}${value}`,
       modifiers: ""
     }));
