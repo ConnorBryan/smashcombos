@@ -52,6 +52,22 @@
       },
       "demonstration": "",
       "notes": ""
+    },
+    {
+      "input": "",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "6319c8ba-13d0-4c96-aefe-3466f9b6d43b"
     }
   ],
   "preview": "",
