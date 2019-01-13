@@ -1,7 +1,7 @@
 {
   "name": "Falco",
   "render": "../../static/img/falco.png",
-  "description": "...",
+  "description": "Falco is one of the most respected and skilled pilots of the Star Fox Team. His personality in general is brash and cocky. Falco has incredible nerves and is able to accurately predict the tide of battle on most occasions.\n\nFalco has incredible damage output and combo game. He has a multitude of kill confirms and has good edgeguarding tools. However, Falco has some glaring weaknesses, because of Falco being 49 of 76 in run speed and 59 of 76 in air speed, he gets outmaneuvered by the majority of the cast.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
