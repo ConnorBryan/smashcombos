@@ -343,13 +343,13 @@ export const getPercentageThreshhold = value => {
 
   if (isNaN(int) || int < 0) {
     return PercentageThresholds.Error;
-  } else if (value >= 0 && value <= 20) {
+  } else if (int >= 0 && int <= 20) {
     return PercentageThresholds.VeryLow;
-  } else if (value >= 21 && value <= 40) {
+  } else if (int >= 21 && int <= 40) {
     return PercentageThresholds.Low;
-  } else if (value >= 41 && value <= 60) {
+  } else if (int >= 41 && int <= 60) {
     return PercentageThresholds.Medium;
-  } else if (value >= 61 && value <= 80) {
+  } else if (int >= 61 && int <= 80) {
     return PercentageThresholds.High;
   } else {
     return PercentageThresholds.VeryHigh;
