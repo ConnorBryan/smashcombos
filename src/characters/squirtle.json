@@ -33,7 +33,9 @@
       "value": "75"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -86,6 +88,24 @@
       "demonstration": "",
       "notes": "Can't work against Middleweight characters",
       "uuid": "50b59975-4d22-4021-8ee8-6015095d37de"
+    },
+    {
+      "input": "dthrow utilt sh+uair dj+uair uspecial",
+      "damage": "50",
+      "tags": [
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "edf87ee8-3ba3-4292-af16-aa5424959bea"
     }
   ],
   "preview": "",
