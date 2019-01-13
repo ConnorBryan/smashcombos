@@ -1,7 +1,7 @@
 {
   "name": "Luigi",
   "render": "../../static/img/luigi.png",
-  "description": "The transition to Super Smash Bros. Ultimate was especially beneficial for Luigi; not only was he buffed in terms of speed and damage, he has also received a 0-to-death combo. His down throw is especially deadly, comboing into many options. With his grab now being a tether, Luigi's grapple game is extremely magnified. As far as nerfs, his down special no longer has utility for recovery. Nonetheless, Luigi is a great choice for a fan of combos.",
+  "description": "The transition to Super Smash Bros. Ultimate was especially beneficial for Luigi; not only was he buffed in terms of speed and damage, he has also received a 0-to-death combo. His down throw is especially deadly, comboing into many options. With his grab now being a tether, Luigi's grapple game is extremely magnified. As far as nerfs, his down special no longer has utility for recovery. Nonetheless, Luigi is a great choice for a fan of combos",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0",
