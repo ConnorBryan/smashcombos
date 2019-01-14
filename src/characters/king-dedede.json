@@ -41,6 +41,22 @@
     {
       "percentages": {},
       "uuid": "65c3e4ae-08de-44b7-b842-4e2335ec535a"
+    },
+    {
+      "input": "uthrow sh+uair",
+      "damage": "24.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "https://www.youtube.com/embed/9oQ1E5MuD_s?start=228",
+      "notes": "",
+      "uuid": "ee437fb4-7260-4842-9736-7cfb3427f410"
     }
   ],
   "preview": "",
