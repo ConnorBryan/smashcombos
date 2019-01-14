@@ -36,6 +36,22 @@
     {
       "percentages": {},
       "uuid": "585b0b78-288a-4a4f-bc39-59eeaf1d8795"
+    },
+    {
+      "input": "ff+uair utilt utilt utilt uair",
+      "damage": "50",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8b384766-b684-4198-a6df-3231823d88f4"
     }
   ],
   "preview": "",
