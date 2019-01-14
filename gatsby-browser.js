@@ -3,6 +3,8 @@ const netlifyIdentity = require("netlify-identity-widget");
 exports.onClientEntry = () => {
   netlifyIdentity.init();
 
+  let deferredPrompt;
+
   window.addEventListener("beforeinstallprompt", e => {
     // Prevent Chrome 67 and earlier from automatically showing the prompt
     e.preventDefault();
