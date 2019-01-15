@@ -33,7 +33,10 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +61,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -89,7 +95,9 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -105,7 +113,11 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -121,7 +133,9 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -137,7 +151,9 @@
     {
       "input": "dthrow ftilt",
       "damage": "22.6",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -153,7 +169,9 @@
     {
       "input": "dthrow usmash",
       "damage": "25.3",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "100",
         "featherweight": "100",
@@ -169,7 +187,10 @@
     {
       "input": "dthrow bair",
       "damage": "29.6%",
-      "tags": ["diable", "killConfirm"],
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -201,7 +222,9 @@
     {
       "input": "dtilt fsmash",
       "damage": "33",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -213,6 +236,24 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=LxlTrtWyojg",
       "notes": "Damage considers a Downward Angled Forward Smash. Kill Confirms at roughly 70% to a majority of the cast. Inconsistent however as Down Tilt's bury frames come out at 14, which is comparable to a Smash Attack. ",
       "uuid": "c29d2c45-49d7-4de0-954f-a8bea5b53b89"
+    },
+    {
+      "input": "fthrow ftilt",
+      "damage": "27.6",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=63-1iK9-qp8",
+      "notes": "Requires Pivot Cancelling. Works from around 0-30%, and is most effective on larger characters. The inputs are pretty tight, and Dash Attack is much easier. However, by angling Forward Tilt you can catch opponents who would jump out of the Dash Attack hitbox, thus dealing more damage. This functions as a tech chase as well, and leaves opponents in a much more disadvantageous position than Dash Attack would. ",
+      "uuid": "1f82d513-7ee2-42d5-8cfe-758119ac10c5"
     }
   ],
   "preview": "",
