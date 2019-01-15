@@ -42,6 +42,17 @@ export default class UserProvider extends Component {
       window.localStorage.removeItem("gotrue.user");
 
       this.auth.currentUser().logout();
+    },
+    requestPasswordRecovery: async email => {
+      try {
+        await this.auth.requestPasswordRecovery(email);
+
+        return true;
+      } catch (error) {
+        console.error(error);
+
+        return false;
+      }
     }
   };
 

@@ -114,6 +114,7 @@ export default function Layout({ fluid, style = {}, children }) {
                                   className="layout"
                                   style={{
                                     marginTop: "68px",
+                                    paddingTop: "28px",
                                     ...style
                                   }}
                                 >

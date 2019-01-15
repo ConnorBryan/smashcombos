@@ -16,7 +16,7 @@ import { UserContext } from "../components/user-provider";
 import smashball from "../img/smashball-dark.png";
 import * as styles from "../styles";
 
-export default function SignIn({ navigate }) {
+export default function ForgotPassword({ navigate }) {
   return (
     <Layout
       fluid
@@ -27,27 +27,31 @@ export default function SignIn({ navigate }) {
       <MessageContext.Consumer>
         {({ showMessage }) => (
           <UserContext.Consumer>
-            {({ signin }) => (
+            {({ requestPasswordRecovery }) => (
               <Formik
                 initialValues={{
-                  email: "",
-                  password: ""
+                  email: ""
                 }}
-                onSubmit={async ({ email, password }, { setSubmitting }) => {
+                onSubmit={async ({ email }, { setSubmitting }) => {
                   setSubmitting(true);
 
-                  const response = await signin(email, password);
+                  const succeeded = await requestPasswordRecovery(email);
 
                   setSubmitting(false);
 
-                  if (!response) {
-                    return showMessage({
-                      header: "Unable to sign in",
-                      content: "Please check your credentials and try again."
+                  if (succeeded) {
+                    showMessage({
+                      header: "Password recovery process started",
+                      content: "Please check your email to continue."
                     });
+
+                    return setTimeout(() => navigate("/"), 3000);
                   }
 
-                  navigate("/");
+                  return showMessage({
+                    header: "Unable to recover password",
+                    content: "Please check your email and try again."
+                  });
                 }}
                 render={({ handleSubmit, isSubmitting }) => (
                   <Form onSubmit={handleSubmit}>
@@ -86,7 +90,7 @@ export default function SignIn({ navigate }) {
                           <Header
                             as="h2"
                             style={styles.fancyText}
-                            content="Sign in"
+                            content="Forgot password"
                           />
                           <p
                             style={{
@@ -114,34 +118,19 @@ export default function SignIn({ navigate }) {
                                 />
                               )}
                             />
-                            <Field
-                              name="password"
-                              render={({ field }) => (
-                                <Form.Input
-                                  {...field}
-                                  fluid
-                                  type="password"
-                                  label="Password"
-                                  placeholder="Enter your password..."
-                                  icon="lock"
-                                  iconPosition="left"
-                                  required
-                                />
-                              )}
-                            />
                           </Segment>
                           <Segment compact attached style={{ padding: 0 }}>
                             <Button.Group widths={2}>
                               <Button
                                 icon
                                 type="button"
-                                onClick={() => navigate("/sign-up")}
+                                onClick={() => navigate("/sign-in")}
                                 disabled={isSubmitting}
                               >
                                 <span style={{ marginRight: "4px" }}>
-                                  <Icon name="user plus" />
+                                  <Icon name="sign in" />
                                 </span>
-                                Sign up
+                                Sign in
                               </Button>
                               <Button
                                 icon
@@ -150,25 +139,10 @@ export default function SignIn({ navigate }) {
                                 disabled={isSubmitting}
                                 loading={isSubmitting}
                               >
-                                <Icon name="sign in" /> Sign in
+                                <Icon name="lock" /> Recover Password
                               </Button>
                             </Button.Group>
                           </Segment>
-                          <span
-                            style={{
-                              display: "block",
-                              marginTop: "1rem",
-                              textAlign: "center"
-                            }}
-                          >
-                            <Button
-                              basic
-                              onClick={() => navigate("/forgot-password")}
-                              disabled={isSubmitting}
-                            >
-                              Forgot password?
-                            </Button>
-                          </span>
                         </Segment>
                       </Grid.Column>
                       <Grid.Column

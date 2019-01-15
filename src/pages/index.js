@@ -27,11 +27,7 @@ export default class IndexPage extends Component {
       window.matchMedia("(display-mode: standalone)").matches;
 
     return (
-      <Layout
-        style={{
-          paddingTop: "28px"
-        }}
-      >
+      <Layout>
         <Item.Group relaxed="very">
           <Item
             style={{
