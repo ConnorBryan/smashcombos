@@ -33,7 +33,10 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +61,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -75,21 +81,22 @@
       "damage": "20",
       "tags": [],
       "percentages": {
-        "balloonweight": "",
-        "featherweight": "",
-        "lightweight": "",
-        "middleweight": "",
-        "heavyweight": "",
-        "superheavyweight": ""
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
       },
       "demonstration": "",
-      "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab",
-      "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
+      "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab. Regardless, it's a generally good way to build up damage. "
     },
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -105,7 +112,11 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -121,7 +132,9 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
