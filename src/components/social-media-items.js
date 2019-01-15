@@ -10,6 +10,8 @@ export default function SocialMediaItems() {
       key={site}
       as="a"
       href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         ...styles.fancyText,
         borderLeft: `2px solid ${color}`
