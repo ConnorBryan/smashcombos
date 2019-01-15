@@ -22,7 +22,6 @@ export default function SignUp({ navigate }) {
         {({ signup }) => (
           <Formik
             initialValues={{
-              name: "",
               email: "",
               password: ""
             }}
@@ -86,20 +85,6 @@ export default function SignUp({ navigate }) {
                         never die.
                       </p>
                       <Segment attached compact padded="very">
-                        <Field
-                          name="name"
-                          render={({ field }) => (
-                            <Form.Input
-                              {...field}
-                              fluid
-                              label="Name"
-                              placeholder="Enter your name..."
-                              icon="user"
-                              iconPosition="left"
-                              required
-                            />
-                          )}
-                        />
                         <Field
                           name="email"
                           render={({ field }) => (
