@@ -91,6 +91,24 @@
       "demonstration": "",
       "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab",
       "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
+    },
+    {
+      "input": "dthrow dashatk",
+      "damage": "25",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=qbCsTPN_xi4&feature=youtu.be",
+      "notes": "Deals 18.2% in 4v4. Usually works even at 0%. Requires use of the Instant Dash Attack Tech. \n\nKing K. Rool's strongest kill confirm and usually the most optimal thing to do out of Down Throw. The only exception is small or floaty characters, where they die earlier to Forward Tilt. ",
+      "uuid": "8673c381-8b5d-4650-bc16-6b83ba1adc0b"
     }
   ],
   "preview": "",
