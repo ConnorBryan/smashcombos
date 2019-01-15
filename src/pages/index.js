@@ -5,86 +5,68 @@ import { CharacterSelect, Layout } from "../components";
 import smashball from "../img/smashball.png";
 import * as styles from "../styles";
 
-export default class IndexPage extends Component {
-  installAppPrompt = null;
+export default function IndexPage() {
+  const isPwa =
+    typeof window !== "undefined" &&
+    window.matchMedia("(display-mode: standalone)").matches;
 
-  state = {
-    isPwa: window.matchMedia("(display-mode: standalone)").matches
-  };
-
-  componentDidMount() {
-    // Progressive Web App
-    window.addEventListener("beforeinstallprompt", e => {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      this.installAppPrompt = e;
-    });
-  }
-
-  attemptToInstallApp = () => {
-    if (this.installAppPrompt) {
-      this.installAppPrompt.prompt();
-    }
-  };
-
-  render() {
-    const { isPwa } = this.state;
-
-    return (
-      <Layout>
-        <Item.Group relaxed="very">
-          <Item
+  return (
+    <Layout>
+      <Item.Group relaxed="very">
+        <Item
+          style={{
+            background: "#1B1C1C"
+          }}
+        >
+          <Item.Image size="medium" src={smashball} />
+          <Item.Content
+            verticalAlign="bottom"
             style={{
-              background: "#1B1C1C"
+              padding: "2rem"
             }}
           >
-            <Item.Image size="medium" src={smashball} />
-            <Item.Content
-              verticalAlign="bottom"
+            <Item.Header
+              as="h1"
               style={{
-                padding: "2rem"
+                ...styles.fancyText,
+                fontSize: "2rem"
+              }}
+              content="Attributes and combos for all members of the Smash Ultimate cast"
+            />
+            <Item.Description
+              style={{
+                fontSize: "1.2rem"
               }}
             >
-              <Item.Header
-                as="h1"
-                style={{
-                  ...styles.fancyText,
-                  fontSize: "2rem"
-                }}
-                content="Attributes and combos for all members of the Smash Ultimate cast"
-              />
-              <Item.Description
-                style={{
-                  fontSize: "1.2rem"
-                }}
-              >
-                SmashCombos is an open-source initiative with the goal of
-                becoming a compendium of combos, a one-stop-shop to pick up the
-                ins and outs of your favorite character, or even a character
-                you're looking to add to your repertoire.
-              </Item.Description>
-              {!isPwa && (
-                <Item.Extra>
-                  <Button
-                    icon
-                    primary
-                    size="massive"
-                    floated="right"
-                    onClick={this.attemptToInstallApp}
-                    style={{
-                      marginTop: "2rem"
-                    }}
-                  >
-                    <Icon name="mobile" /> Download the App
-                  </Button>
-                </Item.Extra>
-              )}
-            </Item.Content>
-          </Item>
-        </Item.Group>
-        <CharacterSelect />
-      </Layout>
-    );
-  }
+              SmashCombos is an open-source initiative with the goal of becoming
+              a compendium of combos, a one-stop-shop to pick up the ins and
+              outs of your favorite character, or even a character you're
+              looking to add to your repertoire.
+            </Item.Description>
+            {!isPwa && (
+              <Item.Extra>
+                <Button
+                  icon
+                  primary
+                  size="massive"
+                  floated="right"
+                  onClick={
+                    typeof window !== "undefined"
+                      ? window.attemptToInstallApp
+                      : () => {}
+                  }
+                  style={{
+                    marginTop: "2rem"
+                  }}
+                >
+                  <Icon name="mobile" /> Download the App
+                </Button>
+              </Item.Extra>
+            )}
+          </Item.Content>
+        </Item>
+      </Item.Group>
+      <CharacterSelect />
+    </Layout>
+  );
 }
