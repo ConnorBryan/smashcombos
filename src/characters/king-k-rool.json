@@ -33,10 +33,7 @@
       "value": "133"
     }
   },
-  "tags": [
-    "fastFaller",
-    "bigBody"
-  ],
+  "tags": ["fastFaller", "bigBody"],
   "combos": [
     {
       "percentages": {},
@@ -61,10 +58,7 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": [
-        "diable",
-        "bigBody"
-      ],
+      "tags": ["diable", "bigBody"],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -95,9 +89,7 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -113,11 +105,7 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": [
-        "diable",
-        "fastFaller",
-        "bigBody"
-      ],
+      "tags": ["diable", "fastFaller", "bigBody"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -133,9 +121,7 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -149,11 +135,25 @@
       "uuid": "8673c381-8b5d-4650-bc16-6b83ba1adc0b"
     },
     {
+      "input": "dthrow ftilt",
+      "damage": "22.6",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "70",
+        "featherweight": "70",
+        "lightweight": "70",
+        "middleweight": "70",
+        "heavyweight": "70",
+        "superheavyweight": "70"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=9YBn93snuKY&feature=youtu.be",
+      "notes": "Deals 18% in 4v4. Usually works at around 70%, but could be higher. \n\nKing K. Rool's kill confirm of choice against floaties or small characters. Requires it to be angled down if they're not mashing, up if they are. ",
+      "uuid": "a9f663c1-c239-4f08-a202-eb9cc5a72bdd"
+    },
+    {
       "input": "dthrow usmash",
       "damage": "25.3",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "100",
         "featherweight": "100",
