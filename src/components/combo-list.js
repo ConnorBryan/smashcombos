@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Button, Card, Header, Icon, Segment } from "semantic-ui-react";
 
+import { sortByHasDemonstration } from "../helpers";
 import * as styles from "../styles";
 import PlaceholderPanel from "./placeholder-panel";
 import ComboListCard from "./combo-list-card";
@@ -42,15 +43,17 @@ export default function ComboList({ slug, combos }) {
             >
               <MessageContext.Consumer>
                 {({ showMessage }) =>
-                  combos.map((combo, index) => (
-                    <ComboListCard
-                      key={combo.input}
-                      {...combo}
-                      slug={slug}
-                      showMessage={showMessage}
-                      basic
-                    />
-                  ))
+                  [...combos]
+                    .sort(sortByHasDemonstration)
+                    .map((combo, index) => (
+                      <ComboListCard
+                        key={combo.input}
+                        {...combo}
+                        slug={slug}
+                        showMessage={showMessage}
+                        basic
+                      />
+                    ))
                 }
               </MessageContext.Consumer>
             </Card.Group>

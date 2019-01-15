@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import { Button, Card, Embed, Header, List, Popup } from "semantic-ui-react";
+import {
+  Button,
+  Card,
+  Embed,
+  Header,
+  Label,
+  List,
+  Popup
+} from "semantic-ui-react";
 
 import { copyToClipboard, generateEffectivePercentages } from "../helpers";
 import * as styles from "../styles";
@@ -50,6 +58,7 @@ export default class ComboListCard extends Component {
             overflowY: "auto"
           }}
         >
+          {demonstration && basic && <Label corner="right" icon="video" />}
           <Input input={input} />
         </Card.Content>
         <>
