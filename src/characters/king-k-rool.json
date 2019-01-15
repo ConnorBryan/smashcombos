@@ -33,10 +33,7 @@
       "value": "133"
     }
   },
-  "tags": [
-    "fastFaller",
-    "bigBody"
-  ],
+  "tags": ["fastFaller", "bigBody"],
   "combos": [
     {
       "percentages": {},
@@ -61,10 +58,7 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": [
-        "diable",
-        "bigBody"
-      ],
+      "tags": ["diable", "bigBody"],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -93,11 +87,41 @@
       "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
     },
     {
+      "input": "dthrow utilt",
+      "damage": "20.8",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "50",
+        "featherweight": "50",
+        "lightweight": "50",
+        "middleweight": "50",
+        "heavyweight": "50",
+        "superheavyweight": "50"
+      },
+      "demonstration": "https://www.youtube.com/embed/GLcSZT3EgyM",
+      "notes": "Deals 25% without 1v1 Modifiers, and true from around 50% (considering your opponent is doing optimal mashing).\n\nThis combo is usually used as a consistent Kill Confirm at around 120% for the regular cast. It works universally - even on characters that are small - meaning there's no need to worry about angling Forward Tilt or technical skill. Good for beginners, and a consistent kill method at higher %s. ",
+      "uuid": "4a717eb8-50a5-43b0-a2a1-50d41cb83b5a"
+    },
+    {
+      "input": "fthrow dashatk",
+      "damage": "31.8",
+      "tags": ["diable", "fastFaller", "bigBody"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=K-yds-daRlI&feature=youtu.be",
+      "notes": "Deals 25% without 1v1 Modifiers, and true at 0% on most characters. \n\nOne of King K. Rool's best ways to deal early damage, and puts the opponent into an immediate disadvantage state. If you're able to get this off, definitely use it. \n\nIt CAN be DI'd by smaller characters, but fast fallers and at least mid-bodies usually have to eat the hit. ",
+      "uuid": "6aa8dd55-a284-4f23-8a49-4b9aea006b53"
+    },
+    {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
