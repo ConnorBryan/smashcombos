@@ -91,6 +91,24 @@
       "demonstration": "",
       "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab",
       "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "20.8",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "50",
+        "featherweight": "50",
+        "lightweight": "50",
+        "middleweight": "50",
+        "heavyweight": "50",
+        "superheavyweight": "50"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=GLcSZT3EgyM&feature=youtu.be",
+      "notes": "Deals 25% without 1v1 Modifiers, and true from around 50% (considering your opponent is doing optimal mashing).\n\nThis combo is usually used as a consistent Kill Confirm at around 120% for the regular cast. It works universally - even on characters that are small - meaning there's no need to worry about angling Forward Tilt or technical skill. Good for beginners, and a consistent kill method at higher %s. ",
+      "uuid": "4a717eb8-50a5-43b0-a2a1-50d41cb83b5a"
     }
   ],
   "preview": "",
