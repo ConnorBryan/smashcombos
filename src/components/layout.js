@@ -102,9 +102,13 @@ export default function Layout({ fluid, style = {}, children }) {
                       <MenuContext.Consumer>
                         {({ isOpen, toggle, close }) => (
                           <UserContext.Consumer>
-                            {({ user }) => (
+                            {({ user, signout }) => (
                               <>
-                                <Navbar user={user} toggleMenu={toggle} />
+                                <Navbar
+                                  user={user}
+                                  signout={signout}
+                                  toggleMenu={toggle}
+                                />
                                 <Container
                                   fluid={fluid}
                                   className="layout"

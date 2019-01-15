@@ -1,24 +1,28 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Menu, Header, Icon } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 
 import * as styles from "../styles";
 
 export default function SiteActions({
   className = "",
   user,
-  closeMenu = () => {}
+  closeMenu = () => {},
+  signout
 }) {
   return (
     <>
       {user ? (
         <>
-          <Menu.Item className={className}>
-            <Header as="h5">Welcome, {user.user_metadata.full_name}.</Header>
+          <Menu.Item className={className} style={styles.fancyText}>
+            {user.email}
           </Menu.Item>
           <Menu.Item
             className={className}
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              signout();
+            }}
             style={styles.fancyText}
           >
             <Icon name="sign out" /> Sign out

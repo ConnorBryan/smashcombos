@@ -6,7 +6,7 @@ import { SOCIAL_MEDIA } from "../config";
 import logo from "../img/logo.svg";
 import SiteActions from "./site-actions";
 
-export default function Navbar({ user, toggleMenu }) {
+export default function Navbar({ user, signout, toggleMenu }) {
   return (
     <Menu
       fixed="top"
@@ -47,7 +47,7 @@ export default function Navbar({ user, toggleMenu }) {
           >
             <Icon style={{ margin: 0 }} name="bars" />
           </Menu.Item>
-          <SiteActions className="desktop-only" user={user} />
+          <SiteActions className="desktop-only" user={user} signout={signout} />
         </Menu.Menu>
       </Container>
     </Menu>
