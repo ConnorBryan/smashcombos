@@ -52,6 +52,25 @@
       "demonstration": "",
       "notes": "",
       "uuid": "f2cd923b-829b-4432-bdea-3fdc5e915bf1"
+    },
+    {
+      "input": "sspecial uspecial dj+uspecial uair dj+nair sspecial sspecial fair fair fair",
+      "damage": "80.1",
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "https://www.youtube.com/embed/A8k7ZZOmqjM",
+      "notes": "This takes advantage of a glitch?/technique (unknown if it's purposeful or not) that gives bayonetta her double jump back after using up-special quickly after double jumping. ",
+      "uuid": "f1069f2f-f03c-438e-8bc1-09b7c1367cd0"
     }
   ],
   "preview": "",
