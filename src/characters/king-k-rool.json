@@ -202,6 +202,22 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=BmeOeMOdT-k",
       "notes": "Deals 24% in 4v4. Works on any character as long as you 100% know their mashing rate. Purely made for style. It's true at a certain range, the demo doesn't show that sadly. If it sourspots, it is a kill confirm. ",
       "uuid": "48bc8629-41e2-46b8-a004-91e6bbbe9d5a"
+    },
+    {
+      "input": "nair grab pummel uthrow utilt",
+      "damage": "37.1%",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=UQfvinvsNGw",
+      "notes": "Damage varies based on how NAir and Up Tilt hit, NAir -> Grab is highly specific. Thus, requires practice. Up Tilt can be jumped out of but punishes any late inputs or challenge attempts for heavy damage. Can deal an upwards of 40% with pummels and additional follow-ups such as Up Aerial. ",
+      "uuid": "e6ae7fe2-f51f-405a-8028-d5c9f91b0c1c"
     }
   ],
   "preview": "",
