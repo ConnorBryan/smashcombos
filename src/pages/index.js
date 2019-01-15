@@ -8,6 +8,10 @@ import * as styles from "../styles";
 export default class IndexPage extends Component {
   installAppPrompt = null;
 
+  state = {
+    isPwa: window.matchMedia("(display-mode: standalone)").matches
+  };
+
   componentDidMount() {
     // Progressive Web App
     window.addEventListener("beforeinstallprompt", e => {
@@ -25,17 +29,23 @@ export default class IndexPage extends Component {
   };
 
   render() {
+    const { isPwa } = this.state;
+
     return (
       <Layout>
-        <Item.Group
-          relaxed="very"
-          style={{
-            marginBottom: "8rem"
-          }}
-        >
-          <Item>
+        <Item.Group relaxed="very">
+          <Item
+            style={{
+              background: "#1B1C1C"
+            }}
+          >
             <Item.Image size="medium" src={smashball} />
-            <Item.Content verticalAlign="middle">
+            <Item.Content
+              verticalAlign="bottom"
+              style={{
+                padding: "2rem"
+              }}
+            >
               <Item.Header
                 as="h1"
                 style={{
@@ -54,20 +64,22 @@ export default class IndexPage extends Component {
                 ins and outs of your favorite character, or even a character
                 you're looking to add to your repertoire.
               </Item.Description>
-              <Item.Extra>
-                <Button
-                  icon
-                  primary
-                  size="massive"
-                  floated="right"
-                  onClick={this.attemptToInstallApp}
-                  style={{
-                    marginTop: "2rem"
-                  }}
-                >
-                  <Icon name="mobile" /> Download the App
-                </Button>
-              </Item.Extra>
+              {!isPwa && (
+                <Item.Extra>
+                  <Button
+                    icon
+                    primary
+                    size="massive"
+                    floated="right"
+                    onClick={this.attemptToInstallApp}
+                    style={{
+                      marginTop: "2rem"
+                    }}
+                  >
+                    <Icon name="mobile" /> Download the App
+                  </Button>
+                </Item.Extra>
+              )}
             </Item.Content>
           </Item>
         </Item.Group>
