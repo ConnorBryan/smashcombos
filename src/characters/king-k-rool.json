@@ -252,6 +252,24 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=2xQLwWiurm8",
       "notes": "A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ",
       "uuid": "91b22c9f-596b-499f-a98b-72f2b6ee69e7"
+    },
+    {
+      "input": "sspecial dtilt dsmash",
+      "damage": "50",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "10",
+        "featherweight": "10",
+        "lightweight": "10",
+        "middleweight": "10",
+        "heavyweight": "10",
+        "superheavyweight": "10"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=6hFeSQ89UWU",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during their first few frames of landing lag from the crown. It's quite difficult to perform; but with practice, this is a kill confirm on the entire cast. Even if it doesn't land in landing lag, the opponent will have issues reacting to it. All it takes is hitting at mid-range. ",
+      "uuid": "fc163465-996e-4a2e-84f8-b3a02a34eed5"
     }
   ],
   "preview": "",
