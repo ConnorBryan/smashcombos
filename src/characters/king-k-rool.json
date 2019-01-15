@@ -33,7 +33,10 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +61,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -89,7 +95,9 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -105,7 +113,11 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -121,7 +133,9 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -137,7 +151,9 @@
     {
       "input": "dthrow ftilt",
       "damage": "22.6",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -153,7 +169,9 @@
     {
       "input": "dthrow usmash",
       "damage": "25.3",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "100",
         "featherweight": "100",
@@ -169,7 +187,10 @@
     {
       "input": "dthrow bair",
       "damage": "29.6%",
-      "tags": ["diable", "killConfirm"],
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -201,7 +222,9 @@
     {
       "input": "dtilt fsmash",
       "damage": "33",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -213,6 +236,24 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=LxlTrtWyojg",
       "notes": "Damage considers a Downward Angled Forward Smash. Kill Confirms at roughly 70% to a majority of the cast. Inconsistent however as Down Tilt's bury frames come out at 14, which is comparable to a Smash Attack. ",
       "uuid": "c29d2c45-49d7-4de0-954f-a8bea5b53b89"
+    },
+    {
+      "input": "dair usmash",
+      "damage": "32.7",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "40",
+        "featherweight": "40",
+        "lightweight": "40",
+        "middleweight": "40",
+        "heavyweight": "40",
+        "superheavyweight": "40"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=bsaBMtQxyHM",
+      "notes": "This kills most opponents at around 100% and is one of King K. Rool's best kill confirm as a result. This can work out of Down Tilt, which makes it guaranteed at 80%. If the opponent sucks at mashing, Down Throw works as well. ",
+      "uuid": "b76cfe51-bf48-4130-9f45-2f200c1cec35"
     }
   ],
   "preview": "",
