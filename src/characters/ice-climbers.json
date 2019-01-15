@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "0ba66c84-2cb9-4671-89cf-cd409b04df6b"
+    },
+    {
+      "input": "",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "98**/",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "3a2d5490-f2dd-42cc-8392-45eab8c446c1"
     }
   ],
   "preview": "",
