@@ -133,6 +133,22 @@
       "demonstration": "https://www.youtube.com/embed/qbCsTPN_xi4",
       "notes": "Deals 18.2% in 4v4. Usually works even at 0%. Requires use of the Instant Dash Attack Tech. \n\nKing K. Rool's strongest kill confirm and usually the most optimal thing to do out of Down Throw. The only exception is small or floaty characters, where they die earlier to Forward Tilt. ",
       "uuid": "8673c381-8b5d-4650-bc16-6b83ba1adc0b"
+    },
+    {
+      "input": "dthrow ftilt",
+      "damage": "22.6",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "70",
+        "featherweight": "70",
+        "lightweight": "70",
+        "middleweight": "70",
+        "heavyweight": "70",
+        "superheavyweight": "70"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=9YBn93snuKY&feature=youtu.be",
+      "notes": "Deals 18% in 4v4. Usually works at around 70%, but could be higher. \n\nKing K. Rool's kill confirm of choice against floaties or small characters. Requires it to be angled down if they're not mashing, up if they are. ",
+      "uuid": "a9f663c1-c239-4f08-a202-eb9cc5a72bdd"
     }
   ],
   "preview": "",
