@@ -12,7 +12,7 @@ export default class IndexPage extends Component {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();
 
-      this.installApp = e.prompt;
+      this.installApp = e;
     });
   }
 
@@ -66,7 +66,7 @@ export default class IndexPage extends Component {
                     primary
                     size="massive"
                     floated="right"
-                    onClick={() => this.installApp()}
+                    onClick={() => this.installApp.prompt()}
                     style={{
                       marginTop: "2rem"
                     }}
