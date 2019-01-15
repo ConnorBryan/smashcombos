@@ -33,10 +33,7 @@
       "value": "133"
     }
   },
-  "tags": [
-    "fastFaller",
-    "bigBody"
-  ],
+  "tags": ["fastFaller", "bigBody"],
   "combos": [
     {
       "percentages": {},
@@ -61,10 +58,7 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": [
-        "diable",
-        "bigBody"
-      ],
+      "tags": ["diable", "bigBody"],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -95,9 +89,7 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -113,11 +105,7 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": [
-        "diable",
-        "fastFaller",
-        "bigBody"
-      ],
+      "tags": ["diable", "fastFaller", "bigBody"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -133,9 +121,7 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -151,9 +137,7 @@
     {
       "input": "dthrow ftilt",
       "damage": "22.6",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -169,9 +153,7 @@
     {
       "input": "dthrow usmash",
       "damage": "25.3",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "100",
         "featherweight": "100",
@@ -187,10 +169,7 @@
     {
       "input": "dthrow bair",
       "damage": "29.6%",
-      "tags": [
-        "diable",
-        "killConfirm"
-      ],
+      "tags": ["diable", "killConfirm"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -222,9 +201,7 @@
     {
       "input": "dtilt fsmash",
       "damage": "33",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -238,11 +215,9 @@
       "uuid": "c29d2c45-49d7-4de0-954f-a8bea5b53b89"
     },
     {
-      "input": "fthrow ftilt",
+      "input": "dtilt dashatk",
       "damage": "27.6",
-      "tags": [
-        "diable"
-      ],
+      "tags": [],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -251,9 +226,57 @@
         "heavyweight": "0",
         "superheavyweight": "0"
       },
-      "demonstration": "https://www.youtube.com/embed/watch?v=63-1iK9-qp8",
-      "notes": "Requires Pivot Cancelling. Works from around 0-30%, and is most effective on larger characters. The inputs are pretty tight, and Dash Attack is much easier. However, by angling Forward Tilt you can catch opponents who would jump out of the Dash Attack hitbox, thus dealing more damage. This functions as a tech chase as well, and leaves opponents in a much more disadvantageous position than Dash Attack would. ",
-      "uuid": "1f82d513-7ee2-42d5-8cfe-758119ac10c5"
+      "demonstration": "https://www.youtube.com/embed/watch?v=2bfQi-2li9A",
+      "notes": "Requires use of the Instant Dash Attack Tech. This is the optimal outcome of a random Down Tilt if the opponent isn't at 0%, as it takes 5 frames to come out. Deals the most damage and can put the opponent in a disadvantageous position. ",
+      "uuid": "c0255ac1-e302-4978-be8f-8113e739d15d"
+    },
+    {
+      "input": "dair uair",
+      "damage": "31.2",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "40",
+        "featherweight": "40",
+        "lightweight": "40",
+        "middleweight": "40",
+        "heavyweight": "40",
+        "superheavyweight": "40"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=UYsiXIbnBCw",
+      "notes": "This works especially well out of Down Tilt for bonus damage if you can get that. It's a kill confirm in a multitude of scenarios if the opponent doesn't tech or is on the floor. If the opponent is at around 80%, Up Smash can be used instead. ",
+      "uuid": "fe667046-e296-41bb-81e6-254cb1dab3ff"
+    },
+    {
+      "input": "dair usmash",
+      "damage": "32.7",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "40",
+        "featherweight": "40",
+        "lightweight": "40",
+        "middleweight": "40",
+        "heavyweight": "40",
+        "superheavyweight": "40"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=bsaBMtQxyHM",
+      "notes": "This kills most opponents at around 100% and is one of King K. Rool's best kill confirm as a result. This can work out of Down Tilt, which makes it guaranteed at 80%. If the opponent sucks at mashing, Down Throw works as well. ",
+      "uuid": "b76cfe51-bf48-4130-9f45-2f200c1cec35"
+    },
+    {
+      "input": "nair jab",
+      "damage": "28.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=2xQLwWiurm8",
+      "notes": "A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ",
+      "uuid": "91b22c9f-596b-499f-a98b-72f2b6ee69e7"
     }
   ],
   "preview": "",
