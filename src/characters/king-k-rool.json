@@ -252,6 +252,22 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=2xQLwWiurm8",
       "notes": "A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ",
       "uuid": "91b22c9f-596b-499f-a98b-72f2b6ee69e7"
+    },
+    {
+      "input": "sspecial dsmash",
+      "damage": "40.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=aASYbNCH6sg",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform, works until around mid%, and works at 0%. Gains immediate advantage and can even kill lighter opponents if you can catch them in it. By far the best thing to come from the tech. ",
+      "uuid": "bd5b1f37-7bcd-48e7-824a-a0d4e1457349"
     }
   ],
   "preview": "",
