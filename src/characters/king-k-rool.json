@@ -202,6 +202,24 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=BmeOeMOdT-k",
       "notes": "Deals 24% in 4v4. Works on any character as long as you 100% know their mashing rate. Purely made for style. It's true at a certain range, the demo doesn't show that sadly. If it sourspots, it is a kill confirm. ",
       "uuid": "48bc8629-41e2-46b8-a004-91e6bbbe9d5a"
+    },
+    {
+      "input": "dtilt fsmash",
+      "damage": "33",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "70",
+        "featherweight": "70",
+        "lightweight": "70",
+        "middleweight": "70",
+        "heavyweight": "70",
+        "superheavyweight": "70"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=LxlTrtWyojg",
+      "notes": "Damage considers a Downward Angled Forward Smash. Kill Confirms at roughly 70% to a majority of the cast. Inconsistent however as Down Tilt's bury frames come out at 14, which is comparable to a Smash Attack. ",
+      "uuid": "c29d2c45-49d7-4de0-954f-a8bea5b53b89"
     }
   ],
   "preview": "",
