@@ -106,6 +106,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "edf87ee8-3ba3-4292-af16-aa5424959bea"
+    },
+    {
+      "input": "utilt",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "afe9fcba-b498-4b02-9096-7c76cb8b2f2a"
     }
   ],
   "preview": "",
