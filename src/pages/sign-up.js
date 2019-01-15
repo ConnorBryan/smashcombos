@@ -14,11 +14,12 @@ import { Layout } from "../components";
 import smashball from "../img/smashball-dark.png";
 import * as styles from "../styles";
 
-export default function SignIn({ navigate }) {
+export default function SignUp({ navigate }) {
   return (
     <Layout fluid>
       <Formik
         initialValues={{
+          name: "",
           email: "",
           password: ""
         }}
@@ -57,7 +58,7 @@ export default function SignIn({ navigate }) {
                 }}
               >
                 <Segment basic padded="very">
-                  <Header as="h2" style={styles.fancyText} content="Sign in" />
+                  <Header as="h2" style={styles.fancyText} content="Sign up" />
                   <p
                     style={{
                       ...styles.fancyPanel,
@@ -69,6 +70,20 @@ export default function SignIn({ navigate }) {
                     Bros community. Heroes get remembered, legends never die.
                   </p>
                   <Segment attached compact padded="very">
+                    <Field
+                      name="name"
+                      render={({ field }) => (
+                        <Form.Input
+                          {...field}
+                          fluid
+                          label="Name"
+                          placeholder="Enter your name..."
+                          icon="user"
+                          iconPosition="left"
+                          required
+                        />
+                      )}
+                    />
                     <Field
                       name="email"
                       render={({ field }) => (
@@ -103,27 +118,18 @@ export default function SignIn({ navigate }) {
                       <Button
                         icon
                         type="button"
-                        onClick={() => navigate("/sign-up")}
+                        onClick={() => navigate("/sign-in")}
                       >
                         <span style={{ marginRight: "4px" }}>
-                          <Icon name="user plus" />
+                          <Icon name="sign in" />
                         </span>
-                        Sign up
+                        Sign in
                       </Button>
                       <Button icon primary type="submit">
-                        <Icon name="sign in" /> Sign in
+                        <Icon name="user plus" /> Sign up
                       </Button>
                     </Button.Group>
                   </Segment>
-                  <span
-                    style={{
-                      display: "block",
-                      marginTop: "1rem",
-                      textAlign: "center"
-                    }}
-                  >
-                    <Button basic>Forgot password?</Button>
-                  </span>
                 </Segment>
               </Grid.Column>
               <Grid.Column
