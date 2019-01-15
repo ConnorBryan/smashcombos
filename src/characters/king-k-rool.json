@@ -1,7 +1,7 @@
 {
   "name": "King K. Rool",
   "render": "../../static/img/king-k-rool.png",
-  "description": "King K. Rool is the second heaviest character in the game, and he makes excellent use of it. With two amazing projectiles and a counter to boot, he can stick around for obnoxious amounts of time. While he suffers against rushdown and those who zone better than him (often to the point of necessitating a secondary), any character with a balanced playstyle will be given hell by this morbidly obese crocodile. ",
+  "description": "King K. Rool is the second heaviest character in the game, and it really shows. With two amazing projectiles and a counter to boot, he can stick around for obnoxious amounts of time. While he suffers against rushdown and those who zone better than him (often to the point of necessitating a secondary), any character with a balanced playstyle will be given hell by this morbidly obese crocodile. ",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
