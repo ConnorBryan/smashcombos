@@ -66,7 +66,11 @@ export default class IndexPage extends Component {
                     primary
                     size="massive"
                     floated="right"
-                    onClick={() => this.installApp.prompt()}
+                    onClick={
+                      this.installApp
+                        ? this.installApp.prompt
+                        : () => console.info("Install app is unavailable")
+                    }
                     style={{
                       marginTop: "2rem"
                     }}
