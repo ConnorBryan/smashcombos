@@ -162,7 +162,7 @@
         "heavyweight": "100",
         "superheavyweight": "100"
       },
-      "demonstration": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iBsOvFi47nk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "demonstration": "https://www.youtube.com/embed/iBsOvFi47nk",
       "notes": "Deals 20.3% in 4v4. Requires knowledge of their mashing ability, but is very useful as it kills at around 100%. \n\nThis is usually the earliest Kill Confirm and works amazing if the opponent always mashes in fear of a Dash Attack or Forward Tilt. ",
       "uuid": "69f2c583-010f-4c13-b3ad-087b20a0053a"
     }
