@@ -33,7 +33,10 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +61,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -89,7 +95,9 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -105,7 +113,11 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -121,7 +133,9 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -133,6 +147,24 @@
       "demonstration": "https://www.youtube.com/embed/qbCsTPN_xi4",
       "notes": "Deals 18.2% in 4v4. Usually works even at 0%. Requires use of the Instant Dash Attack Tech. \n\nKing K. Rool's strongest kill confirm and usually the most optimal thing to do out of Down Throw. The only exception is small or floaty characters, where they die earlier to Forward Tilt. ",
       "uuid": "8673c381-8b5d-4650-bc16-6b83ba1adc0b"
+    },
+    {
+      "input": "dthrow usmash",
+      "damage": "25.3",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "100",
+        "featherweight": "100",
+        "lightweight": "100",
+        "middleweight": "100",
+        "heavyweight": "100",
+        "superheavyweight": "100"
+      },
+      "demonstration": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iBsOvFi47nk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "notes": "Deals 20.3% in 4v4. Requires knowledge of their mashing ability, but is very useful as it kills at around 100%. \n\nThis is usually the earliest Kill Confirm and works amazing if the opponent always mashes in fear of a Dash Attack or Forward Tilt. ",
+      "uuid": "69f2c583-010f-4c13-b3ad-087b20a0053a"
     }
   ],
   "preview": "",
