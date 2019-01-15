@@ -51,6 +51,22 @@
       },
       "demonstration": "",
       "notes": "Fast-fall Fair can be added after the combo if they don't DI out."
+    },
+    {
+      "input": "sspecial grab pummel dthrow fair fair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "b45387db-2221-4cf4-b9e0-b881019fff91"
     }
   ],
   "preview": "",
