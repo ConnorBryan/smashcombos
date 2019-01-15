@@ -194,7 +194,7 @@
 /* Basic */
 @basicBorderRadius: @borderRadius;
 @basicBorderSize: 1px;
-@basicTextColor: @textColor;
+@basicTextColor: #eeeeee;
 @basicColoredBorderSize: 1px;
 
 @basicBackground: transparent none;
@@ -205,28 +205,22 @@
 @basicTextTransform: none;
 
 /* Basic Hover */
-@basicHoverBackground: #FFFFFF;
-@basicHoverTextColor: @hoveredTextColor;
-@basicHoverBoxShadow:
-  0px 0px 0px @basicBorderSize @selectedBorderColor inset,
-  0px 0px 0px 0px @borderColor inset
-;
+@basicHoverBackground: none;
+@basicHoverTextColor: @purple;
+@basicHoverBoxShadow: '';
 /* Basic Focus */
-@basicFocusBackground: @basicHoverBackground;
-@basicFocusTextColor: @basicHoverTextColor;
-@basicFocusBoxShadow: @basicHoverBoxShadow;
+@basicFocusBackground: none;
+@basicFocusTextColor: @purple;
+@basicFocusBoxShadow: '';
 
 /* Basic Down */
-@basicDownBackground: #F8F8F8;
-@basicDownTextColor: @pressedTextColor;
-@basicDownBoxShadow:
-  0px 0px 0px @basicBorderSize rgba(0, 0, 0, 0.15) inset,
-  0px 1px 4px 0px @borderColor inset
-;
+@basicDownBackground: none;
+@basicDownTextColor: @purple;
+@basicDownBoxShadow: '';
 /* Basic Active */
-@basicActiveBackground: @transparentBlack;
+@basicActiveBackground: none;
 @basicActiveBoxShadow: '';
-@basicActiveTextColor: @selectedTextColor;
+@basicActiveTextColor: @purple;
 
 /* Basic Inverted */
 @basicInvertedBackground: transparent;

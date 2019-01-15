@@ -13,7 +13,7 @@ import MenuProvider, { MenuContext } from "./menu-provider";
 import MessageProvider, { MessageContext } from "./message-provider";
 import "./layout.less";
 
-export default function Layout({ children }) {
+export default function Layout({ fluid, style = {}, children }) {
   return (
     <StaticQuery
       query={graphql`
@@ -106,9 +106,11 @@ export default function Layout({ children }) {
                               <>
                                 <Navbar user={user} toggleMenu={toggle} />
                                 <Container
+                                  fluid={fluid}
                                   className="layout"
                                   style={{
-                                    marginTop: "7rem"
+                                    marginTop: "68px",
+                                    ...style
                                   }}
                                 >
                                   <Sidebar.Pushable className="mobile-only">

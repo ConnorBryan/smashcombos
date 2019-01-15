@@ -1,5 +1,5 @@
 import React from "react";
-import netlifyIdentity from "netlify-identity-widget";
+import { Link } from "gatsby";
 import { Menu, Header, Icon } from "semantic-ui-react";
 
 import * as styles from "../styles";
@@ -18,10 +18,7 @@ export default function SiteActions({
           </Menu.Item>
           <Menu.Item
             className={className}
-            onClick={() => {
-              netlifyIdentity.logout();
-              closeMenu();
-            }}
+            onClick={closeMenu}
             style={styles.fancyText}
           >
             <Icon name="sign out" /> Sign out
@@ -30,21 +27,19 @@ export default function SiteActions({
       ) : (
         <>
           <Menu.Item
+            as={Link}
+            to="/sign-in"
             className={className}
-            onClick={() => {
-              netlifyIdentity.open("login");
-              closeMenu();
-            }}
+            onClick={closeMenu}
             style={styles.fancyText}
           >
             <Icon name="sign in" /> Sign in
           </Menu.Item>
           <Menu.Item
+            as={Link}
+            to="/sign-up"
             className={className}
-            onClick={() => {
-              netlifyIdentity.open("signup");
-              closeMenu();
-            }}
+            onClick={closeMenu}
             style={styles.fancyText}
           >
             <Icon name="user plus" /> Sign up

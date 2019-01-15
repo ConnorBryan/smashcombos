@@ -148,7 +148,7 @@
 
 /* Required */
 @requiredContent: '*';
-@requiredColor: @negativeColor;
+@requiredColor: @purple;
 @requiredVerticalOffset: -0.2em;
 @requiredDistance: 0.2em;
 @requiredMargin: @requiredVerticalOffset 0em 0em @requiredDistance;
