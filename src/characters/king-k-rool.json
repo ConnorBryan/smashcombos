@@ -252,6 +252,22 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=2xQLwWiurm8",
       "notes": "A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ",
       "uuid": "91b22c9f-596b-499f-a98b-72f2b6ee69e7"
+    },
+    {
+      "input": "sspecial utilt",
+      "damage": "33",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=ig8lh1ld9bE",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. The most consistent outcome of Crown Sliding, as it's a true combo until outlandish %s (that being like 200). At very high%s, it can be used to combo from Late Up Tilt. ",
+      "uuid": "e4c9d311-da7c-4d42-ac1a-14b09a4d5a45"
     }
   ],
   "preview": "",
