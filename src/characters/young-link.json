@@ -33,14 +33,16 @@
       "value": "88"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "percentages": {},
       "uuid": "e801d6b3-a1bd-4e20-800a-9f2a12808b05"
     },
     {
-      "input": "nspecial ftilt",
+      "input": "nspecial ftilt fsmash",
       "damage": "30.2",
       "tags": [],
       "percentages": {
@@ -52,8 +54,7 @@
         "superheavyweight": "0-25"
       },
       "demonstration": "",
-      "notes": "Neutral Air must be fully charged and at closest range",
-      "uuid": "6661f77e-b9a7-433d-89a4-9a7b8dffc204"
+      "notes": "Neutral Air must be fully charged and at closest range"
     },
     {
       "input": "uspecial bair",
