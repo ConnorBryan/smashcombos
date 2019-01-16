@@ -43,7 +43,7 @@
     },
     {
       "input": "dthrow sh+nair",
-      "damage": "18-28",
+      "damage": "24",
       "tags": [],
       "percentages": {
         "balloonweight": "0",
