@@ -137,7 +137,7 @@
 @selectionPadding: @selectionVerticalPadding @selectionIconDistance @selectionVerticalPadding @selectionHorizontalPadding;
 @selectionZIndex: 10;
 
-@selectionItemDivider: 1px solid #333;
+@selectionItemDivider: 1px solid #444;
 @selectionMessagePadding: @selectionItemPadding;
 
 /* <select> */
@@ -201,12 +201,12 @@
 @selectionVisibleTextFontWeight: @normal;
 @selectionVisibleTextColor: @hoveredTextColor;
 
-@selectionVisibleBorderColor: #333;
+@selectionVisibleBorderColor: #444;
 @selectionVisibleBoxShadow: @raisedShadow;
 @selectionVisibleMenuBoxShadow: @raisedShadow;
 
 /* Visible Hover */
-@selectionActiveHoverBorderColor: #333;
+@selectionActiveHoverBorderColor: #444;
 @selectionActiveHoverBoxShadow: @selectionVisibleBoxShadow;
 @selectionActiveHoverMenuBoxShadow: @selectionVisibleMenuBoxShadow;
 

@@ -12,7 +12,7 @@
 @lastMargin: 0em 0em (@labelHeight);
 
 @background: #000;
-@border: 1px solid #333;
+@border: 1px solid #444;
 @boxShadow: none;
 @padding: 0em;
 @borderRadius: @defaultBorderRadius;

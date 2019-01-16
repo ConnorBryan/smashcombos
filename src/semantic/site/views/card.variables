@@ -22,7 +22,7 @@
 @borderWidth: 1px;
 @borderShadow: 0px 0px 0px @borderWidth @solidBorderColor;
 @boxShadow: none;
-@border: 1px solid #333;
+@border: 1px solid #444;
 @zIndex: '';
 @transition:
   box-shadow @defaultDuration @defaultEasing,
@@ -49,21 +49,21 @@
 
 
 /* Image */
-@imageBackground: @transparentBlack;
+@imageBackground: transparent;
 @imagePadding: 0.3em;
 @imageBorder: none;
 @imageBoxShadow: none;
-@imageBorder: 1px solid #333;
+@imageBorder: 1px solid #444;
 
 /* Content */
 @contentDivider: @borderWidth solid @internalBorderColor;
 @contentMargin: 0em;
-@contentBackground: @almostBlack;
+@contentBackground: transparent;
 @contentPadding: 1em 1em;
 @contentFontSize: 1em;
 @contentBorderRadius: 0em;
 @contentBoxShadow: none;
-@contentBorder: 1px solid #333;
+@contentBorder: 1px solid #444;
 
 /* Header */
 @headerMargin: '';
@@ -119,8 +119,8 @@
 @dimmerColor: '';
 
 /* Additional Content */
-@extraDivider: 1px solid #333;
-@extraBackground: @almostBlack;
+@extraDivider: 1px solid #444;
+@extraBackground: transparent;
 @extraPosition: static;
 @extraWidth: auto;
 @extraTop: 0em;
@@ -144,17 +144,14 @@
 --------------------*/
 
 /* Link */
-@linkHoverBackground: #888;
-@linkHoverBorder: #888;
+@linkHoverBackground: #363636;
+@linkHoverBorder: @purple;
 @linkHoverZIndex: 5;
 @linkHoverRaiseDistance: 3px;
 @linkHoverTransform: translateY(-@linkHoverRaiseDistance);
 
-@shadowHoverBoxShadow: 0px @shadowDistance @linkHoverRaiseDistance 0px @purple;
-@linkHoverBoxShadow:
-  @shadowHoverBoxShadow,
-  @borderShadow
-;
+@shadowHoverBoxShadow: "";
+@linkHoverBoxShadow: "";
 
 
 /* Raised */

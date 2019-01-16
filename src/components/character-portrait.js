@@ -8,7 +8,8 @@ export default function CharacterPortrait({ image, name, ...rest }) {
   const styling = {
     ...styles.noSidePadding,
     ...styles.perfectlyCentered,
-    borderBottom: "none"
+    borderBottom: "none",
+    background: "#222"
   };
   const imageNode = (
     <Image
