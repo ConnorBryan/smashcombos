@@ -143,8 +143,8 @@ export const attackModifiers = [
     term: "falling"
   },
   {
-    name: "pc",
-    term: "pivot canceled"
+    name: "pivot canceled",
+    term: "pc"
   }
 ];
 
