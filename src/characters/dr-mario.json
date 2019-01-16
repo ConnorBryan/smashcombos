@@ -37,6 +37,22 @@
     {
       "percentages": {},
       "uuid": "7a904383-07b2-47a0-b748-abfcbf791cd8"
+    },
+    {
+      "input": "falling+uair dtilt uspecial",
+      "damage": "39-42",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Damage may very on where you hit them with the up b",
+      "uuid": "d885e224-d405-4576-aea1-c394ece9eb9f"
     }
   ],
   "preview": "",
