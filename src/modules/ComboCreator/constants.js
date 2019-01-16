@@ -61,10 +61,6 @@ export const attackTypes = {
     {
       name: "grab aerial",
       term: "zair"
-    },
-    {
-      name: "glide attack",
-      term: "glideatk"
     }
   ],
   Throws: [
