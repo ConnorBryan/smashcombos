@@ -163,6 +163,7 @@ export default function SignIn({ navigate }) {
                           >
                             <Button
                               basic
+                              type="button"
                               onClick={() => navigate("/forgot-password")}
                               disabled={isSubmitting}
                             >
