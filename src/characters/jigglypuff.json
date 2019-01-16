@@ -71,6 +71,25 @@
       "demonstration": "",
       "notes": "Total damage=94.1%",
       "uuid": "b0cb4a63-a6a3-42b4-8073-1ad42a4b0abd"
+    },
+    {
+      "input": "ff+uair dspecial",
+      "damage": "36.54",
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "e926a074-b214-4ddb-884e-0906547f58c6"
     }
   ],
   "preview": "",
