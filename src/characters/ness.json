@@ -67,6 +67,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "b45387db-2221-4cf4-b9e0-b881019fff91"
+    },
+    {
+      "input": "utilt utilt sh+uair",
+      "damage": "31",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "acd01ddf-b410-4e1d-ad21-5bcf10495a63"
     }
   ],
   "preview": "",
