@@ -69,20 +69,22 @@
       "uuid": "b45387db-2221-4cf4-b9e0-b881019fff91"
     },
     {
-      "input": "utilt utilt sh+uair",
-      "damage": "31",
-      "tags": [],
+      "input": "falling+uair ftilt",
+      "damage": "22",
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
-        "balloonweight": "0",
-        "featherweight": "0",
-        "lightweight": "0",
-        "middleweight": "0",
-        "heavyweight": "0",
-        "superheavyweight": "0"
+        "balloonweight": "High",
+        "featherweight": "High",
+        "lightweight": "High",
+        "middleweight": "High",
+        "heavyweight": "High",
+        "superheavyweight": "High"
       },
       "demonstration": "",
       "notes": "",
-      "uuid": "acd01ddf-b410-4e1d-ad21-5bcf10495a63"
+      "uuid": "6fe2d2b9-d9e4-4858-8700-dfe631281d9e"
     }
   ],
   "preview": "",
