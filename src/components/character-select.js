@@ -92,7 +92,7 @@ export default class CharacterSelect extends Component {
                   name
                   render {
                     childImageSharp {
-                      fluid(maxWidth: 100, quality: 72) {
+                      fluid(maxWidth: 200, quality: 72) {
                         ...GatsbyImageSharpFluid
                       }
                     }

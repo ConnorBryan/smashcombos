@@ -1,76 +1,83 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "gatsby-image";
 import { List } from "semantic-ui-react";
 
 import * as styles from "../styles";
-import { weightClassToTag } from "../helpers";
-import Tagbar from "./tagbar";
 
 export default function CharacterSelectEntry({
   name,
   render: {
     childImageSharp: { fluid: image }
   },
-  attributes: {
-    weight: { class: weightClass }
-  },
   slug,
-  tags,
   comboCount
 }) {
+  const content = (
+    <>
+      {name}
+      <br />{" "}
+      <span
+        style={{
+          ...styles.fancyPanel,
+          fontSize: "16px",
+          color: "#738BD6"
+        }}
+      >
+        {comboCount} {comboCount === 1 ? "Combo" : "Combos"}
+      </span>
+    </>
+  );
+
   return (
     <List.Item
       as={Link}
       to={slug}
+      verticalAlign="bottom"
       style={{
-        flexDirection: "column"
+        flexDirection: "column",
+        backgroundImage: `url(${image.src})`,
+        backgroundRepeat: "no-repeat"
       }}
     >
+      {/* Mobile */}
       <List.Content
+        className="mobile-only"
         style={{
-          display: "flex",
-          alignItems: "center",
+          position: "relative",
+          minHeight: "180px",
           padding: "1rem"
         }}
       >
-        <Image
-          fluid={image}
+        <List.Header
+          as="h3"
           style={{
-            width: "100px",
-            height: "100px",
-            marginRight: "1rem"
+            ...styles.fancyText,
+            position: "absolute",
+            right: 0,
+            bottom: 0,
+            textAlign: "right"
           }}
-        />
+        >
+          {content}
+        </List.Header>
+      </List.Content>
+      {/* Desktop */}
+      <List.Content
+        className="desktop-only"
+        style={{
+          minHeight: "180px",
+          padding: "1rem"
+        }}
+      >
         <List.Header
           as="h2"
           style={{
             ...styles.fancyText,
-            width: "100%",
             textAlign: "right"
           }}
         >
-          {name}
-          <br />{" "}
-          <span
-            style={{
-              ...styles.fancyPanel,
-              fontSize: "16px",
-              color: "#738BD6"
-            }}
-          >
-            {comboCount} {comboCount === 1 ? "Combo" : "Combos"}
-          </span>
+          {content}
         </List.Header>
-      </List.Content>
-      <List.Content
-        style={{
-          overflowX: "auto",
-          overflowY: "hidden",
-          whiteSpace: "nowrap"
-        }}
-      >
-        <Tagbar tags={[weightClassToTag[weightClass], ...(tags || [])]} />
       </List.Content>
     </List.Item>
   );
