@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "af7dc654-5276-4f1b-b07c-6f89744a9977"
+    },
+    {
+      "input": "dthrow sh+nair",
+      "damage": "18-28",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8db88863-d0fb-44b4-ab11-c2bf3270022f"
     }
   ],
   "preview": "",
