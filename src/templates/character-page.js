@@ -23,8 +23,10 @@ export default function CharacterPage({ data, location: { search } }) {
         tags={tags}
         attributes={attributes}
       />
-      <Attributes attributes={attributes} />
       <ComboList slug={slug} combos={combos} query={search} />
+      <div className="mobile-only">
+        <Attributes attributes={attributes} />
+      </div>
     </Layout>
   );
 }
