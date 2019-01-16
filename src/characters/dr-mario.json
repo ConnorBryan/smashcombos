@@ -37,6 +37,22 @@
     {
       "percentages": {},
       "uuid": "7a904383-07b2-47a0-b748-abfcbf791cd8"
+    },
+    {
+      "input": "falling+uair dtilt uspecial",
+      "damage": "40",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "040d6479-234b-4078-84e9-1c4ad7730dec"
     }
   ],
   "preview": "",
