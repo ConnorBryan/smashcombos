@@ -158,8 +158,8 @@
 ---------------*/
 
 /* Hovered Item */
-@hoverItemBackground: @almostBlack;
-@hoverItemTextColor: @selectedTextColor;
+@hoverItemBackground: #2D2E2E;
+@hoverItemTextColor: #eee;
 
 /* Pressed Item */
 @pressedItemBackground: @subtleTransparentBlack;

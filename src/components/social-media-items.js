@@ -17,7 +17,9 @@ export default function SocialMediaItems() {
         borderLeft: `2px solid ${color}`
       }}
     >
-      <Icon name={site} /> {tagline}
+      <div>
+        <Icon name={site} /> {tagline}
+      </div>
     </Menu.Item>
   ));
 }
