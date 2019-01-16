@@ -40,7 +40,7 @@
     },
     {
       "input": "falling+uair dtilt uspecial",
-      "damage": "40",
+      "damage": "39-42",
       "tags": [],
       "percentages": {
         "balloonweight": "0",
@@ -51,8 +51,7 @@
         "superheavyweight": "0"
       },
       "demonstration": "",
-      "notes": "",
-      "uuid": "040d6479-234b-4078-84e9-1c4ad7730dec"
+      "notes": ""
     }
   ],
   "preview": "",
