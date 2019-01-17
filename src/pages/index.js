@@ -16,6 +16,7 @@ export default function IndexPage() {
       <Item.Group relaxed="very">
         <Item
           style={{
+            padding: "2rem",
             background: "#1B1C1C"
           }}
         >
