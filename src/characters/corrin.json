@@ -40,7 +40,7 @@
     },
     {
       "input": "dtilt utilt",
-      "damage": "0",
+      "damage": "19.8",
       "tags": [],
       "percentages": {
         "balloonweight": "",
