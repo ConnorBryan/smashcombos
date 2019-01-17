@@ -40,7 +40,7 @@
     },
     {
       "input": "falling+nair rising+sh+fair dj+fair",
-      "damage": "0",
+      "damage": "24",
       "tags": [],
       "percentages": {
         "balloonweight": "",
