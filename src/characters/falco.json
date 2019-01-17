@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "2675a417-b47d-4e21-9ccf-b249ac92948c"
+    },
+    {
+      "input": "falling+uair utilt utilt sh+uair fh+uair dj+uair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Early percent combo that work primarily on all weights (Exception of Featherweight, removing one Up-Tilt from the combo, but should work overall).\nVery safe option, and even if falling up-air misses/hits shield you can still follow with up-tilt on shield.\nFalling Up-Air unnecessary, but adds more damage and is still true.",
+      "uuid": "7cea7f5d-6359-4ca5-b435-f72710dcfc1b"
     }
   ],
   "preview": "",
