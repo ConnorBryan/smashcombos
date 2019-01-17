@@ -32,7 +32,6 @@ export default function CharacterSelectEntry({
     <List.Item
       as={Link}
       to={slug}
-      verticalAlign="bottom"
       style={{
         flexDirection: "column",
         backgroundImage: `url(${image.src})`,

@@ -3,12 +3,18 @@ import GoTrue from "gotrue-js";
 
 export const UserContext = React.createContext();
 
+export const auth = new GoTrue({
+  APIUrl: "https://smash-combos.netlify.com/.netlify/identity",
+  audience: "",
+  setCookie: true
+});
+
 export default class UserProvider extends Component {
   state = {
     user: null,
     signup: async (email, password) => {
       try {
-        await this.auth.signup(email, password);
+        await auth.signup(email, password);
 
         return true;
       } catch (error) {
@@ -19,7 +25,7 @@ export default class UserProvider extends Component {
     },
     signin: async (email, password) => {
       try {
-        const user = await this.auth.login(email, password);
+        const user = await auth.login(email, password);
 
         this.setState({
           user
@@ -41,11 +47,11 @@ export default class UserProvider extends Component {
 
       window.localStorage.removeItem("gotrue.user");
 
-      this.auth.currentUser().logout();
+      auth.currentUser().logout();
     },
     requestPasswordRecovery: async email => {
       try {
-        await this.auth.requestPasswordRecovery(email);
+        await auth.requestPasswordRecovery(email);
 
         return true;
       } catch (error) {
@@ -55,12 +61,6 @@ export default class UserProvider extends Component {
       }
     }
   };
-
-  auth = new GoTrue({
-    APIUrl: "https://smash-combos.netlify.com/.netlify/identity",
-    audience: "",
-    setCookie: true
-  });
 
   componentDidMount() {
     if (window && window.localStorage) {

@@ -47,7 +47,7 @@ export default function SignIn({ navigate }) {
                     });
                   }
 
-                  navigate("/");
+                  navigate("/dashboard");
                 }}
                 render={({ handleSubmit, isSubmitting }) => (
                   <Form onSubmit={handleSubmit}>
