@@ -21,12 +21,7 @@ export default function IndexPage() {
           }}
         >
           <Item.Image size="medium" src={smashball} />
-          <Item.Content
-            verticalAlign="bottom"
-            style={{
-              padding: "2rem"
-            }}
-          >
+          <Item.Content verticalAlign="bottom">
             <Item.Header
               as="h1"
               style={{

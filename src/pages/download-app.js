@@ -17,11 +17,7 @@ export default function DownloadApp() {
           }}
         >
           <Item.Image size="medium" src={mobile} />
-          <Item.Content
-            style={{
-              padding: "2rem"
-            }}
-          >
+          <Item.Content>
             <Item.Header
               as="h1"
               style={{
