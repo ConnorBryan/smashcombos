@@ -14,7 +14,12 @@ export default function SiteActions({
     <>
       {user ? (
         <>
-          <Menu.Item className={className} style={styles.fancyText}>
+          <Menu.Item
+            as={Link}
+            to="/dashboard"
+            className={className}
+            style={styles.fancyText}
+          >
             {user.email}
           </Menu.Item>
           <Menu.Item
