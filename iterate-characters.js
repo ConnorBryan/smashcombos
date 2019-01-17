@@ -11,7 +11,9 @@ fs.readdir("./src/characters", (err, files) => {
 
       const character = JSON.parse(data);
 
-      /** Manipulate character here. */
+      const newCombos = character.combos.filter(combo => combo.input);
+
+      character.combos = newCombos;
 
       fs.writeFile(fileName, JSON.stringify(character), err => {
         return err
