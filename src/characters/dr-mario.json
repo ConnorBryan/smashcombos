@@ -85,6 +85,22 @@
       "demonstration": "",
       "notes": "Damage may very on where you hit them with the up b",
       "uuid": "d885e224-d405-4576-aea1-c394ece9eb9f"
+    },
+    {
+      "input": "dthrow dspecial",
+      "damage": "22",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-40",
+        "featherweight": "0-45",
+        "lightweight": "0-45",
+        "middleweight": "0-45",
+        "heavyweight": "0-45",
+        "superheavyweight": "0-50"
+      },
+      "demonstration": "",
+      "notes": "Good for quick damage ",
+      "uuid": "407e298a-4a6c-4b5f-82b2-8e516aabace5"
     }
   ],
   "preview": "",
