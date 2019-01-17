@@ -43,7 +43,7 @@
     },
     {
       "input": "falling+uair utilt utilt sh+uair fh+uair dj+uair",
-      "damage": "0",
+      "damage": "56",
       "tags": [],
       "percentages": {
         "balloonweight": "",
