@@ -322,7 +322,7 @@
       "uuid": "e4f01284-b502-487d-b4aa-2a58f715e038"
     },
     {
-      "input": "fthrow pivot canceled+ftilt",
+      "input": "fthrow pc+ftilt",
       "damage": "24.8",
       "tags": [
         "diable",
