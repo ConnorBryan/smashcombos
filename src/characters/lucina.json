@@ -64,6 +64,24 @@
       },
       "demonstration": "",
       "notes": "combo works on most character's 5% and below. Anything after and the throw will send them too far away for a true follow up."
+    },
+    {
+      "input": "ff+uair utilt rising+uair dj+bair",
+      "damage": "48",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "For early/low-mid percentages, it's just safe overall.",
+      "uuid": "b9f499e4-3199-404f-8b5d-e57d3fa5785a"
     }
   ],
   "preview": "",
