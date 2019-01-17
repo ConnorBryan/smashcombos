@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+let count = 0;
+
 fs.readdir("./src/characters", (err, files) => {
   if (err) return console.error(err);
 
@@ -11,9 +13,7 @@ fs.readdir("./src/characters", (err, files) => {
 
       const character = JSON.parse(data);
 
-      const newCombos = character.combos.filter(combo => combo.input);
-
-      character.combos = newCombos;
+      /** Manipulate character here. */
 
       fs.writeFile(fileName, JSON.stringify(character), err => {
         return err
