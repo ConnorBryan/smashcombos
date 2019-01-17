@@ -33,9 +33,7 @@
       "value": "82"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "percentages": {},
@@ -56,6 +54,22 @@
       "demonstration": "",
       "notes": "Early percent combo that work primarily on all weights (Exception of Featherweight, removing one Up-Tilt from the combo, but should work overall).\nVery safe option, and even if falling up-air misses/hits shield you can still follow with up-tilt on shield.\nFalling Up-Air unnecessary, but adds more damage and is still true.",
       "uuid": "7cea7f5d-6359-4ca5-b435-f72710dcfc1b"
+    },
+    {
+      "input": "uthrow dj+uair",
+      "damage": "20",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Can work on a majority of early/late percents, but requires no stalling of up-throw. \nCan be a safe kill confirm, or free damage.",
+      "uuid": "9c3a8656-a58f-4a17-a6b4-8cfed803467d"
     }
   ],
   "preview": "",
