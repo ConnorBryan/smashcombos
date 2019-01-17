@@ -43,7 +43,7 @@
     },
     {
       "input": "falling+nair grab",
-      "damage": "0",
+      "damage": "8.1",
       "tags": [],
       "percentages": {
         "balloonweight": "",
