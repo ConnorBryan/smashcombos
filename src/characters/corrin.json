@@ -37,6 +37,22 @@
     {
       "percentages": {},
       "uuid": "135a1fc3-64a7-4b34-a0d6-d8e87b5f9e58"
+    },
+    {
+      "input": "dtilt utilt",
+      "damage": "19.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Early-Mid %, can be good to set someone up on a platform to follow up with an aeriel to juggle.",
+      "uuid": "0e06c78d-4fcd-4b16-bc6f-5d8a9553582b"
     }
   ],
   "preview": "",
