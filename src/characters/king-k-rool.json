@@ -33,7 +33,10 @@
       "value": "133"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "percentages": {},
@@ -58,7 +61,10 @@
     {
       "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
       "damage": "65",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "N/A",
         "featherweight": "N/A",
@@ -89,7 +95,9 @@
     {
       "input": "dthrow utilt",
       "damage": "20.8",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "50",
         "featherweight": "50",
@@ -105,7 +113,11 @@
     {
       "input": "fthrow dashatk",
       "damage": "31.8",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -121,7 +133,9 @@
     {
       "input": "dthrow dashatk",
       "damage": "25",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -137,7 +151,9 @@
     {
       "input": "dthrow ftilt",
       "damage": "22.6",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -153,7 +169,9 @@
     {
       "input": "dthrow usmash",
       "damage": "25.3",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "100",
         "featherweight": "100",
@@ -169,7 +187,10 @@
     {
       "input": "dthrow bair",
       "damage": "29.6%",
-      "tags": ["diable", "killConfirm"],
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -201,7 +222,9 @@
     {
       "input": "dtilt fsmash",
       "damage": "33",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "70",
         "featherweight": "70",
@@ -265,7 +288,9 @@
     {
       "input": "sspecial dtilt dsmash",
       "damage": "50",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "10",
         "featherweight": "10",
@@ -281,7 +306,9 @@
     {
       "input": "sspecial dtilt fsmash",
       "damage": "51.6",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "10",
         "featherweight": "10",
@@ -293,6 +320,26 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=aASYbNCH6sg",
       "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during landing lag, but even then they have trouble reacting. This is a kill confirm from around 70%. Up Angled Forward Smash deals the most damage out of all of K. Rool's Forward Smash variants. ",
       "uuid": "e4f01284-b502-487d-b4aa-2a58f715e038"
+    },
+    {
+      "input": "fthrow pc+ftilt",
+      "damage": "24.8",
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=63-1iK9-qp8",
+      "notes": "Works best as a tech chase at mid%s, works extremely well at 0% for putting the opponent in a bad position. Doesn't work on small characters. ",
+      "uuid": "8b805027-0a1f-4fc7-a846-5af5acb2c8d9"
     }
   ],
   "preview": "",
