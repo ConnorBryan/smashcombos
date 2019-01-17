@@ -37,6 +37,22 @@
     {
       "percentages": {},
       "uuid": "135a1fc3-64a7-4b34-a0d6-d8e87b5f9e58"
+    },
+    {
+      "input": "falling+nair rising+sh+fair dj+fair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Basic bread and butter combo, can be extended with proper platform utilization, but on any stage this is an optimal juggle combo.",
+      "uuid": "0b8abe0b-077e-464d-974f-63e6cbadb254"
     }
   ],
   "preview": "",
