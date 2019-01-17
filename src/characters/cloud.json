@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "86a66a14-a116-4b4f-89bb-b31c0c7d42da"
+    },
+    {
+      "input": "falling+nair grab",
+      "damage": "8.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Primarily early percents just a safe neutral air confirm if you want to reset neutral against an aggressive/momentum player.",
+      "uuid": "82e6af94-c973-4413-aab5-c30cbdea326d"
     }
   ],
   "preview": "",
