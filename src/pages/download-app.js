@@ -2,43 +2,26 @@ import React from "react";
 import platform from "platform";
 import { Item, List } from "semantic-ui-react";
 
-import { Layout } from "../components";
+import { Hero, Layout } from "../components";
 import mobile from "../img/mobile.svg";
-import * as styles from "../styles";
 
 export default function DownloadApp() {
   return (
     <Layout>
+      <Hero
+        image={mobile}
+        header="Download the app for easy SmashCombos access"
+        description={
+          <>
+            Accessing the website is great, but sometimes you want something a
+            little more convenient. SmashCombos makes use of a technology called{" "}
+            <em>progressive web applications</em>, which allows you to download
+            the site as if it were an app. Find instructions specific to your
+            device below.
+          </>
+        }
+      />
       <Item.Group relaxed="very">
-        <Item
-          style={{
-            padding: "2rem",
-            background: "#1B1C1C"
-          }}
-        >
-          <Item.Image size="medium" src={mobile} />
-          <Item.Content>
-            <Item.Header
-              as="h1"
-              style={{
-                ...styles.fancyText,
-                fontSize: "2rem"
-              }}
-              content="Download the app for easy SmashCombos access"
-            />
-            <Item.Description
-              style={{
-                fontSize: "1.2rem"
-              }}
-            >
-              Accessing the website is great, but sometimes you want something a
-              little more convenient. SmashCombos makes use of a technology
-              called <em>progressive web applications</em>, which allows you to
-              download the site as if it were an app. Find instructions specific
-              to your device below.
-            </Item.Description>
-          </Item.Content>
-        </Item>
         <Item
           style={{
             padding: "2rem",

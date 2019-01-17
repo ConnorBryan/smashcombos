@@ -9,6 +9,7 @@ export { default as ComboListCard } from "./combo-list-card";
 export { default as ComboInterface } from "./combo-interface";
 export { default as ConfirmChanges } from "./confirm-changes";
 export { default as EditProfileTab } from "./edit-profile-tab";
+export { default as Hero } from "./hero";
 export { default as Input } from "./input";
 export { default as Layout } from "./layout";
 export { default as MessageProvider } from "./message-provider";
