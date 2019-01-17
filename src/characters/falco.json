@@ -40,6 +40,22 @@
     {
       "percentages": {},
       "uuid": "2675a417-b47d-4e21-9ccf-b249ac92948c"
+    },
+    {
+      "input": "uthrow dj+uair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Can work on a majority of early/late percents, but requires no staling of up-throw. \nCan be a safe kill confirm, or free damage.",
+      "uuid": "9c3a8656-a58f-4a17-a6b4-8cfed803467d"
     }
   ],
   "preview": "",
