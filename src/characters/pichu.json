@@ -1,1 +1,208 @@
-{"name":"Pichu","render":"../../static/img/pichu.png","description":"Pichu has the potential to outclass Pikachu on the tier lists due to insane damage output and combo game. He's also tiny which makes him harder to hit and enables him to low profile attacks with his crouch or crouching attacks. However, this all comes at a cost. Pichu is the lightest character in the game, and can easily be KO'd by 60%. And though it's not much, he hurts himself whenever he performs an attack involving electricity. Play extra cautiously unless you want your stocks erased.","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.09","rank":"9","total":"0.1"},"airSpeed":{"maxAirSpeed":"1.029","rank":"45"},"fallSpeed":{"fastFallSpeed":"2.5","maxFallSpeed":"1.9","rank":"5","speedIncrease":"31.579%"},"runSpeed":{"maxRunSpeed":"1.892","rank":"25"},"walkSpeed":{"maxWalkSpeed":"1.302","rank":"12"},"weight":{"class":"balloonweight","rank":"77","value":"62"}},"tags":["fastFaller"],"combos":[{"input":"dthrow sh+uair dj+fair","damage":"30","tags":[],"percentages":{"balloonweight":"30","featherweight":"30","lightweight":"30","middleweight":"30","heavyweight":"30","superheavyweight":"30"},"demonstration":"","notes":"","uuid":"f247dbe2-fcdc-4147-8cfd-5f67d9230afb"},{"input":"dtilt utilt utilt sh+uair dj+fair","damage":"41.2","tags":["diable"],"percentages":{"balloonweight":"0-5","featherweight":"0-8","lightweight":"0-12","middleweight":"0-15","heavyweight":"0-18","superheavyweight":"0-20"},"demonstration":"","notes":"For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.","uuid":"c55a4bab-b62c-4d31-9c7b-bd3458736472"},{"input":"dthrow uair","damage":"15.1","tags":[],"percentages":{"balloonweight":"20","featherweight":"","lightweight":"","middleweight":"10-78","heavyweight":"","superheavyweight":"21-85"},"demonstration":"","notes":"For Uair, the required height of the jump varies according to the opponent's damages","uuid":"ba057d84-c226-47dd-985d-eb0bf901a2a2"},{"input":"dthrow nair","damage":"18","tags":[],"percentages":{"balloonweight":"0-15","featherweight":"","lightweight":"","middleweight":"0-66","heavyweight":"","superheavyweight":"0-85"},"demonstration":"","notes":"For Nair, the required height of the jump varies according to the opponent's damages","uuid":"32294181-42b9-4e07-8907-7157d58ea31b"},{"input":"dthrow utilt","damage":"16.3","tags":[],"percentages":{"balloonweight":"N/A","featherweight":"N/A","lightweight":"N/A","middleweight":"N/A","heavyweight":"0-18","superheavyweight":"0-18"},"demonstration":"","notes":"Impossible against Balloonweight, Featherweight, Lightweight and Middleweight characters","uuid":"bc0d0c7e-0e72-4bd0-8895-3c8ec79d2df0"},{"input":"dashatk utilt utilt","damage":"19.3","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"0","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Dash Attack must hit at tip range (6% damage)","uuid":"54fd323b-0411-4b5e-9d95-44975ef640ad"},{"input":"nair jab jab jab","damage":"12.8","tags":[],"percentages":{"balloonweight":"0-15","featherweight":"0-17","lightweight":"0-19","middleweight":"0-20","heavyweight":"0-22","superheavyweight":"0-25"},"demonstration":"","notes":"Nair must be done right before landing. Can also work against an opponent with higher damage but with less than 3 jabs. Against a Balloonweight/Heavyweight character, a 4th jab is possible at low damage and a 5th jab against a Super Heavyweight character, at 0-25% damage","uuid":"1d1cc6c0-e167-4813-b8b4-13c2ea90bf61"},{"input":"dtilt dtilt usmash","damage":"31.9","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"0-6","superheavyweight":""},"demonstration":"","notes":"","uuid":"5fdc0ce2-e42d-46c7-82c2-fa106f9da38b"},{"input":"dtilt dtilt ftilt","damage":"0","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"More powerful than Utilt but self-damages","uuid":"4da2e865-f583-4fcd-9389-c133b3abd9c5"}],"preview":"","content":"\n\n","basename":"pichu","id":"11badb0b-4c83-4252-8e55-f366fe584299","slug":"pichu"}
+{
+  "name": "Pichu",
+  "render": "../../static/img/pichu.png",
+  "description": "Pichu has the potential to outclass Pikachu on the tier lists due to insane damage output and combo game. He's also tiny which makes him harder to hit and enables him to low profile attacks with his crouch or crouching attacks. However, this all comes at a cost. Pichu is the lightest character in the game, and can easily be KO'd by 60%. And though it's not much, he hurts himself whenever he performs an attack involving electricity. Play extra cautiously unless you want your stocks erased.",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.09",
+      "rank": "9",
+      "total": "0.1"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.029",
+      "rank": "45"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.5",
+      "maxFallSpeed": "1.9",
+      "rank": "5",
+      "speedIncrease": "31.579%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.892",
+      "rank": "25"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.302",
+      "rank": "12"
+    },
+    "weight": {
+      "class": "balloonweight",
+      "rank": "77",
+      "value": "62"
+    }
+  },
+  "tags": [
+    "fastFaller"
+  ],
+  "combos": [
+    {
+      "input": "dthrow sh+uair dj+fair",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "30",
+        "featherweight": "30",
+        "lightweight": "30",
+        "middleweight": "30",
+        "heavyweight": "30",
+        "superheavyweight": "30"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f247dbe2-fcdc-4147-8cfd-5f67d9230afb"
+    },
+    {
+      "input": "dtilt utilt utilt sh+uair dj+fair",
+      "damage": "41.2",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-8",
+        "lightweight": "0-12",
+        "middleweight": "0-15",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "",
+      "notes": "For some reason, the second hit of dj rising fair resets the combo on Balloon-Light Weights and higher percents on the rest, I doubt it actually stops the combo though. On Superheavies, you can throw in another utilt or two.",
+      "uuid": "c55a4bab-b62c-4d31-9c7b-bd3458736472"
+    },
+    {
+      "input": "dthrow uair",
+      "damage": "15.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "20",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "10-78",
+        "heavyweight": "",
+        "superheavyweight": "21-85"
+      },
+      "demonstration": "",
+      "notes": "For Uair, the required height of the jump varies according to the opponent's damages",
+      "uuid": "ba057d84-c226-47dd-985d-eb0bf901a2a2"
+    },
+    {
+      "input": "dthrow nair",
+      "damage": "18",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0-66",
+        "heavyweight": "",
+        "superheavyweight": "0-85"
+      },
+      "demonstration": "",
+      "notes": "For Nair, the required height of the jump varies according to the opponent's damages",
+      "uuid": "32294181-42b9-4e07-8907-7157d58ea31b"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "16.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-18"
+      },
+      "demonstration": "",
+      "notes": "Impossible against Balloonweight, Featherweight, Lightweight and Middleweight characters",
+      "uuid": "bc0d0c7e-0e72-4bd0-8895-3c8ec79d2df0"
+    },
+    {
+      "input": "dashatk utilt utilt",
+      "damage": "19.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "0",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Dash Attack must hit at tip range (6% damage)",
+      "uuid": "54fd323b-0411-4b5e-9d95-44975ef640ad"
+    },
+    {
+      "input": "nair jab jab jab",
+      "damage": "12.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "0-17",
+        "lightweight": "0-19",
+        "middleweight": "0-20",
+        "heavyweight": "0-22",
+        "superheavyweight": "0-25"
+      },
+      "demonstration": "",
+      "notes": "Nair must be done right before landing. Can also work against an opponent with higher damage but with less than 3 jabs. Against a Balloonweight/Heavyweight character, a 4th jab is possible at low damage and a 5th jab against a Super Heavyweight character, at 0-25% damage",
+      "uuid": "1d1cc6c0-e167-4813-b8b4-13c2ea90bf61"
+    },
+    {
+      "input": "dtilt dtilt usmash",
+      "damage": "31.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "0-6",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5fdc0ce2-e42d-46c7-82c2-fa106f9da38b"
+    },
+    {
+      "input": "dtilt dtilt ftilt",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "More powerful than Utilt but self-damages",
+      "uuid": "4da2e865-f583-4fcd-9389-c133b3abd9c5"
+    },
+    {
+      "input": "utilt uair uair",
+      "damage": "15.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "18-71",
+        "featherweight": "4-74",
+        "lightweight": "0-83",
+        "middleweight": "9-86",
+        "heavyweight": "5-104",
+        "superheavyweight": "0-125"
+      },
+      "demonstration": "",
+      "notes": "The required height of the jump varies according to the opponent's damage and a jump between Uair and Uair may be necessary if the opponent is at high damage. The 2nd Uair can be replaced by Nair (more powerful)",
+      "uuid": "3f8b0f9f-210d-4c1f-ac4e-47857f3c3ea8"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "pichu",
+  "id": "11badb0b-4c83-4252-8e55-f366fe584299",
+  "slug": "pichu"
+}
