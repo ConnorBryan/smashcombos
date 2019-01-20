@@ -1,1 +1,96 @@
-{"name":"Lucario","render":"../../static/img/lucario.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.08","rank":"21","total":"0.09"},"airSpeed":{"maxAirSpeed":"1.281","rank":"6"},"fallSpeed":{"fastFallSpeed":"2.688","maxFallSpeed":"1.68","rank":"25","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.705","rank":"39"},"walkSpeed":{"maxWalkSpeed":"1.103","rank":"45"},"weight":{"class":"middleweight","rank":"45","value":"92"}},"tags":["fastFaller"],"combos":[{"input":"uthrow fh+uair","damage":"18.2","tags":[],"percentages":{"balloonweight":"0-22","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Combo with Lucario at 0% damage","uuid":"d3e0a64b-edf4-42e5-b2c1-60823712a588"},{"input":"nair dtilt grab uthrow fh+fair dj+uair","damage":"31.5","tags":["diable"],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"","notes":"","uuid":"1fc12266-97e6-42ce-a882-c12e44fff0c1"}],"preview":"","content":"\n\n","basename":"lucario","id":"478b997f-e547-49cd-8716-a247c03109e5","slug":"lucario"}
+{
+  "name": "Lucario",
+  "render": "../../static/img/lucario.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.08",
+      "rank": "21",
+      "total": "0.09"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.281",
+      "rank": "6"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.688",
+      "maxFallSpeed": "1.68",
+      "rank": "25",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.705",
+      "rank": "39"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.103",
+      "rank": "45"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "45",
+      "value": "92"
+    }
+  },
+  "tags": [
+    "fastFaller"
+  ],
+  "combos": [
+    {
+      "input": "uthrow fh+uair",
+      "damage": "18.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-22",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Combo with Lucario at 0% damage",
+      "uuid": "d3e0a64b-edf4-42e5-b2c1-60823712a588"
+    },
+    {
+      "input": "nair dtilt grab uthrow fh+fair dj+uair",
+      "damage": "31.5",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "1fc12266-97e6-42ce-a882-c12e44fff0c1"
+    },
+    {
+      "input": "dthrow fh+fair fair fair",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "115989d8-e8c2-49bf-b04a-0b5358abda47"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "lucario",
+  "id": "478b997f-e547-49cd-8716-a247c03109e5",
+  "slug": "lucario"
+}
