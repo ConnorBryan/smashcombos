@@ -1,1 +1,362 @@
-{"name":"King K. Rool","render":"../../static/img/king-k-rool.png","description":"King K. Rool is the second heaviest character in the game, and it really shows. With two amazing projectiles and a counter to boot, he can stick around for obnoxious amounts of time. While he suffers against rushdown and those who zone better than him (often to the point of necessitating a secondary), any character with a balanced playstyle will be given hell by this morbidly obese crocodile. ","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.04","rank":"61","total":"0.05"},"airSpeed":{"maxAirSpeed":"0.945","rank":"62"},"fallSpeed":{"fastFallSpeed":"2.72","maxFallSpeed":"1.7","rank":"23","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.485","rank":"68"},"walkSpeed":{"maxWalkSpeed":"0.903","rank":"66"},"weight":{"class":"superheavyweight","rank":"2","value":"133"}},"tags":["fastFaller","bigBody"],"combos":[{"input":"fair dashatk","damage":"24.8","tags":[],"percentages":{"balloonweight":"Low","featherweight":"Low","lightweight":"Low","middleweight":"Low","heavyweight":"Low","superheavyweight":"Low"},"demonstration":"","notes":"Credit to @PlagueVonKarma and the King R. Rool character discord at https://discord.gg/QgM3RKc","uuid":"6b1a491d-9b2a-4fad-b5aa-2a972380c30f"},{"input":"fair dtilt ff+fair grab pummel pummel fthrow dashatk","damage":"65","tags":["diable","bigBody"],"percentages":{"balloonweight":"N/A","featherweight":"N/A","lightweight":"N/A","middleweight":"N/A","heavyweight":"0-20","superheavyweight":"0-20"},"demonstration":"https://www.youtube.com/embed/yILT_8B6dbc","notes":"Credit to lto#4571 and the King R. Rool character discord at https://discord.gg/QgM3RKc"},{"input":"dthrow jab","damage":"20","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Depending on how tall a character is, you might not be able to hit them with every hit of the jab","uuid":"c76e36f6-3195-48bc-8184-d3fdbe6f3100"},{"input":"dthrow utilt","damage":"20.8","tags":["killConfirm"],"percentages":{"balloonweight":"50","featherweight":"50","lightweight":"50","middleweight":"50","heavyweight":"50","superheavyweight":"50"},"demonstration":"https://www.youtube.com/embed/GLcSZT3EgyM","notes":"Deals 25% without 1v1 Modifiers, and true from around 50% (considering your opponent is doing optimal mashing).\n\nThis combo is usually used as a consistent Kill Confirm at around 120% for the regular cast. It works universally - even on characters that are small - meaning there's no need to worry about angling Forward Tilt or technical skill. Good for beginners, and a consistent kill method at higher %s. ","uuid":"4a717eb8-50a5-43b0-a2a1-50d41cb83b5a"},{"input":"fthrow dashatk","damage":"31.8","tags":["diable","fastFaller","bigBody"],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/watch?v=K-yds-daRlI&feature=youtu.be","notes":"Deals 25% without 1v1 Modifiers, and true at 0% on most characters. \n\nOne of King K. Rool's best ways to deal early damage, and puts the opponent into an immediate disadvantage state. If you're able to get this off, definitely use it. \n\nIt CAN be DI'd by smaller characters, but fast fallers and at least mid-bodies usually have to eat the hit. ","uuid":"6aa8dd55-a284-4f23-8a49-4b9aea006b53"},{"input":"dthrow dashatk","damage":"25","tags":["killConfirm"],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/qbCsTPN_xi4","notes":"Deals 18.2% in 4v4. Usually works even at 0%. Requires use of the Instant Dash Attack Tech. \n\nKing K. Rool's strongest kill confirm and usually the most optimal thing to do out of Down Throw. The only exception is small or floaty characters, where they die earlier to Forward Tilt. ","uuid":"8673c381-8b5d-4650-bc16-6b83ba1adc0b"},{"input":"dthrow ftilt","damage":"22.6","tags":["killConfirm"],"percentages":{"balloonweight":"70","featherweight":"70","lightweight":"70","middleweight":"70","heavyweight":"70","superheavyweight":"70"},"demonstration":"https://www.youtube.com/watch?v=9YBn93snuKY&feature=youtu.be","notes":"Deals 18% in 4v4. Usually works at around 70%, but could be higher. \n\nKing K. Rool's kill confirm of choice against floaties or small characters. Requires it to be angled down if they're not mashing, up if they are. ","uuid":"a9f663c1-c239-4f08-a202-eb9cc5a72bdd"},{"input":"dthrow usmash","damage":"25.3","tags":["killConfirm"],"percentages":{"balloonweight":"100","featherweight":"100","lightweight":"100","middleweight":"100","heavyweight":"100","superheavyweight":"100"},"demonstration":"https://www.youtube.com/embed/iBsOvFi47nk","notes":"Deals 20.3% in 4v4. Requires knowledge of their mashing ability, but is very useful as it kills at around 100%. \n\nThis is usually the earliest Kill Confirm and works amazing if the opponent always mashes in fear of a Dash Attack or Forward Tilt. ","uuid":"69f2c583-010f-4c13-b3ad-087b20a0053a"},{"input":"dthrow bair","damage":"29.6%","tags":["diable","killConfirm"],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=BmeOeMOdT-k","notes":"Deals 24% in 4v4. Works on any character as long as you 100% know their mashing rate. Purely made for style. It's true at a certain range, the demo doesn't show that sadly. If it sourspots, it is a kill confirm. ","uuid":"48bc8629-41e2-46b8-a004-91e6bbbe9d5a"},{"input":"nair grab pummel uthrow utilt","damage":"37.1%","tags":[],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=UQfvinvsNGw","notes":"Damage varies based on how NAir and Up Tilt hit, NAir -> Grab is highly specific. Thus, requires practice. Up Tilt can be jumped out of but punishes any late inputs or challenge attempts for heavy damage. Can deal an upwards of 40% with pummels and additional follow-ups such as Up Aerial. ","uuid":"e6ae7fe2-f51f-405a-8028-d5c9f91b0c1c"},{"input":"dtilt fsmash","damage":"33","tags":["killConfirm"],"percentages":{"balloonweight":"70","featherweight":"70","lightweight":"70","middleweight":"70","heavyweight":"70","superheavyweight":"70"},"demonstration":"https://www.youtube.com/embed/watch?v=LxlTrtWyojg","notes":"Damage considers a Downward Angled Forward Smash. Kill Confirms at roughly 70% to a majority of the cast. Inconsistent however as Down Tilt's bury frames come out at 14, which is comparable to a Smash Attack. ","uuid":"c29d2c45-49d7-4de0-954f-a8bea5b53b89"},{"input":"nair jab","damage":"28.9","tags":[],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=2xQLwWiurm8","notes":"A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ","uuid":"91b22c9f-596b-499f-a98b-72f2b6ee69e7"},{"input":"sspecial dsmash","damage":"40.8","tags":[],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=aASYbNCH6sg","notes":"Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform, works until around mid%, and works at 0%. Gains immediate advantage and can even kill lighter opponents if you can catch them in it. By far the best thing to come from the tech. ","uuid":"bd5b1f37-7bcd-48e7-824a-a0d4e1457349"},{"input":"sspecial utilt","damage":"33","tags":[],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=ig8lh1ld9bE","notes":"Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. The most consistent outcome of Crown Sliding, as it's a true combo until outlandish %s (that being like 200). At very high%s, it can be used to combo from Late Up Tilt. ","uuid":"e4c9d311-da7c-4d42-ac1a-14b09a4d5a45"},{"input":"sspecial dtilt dsmash","damage":"50","tags":["killConfirm"],"percentages":{"balloonweight":"10","featherweight":"10","lightweight":"10","middleweight":"10","heavyweight":"10","superheavyweight":"10"},"demonstration":"https://www.youtube.com/embed/watch?v=6hFeSQ89UWU","notes":"Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during their first few frames of landing lag from the crown. It's quite difficult to perform; but with practice, this is a kill confirm on the entire cast. Even if it doesn't land in landing lag, the opponent will have issues reacting to it. All it takes is hitting at mid-range. ","uuid":"fc163465-996e-4a2e-84f8-b3a02a34eed5"},{"input":"sspecial dtilt fsmash","damage":"51.6","tags":["killConfirm"],"percentages":{"balloonweight":"10","featherweight":"10","lightweight":"10","middleweight":"10","heavyweight":"10","superheavyweight":"10"},"demonstration":"https://www.youtube.com/embed/watch?v=aASYbNCH6sg","notes":"Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during landing lag, but even then they have trouble reacting. This is a kill confirm from around 70%. Up Angled Forward Smash deals the most damage out of all of K. Rool's Forward Smash variants. ","uuid":"e4f01284-b502-487d-b4aa-2a58f715e038"},{"input":"fthrow pc+ftilt","damage":"24.8","tags":["diable","fastFaller","bigBody"],"percentages":{"balloonweight":"0","featherweight":"0","lightweight":"0","middleweight":"0","heavyweight":"0","superheavyweight":"0"},"demonstration":"https://www.youtube.com/embed/watch?v=63-1iK9-qp8","notes":"Works best as a tech chase at mid%s, works extremely well at 0% for putting the opponent in a bad position. Doesn't work on small characters. ","uuid":"8b805027-0a1f-4fc7-a846-5af5acb2c8d9"}],"preview":"","content":"\n\n","basename":"king-k-rool","id":"9a9e1b81-82e4-4170-942e-46e5b7168f59","slug":"king-k-rool"}
+{
+  "name": "King K. Rool",
+  "render": "../../static/img/king-k-rool.png",
+  "description": "King K. Rool is the second heaviest character in the game, and it really shows. With two amazing projectiles and a counter to boot, he can stick around for obnoxious amounts of time. While he suffers against rushdown and those who zone better than him (often to the point of necessitating a secondary), any character with a balanced playstyle will be given hell by this morbidly obese crocodile. ",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.04",
+      "rank": "61",
+      "total": "0.05"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "0.945",
+      "rank": "62"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.72",
+      "maxFallSpeed": "1.7",
+      "rank": "23",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.485",
+      "rank": "68"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "0.903",
+      "rank": "66"
+    },
+    "weight": {
+      "class": "superheavyweight",
+      "rank": "2",
+      "value": "133"
+    }
+  },
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
+  "combos": [
+    {
+      "input": "fair dashatk",
+      "damage": "24.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Low",
+        "featherweight": "Low",
+        "lightweight": "Low",
+        "middleweight": "Low",
+        "heavyweight": "Low",
+        "superheavyweight": "Low"
+      },
+      "demonstration": "",
+      "notes": "Credit to @PlagueVonKarma and the King R. Rool character discord at https://discord.gg/QgM3RKc",
+      "uuid": "6b1a491d-9b2a-4fad-b5aa-2a972380c30f"
+    },
+    {
+      "input": "fair dtilt ff+fair grab pummel pummel fthrow dashatk",
+      "damage": "65",
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "N/A",
+        "featherweight": "N/A",
+        "lightweight": "N/A",
+        "middleweight": "N/A",
+        "heavyweight": "0-20",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "https://www.youtube.com/embed/yILT_8B6dbc",
+      "notes": "Credit to lto#4571 and the King R. Rool character discord at https://discord.gg/QgM3RKc"
+    },
+    {
+      "input": "dthrow jab",
+      "damage": "20",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Depending on how tall a character is, you might not be able to hit them with every hit of the jab",
+      "uuid": "c76e36f6-3195-48bc-8184-d3fdbe6f3100"
+    },
+    {
+      "input": "dthrow utilt",
+      "damage": "20.8",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "50",
+        "featherweight": "50",
+        "lightweight": "50",
+        "middleweight": "50",
+        "heavyweight": "50",
+        "superheavyweight": "50"
+      },
+      "demonstration": "https://www.youtube.com/embed/GLcSZT3EgyM",
+      "notes": "Deals 25% without 1v1 Modifiers, and true from around 50% (considering your opponent is doing optimal mashing).\n\nThis combo is usually used as a consistent Kill Confirm at around 120% for the regular cast. It works universally - even on characters that are small - meaning there's no need to worry about angling Forward Tilt or technical skill. Good for beginners, and a consistent kill method at higher %s. ",
+      "uuid": "4a717eb8-50a5-43b0-a2a1-50d41cb83b5a"
+    },
+    {
+      "input": "fthrow dashatk",
+      "damage": "31.8",
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=K-yds-daRlI&feature=youtu.be",
+      "notes": "Deals 25% without 1v1 Modifiers, and true at 0% on most characters. \n\nOne of King K. Rool's best ways to deal early damage, and puts the opponent into an immediate disadvantage state. If you're able to get this off, definitely use it. \n\nIt CAN be DI'd by smaller characters, but fast fallers and at least mid-bodies usually have to eat the hit. ",
+      "uuid": "6aa8dd55-a284-4f23-8a49-4b9aea006b53"
+    },
+    {
+      "input": "dthrow dashatk",
+      "damage": "25",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/qbCsTPN_xi4",
+      "notes": "Deals 18.2% in 4v4. Usually works even at 0%. Requires use of the Instant Dash Attack Tech. \n\nKing K. Rool's strongest kill confirm and usually the most optimal thing to do out of Down Throw. The only exception is small or floaty characters, where they die earlier to Forward Tilt. ",
+      "uuid": "8673c381-8b5d-4650-bc16-6b83ba1adc0b"
+    },
+    {
+      "input": "dthrow ftilt",
+      "damage": "22.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "70",
+        "featherweight": "70",
+        "lightweight": "70",
+        "middleweight": "70",
+        "heavyweight": "70",
+        "superheavyweight": "70"
+      },
+      "demonstration": "https://www.youtube.com/watch?v=9YBn93snuKY&feature=youtu.be",
+      "notes": "Deals 18% in 4v4. Usually works at around 70%, but could be higher. \n\nKing K. Rool's kill confirm of choice against floaties or small characters. Requires it to be angled down if they're not mashing, up if they are. ",
+      "uuid": "a9f663c1-c239-4f08-a202-eb9cc5a72bdd"
+    },
+    {
+      "input": "dthrow usmash",
+      "damage": "25.3",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "100",
+        "featherweight": "100",
+        "lightweight": "100",
+        "middleweight": "100",
+        "heavyweight": "100",
+        "superheavyweight": "100"
+      },
+      "demonstration": "https://www.youtube.com/embed/iBsOvFi47nk",
+      "notes": "Deals 20.3% in 4v4. Requires knowledge of their mashing ability, but is very useful as it kills at around 100%. \n\nThis is usually the earliest Kill Confirm and works amazing if the opponent always mashes in fear of a Dash Attack or Forward Tilt. ",
+      "uuid": "69f2c583-010f-4c13-b3ad-087b20a0053a"
+    },
+    {
+      "input": "dthrow bair",
+      "damage": "29.6%",
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=BmeOeMOdT-k",
+      "notes": "Deals 24% in 4v4. Works on any character as long as you 100% know their mashing rate. Purely made for style. It's true at a certain range, the demo doesn't show that sadly. If it sourspots, it is a kill confirm. ",
+      "uuid": "48bc8629-41e2-46b8-a004-91e6bbbe9d5a"
+    },
+    {
+      "input": "nair grab pummel uthrow utilt",
+      "damage": "37.1%",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=UQfvinvsNGw",
+      "notes": "Damage varies based on how NAir and Up Tilt hit, NAir -> Grab is highly specific. Thus, requires practice. Up Tilt can be jumped out of but punishes any late inputs or challenge attempts for heavy damage. Can deal an upwards of 40% with pummels and additional follow-ups such as Up Aerial. ",
+      "uuid": "e6ae7fe2-f51f-405a-8028-d5c9f91b0c1c"
+    },
+    {
+      "input": "dtilt fsmash",
+      "damage": "33",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "70",
+        "featherweight": "70",
+        "lightweight": "70",
+        "middleweight": "70",
+        "heavyweight": "70",
+        "superheavyweight": "70"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=LxlTrtWyojg",
+      "notes": "Damage considers a Downward Angled Forward Smash. Kill Confirms at roughly 70% to a majority of the cast. Inconsistent however as Down Tilt's bury frames come out at 14, which is comparable to a Smash Attack. ",
+      "uuid": "c29d2c45-49d7-4de0-954f-a8bea5b53b89"
+    },
+    {
+      "input": "nair jab",
+      "damage": "28.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=2xQLwWiurm8",
+      "notes": "A simple combo that is the easiest confirm out of Neutral Aerial if it's late. True combo and among the best and simplest ways to build up damage. The kick can also put the opponent into a good region for Crownerang. ",
+      "uuid": "91b22c9f-596b-499f-a98b-72f2b6ee69e7"
+    },
+    {
+      "input": "sspecial dsmash",
+      "damage": "40.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=aASYbNCH6sg",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform, works until around mid%, and works at 0%. Gains immediate advantage and can even kill lighter opponents if you can catch them in it. By far the best thing to come from the tech. ",
+      "uuid": "bd5b1f37-7bcd-48e7-824a-a0d4e1457349"
+    },
+    {
+      "input": "sspecial utilt",
+      "damage": "33",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=ig8lh1ld9bE",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. The most consistent outcome of Crown Sliding, as it's a true combo until outlandish %s (that being like 200). At very high%s, it can be used to combo from Late Up Tilt. ",
+      "uuid": "e4c9d311-da7c-4d42-ac1a-14b09a4d5a45"
+    },
+    {
+      "input": "sspecial dtilt dsmash",
+      "damage": "50",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "10",
+        "featherweight": "10",
+        "lightweight": "10",
+        "middleweight": "10",
+        "heavyweight": "10",
+        "superheavyweight": "10"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=6hFeSQ89UWU",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during their first few frames of landing lag from the crown. It's quite difficult to perform; but with practice, this is a kill confirm on the entire cast. Even if it doesn't land in landing lag, the opponent will have issues reacting to it. All it takes is hitting at mid-range. ",
+      "uuid": "fc163465-996e-4a2e-84f8-b3a02a34eed5"
+    },
+    {
+      "input": "sspecial dtilt fsmash",
+      "damage": "51.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "10",
+        "featherweight": "10",
+        "lightweight": "10",
+        "middleweight": "10",
+        "heavyweight": "10",
+        "superheavyweight": "10"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=aASYbNCH6sg",
+      "notes": "Credit to Phantom Phoenix from Dark Sparxx Gaming for the footage. Requires use of Crown Sliding to perform. This can catch opponents during landing lag, but even then they have trouble reacting. This is a kill confirm from around 70%. Up Angled Forward Smash deals the most damage out of all of K. Rool's Forward Smash variants. ",
+      "uuid": "e4f01284-b502-487d-b4aa-2a58f715e038"
+    },
+    {
+      "input": "fthrow pc+ftilt",
+      "damage": "24.8",
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/watch?v=63-1iK9-qp8",
+      "notes": "Works best as a tech chase at mid%s, works extremely well at 0% for putting the opponent in a bad position. Doesn't work on small characters. ",
+      "uuid": "8b805027-0a1f-4fc7-a846-5af5acb2c8d9"
+    },
+    {
+      "input": "dthrow utilt utilt dashatk dair dtilt",
+      "damage": "74.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "04f896c4-fd06-4422-9033-e3d9472aa8fb"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "king-k-rool",
+  "id": "9a9e1b81-82e4-4170-942e-46e5b7168f59",
+  "slug": "king-k-rool"
+}
