@@ -198,6 +198,22 @@
       "demonstration": "",
       "notes": "The required height of the jump varies according to the opponent's damage and a jump between Uair and Uair may be necessary if the opponent is at high damage. The 2nd Uair can be replaced by Nair (more powerful)",
       "uuid": "3f8b0f9f-210d-4c1f-ac4e-47857f3c3ea8"
+    },
+    {
+      "input": "dthrow nair fsmash",
+      "damage": "39.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f875f4c5-ea73-488b-95e1-8e2a7743eef4"
     }
   ],
   "preview": "",
