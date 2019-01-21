@@ -69,7 +69,9 @@
     {
       "input": "nair uair bair",
       "damage": "33%",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "20",
         "featherweight": "20",
@@ -113,6 +115,24 @@
       "demonstration": "",
       "notes": "Goes into Forward Kick after the Pin, and is very good with Pivot Cancelling. Only works at Low%s. \n\n~ Plague von Karma",
       "uuid": "c294542b-3c2e-4cd0-b2b5-5f8c6c80f353"
+    },
+    {
+      "input": "falling+uair sh+ff+uair fh+fair fair fh+fair dj+fair uair",
+      "damage": "66.1",
+      "tags": [
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "--",
+        "featherweight": "--",
+        "lightweight": "--",
+        "middleweight": "--",
+        "heavyweight": "--",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/2AyBP9I946A",
+      "notes": "Works on heavy boys only. Credit to Doctordonut23 for footage. ",
+      "uuid": "028f53d0-8a1a-46b5-8899-3ff387f920c2"
     }
   ],
   "preview": "",
