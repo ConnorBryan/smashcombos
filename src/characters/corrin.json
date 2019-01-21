@@ -65,6 +65,56 @@
       "demonstration": "",
       "notes": "Basic bread and butter combo, can be extended with proper platform utilization, but on any stage this is an optimal juggle combo.",
       "uuid": "0b8abe0b-077e-464d-974f-63e6cbadb254"
+    },
+	{
+      "input": "nair uair bair",
+      "damage": "33%",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "20",
+        "featherweight": "20",
+        "lightweight": "20",
+        "middleweight": "20",
+        "heavyweight": "20",
+        "superheavyweight": "20"
+      },
+      "demonstration": "",
+      "notes": "Requires NAir to be reversed. Kill Confirm at higher %s, works very consistently.\n\n~ Plague von Karma",
+      "uuid": "c5db768b-61f7-44ec-a66e-461649f63e17"
+    },
+	{
+      "input": "dtilt utilt utilt uair",
+      "damage": "41.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Corrin's bread and butter, very easy to pull off and should be the first combo a new player tries out. Starts a juggle situation that can drastically increase the damage. \n\n~ Plague von Karma",
+      "uuid": "4894835c-0ac6-4114-8ffd-a04a85797efc"
+    }
+	 {
+      "input": "ftilt sspecial",
+      "damage": "35.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Goes into Forward Kick after the Pin, and is very good with Pivot Cancelling. Only works at Low%s. \n\n~ Plague von Karma",
+      "uuid": "c294542b-3c2e-4cd0-b2b5-5f8c6c80f353"
     }
   ],
   "preview": "",
