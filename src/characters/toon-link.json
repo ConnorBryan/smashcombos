@@ -51,6 +51,22 @@
       "notes": "",
       "uuid": "23528527-1536-4e0e-b51f-e0b5a0be3354"
     }
+	{
+      "input": "dthrow sspecial nspecial",
+      "damage": "24.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8d0aa0f0-baf2-4b27-9e02-7cd50552bc8f"
+    }
   ],
   "preview": "",
   "content": "\n\n",

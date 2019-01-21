@@ -49,6 +49,22 @@
       "demonstration": "",
       "notes": ""
     }
+	{
+      "input": "fthrow sspecial",
+      "damage": "16.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8508a0dc-f2bd-4a98-b249-7e78b0b8e59f"
+    }
   ],
   "preview": "",
   "content": "\n",

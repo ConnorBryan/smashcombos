@@ -54,6 +54,22 @@
       "notes": "Easy to use.",
       "uuid": "ee2a30af-dcbf-41c2-9e2d-2e7a69a2cfd1"
     }
+	{
+      "input": "dtilt utilt",
+      "damage": "",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "84b3ac17-2602-4ffc-9532-71813efabc62"
+    }
   ],
   "preview": "",
   "content": "\n\n",

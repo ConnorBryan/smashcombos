@@ -71,6 +71,22 @@
       "notes": "",
       "uuid": "1fc12266-97e6-42ce-a882-c12e44fff0c1"
     }
+	{
+      "input": "dthrow fh+fair fair fair",
+      "damage": "21.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "115989d8-e8c2-49bf-b04a-0b5358abda47"
+    }
   ],
   "preview": "",
   "content": "\n\n",
