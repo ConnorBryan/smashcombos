@@ -48,7 +48,30 @@
       "demonstration": "",
       "notes": "",
       "uuid": "662a8054-56ef-4059-9503-79d993427e7e"
+    },
+    {
+      "input": "dthrow fair",
+      "damage": "26.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "8fee9952-04d4-41d7-a649-1572116370f6"
     }
+  ],
+  "preview": "",
+  "content": "\n",
+  "basename": "ganondorf",
+  "id": "e2b9d355-dd25-4180-a8b2-efd3d38fd2df",
+  "slug": "ganondorf"
+} 
   ],
   "preview": "",
   "content": "\n",
