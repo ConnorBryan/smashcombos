@@ -32,7 +32,24 @@
       "value": "118"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow fsmash",
+      "damage": "37.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "662a8054-56ef-4059-9503-79d993427e7e"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "ganondorf",
