@@ -65,7 +65,7 @@
       "notes": "",
       "uuid": "8fee9952-04d4-41d7-a649-1572116370f6"
     },
-	{
+    {
       "input": "uthrow uair sspecial",
       "damage": "45.6",
       "tags": [],
@@ -80,14 +80,7 @@
       "demonstration": "",
       "notes": "",
       "uuid": "aa9acb72-fc87-4b24-8f83-d411b45c4e60"
-    },
-  ],
-  "preview": "",
-  "content": "\n",
-  "basename": "ganondorf",
-  "id": "e2b9d355-dd25-4180-a8b2-efd3d38fd2df",
-  "slug": "ganondorf"
-} 
+    }
   ],
   "preview": "",
   "content": "\n",
