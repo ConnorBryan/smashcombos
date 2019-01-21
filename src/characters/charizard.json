@@ -1,6 +1,6 @@
 {
   "name": "Charizard",
-  "render": "../../static/img/pokemon-trainer.png",
+  "render": "../../static/img/charizard.png",
   "description": "Charizard returns as a playable character in Super Smash Bros. Ultimate, but unlike in Super Smash Bros. 4, it returns as part of Pokémon Trainer alongisde Squirtle and Ivysaur. Due to this, Rock Smash has been replaced by Pokémon Change. Like Squirtle and Ivysaur, it is no longer subject to stamina, and thus remains effective throughout a fight. Unlike Brawl, where Pokémon Trainer is a starter character, and Smash 4, where Charizard is, Pokémon Trainer is now an unlockable character. ",
   "attributes": {
     "airAcceleration": {

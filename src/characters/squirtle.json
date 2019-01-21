@@ -1,6 +1,6 @@
 {
   "name": "Squirtle",
-  "render": "../../static/img/pokemon-trainer.png",
+  "render": "../../static/img/squirtle.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "75"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "input": "dashatk uspecial",
@@ -88,9 +86,7 @@
     {
       "input": "dthrow utilt sh+uair dj+uair uspecial",
       "damage": "50",
-      "tags": [
-        "bigBody"
-      ],
+      "tags": ["bigBody"],
       "percentages": {
         "balloonweight": "",
         "featherweight": "",
