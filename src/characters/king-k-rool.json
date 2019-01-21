@@ -305,22 +305,6 @@
       "demonstration": "https://www.youtube.com/embed/watch?v=63-1iK9-qp8",
       "notes": "Works best as a tech chase at mid%s, works extremely well at 0% for putting the opponent in a bad position. Doesn't work on small characters. ",
       "uuid": "8b805027-0a1f-4fc7-a846-5af5acb2c8d9"
-    },
-    {
-      "input": "dthrow utilt utilt dashatk dair dtilt",
-      "damage": "74.4",
-      "tags": [],
-      "percentages": {
-        "balloonweight": "",
-        "featherweight": "",
-        "lightweight": "",
-        "middleweight": "",
-        "heavyweight": "",
-        "superheavyweight": ""
-      },
-      "demonstration": "",
-      "notes": "",
-      "uuid": "04f896c4-fd06-4422-9033-e3d9472aa8fb"
     }
   ],
   "preview": "",
