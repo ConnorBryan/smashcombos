@@ -113,6 +113,40 @@
       "demonstration": "",
       "notes": "Goes into Forward Kick after the Pin, and is very good with Pivot Cancelling. Only works at Low%s. \n\n~ Plague von Karma",
       "uuid": "c294542b-3c2e-4cd0-b2b5-5f8c6c80f353"
+    },
+	{
+      "input": "sh+uair sh+ff+uair fh+fair dj+fair uair",
+      "damage": "52.1%",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "5",
+        "featherweight": "5",
+        "lightweight": "5",
+        "middleweight": "5",
+        "heavyweight": "5",
+        "superheavyweight": "5"
+      },
+      "demonstration": "https://www.youtube.com/embed/gfE7MM31qi0",
+      "notes": "Can work at 0%, 5% is more reliable. Credit to doctordonut23 for the footage. ",
+      "uuid": "88b85c8a-8107-4cd6-9b6d-efd3c5d0ed5b"
+    },
+	{
+      "input": "falling+uair sh+ff+uair fh+fair fair fh+fair dj+fair uair",
+      "damage": "66.1",
+      "tags": [
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "--",
+        "featherweight": "--",
+        "lightweight": "--",
+        "middleweight": "--",
+        "heavyweight": "--",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/2AyBP9I946A",
+      "notes": "Works on heavy boys only. Credit to Doctordonut23 for footage. ",
+      "uuid": "028f53d0-8a1a-46b5-8899-3ff387f920c2"
     }
   ],
   "preview": "",
