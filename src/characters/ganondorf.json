@@ -64,7 +64,23 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8fee9952-04d4-41d7-a649-1572116370f6"
-    }
+    },
+	{
+      "input": "uthrow uair sspecial",
+      "damage": "45.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "aa9acb72-fc87-4b24-8f83-d411b45c4e60"
+    },
   ],
   "preview": "",
   "content": "\n",
