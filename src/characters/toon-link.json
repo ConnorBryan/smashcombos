@@ -33,10 +33,25 @@
       "value": "91"
     }
   },
-  "tags": [
-    "floatie"
+  "tags": ["floatie"],
+  "combos": [
+    {
+      "input": "utilt utilt utilt utilt fair",
+      "damage": "42.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "23528527-1536-4e0e-b51f-e0b5a0be3354"
+    }
   ],
-  "combos": [],
   "preview": "",
   "content": "\n\n",
   "basename": "toon-link",

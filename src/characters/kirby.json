@@ -33,10 +33,25 @@
       "value": "79"
     }
   },
-  "tags": [
-    "floatie"
+  "tags": ["floatie"],
+  "combos": [
+    {
+      "input": "dthrow dashatk fsmash",
+      "damage": "42.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "a3d265ee-e5d7-440e-9b9e-47fd4599ea2a"
+    }
   ],
-  "combos": [],
   "preview": "",
   "content": "\n\n",
   "basename": "kirby",
