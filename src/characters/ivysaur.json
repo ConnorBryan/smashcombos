@@ -1,6 +1,6 @@
 {
   "name": "Ivysaur",
-  "render": "../../static/img/pokemon-trainer.png",
+  "render": "../../static/img/ivysaur.png",
   "description": "...",
   "attributes": {
     "airAcceleration": {
@@ -33,9 +33,7 @@
       "value": "96"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [],
   "preview": "",
   "content": "\n\n",
