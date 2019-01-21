@@ -1,1 +1,125 @@
-{"name":"Pit","render":"../../static/img/pit.png","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.065","rank":"41","total":"0.075"},"airSpeed":{"maxAirSpeed":"0.935","rank":"65"},"fallSpeed":{"fastFallSpeed":"2.368","maxFallSpeed":"1.48","rank":"53","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.828","rank":"28"},"walkSpeed":{"maxWalkSpeed":"1.259","rank":"20"},"weight":{"class":"middleweight","rank":"32","value":"96"}},"combos":[{"input":"dthrow fair","damage":"18.4","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"","uuid":"95dfc30c-c177-4cc6-ab29-0c62c3369dd6"},{"input":"dair usmash","damage":"33.8","tags":["killConfirm"],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":""},{"input":"dthrow sh+nair","damage":"16.7","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"90-150","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Kill confirm. Needs the dair sweet spot.","uuid":"a5dd87cb-34a5-4dfa-8a3d-7405b6a329ba"},{"input":"dtilt ftilt","damage":"18.4","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"","uuid":"54609b41-e5dd-4df8-b8d2-bbe8eab62b01"},{"input":"uthrow uair","damage":"27.7","tags":["diable"],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"","uuid":"ebcd98f2-e94b-4847-8e0e-33470c4dcce0"}],"preview":"","content":"\n","basename":"pit","id":"8caf6c19-e370-4831-9a55-e6b8a9b53c8f","slug":"pit"}
+{
+  "name": "Pit",
+  "render": "../../static/img/pit.png",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.065",
+      "rank": "41",
+      "total": "0.075"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "0.935",
+      "rank": "65"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.368",
+      "maxFallSpeed": "1.48",
+      "rank": "53",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.828",
+      "rank": "28"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.259",
+      "rank": "20"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "32",
+      "value": "96"
+    }
+  },
+  "combos": [
+    {
+      "input": "dthrow fair",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "95dfc30c-c177-4cc6-ab29-0c62c3369dd6"
+    },
+    {
+      "input": "dair usmash",
+      "damage": "33.8",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": ""
+    },
+    {
+      "input": "dthrow sh+nair",
+      "damage": "16.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "90-150",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Kill confirm. Needs the dair sweet spot.",
+      "uuid": "a5dd87cb-34a5-4dfa-8a3d-7405b6a329ba"
+    },
+    {
+      "input": "dtilt ftilt",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "54609b41-e5dd-4df8-b8d2-bbe8eab62b01"
+    },
+    {
+      "input": "uthrow uair",
+      "damage": "27.7",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ebcd98f2-e94b-4847-8e0e-33470c4dcce0"
+    }
+  ],
+  "preview": "",
+  "content": "\n",
+  "basename": "pit",
+  "id": "8caf6c19-e370-4831-9a55-e6b8a9b53c8f",
+  "slug": "pit"
+}

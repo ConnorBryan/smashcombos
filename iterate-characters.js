@@ -15,7 +15,7 @@ fs.readdir("./src/characters", (err, files) => {
 
       /** Manipulate character here. */
 
-      fs.writeFile(fileName, JSON.stringify(character), err => {
+      fs.writeFile(fileName, JSON.stringify(character, null, 2), err => {
         return err
           ? console.error(err)
           : console.info(`Updated ${character.name}.`);

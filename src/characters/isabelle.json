@@ -1,1 +1,62 @@
-{"name":"Isabelle","render":"../../static/img/isabelle.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.05","rank":"53","total":"0.06"},"airSpeed":{"maxAirSpeed":"1.02","rank":"48"},"fallSpeed":{"fastFallSpeed":"2.08","maxFallSpeed":"1.3","rank":"68","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.48","rank":"69"},"walkSpeed":{"maxWalkSpeed":"1.14","rank":"37"},"weight":{"class":"lightweight","rank":"56","value":"88"}},"tags":["floatie"],"combos":[{"input":"sspecial uair","damage":"28","tags":[],"percentages":{"balloonweight":"0-15","featherweight":"0-27","lightweight":"0-20","middleweight":"0-18","heavyweight":"0-44","superheavyweight":"0-47"},"demonstration":"","notes":"","uuid":"5910f578-3f2c-489b-8101-0001dd8cdf93"}],"preview":"","content":"\n\n","basename":"isabelle","id":"281350e3-3ef8-4a28-859d-b12c45031e1a","slug":"isabelle"}
+{
+  "name": "Isabelle",
+  "render": "../../static/img/isabelle.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.05",
+      "rank": "53",
+      "total": "0.06"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.02",
+      "rank": "48"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.08",
+      "maxFallSpeed": "1.3",
+      "rank": "68",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.48",
+      "rank": "69"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.14",
+      "rank": "37"
+    },
+    "weight": {
+      "class": "lightweight",
+      "rank": "56",
+      "value": "88"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [
+    {
+      "input": "sspecial uair",
+      "damage": "28",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-15",
+        "featherweight": "0-27",
+        "lightweight": "0-20",
+        "middleweight": "0-18",
+        "heavyweight": "0-44",
+        "superheavyweight": "0-47"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5910f578-3f2c-489b-8101-0001dd8cdf93"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "isabelle",
+  "id": "281350e3-3ef8-4a28-859d-b12c45031e1a",
+  "slug": "isabelle"
+}

@@ -1,1 +1,45 @@
-{"name":"Villager","render":"../../static/img/villager.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.05","rank":"53","total":"0.06"},"airSpeed":{"maxAirSpeed":"0.987","rank":"57"},"fallSpeed":{"fastFallSpeed":"2.112","maxFallSpeed":"1.32","rank":"65","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.397","rank":"72"},"walkSpeed":{"maxWalkSpeed":"1.092","rank":"49"},"weight":{"class":"middleweight","rank":"45","value":"92"}},"tags":["floatie"],"combos":[],"preview":"","content":"\n\n","basename":"villager","id":"4a91aa3b-548d-4887-a3ea-a53983496514","slug":"villager"}
+{
+  "name": "Villager",
+  "render": "../../static/img/villager.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.05",
+      "rank": "53",
+      "total": "0.06"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "0.987",
+      "rank": "57"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.112",
+      "maxFallSpeed": "1.32",
+      "rank": "65",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.397",
+      "rank": "72"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.092",
+      "rank": "49"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "45",
+      "value": "92"
+    }
+  },
+  "tags": [
+    "floatie"
+  ],
+  "combos": [],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "villager",
+  "id": "4a91aa3b-548d-4887-a3ea-a53983496514",
+  "slug": "villager"
+}

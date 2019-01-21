@@ -1,1 +1,45 @@
-{"name":"Sheik","render":"../../static/img/sheik.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.08","rank":"21","total":"0.09"},"airSpeed":{"maxAirSpeed":"1.155","rank":"19"},"fallSpeed":{"fastFallSpeed":"2.8","maxFallSpeed":"1.75","rank":"20","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"2.42","rank":"4"},"walkSpeed":{"maxWalkSpeed":"1.47","rank":"5"},"weight":{"class":"featherweight","rank":"71","value":"78"}},"tags":["fastFaller"],"combos":[],"preview":"","content":"\n\n","basename":"sheik","id":"7dfb99e7-f8a4-492b-99ae-bae84c701856","slug":"sheik"}
+{
+  "name": "Sheik",
+  "render": "../../static/img/sheik.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.08",
+      "rank": "21",
+      "total": "0.09"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.155",
+      "rank": "19"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.8",
+      "maxFallSpeed": "1.75",
+      "rank": "20",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "2.42",
+      "rank": "4"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.47",
+      "rank": "5"
+    },
+    "weight": {
+      "class": "featherweight",
+      "rank": "71",
+      "value": "78"
+    }
+  },
+  "tags": [
+    "fastFaller"
+  ],
+  "combos": [],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "sheik",
+  "id": "7dfb99e7-f8a4-492b-99ae-bae84c701856",
+  "slug": "sheik"
+}

@@ -1,1 +1,62 @@
-{"name":"Greninja","render":"../../static/img/greninja.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.07","rank":"31","total":"0.08"},"airSpeed":{"maxAirSpeed":"1.239","rank":"10"},"fallSpeed":{"fastFallSpeed":"2.96","maxFallSpeed":"1.85","rank":"7","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"2.288","rank":"7"},"walkSpeed":{"maxWalkSpeed":"1.502","rank":"4"},"weight":{"class":"lightweight","rank":"56","value":"88"}},"tags":["fastFaller"],"combos":[{"input":"nair fsmash","damage":"31.5","tags":[],"percentages":{"balloonweight":"0-18","featherweight":"0-19","lightweight":"0-14","middleweight":"0-24","heavyweight":"0-21","superheavyweight":"4-35"},"demonstration":"","notes":"","uuid":"858e2cc7-32f9-4251-bccd-714732d617a3"}],"preview":"","content":"\n\n","basename":"greninja","id":"807b5a26-adb8-42ac-97fb-c192fc7962ff","slug":"greninja"}
+{
+  "name": "Greninja",
+  "render": "../../static/img/greninja.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.07",
+      "rank": "31",
+      "total": "0.08"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.239",
+      "rank": "10"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.96",
+      "maxFallSpeed": "1.85",
+      "rank": "7",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "2.288",
+      "rank": "7"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.502",
+      "rank": "4"
+    },
+    "weight": {
+      "class": "lightweight",
+      "rank": "56",
+      "value": "88"
+    }
+  },
+  "tags": [
+    "fastFaller"
+  ],
+  "combos": [
+    {
+      "input": "nair fsmash",
+      "damage": "31.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-18",
+        "featherweight": "0-19",
+        "lightweight": "0-14",
+        "middleweight": "0-24",
+        "heavyweight": "0-21",
+        "superheavyweight": "4-35"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "858e2cc7-32f9-4251-bccd-714732d617a3"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "greninja",
+  "id": "807b5a26-adb8-42ac-97fb-c192fc7962ff",
+  "slug": "greninja"
+}

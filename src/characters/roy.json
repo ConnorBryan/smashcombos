@@ -1,1 +1,78 @@
-{"name":"Roy","render":"../../static/img/roy.png","description":"...","attributes":{"airAcceleration":{"baseValue":"0.02","maxAdditional":"0.03","rank":"61","total":"0.05"},"airSpeed":{"maxAirSpeed":"1.302","rank":"4"},"fallSpeed":{"fastFallSpeed":"2.88","maxFallSpeed":"1.8","rank":"10","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"2.145","rank":"12"},"walkSpeed":{"maxWalkSpeed":"1.208","rank":"26"},"weight":{"class":"middleweight","rank":"36","value":"95"}},"tags":["fastFaller"],"combos":[{"input":"grab pummel pummel dthrow uspecial","damage":"21.3","tags":[],"percentages":{"balloonweight":"0-43","featherweight":"0-45","lightweight":"0-57","middleweight":"0-64","heavyweight":"0-69","superheavyweight":"0-70"},"demonstration":"","notes":"More damage will be done at lower percentages (around 29.2%) especially on heavy characters","uuid":"4f462fbb-0ece-41d9-9a23-dcaf9d6cc2a2"},{"input":"jab jab","damage":"14.6","tags":[],"percentages":{"balloonweight":"0-14","featherweight":"0-9","lightweight":"Doesn't work","middleweight":"0-40","heavyweight":"0-6","superheavyweight":"0-69"},"demonstration":"","notes":"First hit must be at closest range(9.4% damage). Against Super Heavyweight characters, both hits are at closest range (for 0-14% damage)","uuid":"248590d0-0a1f-414d-a679-882417c9715b"}],"preview":"","content":"\n\n","basename":"roy","id":"f94df2b6-95e1-4490-bcff-0f003274d645","slug":"roy"}
+{
+  "name": "Roy",
+  "render": "../../static/img/roy.png",
+  "description": "...",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.02",
+      "maxAdditional": "0.03",
+      "rank": "61",
+      "total": "0.05"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.302",
+      "rank": "4"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.88",
+      "maxFallSpeed": "1.8",
+      "rank": "10",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "2.145",
+      "rank": "12"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.208",
+      "rank": "26"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "36",
+      "value": "95"
+    }
+  },
+  "tags": [
+    "fastFaller"
+  ],
+  "combos": [
+    {
+      "input": "grab pummel pummel dthrow uspecial",
+      "damage": "21.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-43",
+        "featherweight": "0-45",
+        "lightweight": "0-57",
+        "middleweight": "0-64",
+        "heavyweight": "0-69",
+        "superheavyweight": "0-70"
+      },
+      "demonstration": "",
+      "notes": "More damage will be done at lower percentages (around 29.2%) especially on heavy characters",
+      "uuid": "4f462fbb-0ece-41d9-9a23-dcaf9d6cc2a2"
+    },
+    {
+      "input": "jab jab",
+      "damage": "14.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-14",
+        "featherweight": "0-9",
+        "lightweight": "Doesn't work",
+        "middleweight": "0-40",
+        "heavyweight": "0-6",
+        "superheavyweight": "0-69"
+      },
+      "demonstration": "",
+      "notes": "First hit must be at closest range(9.4% damage). Against Super Heavyweight characters, both hits are at closest range (for 0-14% damage)",
+      "uuid": "248590d0-0a1f-414d-a679-882417c9715b"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "roy",
+  "id": "f94df2b6-95e1-4490-bcff-0f003274d645",
+  "slug": "roy"
+}
