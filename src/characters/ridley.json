@@ -33,10 +33,7 @@
       "value": "107"
     }
   },
-  "tags": [
-    "fastFaller",
-    "bigBody"
-  ],
+  "tags": ["fastFaller", "bigBody"],
   "combos": [
     {
       "input": "dthrow fair",
@@ -53,8 +50,8 @@
       "demonstration": "",
       "notes": "Easy to use.",
       "uuid": "ee2a30af-dcbf-41c2-9e2d-2e7a69a2cfd1"
-    }
-	{
+    },
+    {
       "input": "dtilt utilt",
       "damage": "",
       "tags": [],

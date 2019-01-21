@@ -33,9 +33,7 @@
       "value": "92"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "input": "uthrow fh+uair",
@@ -56,9 +54,7 @@
     {
       "input": "nair dtilt grab uthrow fh+fair dj+uair",
       "damage": "31.5",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -70,8 +66,8 @@
       "demonstration": "",
       "notes": "",
       "uuid": "1fc12266-97e6-42ce-a882-c12e44fff0c1"
-    }
-	{
+    },
+    {
       "input": "dthrow fh+fair fair fair",
       "damage": "21.2",
       "tags": [],
