@@ -71,6 +71,38 @@
       "notes": "Low percent combo in place of the traditional fair you can darkest lariat for a little more damage.",
       "uuid": "82b1dbf8-cf49-40f8-b8a7-cba2d98b00cf"
     }
+	{
+      "input": "uthrow uspecial",
+      "damage": "34.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "48576e2f-fe54-4a8b-a53b-1d2c6511c809"
+    },
+	{
+      "input": "dthrow uspecial",
+      "damage": "24",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "dd59f204-f2ee-4530-9900-639f32bd273a"
+    }
   ],
   "preview": "",
   "content": "\n\n",
