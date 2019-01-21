@@ -1,1 +1,93 @@
-{"name":"Corrin","render":"../../static/img/corrin.png","description":"Corrin has received a mix of buffs and nerfs in the transition to Ultimate, but was nerfed overall. Corrin's mobility has been improved, which helps him with the more movement and offensive style of Ultimate. On top of this, Down Throw is a better KO option, and all of his aerials have reduced landing lag to go along with the rest of the roster. However, Corrin's nerfs seem to outweigh his buffs. Dragon Lunge has been significantly nerfed, as Corrin does not get as much range with his kick. He also is drastically more punishable on his backwards kick as he does not travel nearly as far. Corrin's grab is also slower, the stun time from Dragon Fang Shot has been reduced, and Counter Surge has been weakened. These changes have resulted in Corrin being a worse character than he was in SSB4, but to what extent is currently unknown.","attributes":{"airAcceleration":{"baseValue":"0.01","maxAdditional":"0.04","rank":"61","total":"0.05"},"airSpeed":{"maxAirSpeed":"1.019","rank":"49"},"fallSpeed":{"fastFallSpeed":"2.64","maxFallSpeed":"1.65","rank":"28","speedIncrease":"60%"},"runSpeed":{"maxRunSpeed":"1.595","rank":"54"},"walkSpeed":{"maxWalkSpeed":"1.208","rank":"26"},"weight":{"class":"middleweight","rank":"27","value":"98"}},"combos":[{"input":"dtilt utilt","damage":"19.8","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Early-Mid %, can be good to set someone up on a platform to follow up with an aeriel to juggle.","uuid":"0e06c78d-4fcd-4b16-bc6f-5d8a9553582b"},{"input":"falling+nair rising+sh+fair dj+fair","damage":"24","tags":[],"percentages":{"balloonweight":"","featherweight":"","lightweight":"","middleweight":"","heavyweight":"","superheavyweight":""},"demonstration":"","notes":"Basic bread and butter combo, can be extended with proper platform utilization, but on any stage this is an optimal juggle combo.","uuid":"0b8abe0b-077e-464d-974f-63e6cbadb254"}],"preview":"","content":"\n\n","basename":"corrin","id":"55056d4a-1193-4dd0-bf9c-312dd317d3c6","slug":"corrin"}
+{
+  "name": "Corrin",
+  "render": "../../static/img/corrin.png",
+  "description": "Corrin has received a mix of buffs and nerfs in the transition to Ultimate, but was nerfed overall. Corrin's mobility has been improved, which helps him with the more movement and offensive style of Ultimate. On top of this, Down Throw is a better KO option, and all of his aerials have reduced landing lag to go along with the rest of the roster. However, Corrin's nerfs seem to outweigh his buffs. Dragon Lunge has been significantly nerfed, as Corrin does not get as much range with his kick. He also is drastically more punishable on his backwards kick as he does not travel nearly as far. Corrin's grab is also slower, the stun time from Dragon Fang Shot has been reduced, and Counter Surge has been weakened. These changes have resulted in Corrin being a worse character than he was in SSB4, but to what extent is currently unknown.",
+  "attributes": {
+    "airAcceleration": {
+      "baseValue": "0.01",
+      "maxAdditional": "0.04",
+      "rank": "61",
+      "total": "0.05"
+    },
+    "airSpeed": {
+      "maxAirSpeed": "1.019",
+      "rank": "49"
+    },
+    "fallSpeed": {
+      "fastFallSpeed": "2.64",
+      "maxFallSpeed": "1.65",
+      "rank": "28",
+      "speedIncrease": "60%"
+    },
+    "runSpeed": {
+      "maxRunSpeed": "1.595",
+      "rank": "54"
+    },
+    "walkSpeed": {
+      "maxWalkSpeed": "1.208",
+      "rank": "26"
+    },
+    "weight": {
+      "class": "middleweight",
+      "rank": "27",
+      "value": "98"
+    }
+  },
+  "combos": [
+    {
+      "input": "dtilt utilt",
+      "damage": "19.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Early-Mid %, can be good to set someone up on a platform to follow up with an aeriel to juggle.",
+      "uuid": "0e06c78d-4fcd-4b16-bc6f-5d8a9553582b"
+    },
+    {
+      "input": "falling+nair rising+sh+fair dj+fair",
+      "damage": "24",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Basic bread and butter combo, can be extended with proper platform utilization, but on any stage this is an optimal juggle combo.",
+      "uuid": "0b8abe0b-077e-464d-974f-63e6cbadb254"
+    },
+    {
+      "input": "nair uair bair",
+      "damage": "33%",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "20",
+        "featherweight": "20",
+        "lightweight": "20",
+        "middleweight": "20",
+        "heavyweight": "20",
+        "superheavyweight": "20"
+      },
+      "demonstration": "",
+      "notes": "Requires NAir to be reversed. Kill Confirm at higher %s, works very consistently.\n\n~ Plague von Karma",
+      "uuid": "c5db768b-61f7-44ec-a66e-461649f63e17"
+    }
+  ],
+  "preview": "",
+  "content": "\n\n",
+  "basename": "corrin",
+  "id": "55056d4a-1193-4dd0-bf9c-312dd317d3c6",
+  "slug": "corrin"
+}
