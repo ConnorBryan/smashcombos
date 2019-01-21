@@ -33,9 +33,7 @@
       "value": "85"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "input": "dthrow nair",
@@ -52,6 +50,118 @@
       "demonstration": "",
       "notes": "",
       "uuid": "5d33fcd6-eaf9-4d88-b6c0-c3741c3125dc"
+    },
+    {
+      "input": "dthrow bair",
+      "damage": "33.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "0a50df0d-6bc6-4816-8c76-72c94b70b6a9"
+    },
+    {
+      "input": "sh+nair jab",
+      "damage": "28.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "jab=rapid jab",
+      "uuid": "b89f4727-2f10-4dec-a9a1-c21c9f25f7eb"
+    },
+    {
+      "input": "utilt jab",
+      "damage": "22.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "(rapid jab)",
+      "uuid": "61b904e0-3553-4471-93c0-bbfc8c5871a0"
+    },
+    {
+      "input": "sh+dair jab",
+      "damage": "28.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "(rapid jab)",
+      "uuid": "5caf78bc-af28-497c-84d0-a70b4a267836"
+    },
+    {
+      "input": "sh+fair jab",
+      "damage": "34",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "rapid jab",
+      "uuid": "6df87bea-d7d2-40b4-ae6d-b18aed1c8546"
+    },
+    {
+      "input": "utilt utilt utilt utilt nair",
+      "damage": "45.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-?"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "49912485-1122-4071-9c1f-f8d92dc74d60"
+    },
+    {
+      "input": "sh+nair sh+nair sh+fair",
+      "damage": "51",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "15-?"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "a191b1fa-a2d4-4f90-be49-a4acac86fe7a"
     }
   ],
   "preview": "",
