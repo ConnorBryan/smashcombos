@@ -3,10 +3,21 @@ import React from "react";
 import Layout from "./layout";
 import Redirect from "./redirect";
 
-export default function AuthRedirect({ navigate, children }) {
+export default function AuthRedirect({
+  navigate,
+  children,
+  redirect,
+  message
+}) {
   return (
     <Layout>
-      <Redirect navigate={navigate} children={children} redirect="/sign-in" />
+      <Redirect
+        navigate={navigate}
+        children={children}
+        message={message}
+        redirectBack={redirect}
+        redirect="/sign-in"
+      />
     </Layout>
   );
 }

@@ -14,7 +14,8 @@ import { CharacterService } from "../services";
 export default function EditComboPage({
   data,
   pageContext: { uuid },
-  navigate
+  navigate,
+  location: { pathname }
 }) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
@@ -22,7 +23,11 @@ export default function EditComboPage({
   const combo = combos.find(entry => entry.uuid === uuid);
 
   return (
-    <AuthRedirect navigate={navigate}>
+    <AuthRedirect
+      navigate={navigate}
+      message={`Editing one of ${name}'s combos requires a SmashCombos account.`}
+      redirect={pathname}
+    >
       <Layout>
         <Link to={slug}>
           <CharacterPortrait

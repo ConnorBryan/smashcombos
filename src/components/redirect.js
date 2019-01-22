@@ -4,18 +4,22 @@ import { auth, UserContext } from "./user-provider";
 
 export class AbstractRedirect extends Component {
   componentDidMount() {
-    const { navigate, redirect } = this.props;
+    const { navigate, redirect, message, redirectBack } = this.props;
 
     if (!auth.currentUser()) {
-      setTimeout(() => navigate(redirect), 0);
+      setTimeout(
+        () =>
+          navigate(redirect, { state: { message, redirect: redirectBack } }),
+        0
+      );
     }
   }
 
   componentDidUpdate(prevProps) {
-    const { navigate, user, redirect } = this.props;
+    const { navigate, user, redirect, message, redirectBack } = this.props;
 
     if (!user && prevProps.user) {
-      navigate(redirect);
+      navigate(redirect, { state: { message, redirect: redirectBack } });
     }
   }
 
@@ -24,11 +28,23 @@ export class AbstractRedirect extends Component {
   }
 }
 
-export default function Redirect({ navigate, children, redirect }) {
+export default function Redirect({
+  navigate,
+  children,
+  redirect,
+  redirectBack,
+  message
+}) {
   return (
     <UserContext.Consumer>
       {({ user }) => (
-        <AbstractRedirect navigate={navigate} user={user} redirect={redirect}>
+        <AbstractRedirect
+          navigate={navigate}
+          user={user}
+          redirect={redirect}
+          redirectBack={redirectBack}
+          message={message}
+        >
           {children}
         </AbstractRedirect>
       )}
