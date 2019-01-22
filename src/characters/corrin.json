@@ -114,7 +114,7 @@
       "notes": "Goes into Forward Kick after the Pin, and is very good with Pivot Cancelling. Only works at Low%s. \n\n~ Plague von Karma",
       "uuid": "c294542b-3c2e-4cd0-b2b5-5f8c6c80f353"
     },
-	{
+    {
       "input": "sh+uair sh+ff+uair fh+fair dj+fair uair",
       "damage": "52.1%",
       "tags": [],
@@ -130,12 +130,10 @@
       "notes": "Can work at 0%, 5% is more reliable. Credit to doctordonut23 for the footage. ",
       "uuid": "88b85c8a-8107-4cd6-9b6d-efd3c5d0ed5b"
     },
-	{
+    {
       "input": "falling+uair sh+ff+uair fh+fair fair fh+fair dj+fair uair",
       "damage": "66.1",
-      "tags": [
-        "bigBody"
-      ],
+      "tags": ["bigBody"],
       "percentages": {
         "balloonweight": "--",
         "featherweight": "--",
