@@ -34,7 +34,11 @@ export default class EditCharacterPage extends Component {
   handleTabChange = (_, { activeIndex }) => this.setState({ activeIndex });
 
   render() {
-    const { data, navigate, pathname } = this.props;
+    const {
+      data,
+      navigate,
+      location: { pathname }
+    } = this.props;
     const { activeIndex } = this.state;
     const character = getCharacter(data);
     const image = getCharacterRender(character);

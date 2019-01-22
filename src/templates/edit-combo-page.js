@@ -1,12 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import {
-  AuthRedirect,
-  CharacterPortrait,
-  ComboInterface,
-  Layout
-} from "../components";
+import { AuthRedirect, CharacterPortrait, ComboInterface } from "../components";
 import { MessageContext } from "../components/message-provider";
 import { getCharacter, getCharacterRender } from "../helpers";
 import { CharacterService } from "../services";
