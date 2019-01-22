@@ -83,6 +83,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "0d0f1657-06a3-43ff-953e-71cdf4fcb3b9"
+    },
+    {
+      "input": "dthrow sh+uair",
+      "damage": "22.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "34d1a493-f6e7-4f8b-9ca3-0f8dddbafabd"
     }
   ],
   "preview": "",
