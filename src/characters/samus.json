@@ -36,7 +36,24 @@
   "tags": [
     "floatie"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "sspecial nspecial",
+      "damage": "43.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "must be fully charged neutral special",
+      "uuid": "332fca55-4926-4ac1-bd15-6ba88f5af093"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "samus",
