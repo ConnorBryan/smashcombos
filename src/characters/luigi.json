@@ -33,7 +33,9 @@
       "value": "97"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "input": "dthrow sh+rising+dair ff+nair sh+rising+dair ff+dair uspecial",
@@ -54,7 +56,9 @@
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
@@ -70,7 +74,9 @@
     {
       "input": "dthrow usmash uspecial",
       "damage": "54.8",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "",
         "featherweight": "",
@@ -82,6 +88,24 @@
       "demonstration": "",
       "notes": "not a true combo.",
       "uuid": "43f94e1a-2369-4874-930c-405700a7ca32"
+    },
+    {
+      "input": "dthrow sh+fair falling+dair uspecial",
+      "damage": "60",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/ha975Ukgm9k",
+      "notes": "Credit to u/Cucklerhead on Reddit.",
+      "uuid": "864e9a9d-b64b-4d8c-b881-ede37e09b512"
     }
   ],
   "preview": "",
