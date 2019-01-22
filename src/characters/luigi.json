@@ -33,9 +33,7 @@
       "value": "97"
     }
   },
-  "tags": [
-    "floatie"
-  ],
+  "tags": ["floatie"],
   "combos": [
     {
       "input": "dthrow sh+rising+dair ff+nair sh+rising+dair ff+dair uspecial",
@@ -56,9 +54,7 @@
     {
       "input": "dthrow sh+rising+dair ff+dair uspecial",
       "damage": "59",
-      "tags": [
-        "diable"
-      ],
+      "tags": ["diable"],
       "percentages": {
         "balloonweight": "15-30",
         "featherweight": "15-30",
@@ -70,6 +66,22 @@
       "demonstration": "https://www.youtube.com/embed/z-nsOMKHIZU?start=158",
       "notes": "Credit to Beefy Smash Doods. Adding pummeling can enable this combo when it otherwise wouldn't work.",
       "uuid": "5f335bbc-395f-41a8-a3a0-26974eaa0eag"
+    },
+    {
+      "input": "dthrow usmash uspecial",
+      "damage": "54.8",
+      "tags": ["diable"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "not a true combo.",
+      "uuid": "43f94e1a-2369-4874-930c-405700a7ca32"
     }
   ],
   "preview": "",
