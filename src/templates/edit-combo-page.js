@@ -28,46 +28,44 @@ export default function EditComboPage({
       message={`Editing one of ${name}'s combos requires a SmashCombos account.`}
       redirect={pathname}
     >
-      <Layout>
-        <Link to={slug}>
-          <CharacterPortrait
-            name={`Editing ${name}'s combo`}
-            image={image}
-            style={{
-              marginBottom: "2rem"
+      <Link to={slug}>
+        <CharacterPortrait
+          name={`Editing ${name}'s combo`}
+          image={image}
+          style={{
+            marginBottom: "2rem"
+          }}
+        />
+      </Link>
+      <MessageContext.Consumer>
+        {({ showMessage }) => (
+          <ComboInterface
+            combo={combo}
+            onContinue={async (combo, toggleConfirming) => {
+              const success = await CharacterService.editCombo(
+                slug,
+                uuid,
+                combo
+              );
+
+              showMessage(
+                success
+                  ? {
+                      header: `Successfully edited one of ${name}'s combos.`,
+                      content:
+                        "The change will be reviewed as soon as possible."
+                    }
+                  : {
+                      header: `Unable to edit one of ${name}'s combos.`,
+                      content: "Please try again later."
+                    }
+              );
+
+              toggleConfirming();
             }}
           />
-        </Link>
-        <MessageContext.Consumer>
-          {({ showMessage }) => (
-            <ComboInterface
-              combo={combo}
-              onContinue={async (combo, toggleConfirming) => {
-                const success = await CharacterService.editCombo(
-                  slug,
-                  uuid,
-                  combo
-                );
-
-                showMessage(
-                  success
-                    ? {
-                        header: `Successfully edited one of ${name}'s combos.`,
-                        content:
-                          "The change will be reviewed as soon as possible."
-                      }
-                    : {
-                        header: `Unable to edit one of ${name}'s combos.`,
-                        content: "Please try again later."
-                      }
-                );
-
-                toggleConfirming();
-              }}
-            />
-          )}
-        </MessageContext.Consumer>
-      </Layout>
+        )}
+      </MessageContext.Consumer>
     </AuthRedirect>
   );
 }

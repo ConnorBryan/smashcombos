@@ -5,9 +5,9 @@ import queryString from "query-string";
 
 import {
   AddComboTab,
+  AuthRedirect,
   CharacterPortrait,
-  EditProfileTab,
-  Layout
+  EditProfileTab
 } from "../components";
 import { MessageContext } from "../components/message-provider";
 import { getCharacter, getCharacterRender } from "../helpers";
@@ -34,7 +34,7 @@ export default class EditCharacterPage extends Component {
   handleTabChange = (_, { activeIndex }) => this.setState({ activeIndex });
 
   render() {
-    const { data } = this.props;
+    const { data, navigate, pathname } = this.props;
     const { activeIndex } = this.state;
     const character = getCharacter(data);
     const image = getCharacterRender(character);
@@ -91,7 +91,11 @@ export default class EditCharacterPage extends Component {
     ];
 
     return (
-      <Layout>
+      <AuthRedirect
+        navigate={navigate}
+        message={`Adding a combo for ${name} requires a SmashCombos account.`}
+        redirect={pathname}
+      >
         <Link to={slug}>
           <CharacterPortrait
             name={`Editing ${name}'s profile`}
@@ -128,7 +132,7 @@ export default class EditCharacterPage extends Component {
             }}
           />
         </div>
-      </Layout>
+      </AuthRedirect>
     );
   }
 }
