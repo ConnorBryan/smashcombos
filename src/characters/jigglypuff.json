@@ -102,6 +102,22 @@
       "demonstration": "",
       "notes": "I'm not experienced enough to test this, I know it's a true combo but I'm not sure if it works on all characters and at what percentages. If anybody could edit this, I would appreciate it.",
       "uuid": "98b22c17-c122-4618-a67e-a5f397435140"
+    },
+    {
+      "input": "utilt sh+bair",
+      "damage": "24",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "24ce34cb-8923-422d-a700-5d28647004ac"
     }
   ],
   "preview": "",
