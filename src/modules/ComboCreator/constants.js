@@ -145,6 +145,14 @@ export const attackModifiers = [
   {
     name: "pivot canceled",
     term: "pc"
+  },
+  {
+    name: "sweetspotted",
+    term: "sweet"
+  },
+  {
+    name: "sourspotted",
+    term: "sour"
   }
 ];
 
