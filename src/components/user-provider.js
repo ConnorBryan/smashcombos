@@ -11,7 +11,7 @@ export const auth = new GoTrue({
 
 export default class UserProvider extends Component {
   state = {
-    user: null,
+    user: auth.currentUser() || null,
     signup: async (email, password) => {
       try {
         await auth.signup(email, password);
@@ -31,10 +31,6 @@ export default class UserProvider extends Component {
           user
         });
 
-        if (window && window.localStorage) {
-          window.localStorage.setItem("gotrue.user", JSON.stringify(user));
-        }
-
         return true;
       } catch (error) {
         console.error(error);
@@ -44,8 +40,6 @@ export default class UserProvider extends Component {
     },
     signout: () => {
       this.setState({ user: null });
-
-      window.localStorage.removeItem("gotrue.user");
 
       auth.currentUser().logout();
     },
@@ -61,18 +55,6 @@ export default class UserProvider extends Component {
       }
     }
   };
-
-  componentDidMount() {
-    if (window && window.localStorage) {
-      const storedUser = window.localStorage.getItem("gotrue.user");
-
-      if (storedUser) {
-        this.setState({
-          user: JSON.parse(storedUser)
-        });
-      }
-    }
-  }
 
   render() {
     return (

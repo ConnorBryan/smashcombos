@@ -20,7 +20,7 @@ export default function SiteActions({
             className={className}
             style={styles.fancyText}
           >
-            {user.email}
+            <Icon name="dashboard" /> Dashboard
           </Menu.Item>
           <Menu.Item
             className={className}
