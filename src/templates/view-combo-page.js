@@ -2,9 +2,10 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import { Card } from "semantic-ui-react";
 
-import { CharacterPortrait, ComboListCard, Layout } from "../components";
-import { MessageContext } from "../components/message-provider";
+import { CharacterPortrait, ComboListCard } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
+import { Layout } from "../modules";
+import { MessageContext } from "../providers";
 
 export default function ViewComboPage({
   navigate,

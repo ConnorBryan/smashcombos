@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import { AuthRedirect, CharacterPortrait, ComboInterface } from "../components";
-import { MessageContext } from "../components/message-provider";
+import { CharacterPortrait, ComboInterface } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
+import { Layout } from "../modules";
+import { MessageContext } from "../providers";
 import { CharacterService } from "../services";
+import { AuthRedirect } from "../utils";
 
 export default function EditComboPage({
   data,
@@ -18,50 +20,52 @@ export default function EditComboPage({
   const combo = combos.find(entry => entry.uuid === uuid);
 
   return (
-    <AuthRedirect
-      navigate={navigate}
-      message={`Editing one of ${name}'s combos requires a SmashCombos account.`}
-      redirect={pathname}
-    >
-      <Link to={slug}>
-        <CharacterPortrait
-          name={`Editing ${name}'s combo`}
-          image={image}
-          style={{
-            marginBottom: "2rem"
-          }}
-        />
-      </Link>
-      <MessageContext.Consumer>
-        {({ showMessage }) => (
-          <ComboInterface
-            combo={combo}
-            onContinue={async (combo, toggleConfirming) => {
-              const success = await CharacterService.editCombo(
-                slug,
-                uuid,
-                combo
-              );
-
-              showMessage(
-                success
-                  ? {
-                      header: `Successfully edited one of ${name}'s combos.`,
-                      content:
-                        "The change will be reviewed as soon as possible."
-                    }
-                  : {
-                      header: `Unable to edit one of ${name}'s combos.`,
-                      content: "Please try again later."
-                    }
-              );
-
-              toggleConfirming();
+    <Layout navigate={navigate}>
+      <AuthRedirect
+        navigate={navigate}
+        message={`Editing one of ${name}'s combos requires a SmashCombos account.`}
+        redirect={pathname}
+      >
+        <Link to={slug}>
+          <CharacterPortrait
+            name={`Editing ${name}'s combo`}
+            image={image}
+            style={{
+              marginBottom: "2rem"
             }}
           />
-        )}
-      </MessageContext.Consumer>
-    </AuthRedirect>
+        </Link>
+        <MessageContext.Consumer>
+          {({ showMessage }) => (
+            <ComboInterface
+              combo={combo}
+              onContinue={async (combo, toggleConfirming) => {
+                const success = await CharacterService.editCombo(
+                  slug,
+                  uuid,
+                  combo
+                );
+
+                showMessage(
+                  success
+                    ? {
+                        header: `Successfully edited one of ${name}'s combos.`,
+                        content:
+                          "The change will be reviewed as soon as possible."
+                      }
+                    : {
+                        header: `Unable to edit one of ${name}'s combos.`,
+                        content: "Please try again later."
+                      }
+                );
+
+                toggleConfirming();
+              }}
+            />
+          )}
+        </MessageContext.Consumer>
+      </AuthRedirect>
+    </Layout>
   );
 }
 

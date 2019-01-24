@@ -2,15 +2,18 @@ import React, { Component } from "react";
 import { Container, Menu, Message, Icon, Sidebar } from "semantic-ui-react";
 import "semantic-ui-less/semantic.less";
 
-import * as styles from "../styles";
-import Head from "./head";
-import Navbar from "./navbar";
-import SiteActions from "./site-actions";
-import SocialMediaItems from "./social-media-items";
-import UserProvider, { UserContext } from "./user-provider";
-import MenuProvider, { MenuContext } from "./menu-provider";
-import MessageProvider, { MessageContext } from "./message-provider";
-import "./layout.less";
+import { SocialMediaItems } from "../../components";
+import {
+  UserProvider,
+  UserContext,
+  MenuProvider,
+  MenuContext,
+  MessageProvider,
+  MessageContext
+} from "../../providers";
+import * as styles from "../../styles";
+import { Head, SiteActions, Topbar } from "./components";
+import "./overrides.less";
 
 export default class Layout extends Component {
   componentDidCatch() {
@@ -41,7 +44,7 @@ export default class Layout extends Component {
                         <UserContext.Consumer>
                           {({ user, signout }) => (
                             <>
-                              <Navbar
+                              <Topbar
                                 user={user}
                                 signout={signout}
                                 toggleMenu={toggle}

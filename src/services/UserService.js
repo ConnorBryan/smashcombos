@@ -13,7 +13,8 @@ export class UserService {
   static async updateUsername(username) {
     const user = typeof window !== "undefined" ? auth.currentUser() : null;
     const token = getAccessToken(user);
-    const { data } = await axios.post(
+
+    await axios.post(
       "/.netlify/functions/updateUser",
       {
         username: "Bob"

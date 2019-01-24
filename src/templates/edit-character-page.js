@@ -3,14 +3,11 @@ import { Link, graphql } from "gatsby";
 import { Tab } from "semantic-ui-react";
 import queryString from "query-string";
 
-import {
-  AddComboTab,
-  AuthRedirect,
-  CharacterPortrait,
-  EditProfileTab
-} from "../components";
-import { MessageContext } from "../components/message-provider";
+import { AddComboTab, CharacterPortrait, EditProfileTab } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
+import { Layout } from "../modules";
+import { MessageContext } from "../providers";
+import { AuthRedirect } from "../utils";
 
 export default class EditCharacterPage extends Component {
   state = {
@@ -95,48 +92,50 @@ export default class EditCharacterPage extends Component {
     ];
 
     return (
-      <AuthRedirect
-        navigate={navigate}
-        message={`Adding a combo for ${name} requires a SmashCombos account.`}
-        redirect={pathname}
-      >
-        <Link to={slug}>
-          <CharacterPortrait
-            name={`Editing ${name}'s profile`}
-            image={image}
-            style={{
-              marginBottom: "2rem"
-            }}
-          />
-        </Link>
-        <div className="mobile-only">
-          <Tab
-            activeIndex={activeIndex}
-            onTabChange={this.handleTabChange}
-            menu={{
-              style: {
-                display: "flex",
-                flexDirection: "column"
-              }
-            }}
-            panes={panes}
-            style={{
-              marginBottom: "3rem",
-              border: "none"
-            }}
-          />
-        </div>
-        <div className="desktop-only">
-          <Tab
-            activeIndex={activeIndex}
-            onTabChange={this.handleTabChange}
-            panes={panes}
-            style={{
-              marginBottom: "3rem"
-            }}
-          />
-        </div>
-      </AuthRedirect>
+      <Layout navigate={navigate}>
+        <AuthRedirect
+          navigate={navigate}
+          message={`Adding a combo for ${name} requires a SmashCombos account.`}
+          redirect={pathname}
+        >
+          <Link to={slug}>
+            <CharacterPortrait
+              name={`Editing ${name}'s profile`}
+              image={image}
+              style={{
+                marginBottom: "2rem"
+              }}
+            />
+          </Link>
+          <div className="mobile-only">
+            <Tab
+              activeIndex={activeIndex}
+              onTabChange={this.handleTabChange}
+              menu={{
+                style: {
+                  display: "flex",
+                  flexDirection: "column"
+                }
+              }}
+              panes={panes}
+              style={{
+                marginBottom: "3rem",
+                border: "none"
+              }}
+            />
+          </div>
+          <div className="desktop-only">
+            <Tab
+              activeIndex={activeIndex}
+              onTabChange={this.handleTabChange}
+              panes={panes}
+              style={{
+                marginBottom: "3rem"
+              }}
+            />
+          </div>
+        </AuthRedirect>
+      </Layout>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { auth, UserContext } from "./user-provider";
+import { auth, UserContext } from "../providers";
 
 export class AbstractRedirect extends Component {
   state = {

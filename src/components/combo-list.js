@@ -3,10 +3,10 @@ import { Link } from "gatsby";
 import { Button, Card, Header, Icon, Segment } from "semantic-ui-react";
 
 import { sortByHasDemonstration } from "../helpers";
+import { MessageContext } from "../providers";
 import * as styles from "../styles";
 import PlaceholderPanel from "./placeholder-panel";
 import ComboListCard from "./combo-list-card";
-import { MessageContext } from "./message-provider";
 
 export default function ComboList({ slug, combos }) {
   return (

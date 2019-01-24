@@ -2,7 +2,8 @@ import React from "react";
 import platform from "platform";
 import { Item, List } from "semantic-ui-react";
 
-import { Hero, Layout } from "../components";
+import { Hero } from "../components";
+import { Layout } from "../modules";
 import mobile from "../img/mobile.svg";
 
 export default function DownloadApp({ navigate }) {

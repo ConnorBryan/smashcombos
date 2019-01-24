@@ -10,10 +10,9 @@ import {
   Segment
 } from "semantic-ui-react";
 
-import { Layout } from "../components";
-import { MessageContext } from "../components/message-provider";
-import { UserContext } from "../components/user-provider";
 import smashball from "../img/smashball-dark.png";
+import { Layout } from "../modules";
+import { MessageContext, UserContext } from "../providers";
 import * as styles from "../styles";
 
 export default function ForgotPassword({ navigate }) {

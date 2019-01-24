@@ -1,7 +1,7 @@
 import axios from "axios";
 import uuid from "uuid/v4";
 
-import { auth } from "../components/user-provider";
+import { auth } from "../providers";
 
 const URL_BASE = "https://smashcombos.xyz";
 

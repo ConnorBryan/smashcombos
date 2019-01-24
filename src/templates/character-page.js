@@ -1,8 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import { Attributes, ComboList, Layout, Profile } from "../components";
+import { Attributes, ComboList, Profile } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
+import { Layout } from "../modules";
 
 export default function CharacterPage({
   navigate,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Layout } from "../components";
+import { Layout } from "../modules";
 
 export default function NotFoundPage() {
   return (

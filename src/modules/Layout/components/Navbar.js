@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import { Container, Icon, Image, Menu } from "semantic-ui-react";
 
-import { SOCIAL_MEDIA } from "../config";
-import logo from "../img/logo.svg";
-import SiteActions from "./site-actions";
+import { SOCIAL_MEDIA } from "../../../config";
+import logo from "../../../img/logo.svg";
+import SiteActions from "./SiteActions";
 
 export default function Navbar({ user, signout, toggleMenu }) {
   return (
