@@ -80,6 +80,22 @@
       "demonstration": "",
       "notes": "this combo was tested against the lightest character in each weight category. characters who have smaller frames like Diddy Kong and Mega Man will have a lower percentage. normally by about 5 % after testing,\n\nthis combo was also tested by buffering the SH+aerial. you can extend combo damage range by changing up times between jumping.\n\nI tested this way to guarantee combo precision.",
       "uuid": "3d5f91dc-25bd-4d1d-a3c3-01241e908a9b"
+    },
+    {
+      "input": "uthrow uspecial",
+      "damage": "24.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-70",
+        "featherweight": "0-88",
+        "lightweight": "0-95",
+        "middleweight": "0-117",
+        "heavyweight": "0-121",
+        "superheavyweight": "0-150"
+      },
+      "demonstration": "",
+      "notes": "Tested with cpu (lvl3) cpu shuflle (a lot)\n\nCombo does not confirm kills on stage.\n\nCombo will stage spike if edge guarding at very edge.\n\nWill place the opponent high on stage and allow for more follow up combos but gives them an easy DI out.\n\nall percentages are guaranteed no percentage was kept if it only worked sometimes.\n\ncharacters in weight classes with smaller frames such as Game and Watch, squirtle, etc. may have lower percentages.\n",
+      "uuid": "702836c9-a9b3-446a-9c2d-ffc4f0284ab0"
     }
   ],
   "preview": "",
