@@ -44,8 +44,6 @@ export default function CharacterSelectEntry({
         style={{
           position: "relative",
           padding: "1rem",
-          //Andrew made the following CSS rule changes
-          //minHeight: 150px
           minHeight: '130px'
         }}
       >
@@ -67,8 +65,6 @@ export default function CharacterSelectEntry({
         className="desktop-only"
         style={{
           padding: "1rem",
-          //Andrew made the following css rule changes
-          //minHeight: 180px
           minHeight: "150px"
         }}
       >
