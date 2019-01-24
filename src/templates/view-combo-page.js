@@ -6,14 +6,18 @@ import { CharacterPortrait, ComboListCard, Layout } from "../components";
 import { MessageContext } from "../components/message-provider";
 import { getCharacter, getCharacterRender } from "../helpers";
 
-export default function ViewComboPage({ data, pageContext: { uuid } }) {
+export default function ViewComboPage({
+  navigate,
+  data,
+  pageContext: { uuid }
+}) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
   const { name, slug, combos } = character;
   const combo = combos.find(entry => entry.uuid === uuid);
 
   return (
-    <Layout>
+    <Layout navigate={navigate}>
       <Link to={slug}>
         <CharacterPortrait
           name={`Viewing ${name}'s combo`}

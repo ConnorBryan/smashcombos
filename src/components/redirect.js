@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import { auth, UserContext } from "./user-provider";
 
 export class AbstractRedirect extends Component {
+  state = {
+    initiallyLoaded: false
+  };
+
   componentDidMount() {
     const { navigate, redirect, message, redirectBack } = this.props;
 
@@ -12,6 +16,8 @@ export class AbstractRedirect extends Component {
           navigate(redirect, { state: { message, redirect: redirectBack } }),
         0
       );
+    } else {
+      this.setState({ initiallyLoaded: true });
     }
   }
 
@@ -24,7 +30,10 @@ export class AbstractRedirect extends Component {
   }
 
   render() {
-    return this.props.children;
+    const { children } = this.props;
+    const { initiallyLoaded } = this.state;
+
+    return initiallyLoaded ? children : null;
   }
 }
 

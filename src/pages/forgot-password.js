@@ -20,6 +20,7 @@ export default function ForgotPassword({ navigate }) {
   return (
     <Layout
       fluid
+      navigate={navigate}
       style={{
         paddingTop: 0
       }}

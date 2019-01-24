@@ -210,6 +210,7 @@ export default function SignIn({ navigate, location, redirectBack }) {
   return (
     <Layout
       fluid
+      navigate={navigate}
       style={{
         paddingTop: 0
       }}

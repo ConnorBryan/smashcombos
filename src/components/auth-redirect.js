@@ -10,7 +10,7 @@ export default function AuthRedirect({
   message
 }) {
   return (
-    <Layout>
+    <Layout navigate={navigate}>
       <Redirect
         navigate={navigate}
         children={children}

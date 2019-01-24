@@ -5,13 +5,13 @@ import { Button, Icon, Item } from "semantic-ui-react";
 import { CharacterSelect, Hero, Layout } from "../components";
 import smashball from "../img/smashball.png";
 
-export default function IndexPage() {
+export default function IndexPage({ navigate }) {
   const isPwa =
     typeof window !== "undefined" &&
     window.matchMedia("(display-mode: standalone)").matches;
 
   return (
-    <Layout>
+    <Layout navigate={navigate}>
       <Hero
         image={smashball}
         header="Attributes and combos for all members of the Smash Ultimate cast"

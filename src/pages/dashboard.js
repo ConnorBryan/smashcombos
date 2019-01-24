@@ -8,7 +8,7 @@ export default function DashboardPage({ navigate }) {
   return (
     <AuthRedirect navigate={navigate}>
       <UserContext.Consumer>
-        {({ user }) => <Dashboard user={user} />}
+        {({ user }) => user && <Dashboard user={user} />}
       </UserContext.Consumer>
     </AuthRedirect>
   );

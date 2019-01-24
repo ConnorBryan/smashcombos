@@ -4,7 +4,11 @@ import { graphql } from "gatsby";
 import { Attributes, ComboList, Layout, Profile } from "../components";
 import { getCharacter, getCharacterRender } from "../helpers";
 
-export default function CharacterPage({ data, location: { search } }) {
+export default function CharacterPage({
+  navigate,
+  data,
+  location: { search }
+}) {
   const character = getCharacter(data);
   const image = getCharacterRender(character);
   const { name, slug, description, attributes, combos, tags } = character;
@@ -13,7 +17,7 @@ export default function CharacterPage({ data, location: { search } }) {
   } = attributes;
 
   return (
-    <Layout>
+    <Layout navigate={navigate}>
       <Profile
         slug={slug}
         image={image}

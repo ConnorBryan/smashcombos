@@ -5,9 +5,9 @@ import { Item, List } from "semantic-ui-react";
 import { Hero, Layout } from "../components";
 import mobile from "../img/mobile.svg";
 
-export default function DownloadApp() {
+export default function DownloadApp({ navigate }) {
   return (
-    <Layout>
+    <Layout navigate={navigate}>
       <Hero
         image={mobile}
         header="Download the app for easy SmashCombos access"
