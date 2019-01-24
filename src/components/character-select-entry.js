@@ -35,7 +35,7 @@ export default function CharacterSelectEntry({
       style={{
         flexDirection: "column",
         backgroundImage: `url(${image.src})`,
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Mobile */}
@@ -43,8 +43,8 @@ export default function CharacterSelectEntry({
         className="mobile-only"
         style={{
           position: "relative",
-          minHeight: "180px",
-          padding: "1rem"
+          padding: "1rem",
+          minHeight: '130px'
         }}
       >
         <List.Header
@@ -64,8 +64,8 @@ export default function CharacterSelectEntry({
       <List.Content
         className="desktop-only"
         style={{
-          minHeight: "180px",
-          padding: "1rem"
+          padding: "1rem",
+          minHeight: "150px"
         }}
       >
         <List.Header
