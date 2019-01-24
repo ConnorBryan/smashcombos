@@ -12,7 +12,8 @@ import {
   List,
   Loader,
   Sidebar,
-  Dropdown
+  Dropdown,
+  Sticky
 } from "semantic-ui-react";
 
 import * as styles from "../styles";
@@ -41,6 +42,8 @@ export default class CharacterSelect extends Component {
   };
 
   input = React.createRef();
+
+  handleContextRef = (contextRef) => this.setState({ contextRef })
 
   componentDidMount() {
     setTimeout(() =>
@@ -79,8 +82,9 @@ export default class CharacterSelect extends Component {
       sort,
       weightClass,
       optionsVisible,
-      initiallyLoaded
-    } = this.state;
+      initiallyLoaded,
+      contextRef,
+   } = this.state;
 
     return (
       <StaticQuery
@@ -287,7 +291,9 @@ export default class CharacterSelect extends Component {
                     ))
                   ) : (
                     <List.Item>
-                      <Segment placeholder style={{ width: "100%" }}>
+                      <Segment placeholder style={{
+                          width: "100%"
+                        }}>
                         <Header icon>
                           <Icon name="warning" />
                           No characters match the filter.
@@ -312,53 +318,63 @@ export default class CharacterSelect extends Component {
           );
 
           return (
+            // Andrew added the Sticky to the following Grid component
             <Grid>
-              <Grid.Column mobile={16} tablet={16} computer={6}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center"
-                  }}
-                >
-                  <Input
-                    style={{ flex: 3, width: "100%" }}
-                    size="huge"
-                    placeholder="Filter characters..."
-                    icon="filter"
-                    onChange={this.handleFilterChange}
-                    ref={this.input}
-                  />
-                  <div
-                    className="mobile-only"
-                    style={{ flex: 1, textAlign: "right" }}
-                  >
-                    <Button
-                      primary
-                      size="huge"
-                      icon="sort"
-                      onClick={this.toggleOptions}
-                    />
-                  </div>
-                </div>
-                <div className="desktop-only">{menu}</div>
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={16} computer={10}>
-                <Sidebar.Pushable className="mobile-only">
-                  <Sidebar
-                    animation="overlay"
-                    width="wide"
-                    visible={optionsVisible}
-                    style={{
-                      maxWidth: "80vw",
-                      boxShadow: "none"
-                    }}
-                  >
-                    {menu}
-                  </Sidebar>
-                  {list}
-                </Sidebar.Pushable>
-                <div className="desktop-only">{list}</div>
-              </Grid.Column>
+              <div 
+                ref={this.handleContextRef}
+                style={{
+                  width: '100%'
+                }}
+              >
+                <Grid.Column mobile={16} tablet={16} computer={6}>
+                  <Sticky context={ contextRef }>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Input
+                        style={{ flex: 3, width: "100%" }}
+                        size="huge"
+                        placeholder="Filter characters..."
+                        icon="filter"
+                        onChange={this.handleFilterChange}
+                        ref={this.input}
+                      />
+                      <div
+                        className="mobile-only"
+                        style={{ flex: 1, textAlign: "right" }}
+                      >
+                        <Button
+                          primary
+                          size="huge"
+                          icon="sort"
+                          onClick={this.toggleOptions}
+                        />
+                      </div>
+                    </div>
+                    <div className="desktop-only">{menu}</div>
+                  </Sticky>
+                </Grid.Column>
+                <Grid.Column mobile={16} tablet={16} computer={10}>
+                  <Sidebar.Pushable className="mobile-only">
+                    <Sidebar
+                      animation="overlay"
+                      width="wide"
+                      visible={optionsVisible}
+                      style={{
+                        maxWidth: "80vw",
+                        boxShadow: "none"
+                      }}
+                    >
+                      {menu}
+                    </Sidebar>
+                    {list}
+                  </Sidebar.Pushable>
+                  <div className="desktop-only">{list}</div>
+                </Grid.Column>
+              </div>
             </Grid>
           );
         }}
