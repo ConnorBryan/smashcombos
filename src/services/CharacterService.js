@@ -3,12 +3,11 @@ import uuid from "uuid/v4";
 
 import { auth } from "../components/user-provider";
 
-// const URL_BASE = "https://smashcombos.xyz";
-const URL_BASE = "http://localhost:1337";
+const URL_BASE = "https://smashcombos.xyz";
 
 export class CharacterService {
   static async editProfile(name, description, tags) {
-    const user = auth.currentUser();
+    const user = typeof window !== "undefined" ? auth.currentUser() : null;
 
     if (!user) {
       throw new Error(`Unable to edit a profile when not signed in.`);
@@ -25,7 +24,7 @@ export class CharacterService {
   }
 
   static async addCombo(name, combo) {
-    const user = auth.currentUser();
+    const user = typeof window !== "undefined" ? auth.currentUser() : null;
 
     if (!user) {
       throw new Error(`Unable to edit a profile when not signed in.`);
@@ -44,7 +43,7 @@ export class CharacterService {
   }
 
   static async editCombo(name, uuid, combo) {
-    const user = auth.currentUser();
+    const user = typeof window !== "undefined" ? auth.currentUser() : null;
 
     if (!user) {
       throw new Error(`Unable to edit a profile when not signed in.`);

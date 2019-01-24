@@ -11,7 +11,7 @@ export const auth = new GoTrue({
 
 export default class UserProvider extends Component {
   state = {
-    user: auth.currentUser() || null,
+    user: (typeof window !== "undefined" && auth.currentUser()) || null,
     signup: async (email, password) => {
       try {
         await auth.signup(email, password);

@@ -11,7 +11,7 @@ export const auth = new GoTrue({
 
 export class UserService {
   static async updateUsername(username) {
-    const user = auth.currentUser();
+    const user = typeof window !== "undefined" ? auth.currentUser() : null;
     const token = getAccessToken(user);
     const { data } = await axios.post(
       "/.netlify/functions/updateUser",
@@ -25,8 +25,6 @@ export class UserService {
         withCredentials: true
       }
     );
-
-    console.log("\n\n\n", "data", data, "\n\n\n");
   }
 }
 
