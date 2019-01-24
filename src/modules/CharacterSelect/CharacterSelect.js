@@ -15,17 +15,17 @@ import {
   Dropdown
 } from "semantic-ui-react";
 
-import * as styles from "../styles";
+import { SocialMediaItems } from "../../components";
+import { WeightClasses } from "../../helpers";
+import * as styles from "../../styles";
+import { CharacterSelectEntry } from "./components";
 import {
-  getCharacters,
   SortTypes,
   sortFunctions,
-  WeightClasses,
   sortTypesToPhrasesHash,
   weightClassesToPhrasesHash
-} from "../helpers";
-import CharacterSelectEntry from "./character-select-entry";
-import SocialMediaItems from "./social-media-items";
+} from "./constants";
+import { getCharacters } from "./helpers";
 
 const getInitialState = () => ({
   filter: "",

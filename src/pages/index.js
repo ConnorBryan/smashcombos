@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { Button, Icon, Item } from "semantic-ui-react";
 
-import { CharacterSelect, Hero } from "../components";
-import { Layout } from "../modules";
+import { Hero } from "../components";
+import { CharacterSelect, Layout } from "../modules";
 import smashball from "../img/smashball.png";
 
 export default function IndexPage({ navigate }) {

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { List } from "semantic-ui-react";
 
-import * as styles from "../styles";
+import * as styles from "../../../styles";
 
 export default function CharacterSelectEntry({
   name,
