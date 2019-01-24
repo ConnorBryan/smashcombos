@@ -80,6 +80,22 @@
       "demonstration": "",
       "notes": "this combo was tested against the lightest character in each weight category. characters who have smaller frames like Diddy Kong and Mega Man will have a lower percentage. normally by about 5 % after testing,\n\nthis combo was also tested by buffering the SH+aerial. you can extend combo damage range by changing up times between jumping.\n\nI tested this way to guarantee combo precision.",
       "uuid": "3d5f91dc-25bd-4d1d-a3c3-01241e908a9b"
+    },
+    {
+      "input": "dtilt utilt",
+      "damage": "24",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-5",
+        "featherweight": "0-8",
+        "lightweight": "0-14",
+        "middleweight": "0-16",
+        "heavyweight": "0-22",
+        "superheavyweight": "0-28"
+      },
+      "demonstration": "",
+      "notes": "To preform this combo properly you're going to want to dash into your opponent to be as close as possible. Which makes it a decent mix up for IKE as you normally want to space yourself farther out. This is a good starter combo.\n\nThis combo will NOT confirm on ZELDA or MEGA MAN I don't know why.\n\nThis combo has been tested with all of the lightest characters in each weight category.",
+      "uuid": "a541b70d-9bf1-4277-8e37-6de2f8327ffa"
     }
   ],
   "preview": "",
