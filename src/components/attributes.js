@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Dropdown, Header, Icon, List, Segment, Tab } from "semantic-ui-react";
 
-import { AttributeTypes, attributeToInformationHash } from "../helpers";
+import { AttributeTypes, attributeToInformationHash } from "../constants";
 import * as styles from "../styles";
 
 export default class Attributes extends Component {

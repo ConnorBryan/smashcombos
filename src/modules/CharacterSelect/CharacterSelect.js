@@ -16,7 +16,7 @@ import {
 } from "semantic-ui-react";
 
 import { SocialMediaItems } from "../../components";
-import { WeightClasses } from "../../helpers";
+import { WeightClasses } from "../../constants";
 import * as styles from "../../styles";
 import { CharacterSelectEntry } from "./components";
 import {

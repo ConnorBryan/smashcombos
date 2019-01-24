@@ -1,7 +1,7 @@
 import React from "react";
 import { Label, List } from "semantic-ui-react";
 
-import { tagTypeToTag } from "../helpers";
+import { tagTypeToTag } from "../constants";
 import * as styles from "../styles";
 
 export default function Tagbar({ tags, labeled = true, ...rest }) {

@@ -1,4 +1,4 @@
-import { WeightClasses } from "../../helpers";
+import { WeightClasses } from "../../constants";
 
 export const SortTypes = {
   AtoZ: "A-Z",

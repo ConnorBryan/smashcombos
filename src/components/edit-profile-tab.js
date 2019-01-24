@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Formik, Field } from "formik";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 
-import { tagTypeToTag } from "../helpers";
+import { tagTypeToTag } from "../constants";
 import { CharacterService } from "../services";
 import ConfirmChanges from "./confirm-changes";
 import Profile from "./profile";
