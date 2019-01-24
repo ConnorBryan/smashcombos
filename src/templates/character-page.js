@@ -1,37 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import { Attributes, ComboList, Profile } from "../components";
-import { getCharacter, getCharacterRender } from "../helpers";
-import { Layout } from "../modules";
+import { Character, Layout } from "../modules";
 
 export default function CharacterPage({
   navigate,
   data,
   location: { search }
 }) {
-  const character = getCharacter(data);
-  const image = getCharacterRender(character);
-  const { name, slug, description, attributes, combos, tags } = character;
-  const {
-    weight: { class: weightClass }
-  } = attributes;
-
   return (
     <Layout navigate={navigate}>
-      <Profile
-        slug={slug}
-        image={image}
-        name={name}
-        description={description}
-        weightClass={weightClass}
-        tags={tags}
-        attributes={attributes}
-      />
-      <ComboList slug={slug} combos={combos} query={search} />
-      <div className="mobile-only">
-        <Attributes attributes={attributes} />
-      </div>
+      <Character data={data} query={search} />
     </Layout>
   );
 }

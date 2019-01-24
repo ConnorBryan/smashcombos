@@ -1,8 +1,6 @@
-export { default as AddComboTab } from "./add-combo-tab";
 export { default as Attributes } from "./attributes";
-export { default as Profile } from "./profile";
+export { default as AddComboTab } from "./add-combo-tab";
 export { default as CharacterPortrait } from "./character-portrait";
-export { default as ComboList } from "./combo-list";
 export { default as ComboListCard } from "./combo-list-card";
 export { default as ComboInterface } from "./combo-interface";
 export { default as ConfirmChanges } from "./confirm-changes";
@@ -11,5 +9,6 @@ export { default as Hero } from "./hero";
 export { default as Input } from "./input";
 export { default as PercentBar } from "./percent-bar";
 export { default as PlaceholderPanel } from "./placeholder-panel";
+export { default as Profile } from "./profile";
 export { default as SocialMediaItems } from "./social-media-items";
 export { default as Tagbar } from "./tagbar";

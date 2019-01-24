@@ -25,15 +25,6 @@ export const tagTypeToTag = {
   killConfirm: "Kill Confirm"
 };
 
-export const AttributeTypes = {
-  AirAcceleration: "airAcceleration",
-  AirSpeed: "airSpeed",
-  FallSpeed: "fallSpeed",
-  RunSpeed: "runSpeed",
-  WalkSpeed: "walkSpeed",
-  Weight: "weight"
-};
-
 export const characterFields = {
   name: "",
   description: "",
@@ -70,6 +61,38 @@ export const characterFields = {
   },
   combos: [],
   tags: []
+};
+
+export const weightClassLabelsAndValues = Object.entries(WeightClasses).reduce(
+  (prev, [key, value]) => {
+    if (key !== "All") {
+      prev.push({
+        label: key,
+        value
+      });
+    }
+
+    return prev;
+  },
+  []
+);
+
+export const PercentageThresholds = {
+  Error: 0,
+  VeryLow: 1,
+  Low: 2,
+  Medium: 3,
+  High: 4,
+  VeryHigh: 5
+};
+
+export const AttributeTypes = {
+  AirAcceleration: "airAcceleration",
+  AirSpeed: "airSpeed",
+  FallSpeed: "fallSpeed",
+  RunSpeed: "runSpeed",
+  WalkSpeed: "walkSpeed",
+  Weight: "weight"
 };
 
 export const attributeToInformationHash = {
@@ -149,27 +172,4 @@ export const attributeToInformationHash = {
       }
     ]
   }
-};
-
-export const weightClassLabelsAndValues = Object.entries(WeightClasses).reduce(
-  (prev, [key, value]) => {
-    if (key !== "All") {
-      prev.push({
-        label: key,
-        value
-      });
-    }
-
-    return prev;
-  },
-  []
-);
-
-export const PercentageThresholds = {
-  Error: 0,
-  VeryLow: 1,
-  Low: 2,
-  Medium: 3,
-  High: 4,
-  VeryHigh: 5
 };

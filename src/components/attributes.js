@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Dropdown, Header, Icon, List, Segment, Tab } from "semantic-ui-react";
 
-import { AttributeTypes, attributeToInformationHash } from "../constants";
 import * as styles from "../styles";
+import { AttributeTypes, attributeToInformationHash } from "../constants";
 
 export default class Attributes extends Component {
   static Box({ attribute, header, rank, fields }) {
