@@ -80,6 +80,22 @@
       "demonstration": "",
       "notes": "this combo was tested against the lightest character in each weight category. characters who have smaller frames like Diddy Kong and Mega Man will have a lower percentage. normally by about 5 % after testing,\n\nthis combo was also tested by buffering the SH+aerial. you can extend combo damage range by changing up times between jumping.\n\nI tested this way to guarantee combo precision.",
       "uuid": "3d5f91dc-25bd-4d1d-a3c3-01241e908a9b"
+    },
+    {
+      "input": "utilt utilt utilt",
+      "damage": "40",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-4",
+        "featherweight": "0-8",
+        "lightweight": "0-9",
+        "middleweight": "0-11",
+        "heavyweight": "0-15",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "",
+      "notes": "Probably Ike's best opener doing 40% damage out the gate \n\nTested with CPU (lvl 3) shuffle (a lot) in all weight catagories.\n\ncombo appears to be true\n\neasiest to preform by dash cancelling the first up tilt.",
+      "uuid": "5d0ac689-1fa5-4cbc-846f-600cd7c1ba9a"
     }
   ],
   "preview": "",
