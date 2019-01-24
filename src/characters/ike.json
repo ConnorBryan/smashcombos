@@ -64,6 +64,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8508a0dc-f2bd-4a98-b249-7e78b0b8e59f"
+    },
+    {
+      "input": "uthrow sh+nair",
+      "damage": "16.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-28",
+        "featherweight": "0-32",
+        "lightweight": "0-35",
+        "middleweight": "0-42",
+        "heavyweight": "0-44",
+        "superheavyweight": "0-50"
+      },
+      "demonstration": "",
+      "notes": "this combo was tested against the lightest character in each weight category. characters who have smaller frames like Diddy Kong and Mega Man will have a lower percentage. normally by about 5 % after testing,\n\nthis combo was also tested by buffering the SH+aerial. you can extend combo damage range by changing up times between jumping.\n\nI tested this way to guarantee combo precision.",
+      "uuid": "3d5f91dc-25bd-4d1d-a3c3-01241e908a9b"
     }
   ],
   "preview": "",
