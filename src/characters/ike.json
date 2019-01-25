@@ -112,22 +112,6 @@
       "demonstration": "",
       "notes": "Tested with a level 3 CPU on high shuflle.\n\nCombo does not confirm kills on stage.\n\nCombo will stage spike if edge guarding at very edge.\n\nWill place the opponent high on stage and allow for more follow up combos but gives them an easy DI out.\n\nAll percentages are guaranteed; no percentage was kept if it only worked sometimes.\n\nCharacters in weight classes with smaller frames such as Mr. Game and Watch, Squirtle, etc. may have lower percentages.\n",
       "uuid": "702836c9-a9b3-446a-9c2d-ffc4f0284ab0"
-    },
-    {
-      "input": "utilt utilt utilt",
-      "damage": "40",
-      "tags": [],
-      "percentages": {
-        "balloonweight": "0-4",
-        "featherweight": "0-8",
-        "lightweight": "0-9",
-        "middleweight": "0-11",
-        "heavyweight": "0-15",
-        "superheavyweight": "0-20"
-      },
-      "demonstration": "",
-      "notes": "Probably Ike's best opener, doing 40% damage out the gate. \n\nTested with a level 3 CPU on high shuffle for all weight catagories.\n\nCombo appears to be true.\n\nEasiest to perform by dash cancelling the first utilt.",
-      "uuid": "5d0ac689-1fa5-4cbc-846f-600cd7c1ba9a"
     }
   ],
   "preview": "",
