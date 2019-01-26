@@ -33,7 +33,24 @@
       "value": "127"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+dspecial utilt",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "0e2c8ed2-45ea-467e-8b87-63c864b45ac1"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "donkey-kong",
