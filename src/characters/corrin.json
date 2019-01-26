@@ -68,7 +68,7 @@
     },
     {
       "input": "nair uair bair",
-      "damage": "33%",
+      "damage": "33",
       "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "20",
@@ -116,7 +116,7 @@
     },
     {
       "input": "sh+uair sh+ff+uair fh+fair dj+fair uair",
-      "damage": "52.1%",
+      "damage": "52.1",
       "tags": [],
       "percentages": {
         "balloonweight": "5",
