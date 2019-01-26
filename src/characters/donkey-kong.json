@@ -33,7 +33,24 @@
       "value": "127"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dashatk utilt",
+      "damage": "26.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Works on very few characters only on 0%.",
+      "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "donkey-kong",
