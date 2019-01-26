@@ -12,7 +12,7 @@ export default function Hero({ image, header, description, children }) {
           background: "#1B1C1C"
         }}
       >
-        <Item.Image size="medium" src={image} />
+        <Item.Image size="left" src={image} />
         <Item.Content verticalAlign="middle">
           <Item.Header
             as="h1"

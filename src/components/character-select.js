@@ -41,10 +41,6 @@ export default class CharacterSelect extends Component {
     initiallyLoaded: false
   };
 
-  input = React.createRef();
-
-  handleContextRef = (contextRef) => this.setState({ contextRef })
-
   componentDidMount() {
     setTimeout(() =>
       this.setState({ initiallyLoaded: true }, this.input.current.focus, 500)
@@ -52,6 +48,11 @@ export default class CharacterSelect extends Component {
   }
 
   reset = () => this.setState(getInitialState());
+
+  /** Sticking **/
+  input = React.createRef();
+
+  handleContextRef = (contextRef) => this.setState({ contextRef })
 
   /** Filtering */
   handleFilterChange = debounce(
@@ -162,6 +163,7 @@ export default class CharacterSelect extends Component {
           const menu = (
             <>
               <Menu
+                className="mobile-only"
                 vertical
                 fluid
                 style={{
@@ -220,6 +222,16 @@ export default class CharacterSelect extends Component {
                     }}
                   />
                 </Menu.Item>
+                <Menu.Item fitted>
+                  <Button
+                    className="desktop-only"
+                    fluid
+                    size="large"
+                    onClick={this.reset}
+                  >
+                    Clear
+                  </Button>
+                </Menu.Item>
                 <Menu.Item fitted className="mobile-only">
                   <Button
                     onClick={this.reset}
@@ -240,16 +252,6 @@ export default class CharacterSelect extends Component {
                     }}
                   >
                     Close
-                  </Button>
-                </Menu.Item>
-                <Menu.Item fitted>
-                  <Button
-                    className="desktop-only"
-                    fluid
-                    size="large"
-                    onClick={this.reset}
-                  >
-                    Clear
                   </Button>
                 </Menu.Item>
                 <Menu.Item header />
@@ -318,63 +320,86 @@ export default class CharacterSelect extends Component {
           );
 
           return (
-            // Andrew added the Sticky to the following Grid component
             <Grid>
-              <div 
-                ref={this.handleContextRef}
-                style={{
-                  width: '100%'
-                }}
-              >
-                <Grid.Column mobile={16} tablet={16} computer={6}>
-                  <Sticky context={ contextRef }>
+              <Grid.Column mobile={16} tablet={16} computer={6}>
+                {/* Mobile */}
+                <Sticky context={ contextRef } offset={69}>
+                  <div
+                    className="mobile-only"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      backgroundColor: "#111111"
+                    }}
+                  >
+                    <Input
+                      style={{ flex: 3, width: "100%" }}
+                      size="huge"
+                      placeholder="Filter characters..."
+                      icon="filter"
+                      onChange={this.handleFilterChange}
+                      ref={this.input}
+                    />
                     <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
+                      className="mobile-only"
+                      style={{ flex: 1, textAlign: "right" }}
                     >
-                      <Input
-                        style={{ flex: 3, width: "100%" }}
+                      <Button
+                        primary
                         size="huge"
-                        placeholder="Filter characters..."
-                        icon="filter"
-                        onChange={this.handleFilterChange}
-                        ref={this.input}
+                        icon="sort"
+                        onClick={this.toggleOptions}
                       />
-                      <div
-                        className="mobile-only"
-                        style={{ flex: 1, textAlign: "right" }}
-                      >
-                        <Button
-                          primary
-                          size="huge"
-                          icon="sort"
-                          onClick={this.toggleOptions}
-                        />
-                      </div>
                     </div>
-                    <div className="desktop-only">{menu}</div>
-                  </Sticky>
-                </Grid.Column>
-                <Grid.Column mobile={16} tablet={16} computer={10}>
+                  </div>
+                </Sticky>
+                {/* Desktop */}
+                <div
+                  className="desktop-only"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    backgroundColor: "#111111"
+                  }}
+                >
+                  <Input
+                    style={{ flex: 3, width: "100%" }}
+                    size="huge"
+                    placeholder="Filter characters..."
+                    icon="filter"
+                    onChange={this.handleFilterChange}
+                    ref={this.input}
+                  />
+                  </div>
+                <div className="desktop-only">{menu}</div>
+              </Grid.Column>
+              <Grid.Column mobile={16} tablet={16} computer={10}>
+                <div 
+                  ref={this.handleContextRef}
+                >
                   <Sidebar.Pushable className="mobile-only">
                     <Sidebar
+                      direction="top"
                       animation="overlay"
                       width="wide"
                       visible={optionsVisible}
                       style={{
                         maxWidth: "80vw",
-                        boxShadow: "none"
+                        boxShadow: "none",
+                        transform: "none",
+                        WebkitTransform: "none",
+                        willChange: "auto"
                       }}
                     >
+                    <Sticky  offsets={169} context={ contextRef }>
                       {menu}
+                    </Sticky>
                     </Sidebar>
                     {list}
-                  </Sidebar.Pushable>
+                    </Sidebar.Pushable>
                   <div className="desktop-only">{list}</div>
-                </Grid.Column>
-              </div>
+                </div>
+              </Grid.Column>
             </Grid>
           );
         }}
