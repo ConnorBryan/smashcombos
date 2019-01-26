@@ -348,7 +348,7 @@ export default class CharacterSelect extends Component {
                 style={{ flex: 3, width: "100%" }}
                 size="huge"
                 placeholder="Filter characters..."
-                icon={optionsVisible ? "close" : "filter"}
+                icon="filter"
                 onChange={this.handleFilterChange}
                 value={filter}
                 ref={this.input}
@@ -360,7 +360,7 @@ export default class CharacterSelect extends Component {
                 <Button
                   primary
                   size="huge"
-                  icon="sort"
+                  icon={optionsVisible ? "close" : "sort"}
                   onClick={this.toggleOptions}
                 />
               </div>
