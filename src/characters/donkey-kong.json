@@ -33,7 +33,56 @@
       "value": "127"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "grab fthrow fh+uthrow fh+uair",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "7f2282a0-e251-4abf-bb59-3cbfdf395a97"
+    },
+    {
+      "input": "sh+dspecial utilt",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "0e2c8ed2-45ea-467e-8b87-63c864b45ac1"
+    },
+    {
+      "input": "dashatk utilt",
+      "damage": "26.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Works on very few characters only on 0%.",
+      "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "donkey-kong",
