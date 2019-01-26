@@ -305,6 +305,22 @@
       "demonstration": "https://www.youtube.com/embed/63-1iK9-qp8",
       "notes": "Works best as a tech chase at mid%s, works extremely well at 0% for putting the opponent in a bad position. Doesn't work on small characters. ",
       "uuid": "8b805027-0a1f-4fc7-a846-5af5acb2c8d9"
+    },
+	{
+      "input": "sspecial fh+nair",
+      "damage": "34.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://www.youtube.com/embed/j3A5UoEqhXM",
+      "notes": "While it doesn't require Crown Squatting (Using jumpsquat to skip the crown pickup animation) to perform, the combo prefers it for consistency and momentum. It is true at even High%s with Crown Squatting. This doesn't require the first hit of Crownerang (as shown in the demo) to happen but is definitely preferred for consistency. ",
+      "uuid": "97ac3b23-e2e9-43d8-9735-88e672a7bdb7"
     }
   ],
   "preview": "",
