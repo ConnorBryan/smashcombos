@@ -33,7 +33,24 @@
       "value": "127"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "grab fthrow fh+uthrow fh+uair",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "7f2282a0-e251-4abf-bb59-3cbfdf395a97"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "donkey-kong",
