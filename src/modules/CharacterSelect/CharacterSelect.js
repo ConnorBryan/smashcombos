@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { StaticQuery, graphql } from "gatsby";
 import debounce from "lodash/debounce";
+import throttle from "lodash/throttle";
 import {
   Grid,
   Segment,
@@ -11,7 +12,6 @@ import {
   Input,
   List,
   Loader,
-  Sidebar,
   Dropdown
 } from "semantic-ui-react";
 
@@ -37,16 +37,52 @@ const getInitialState = () => ({
 export default class CharacterSelect extends Component {
   state = {
     ...getInitialState(),
-    initiallyLoaded: false
+    initiallyLoaded: false,
+    stuck: false
   };
 
   input = React.createRef();
 
+  filterInputWrapper = React.createRef();
+
+  list = React.createRef();
+
   componentDidMount() {
+    window.addEventListener("scroll", this.checkFilterInputWrapper);
+
     setTimeout(() =>
       this.setState({ initiallyLoaded: true }, this.input.current.focus, 500)
     );
   }
+
+  componentDidUpdate(_, { stuck: prevStuck }) {
+    const { stuck } = this.state;
+
+    if ((!prevStuck && stuck) || (prevStuck && !stuck)) {
+      this.input.current.focus();
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.checkFilterInputWrapper);
+  }
+
+  checkFilterInputWrapper = throttle(() => {
+    const { stuck } = this.state;
+    const distanceFromTop = this.filterInputWrapper.current.getBoundingClientRect()
+      .bottom;
+
+    // For some reason, even with throttle, this always fires twice:
+    // once with an actual value, and again with 0. We need to ignore
+    // that second fire.
+    if (distanceFromTop !== 0) {
+      if (stuck && distanceFromTop >= 50) {
+        this.setState({ stuck: false });
+      } else if (!stuck && distanceFromTop < 50) {
+        this.setState({ stuck: true });
+      }
+    }
+  }, 50);
 
   reset = () => this.setState(getInitialState());
 
@@ -56,7 +92,7 @@ export default class CharacterSelect extends Component {
       this.setState({
         filter
       }),
-    250
+    50
   );
 
   /** Sorting */
@@ -79,7 +115,8 @@ export default class CharacterSelect extends Component {
       sort,
       weightClass,
       optionsVisible,
-      initiallyLoaded
+      initiallyLoaded,
+      stuck
     } = this.state;
 
     return (
@@ -254,7 +291,7 @@ export default class CharacterSelect extends Component {
             </>
           );
           const list = (
-            <>
+            <div ref={this.list}>
               <Header
                 as="p"
                 textAlign="right"
@@ -271,12 +308,7 @@ export default class CharacterSelect extends Component {
                 {sortTypesToPhrasesHash[sort]}.
               </Header>
               {initiallyLoaded ? (
-                <List
-                  className="sc-list"
-                  divided
-                  selection
-                  style={{ marginTop: 0 }}
-                >
+                <List divided selection style={{ marginTop: 0 }}>
                   {matches.length > 0 ? (
                     matches.map(character => (
                       <CharacterSelectEntry
@@ -308,58 +340,94 @@ export default class CharacterSelect extends Component {
               ) : (
                 <Loader active />
               )}
+            </div>
+          );
+          const filterInput = (
+            <>
+              <Input
+                style={{ flex: 3, width: "100%" }}
+                size="huge"
+                placeholder="Filter characters..."
+                icon={optionsVisible ? "close" : "filter"}
+                onChange={this.handleFilterChange}
+                value={filter}
+                ref={this.input}
+              />
+              <div
+                className="mobile-only"
+                style={{ flex: 1, textAlign: "right" }}
+              >
+                <Button
+                  primary
+                  size="huge"
+                  icon="sort"
+                  onClick={this.toggleOptions}
+                />
+              </div>
             </>
           );
 
           return (
-            <Grid>
-              <Grid.Column mobile={16} tablet={16} computer={6}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center"
-                  }}
-                >
-                  <Input
-                    style={{ flex: 3, width: "100%" }}
-                    size="huge"
-                    placeholder="Filter characters..."
-                    icon="filter"
-                    onChange={this.handleFilterChange}
-                    ref={this.input}
-                  />
+            <React.Fragment>
+              {stuck && (
+                <>
                   <div
-                    className="mobile-only"
-                    style={{ flex: 1, textAlign: "right" }}
-                  >
-                    <Button
-                      primary
-                      size="huge"
-                      icon="sort"
-                      onClick={this.toggleOptions}
-                    />
-                  </div>
-                </div>
-                <div className="desktop-only">{menu}</div>
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={16} computer={10}>
-                <Sidebar.Pushable className="mobile-only">
-                  <Sidebar
-                    animation="overlay"
-                    width="wide"
-                    visible={optionsVisible}
+                    className="sticky-fix-filter"
                     style={{
-                      maxWidth: "80vw",
-                      boxShadow: "none"
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: optionsVisible ? "10px" : 0
+                    }}
+                  >
+                    {filterInput}
+                  </div>
+                  <div
+                    className="mobile-only sticky-fix-menu"
+                    style={{
+                      display: optionsVisible ? "block" : "none"
                     }}
                   >
                     {menu}
-                  </Sidebar>
-                  {list}
-                </Sidebar.Pushable>
-                <div className="desktop-only">{list}</div>
-              </Grid.Column>
-            </Grid>
+                  </div>
+                  <div className="desktop-only sticky-fix-menu">{menu}</div>
+                </>
+              )}
+              <Grid>
+                <Grid.Column mobile={16} tablet={16} computer={6}>
+                  <div
+                    ref={this.filterInputWrapper}
+                    style={{
+                      display: "flex",
+                      alignItems: "center"
+                    }}
+                  >
+                    {!stuck && filterInput}
+                  </div>
+                  <div className="desktop-only">{!stuck && menu}</div>
+                </Grid.Column>
+                <Grid.Column
+                  mobile={16}
+                  tablet={16}
+                  computer={10}
+                  style={{ minHeight: "580px" }}
+                >
+                  <div className="mobile-only">
+                    {!stuck && optionsVisible && (
+                      <div
+                        style={{
+                          position: "absolute",
+                          zIndex: 2
+                        }}
+                      >
+                        {menu}
+                      </div>
+                    )}
+                    {list}
+                  </div>
+                  <div className="desktop-only">{list}</div>
+                </Grid.Column>
+              </Grid>
+            </React.Fragment>
           );
         }}
       />

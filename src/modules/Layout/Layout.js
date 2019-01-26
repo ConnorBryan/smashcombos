@@ -59,7 +59,12 @@ export default class Layout extends Component {
                                   ...style
                                 }}
                               >
-                                <Sidebar.Pushable className="mobile-only">
+                                <Sidebar.Pushable
+                                  className="mobile-only"
+                                  style={{
+                                    transform: "none"
+                                  }}
+                                >
                                   <Sidebar
                                     as={Menu}
                                     animation="overlay"
@@ -68,6 +73,7 @@ export default class Layout extends Component {
                                     width="wide"
                                     fluid
                                     style={{
+                                      marginTop: "80px",
                                       background: "#111"
                                     }}
                                   >
