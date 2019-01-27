@@ -48,6 +48,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8b384766-b684-4198-a6df-3231823d88f4"
+    },
+    {
+      "input": "dtilt dashatk",
+      "damage": "18",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "b05268c9-3ab3-4fd2-9fa7-8f541ff3a66c"
     }
   ],
   "preview": "",
