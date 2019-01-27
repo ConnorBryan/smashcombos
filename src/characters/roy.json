@@ -68,6 +68,26 @@
       "demonstration": "",
       "notes": "First hit must be at closest range(9.4% damage). Against Super Heavyweight characters, both hits are at closest range (for 0-14% damage)",
       "uuid": "248590d0-0a1f-414d-a679-882417c9715b"
+    },
+    {
+      "input": "sweet+jab sspecial",
+      "damage": "35.4",
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0-20",
+        "featherweight": "0-20",
+        "lightweight": "0-20",
+        "middleweight": "0-20",
+        "heavyweight": "0-20",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "",
+      "notes": "Double edge dance >^^v for maximum damage. Other combinations can be used depending on situation.",
+      "uuid": "5e61828f-f25e-4c3a-9af7-b59e01fe1d10"
     }
   ],
   "preview": "",
