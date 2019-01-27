@@ -48,6 +48,25 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8b384766-b684-4198-a6df-3231823d88f4"
+    },
+    {
+      "input": "fh+sour+nair fh+bair",
+      "damage": "20.4%",
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "85df54ef-d713-4179-b162-d9a6412907fd"
     }
   ],
   "preview": "",
