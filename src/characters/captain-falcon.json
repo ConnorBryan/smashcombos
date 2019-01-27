@@ -52,6 +52,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8db88863-d0fb-44b4-ab11-c2bf3270022f"
+    },
+    {
+      "input": "fh+falling+sweet+dair fh+sweet+fair",
+      "damage": "40.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "c167d033-b768-4b47-8d05-ebd4c65b7f45"
     }
   ],
   "preview": "",
