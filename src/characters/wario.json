@@ -48,6 +48,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8b384766-b684-4198-a6df-3231823d88f4"
+    },
+    {
+      "input": "uthrow fh+uair",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "00bc5f65-6e3b-470a-a2c2-64ed9373cf9c"
     }
   ],
   "preview": "",
