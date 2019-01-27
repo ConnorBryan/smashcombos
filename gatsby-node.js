@@ -46,6 +46,15 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
 
+      // Create combo
+      createPage({
+        path: `${slug}/combos/create`,
+        component: path.resolve("src/templates/add-combo-page.js"),
+        context: {
+          id
+        }
+      });
+
       combos.forEach(({ uuid }) => {
         // View combo
         createPage({
