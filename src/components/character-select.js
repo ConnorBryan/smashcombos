@@ -163,7 +163,6 @@ export default class CharacterSelect extends Component {
           const menu = (
             <>
               <Menu
-                className="mobile-only"
                 vertical
                 fluid
                 style={{
@@ -349,6 +348,9 @@ export default class CharacterSelect extends Component {
                         size="huge"
                         icon="sort"
                         onClick={this.toggleOptions}
+                        style= {{
+                          marginRight: "0em"
+                        }}
                       />
                     </div>
                   </div>
@@ -370,7 +372,7 @@ export default class CharacterSelect extends Component {
                     onChange={this.handleFilterChange}
                     ref={this.input}
                   />
-                  </div>
+                </div>
                 <div className="desktop-only">{menu}</div>
               </Grid.Column>
               <Grid.Column mobile={16} tablet={16} computer={10}>
@@ -379,8 +381,10 @@ export default class CharacterSelect extends Component {
                 >
                   <Sidebar.Pushable className="mobile-only">
                     <Sidebar
-                      direction="top"
-                      animation="overlay"
+                      className="no-animate"
+                      animation="uncover"
+                      duration= "0s"
+                      onChange={this.toggleOptions}
                       width="wide"
                       visible={optionsVisible}
                       style={{
@@ -391,7 +395,7 @@ export default class CharacterSelect extends Component {
                         willChange: "auto"
                       }}
                     >
-                    <Sticky  offsets={169} context={ contextRef }>
+                    <Sticky  offset={122} context={ contextRef }>
                       {menu}
                     </Sticky>
                     </Sidebar>

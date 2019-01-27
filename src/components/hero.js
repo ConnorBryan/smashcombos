@@ -9,10 +9,11 @@ export default function Hero({ image, header, description, children }) {
       <Item
         style={{
           padding: "2rem",
-          background: "#1B1C1C"
+          background: "#1B1C1C",
+          marginTop: "0em"
         }}
       >
-        <Item.Image size="left" src={image} />
+        <Item.Image size="medium" src={image} />
         <Item.Content verticalAlign="middle">
           <Item.Header
             as="h1"
