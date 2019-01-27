@@ -37,9 +37,7 @@
     {
       "input": "dspecial dair uspecial",
       "damage": "52",
-      "tags": [
-        "killConfirm"
-      ],
+      "tags": ["killConfirm"],
       "percentages": {
         "balloonweight": "0 - 280",
         "featherweight": "0 - 280",
@@ -51,6 +49,22 @@
       "demonstration": "",
       "notes": "A fully charged focus attack into a short hop Dair.\n\nTrue Shoryuken does a little more damage.\n\nThis combo is especially useful, considering the amount of damage the enemy needs to take before the combo is not guaranteed, and amount of damage the attack deals.",
       "uuid": "1f71d75d-ebee-4349-9991-590eff8f8f03"
+    },
+    {
+      "input": "dthrow uair uspecial",
+      "damage": "33",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "0-10",
+        "lightweight": "0-10",
+        "middleweight": "0-10",
+        "heavyweight": "0-10",
+        "superheavyweight": "0-10"
+      },
+      "demonstration": "",
+      "notes": "The Owen Wilson, good opening move if you can get the grab. Make sure to buffer the True Shoryuken out of the up air. The Shoryuken is a true input, but an Up-B works as well.",
+      "uuid": "01cdf63f-8ae6-450d-a80d-1de717d95c3e"
     }
   ],
   "preview": "",

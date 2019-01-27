@@ -50,6 +50,118 @@
       "demonstration": "",
       "notes": "",
       "uuid": "a3d265ee-e5d7-440e-9b9e-47fd4599ea2a"
+    },
+    {
+      "input": "sweet+utilt sh+uair",
+      "damage": "15",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "c928c037-6c09-494a-a426-49db6c7356ef"
+    },
+    {
+      "input": "sh+falling+uair fh+bair",
+      "damage": "24.7",
+      "tags": ["diable"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "aae1d642-fe99-4187-8062-b3779912f432"
+    },
+    {
+      "input": "sour+sh+ff+nair sh+bair",
+      "damage": "17.3",
+      "tags": ["diable", "killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f9b06af4-b236-4cfb-bfe8-052a37e0db46"
+    },
+    {
+      "input": "fthrow fair",
+      "damage": "20.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "4072276d-b6c8-45a8-ac81-0255d99f5e45"
+    },
+    {
+      "input": "fthrow fair",
+      "damage": "20.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "59111b52-4ac2-4323-8a9d-73ec061fb114"
+    },
+    {
+      "input": "fthrow ff+nair sh+bair",
+      "damage": "32.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "a8407f9e-78d4-42b2-a498-25f33aef85fa"
+    },
+    {
+      "input": "fthrow falling+fair grab fthrow falling+dair utilt fh+bair",
+      "damage": "60.2",
+      "tags": ["bigBody"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "72f4ce80-1856-42ec-94e9-29c21e3f90fc"
     }
   ],
   "preview": "",

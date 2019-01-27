@@ -66,6 +66,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "84b3ac17-2602-4ffc-9532-71813efabc62"
+    },
+    {
+      "input": "sour+dtilt sh+fair",
+      "damage": "24.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
     }
   ],
   "preview": "",

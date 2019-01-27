@@ -33,9 +33,7 @@
       "value": "104"
     }
   },
-  "tags": [
-    "fastFaller"
-  ],
+  "tags": ["fastFaller"],
   "combos": [
     {
       "input": "dthrow sh+nair",
@@ -52,6 +50,38 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8db88863-d0fb-44b4-ab11-c2bf3270022f"
+    },
+    {
+      "input": "fh+falling+sweet+dair fh+sweet+fair",
+      "damage": "40.6",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "c167d033-b768-4b47-8d05-ebd4c65b7f45"
+    },
+    {
+      "input": "fh+falling+sweet+dair utilt",
+      "damage": "30",
+      "tags": ["diable", "killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Only a kill confirm at the ledge, due to being a meteor confirm. DI in prevents the meteor from killing.",
+      "uuid": "411978b0-6060-48f9-ac00-63045cd72d7a"
     }
   ],
   "preview": "",

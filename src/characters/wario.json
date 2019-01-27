@@ -48,6 +48,54 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8b384766-b684-4198-a6df-3231823d88f4"
+    },
+    {
+      "input": "dtilt dashatk",
+      "damage": "18",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "b05268c9-3ab3-4fd2-9fa7-8f541ff3a66c"
+    },
+    {
+      "input": "fh+sour+nair fh+bair",
+      "damage": "20.4",
+      "tags": ["diable", "killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "85df54ef-d713-4179-b162-d9a6412907fd"
+    },
+    {
+      "input": "uthrow fh+uair",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "00bc5f65-6e3b-470a-a2c2-64ed9373cf9c"
     }
   ],
   "preview": "",
