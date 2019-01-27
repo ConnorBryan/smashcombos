@@ -33,7 +33,9 @@
       "value": "79"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "input": "dthrow dashatk fsmash",
@@ -50,6 +52,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "a3d265ee-e5d7-440e-9b9e-47fd4599ea2a"
+    },
+    {
+      "input": "fthrow fair",
+      "damage": "20.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "4072276d-b6c8-45a8-ac81-0255d99f5e45"
     }
   ],
   "preview": "",
