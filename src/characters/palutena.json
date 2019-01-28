@@ -32,7 +32,24 @@
       "value": "91"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow nair",
+      "damage": "19.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-100",
+        "featherweight": "0-100",
+        "lightweight": "0-100",
+        "middleweight": "0-100",
+        "heavyweight": "0-100",
+        "superheavyweight": "0-100"
+      },
+      "demonstration": "",
+      "notes": "Can lead into more nairs or a fair at lower percents.",
+      "uuid": "46817b40-372f-4c71-bb15-ef4d22c10835"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "palutena",
