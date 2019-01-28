@@ -35,7 +35,7 @@ export default function CharacterSelectEntry({
       style={{
         flexDirection: "column",
         backgroundImage: `url(${image.src})`,
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "no-repeat"
       }}
     >
       {/* Mobile */}
