@@ -1,6 +1,14 @@
+const fs = require("fs");
+const pify = require("pify");
 const path = require("path");
 const slugify = require("slugify");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+
+const { getSortedAttribValues, setRankedAttributes } = require("./update-ranks");
+
+const asyncReaddir = pify(fs.readdir);
+const asyncReadFile = pify(fs.readFile);
+const asyncWriteFile = pify(fs.writeFile);
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -84,3 +92,21 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
     }
   });
 };
+
+// Perform programmatic character ranking
+exports.onPreBootstrap = async () => {
+  try {
+    const files = await asyncReaddir(path.join(__dirname, "src/characters"));
+    const characters = await Promise.all(files.map(async file => {
+      const fileData = await asyncReadFile(path.join(__dirname, `src/characters/${file}`));
+      return JSON.parse(fileData);
+    }));
+    const setRanksOnCharacter = setRankedAttributes(getSortedAttribValues(characters));
+    return Promise.all(characters.map(character => asyncWriteFile(
+      path.join(__dirname, `src/characters/${character.basename}.json`),
+      JSON.stringify(setRanksOnCharacter(character), null, 2)
+    )));
+  } catch (err) {
+    console.error("Unable to update character attribute rankings, falling back to hardcoded values", err);
+  }
+}
