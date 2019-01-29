@@ -30,7 +30,7 @@ export const SidebarScreens = {
 };
 
 export const sidebarScreenComponents = {
-  [SidebarScreens.MoveOrModifier]: ({ switchSidebarScreen, closeSidebar }) => (
+  [SidebarScreens.MoveOrModifier]: ({ switchSidebarScreen }) => (
     <>
       <Menu.Item onClick={() => switchSidebarScreen(SidebarScreens.Moves)}>
         <Menu.Header content="Moves" style={styles.fancyText} />
@@ -43,10 +43,6 @@ export const sidebarScreenComponents = {
       <Menu.Item onClick={() => switchSidebarScreen(SidebarScreens.Custom)}>
         <Menu.Header content="Custom" style={styles.fancyText} />
         Character-specific input for moves or modifiers not listed above.
-      </Menu.Item>
-      <Menu.Item onClick={closeSidebar}>
-        <Icon name="close" />
-        <Menu.Header content="Close" style={styles.fancyText} />
       </Menu.Item>
     </>
   ),
@@ -163,7 +159,6 @@ export class InputScreen extends Component {
       input: prevState.input.concat(fullInput)
     }));
     this.clearModifiers();
-    this.closeSidebar();
   };
 
   clearInput = offset =>
@@ -175,13 +170,20 @@ export class InputScreen extends Component {
     this.setState(prevState => ({
       modifiers: prevState.modifiers.concat(modifier)
     }));
-    this.closeSidebar();
   };
 
   clearModifiers = () =>
     this.setState({
       modifiers: []
     });
+
+  continue = () => {
+    const { onNext, onSubmit } = this.props;
+    const { input } = this.state;
+
+    onSubmit({ input });
+    onNext();
+  };
 
   render() {
     const { input, modifiers, sidebarScreen } = this.state;
@@ -251,7 +253,7 @@ export class InputScreen extends Component {
             icon
             fluid
             size="huge"
-            onClick={() => {}}
+            onClick={this.continue}
             disabled={input.length === 0}
             style={styles.fancyText}
           >
@@ -273,12 +275,17 @@ export class InputScreen extends Component {
             </Menu.Item>
           )}
           {sidebarScreen && (
-            <SidebarScreen
-              addInput={this.addInput}
-              addModifier={this.addModifier}
-              switchSidebarScreen={this.switchSidebarScreen}
-              closeSidebar={this.closeSidebar}
-            />
+            <>
+              <SidebarScreen
+                addInput={this.addInput}
+                addModifier={this.addModifier}
+                switchSidebarScreen={this.switchSidebarScreen}
+              />
+              <Menu.Item onClick={this.closeSidebar}>
+                <Icon name="close" />
+                <Menu.Header content="Close" style={styles.fancyText} />
+              </Menu.Item>
+            </>
           )}
         </Sidebar>
       </Sidebar.Pushable>

@@ -19,12 +19,12 @@ export default class Layout extends Component {
   componentDidCatch() {
     const { navigate } = this.props;
 
-    navigate("/", {
-      state: {
-        message:
-          "An unknown error has occurred. If this happens again, please email admin@smashcombos.com"
-      }
-    });
+    // navigate("/", {
+    //   state: {
+    //     message:
+    //       "An unknown error has occurred. If this happens again, please email admin@smashcombos.com"
+    //   }
+    // });
   }
 
   render() {
