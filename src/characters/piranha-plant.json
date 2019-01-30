@@ -32,7 +32,26 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "fh+ff+sweet+dair usmash",
+      "damage": "31.2",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ec053a9b-9a7c-46e5-95e8-f5d3a47fc845"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
