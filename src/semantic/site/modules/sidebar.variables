@@ -20,8 +20,8 @@
 
 /* Shadow */
 @boxShadow: 0px 0px 20px @borderColor;
-@horizontalBoxShadow: @boxShadow;
-@verticalBoxShadow: @boxShadow;
+@horizontalBoxShadow: none;
+@verticalBoxShadow: none;
 
 /* Layering */
 @bottomLayer: 1;
