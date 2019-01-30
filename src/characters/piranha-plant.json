@@ -32,7 +32,24 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+ff+nair jab",
+      "damage": "22.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "To perform this, you need to hit with the back hit of n-air (which always launches forward), then fast fall with a buffered jab. Damage listed is with rapid jab held for the least amount of time.",
+      "uuid": "4905f7c7-48d9-4ca2-bf43-0b07f404fd4a"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
