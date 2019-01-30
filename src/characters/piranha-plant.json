@@ -32,7 +32,24 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+falling+uair nspecial sh+sweet+fair",
+      "damage": "39.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "d4ddb7f0-8e53-4407-9582-8f3d4eaa3c06"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
