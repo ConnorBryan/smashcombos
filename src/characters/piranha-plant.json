@@ -32,7 +32,27 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+ff+uair nspecial sh+ff+uair nspecial fh+rising+fair",
+      "damage": "62.8",
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f42b8c99-fd00-41a2-9563-5e5f289a4ca9"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
