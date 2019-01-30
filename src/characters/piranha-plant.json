@@ -32,7 +32,26 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow sh+sweet+fair",
+      "damage": "20.8",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "DI away from the down throw causes f-air to miss at mid to high percents.",
+      "uuid": "058c3334-8d33-4045-bf1d-325316689ed0"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
