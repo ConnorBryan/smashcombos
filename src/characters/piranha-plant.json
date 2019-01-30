@@ -32,7 +32,24 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+falling+uair utilt",
+      "damage": "18.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "6b3ae2b4-3da9-48c8-8a68-a6aef4756226"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
