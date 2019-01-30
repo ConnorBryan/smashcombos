@@ -13,23 +13,23 @@
       "rank": "54"
     },
     "fallSpeed": {
-      "fastFallSpeed": "2.56",
-      "maxFallSpeed": "1.6",
+      "fastFallSpeed": "2.73",
+      "maxFallSpeed": "1.82",
       "rank": "36",
-      "speedIncrease": "60%"
+      "speedIncrease": "50%"
     },
     "runSpeed": {
-      "maxRunSpeed": "1.12",
-      "rank": "78"
+      "maxRunSpeed": "1.72",
+      "rank": "39"
     },
     "walkSpeed": {
-      "maxWalkSpeed": "0.56",
-      "rank": "78"
+      "maxWalkSpeed": "0.76",
+      "rank": "73"
     },
     "weight": {
-      "class": "middleweight",
-      "rank": "40",
-      "value": "94"
+      "class": "heavyweight",
+      "rank": "8",
+      "value": "112"
     }
   },
   "combos": [],
