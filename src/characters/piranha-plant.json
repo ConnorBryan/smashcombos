@@ -32,7 +32,24 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dtilt sh+sweet+fair",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "291b176a-a4bf-4ce2-bd41-498c73551489"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
