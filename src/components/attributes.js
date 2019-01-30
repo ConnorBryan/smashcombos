@@ -57,7 +57,7 @@ export default class Attributes extends Component {
               }
             />
             <List.Content
-              content={`${rank} of 77`}
+              content={`${rank} of 78`}
               style={{
                 flex: 1,
                 textAlign: "right"
