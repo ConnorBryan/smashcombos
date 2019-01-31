@@ -162,6 +162,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "72f4ce80-1856-42ec-94e9-29c21e3f90fc"
+    },
+    {
+      "input": "fthrow falling+fair grab fthrow falling+dair utilt fh+bair",
+      "damage": "60.2",
+      "tags": ["bigBody"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "72f4ce80-1856-42ec-94e9-29c21e3f90fc"
     }
   ],
   "preview": "",
