@@ -32,7 +32,184 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+falling+uair nspecial sh+sweet+fair",
+      "damage": "39.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "d4ddb7f0-8e53-4407-9582-8f3d4eaa3c06"
+    },
+    {
+      "input": "dtilt sh+sweet+fair",
+      "damage": "18.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "291b176a-a4bf-4ce2-bd41-498c73551489"
+    },
+    {
+      "input": "sh+falling+uair utilt",
+      "damage": "18.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "6b3ae2b4-3da9-48c8-8a68-a6aef4756226"
+    },
+    {
+      "input": "fh+ff+sweet+dair usmash",
+      "damage": "31.2",
+      "tags": ["killConfirm"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ec053a9b-9a7c-46e5-95e8-f5d3a47fc845"
+    },
+    {
+      "input": "dthrow sh+sweet+fair",
+      "damage": "20.8",
+      "tags": ["diable"],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "DI away from the down throw causes f-air to miss at mid to high percents.",
+      "uuid": "058c3334-8d33-4045-bf1d-325316689ed0"
+    },
+    {
+      "input": "sh+ff+nair jab",
+      "damage": "22.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "To perform this, you need to hit with the back hit of n-air (which always launches forward), then fast fall with a buffered jab. Damage listed is with rapid jab held for the least amount of time.",
+      "uuid": "4905f7c7-48d9-4ca2-bf43-0b07f404fd4a"
+    },
+    {
+      "input": "sh+ff+uair nspecial sh+ff+uair nspecial fh+rising+fair",
+      "damage": "62.8",
+      "tags": ["diable", "bigBody"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "f42b8c99-fd00-41a2-9563-5e5f289a4ca9"
+    },
+    {
+      "input": "sh+ff+uair nspecial sh+ff+uair nspecial fh+rising+fair",
+      "damage": "62.8",
+      "tags": ["diable", "bigBody"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "edeb0574-7def-4173-bc98-501cb1dcfbb1"
+    },
+    {
+      "input": "dthrow fh+fair",
+      "damage": "30",
+      "tags": ["diable"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0%",
+        "middleweight": "0",
+        "heavyweight": "0%",
+        "superheavyweight": "0%"
+      },
+      "demonstration": "",
+      "notes": "On featherweights or balloonweights like Kirby or Jigglypuff, you can fastfall -> full hop -> forward air a second time for even more damage.",
+      "uuid": "c0273e84-a392-4794-97dc-88f86164bd4c"
+    },
+    {
+      "input": "dthrow sh+rising+uair",
+      "damage": "17.7",
+      "tags": ["fastFaller", "floatie", "bigBody"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Up air must be instant RAR-ed. Must dash slightly farther for up air to connect. Must full hop vs. floaties",
+      "uuid": "f19e46f2-d584-4e3e-a5a1-bef7f917b712"
+    },
+    {
+      "input": "dthrow sh+rising+uair",
+      "damage": "17.7",
+      "tags": ["fastFaller", "floatie", "bigBody"],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Up air must be instant RAR-ed. Must dash slightly farther for up air to connect. Must full hop vs. floaties",
+      "uuid": "bbd6036f-133c-4c06-8eef-74b7e82b7d6d"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
