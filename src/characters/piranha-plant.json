@@ -32,7 +32,26 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow fh+fair",
+      "damage": "30",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0%",
+        "middleweight": "0",
+        "heavyweight": "0%",
+        "superheavyweight": "0%"
+      },
+      "demonstration": "",
+      "notes": "On featherweights or balloonweights like Kirby or Jigglypuff, you can fastfall -> full hop -> forward air a second time for even more damage.",
+      "uuid": "c0273e84-a392-4794-97dc-88f86164bd4c"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
