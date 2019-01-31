@@ -84,7 +84,9 @@
     {
       "input": "fh+ff+sweet+dair usmash",
       "damage": "31.2",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "",
         "featherweight": "",
@@ -100,7 +102,9 @@
     {
       "input": "dthrow sh+sweet+fair",
       "damage": "20.8",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "",
         "featherweight": "",
@@ -132,7 +136,10 @@
     {
       "input": "sh+ff+uair nspecial sh+ff+uair nspecial fh+rising+fair",
       "damage": "62.8",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -148,7 +155,10 @@
     {
       "input": "sh+ff+uair nspecial sh+ff+uair nspecial fh+rising+fair",
       "damage": "62.8",
-      "tags": ["diable", "bigBody"],
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -164,7 +174,9 @@
     {
       "input": "dthrow fh+fair",
       "damage": "30",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -180,7 +192,11 @@
     {
       "input": "dthrow sh+rising+uair",
       "damage": "17.7",
-      "tags": ["fastFaller", "floatie", "bigBody"],
+      "tags": [
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -196,7 +212,11 @@
     {
       "input": "dthrow sh+rising+uair",
       "damage": "17.7",
-      "tags": ["fastFaller", "floatie", "bigBody"],
+      "tags": [
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -208,6 +228,22 @@
       "demonstration": "",
       "notes": "Up air must be instant RAR-ed. Must dash slightly farther for up air to connect. Must full hop vs. floaties",
       "uuid": "bbd6036f-133c-4c06-8eef-74b7e82b7d6d"
+    },
+    {
+      "input": "sspecial grab pummel pummel pummel dthrow fh+fair",
+      "damage": "78-92",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Make sure to grab them as they are inside the poison cloud, so they take continuous damage as you pummel them within the cloud. ",
+      "uuid": "101ba1f1-ddd9-453a-b0bf-278e837b192a"
     }
   ],
   "preview": "",
