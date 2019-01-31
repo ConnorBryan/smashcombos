@@ -32,7 +32,28 @@
       "value": "112"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow sh+rising+uair",
+      "damage": "17.7",
+      "tags": [
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Up air must be instant RAR-ed. Must dash slightly farther for up air to connect. Must full hop vs. floaties",
+      "uuid": "bbd6036f-133c-4c06-8eef-74b7e82b7d6d"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "piranha-plant",
