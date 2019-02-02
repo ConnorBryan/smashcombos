@@ -33,7 +33,9 @@
       "value": "91"
     }
   },
-  "tags": ["floatie"],
+  "tags": [
+    "floatie"
+  ],
   "combos": [
     {
       "input": "utilt utilt utilt utilt fair",
@@ -66,6 +68,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8d0aa0f0-baf2-4b27-9e02-7cd50552bc8f"
+    },
+    {
+      "input": "sh+rising+bair rising+bair bair",
+      "damage": "27.3",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "~45-55",
+        "heavyweight": "~50-60",
+        "superheavyweight": "~55-70"
+      },
+      "demonstration": "",
+      "notes": "There are general true percents for listed weight classes - 60% for super heavies, 55% for heavies, 50% for middles. Have momentum towards the target decrease the effectiveness of opponent di-away. Otherwise, the combo is true, especially against bigger characters",
+      "uuid": "bb065a40-c518-4621-b8c0-17946878137a"
     }
   ],
   "preview": "",
