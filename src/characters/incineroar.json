@@ -33,12 +33,16 @@
       "value": "116"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "input": "dthrow sh+fh+dj+fair",
       "damage": "26.4",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "0 to 55 to (+dash)90",
         "featherweight": "0 to 80 to (+dash)125",
@@ -98,6 +102,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "dd59f204-f2ee-4530-9900-639f32bd273a"
+    },
+    {
+      "input": "dtilt utilt utilt sh+uair",
+      "damage": "41",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Never",
+        "featherweight": "0",
+        "lightweight": "0-5",
+        "middleweight": "0-5",
+        "heavyweight": "0-13",
+        "superheavyweight": "0-15"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "529c41f9-6532-4370-a5af-27871af027ad"
     }
   ],
   "preview": "",
