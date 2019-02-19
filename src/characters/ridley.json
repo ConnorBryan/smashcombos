@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "sh+ff+uair usmash",
+      "damage": "32.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Not possible",
+        "featherweight": "0-18/25",
+        "lightweight": "0-26/29",
+        "middleweight": "0 - 29/30",
+        "heavyweight": "0 -34/42",
+        "superheavyweight": "0 - 42/52"
+      },
+      "demonstration": "",
+      "notes": "The / shows the lightest character of a category's max percent, and the heaviest of a category. This doesn't account for different fall speeds or sizes because I don't have all day. So take the percents as rough estimates.\n\nThe only two balloonweights are too small to hit with a falling up air. This also applies to several other small characters, such as Squirtle. \n\nRosalina can sometimes fail if you hit her Luma with the up smash, due to the extra hit lag. The same would presumably apply to Ice Climbers if they could be hit by a falling up air. \n\nIt's relatively situational in general. Just some decent damage and a juggle opportunity, should you happen to get the chance. Though this is presumably DI-able at the latest of percents, due to just barely hitting them with the tip of Up smash",
+      "uuid": "b08453e1-1e86-43ea-8e2d-7e27d34975f8"
     }
   ],
   "preview": "",
