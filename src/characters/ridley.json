@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,25 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "grab dthrow dspecial",
+      "damage": "68.4",
+      "tags": [
+        "diable",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Works at 0% but can be wiggled out of. Very effective against big body characters, however. ",
+      "uuid": "171739e2-7e56-4e88-bc7f-f4f6e58d0189"
     }
   ],
   "preview": "",
