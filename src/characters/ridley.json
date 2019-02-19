@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "sh+falling+nair dashatk",
+      "damage": "26.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "90-100",
+        "featherweight": "90-100",
+        "lightweight": "90-100",
+        "middleweight": "90-100",
+        "heavyweight": "90-100",
+        "superheavyweight": "90-100"
+      },
+      "demonstration": "",
+      "notes": "Kills at the edge. ",
+      "uuid": "4a2dc775-c9f2-4aba-883b-311d681622ad"
     }
   ],
   "preview": "",
