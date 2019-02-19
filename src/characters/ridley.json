@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "grab dthrow nair",
+      "damage": "19.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "Works from 0 and stays that way for ages, Ridley's bread and butter. ",
+      "uuid": "538c9830-c940-4c34-abe8-756f7c606de7"
     }
   ],
   "preview": "",
