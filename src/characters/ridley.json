@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "grab dthrow utilt utilt",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Confirms from around 20%\nhttps://docs.google.com/spreadsheets/d/1HLrYxxK1YF6SHUgZ_ljT4cBQJ3Wd9fKwtfZ7oQGLrs4/edit#gid=0",
+      "uuid": "77922098-1121-43b9-a0a8-925f7b90f5ef"
     }
   ],
   "preview": "",
