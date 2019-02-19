@@ -33,7 +33,10 @@
       "value": "107"
     }
   },
-  "tags": ["fastFaller", "bigBody"],
+  "tags": [
+    "fastFaller",
+    "bigBody"
+  ],
   "combos": [
     {
       "input": "dthrow fair",
@@ -82,6 +85,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "79a0bebd-5011-4b3b-b7c3-98a5b5fb7680"
+    },
+    {
+      "input": "falling+fair grab pummel pummel dthrow pc+utilt utilt sh+nair",
+      "damage": "43.44",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "18-43",
+        "featherweight": "20-46",
+        "lightweight": "22-58",
+        "middleweight": "23-55",
+        "heavyweight": "23-57",
+        "superheavyweight": "26-67"
+      },
+      "demonstration": "",
+      "notes": "A combo making use of the Down Throw Up Tilt Confirm Document. https://docs.google.com/spreadsheets/d/1HLrYxxK1YF6SHUgZ_ljT4cBQJ3Wd9fKwtfZ7oQGLrs4/edit#gid=0",
+      "uuid": "81287e6d-d2c2-4b7b-b5dd-fa386573a9ea"
     }
   ],
   "preview": "",
