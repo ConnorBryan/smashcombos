@@ -32,7 +32,24 @@
       "value": "95"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow sh+fair sh+fair sh+fair sh+fair",
+      "damage": "58.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "Null",
+        "featherweight": "0-10",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-10"
+      },
+      "demonstration": "",
+      "notes": "This combo uses Levin sword. At higher percents, the combo is usable, but shortened. This combo works on the heaviest featherweights, with one less fair",
+      "uuid": "0b895a03-c2a5-4769-8252-dc3443cb32ef"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "robin",
