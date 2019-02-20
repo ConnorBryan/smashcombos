@@ -32,7 +32,24 @@
       "value": "95"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "uthrow fh+uair ff+fh+uair",
+      "damage": "39.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "35",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "55"
+      },
+      "demonstration": "",
+      "notes": "This combo uses the Levin sword",
+      "uuid": "ddb4d5d0-cad7-41e5-ae12-0fc9b513277e"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "robin",
