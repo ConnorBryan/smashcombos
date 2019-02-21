@@ -97,6 +97,22 @@
       "demonstration": "",
       "notes": "Good for quick damage ",
       "uuid": "407e298a-4a6c-4b5f-82b2-8e516aabace5"
+    },
+    {
+      "input": "dthrow sh+uair falling+nair dtilt dashatk fh+uair dj+bair",
+      "damage": "62-76",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "The bair at the end can be tricky to land, so sometimes it may be better to end with a dair once they hit the ground. This combo works on the entire cast at 0%, save Jigglypuff, but becomes more unreliable once damage passes the 5% mark. Excellent for big opening damage and showing off in general.",
+      "uuid": "5d162aaa-2793-46a7-a2c6-f9fd68b4d030"
     }
   ],
   "preview": "",
