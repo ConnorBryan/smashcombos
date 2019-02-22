@@ -37,7 +37,9 @@
     {
       "input": "dspecial dair uspecial",
       "damage": "52",
-      "tags": ["killConfirm"],
+      "tags": [
+        "killConfirm"
+      ],
       "percentages": {
         "balloonweight": "0 - 280",
         "featherweight": "0 - 280",
@@ -65,6 +67,24 @@
       "demonstration": "",
       "notes": "The Owen Wilson, good opening move if you can get the grab. Make sure to buffer the True Shoryuken out of the up air. The Shoryuken is a true input, but an Up-B works as well.",
       "uuid": "01cdf63f-8ae6-450d-a80d-1de717d95c3e"
+    },
+    {
+      "input": "jab jab atkc+uspecial",
+      "damage": "27.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0-999",
+        "featherweight": "0-999",
+        "lightweight": "0-999",
+        "middleweight": "0-999",
+        "heavyweight": "0-999",
+        "superheavyweight": "0-999"
+      },
+      "demonstration": "",
+      "notes": "Attack cancel into regular uspecial does a 23.6% combo while inputted uspecial does it at 27.6% ",
+      "uuid": "84a6070f-e5eb-4f99-bb5c-5a657695d549"
     }
   ],
   "preview": "",
