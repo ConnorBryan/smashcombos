@@ -53,6 +53,24 @@
       "demonstration": "https://www.youtube.com/embed/9oQ1E5MuD_s?start=228",
       "notes": "",
       "uuid": "ee437fb4-7260-4842-9736-7cfb3427f410"
+    },
+    {
+      "input": "fh+sspecial pc+dj+dair fh+bair",
+      "damage": "74.1",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "https://twitter.com/DDDS_Main/status/1082428928407552005",
+      "notes": "",
+      "uuid": "323e13f8-6f15-4f77-a603-77c8ab8867f5"
     }
   ],
   "preview": "",
