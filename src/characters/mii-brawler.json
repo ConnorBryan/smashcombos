@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "dtilt dtilt sspecial",
+      "damage": "38.4",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "SSpecial is onslaught",
+      "uuid": "c0b0b352-7ea3-4486-a5a2-0023275cc274"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "mii-brawler",
