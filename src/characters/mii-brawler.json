@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "sh+nair dtilt sh+fair",
+      "damage": "31.0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "You can add another sh+fair to it based on opponent weight or percentage",
+      "uuid": "c90fe231-528d-42a0-af8a-ad1638bcd6e8"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "mii-brawler",
