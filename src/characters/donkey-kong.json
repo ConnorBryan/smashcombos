@@ -81,6 +81,24 @@
       "demonstration": "",
       "notes": "Works on very few characters only on 0%.",
       "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    },
+    {
+      "input": "uthrow fh+bair sspecial ftilt ftilt dashatk",
+      "damage": "74.2",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "10",
+        "superheavyweight": "15"
+      },
+      "demonstration": "",
+      "notes": "You can do a fair off the edge to kill the opponent, but they will often jump away.\n\nAlso, wait a bit before doing sspecial so that they get buried and wait a bit before doing your dashatk so that they get unburied.",
+      "uuid": "0ebec33d-0997-4e77-9c51-8c619570437b"
     }
   ],
   "preview": "",
