@@ -33,7 +33,9 @@
       "value": "95"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "input": "grab pummel pummel dthrow uspecial",
@@ -70,7 +72,11 @@
     {
       "input": "sweet+jab sspecial",
       "damage": "35.4",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0-20",
         "featherweight": "0-20",
@@ -86,7 +92,11 @@
     {
       "input": "sweet+jab rising+sweet+nair",
       "damage": "26.4",
-      "tags": ["fastFaller", "floatie", "bigBody"],
+      "tags": [
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "35 - 100",
         "featherweight": "35 - 100",
@@ -102,7 +112,11 @@
     {
       "input": "dthrow sh+rising+nair",
       "damage": "20.7",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -114,6 +128,27 @@
       "demonstration": "",
       "notes": "Only consistent at 0%.",
       "uuid": "ba74094a-ea4c-4a5d-9846-67116639d221"
+    },
+    {
+      "input": "jab sspecial",
+      "damage": "27.0",
+      "tags": [
+        "diable",
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "https://youtu.be/ORU3SqzyWvw?t=9",
+      "notes": "Does 30.6 dmg if you do low input. \nDoes 22.2 if you do middle.\nDoes 27.0 if you do high.",
+      "uuid": "3c6bc989-fdac-4aa8-9d75-3e0e49860a2e"
     }
   ],
   "preview": "",
