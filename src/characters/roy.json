@@ -33,7 +33,9 @@
       "value": "95"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "input": "grab pummel pummel dthrow uspecial",
@@ -68,9 +70,13 @@
       "uuid": "248590d0-0a1f-414d-a679-882417c9715b"
     },
     {
-      "input": "sweet+jab sspecial",
+      "input": "jab sspecial",
       "damage": "35.4",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0-20",
         "featherweight": "0-20",
@@ -80,13 +86,16 @@
         "superheavyweight": "0-20"
       },
       "demonstration": "",
-      "notes": "Double edge dance >^^v for maximum damage. Other combinations can be used depending on situation.",
-      "uuid": "5e61828f-f25e-4c3a-9af7-b59e01fe1d10"
+      "notes": "Double edge dance >^^v for maximum damage. Other combinations can be used depending on situation."
     },
     {
       "input": "sweet+jab rising+sweet+nair",
       "damage": "26.4",
-      "tags": ["fastFaller", "floatie", "bigBody"],
+      "tags": [
+        "fastFaller",
+        "floatie",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "35 - 100",
         "featherweight": "35 - 100",
@@ -102,7 +111,11 @@
     {
       "input": "dthrow sh+rising+nair",
       "damage": "20.7",
-      "tags": ["diable", "fastFaller", "bigBody"],
+      "tags": [
+        "diable",
+        "fastFaller",
+        "bigBody"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
