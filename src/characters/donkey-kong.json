@@ -81,6 +81,22 @@
       "demonstration": "",
       "notes": "Works on very few characters only on 0%.",
       "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    },
+    {
+      "input": "falling+bair dtilt fthrow fh+uthrow fh+uair",
+      "damage": "52.8",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "0-12",
+        "lightweight": "0-14",
+        "middleweight": "0-17",
+        "heavyweight": "0-18",
+        "superheavyweight": "0-20"
+      },
+      "demonstration": "https://youtu.be/WDJx-wlIH-Q?t=34",
+      "notes": "",
+      "uuid": "fd4ae2df-9418-4154-8ce1-c897973b1f2f"
     }
   ],
   "preview": "",
