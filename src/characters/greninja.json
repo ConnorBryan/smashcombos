@@ -52,6 +52,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "858e2cc7-32f9-4251-bccd-714732d617a3"
+    },
+    {
+      "input": "dtilt jab",
+      "damage": "18.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ded710aa-2cf8-41cc-aff5-8ebfe6a3c4c9"
     }
   ],
   "preview": "",
