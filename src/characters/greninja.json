@@ -52,6 +52,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "858e2cc7-32f9-4251-bccd-714732d617a3"
+    },
+    {
+      "input": "dthrow jab",
+      "damage": "19.8",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "693f99eb-8d98-4149-a668-5bed5e178049"
     }
   ],
   "preview": "",
