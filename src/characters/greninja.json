@@ -52,6 +52,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "858e2cc7-32f9-4251-bccd-714732d617a3"
+    },
+    {
+      "input": "dtilt usmash",
+      "damage": "27.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "70-90",
+        "featherweight": "80-100",
+        "lightweight": "85-105",
+        "middleweight": "95-115",
+        "heavyweight": "105-120",
+        "superheavyweight": "120-150"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "eee0ab47-a235-423e-a99f-2f2ccfb69025"
     }
   ],
   "preview": "",
