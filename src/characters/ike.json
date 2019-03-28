@@ -112,6 +112,22 @@
       "demonstration": "",
       "notes": "Tested with a level 3 CPU on high shuflle.\n\nCombo does not confirm kills on stage.\n\nCombo will stage spike if edge guarding at very edge.\n\nWill place the opponent high on stage and allow for more follow up combos but gives them an easy DI out.\n\nAll percentages are guaranteed; no percentage was kept if it only worked sometimes.\n\nCharacters in weight classes with smaller frames such as Mr. Game and Watch, Squirtle, etc. may have lower percentages.\n",
       "uuid": "702836c9-a9b3-446a-9c2d-ffc4f0284ab0"
+    },
+    {
+      "input": "utilt utilt utilt sh+nair fh+bair",
+      "damage": "66.1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "You can really nair, bair, or fair after the nair. It depends on which way your opponent falls after the nair (left or right)",
+      "uuid": "c4fd8ce5-8c0c-4539-ae50-a885cb316d5d"
     }
   ],
   "preview": "",
