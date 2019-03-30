@@ -33,7 +33,9 @@
       "value": "92"
     }
   },
-  "tags": ["fastFaller"],
+  "tags": [
+    "fastFaller"
+  ],
   "combos": [
     {
       "input": "uthrow fh+uair",
@@ -54,7 +56,9 @@
     {
       "input": "nair dtilt grab uthrow fh+fair dj+uair",
       "damage": "31.5",
-      "tags": ["diable"],
+      "tags": [
+        "diable"
+      ],
       "percentages": {
         "balloonweight": "0",
         "featherweight": "0",
@@ -82,6 +86,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "115989d8-e8c2-49bf-b04a-0b5358abda47"
+    },
+    {
+      "input": "nspecial sh+bair fair falling+uair",
+      "damage": "24.9",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Demonstration Coming Soon",
+      "uuid": "7f5a3b4b-ae10-468d-b840-b3af248b6f70"
     }
   ],
   "preview": "",
