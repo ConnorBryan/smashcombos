@@ -81,6 +81,22 @@
       "demonstration": "",
       "notes": "Works on very few characters only on 0%.",
       "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    },
+    {
+      "input": "dair grab dthrow bair grab pummel pummel uthrow uair",
+      "damage": "?",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "00",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "yikes",
+      "notes": "This is known as the Ding-Dong Combo. I'm not sure how much percentage it does, but on lighter characters it instant KO-s\n",
+      "uuid": "e8fc2164-4313-4fb7-918c-33486d9a2176"
     }
   ],
   "preview": "",
