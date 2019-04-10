@@ -1,7 +1,7 @@
 {
   "name": "Mega Man",
   "render": "../../static/img/megaman.png",
-  "description": "...",
+  "description": "Mega man is a robot created by Dr. Light in order to defeat Dr. Wily's robot masters. He was entered into the smash roster in Super Smash Bros For Wii U/3DS. He was pretty bad in SM4SH, but in SSBU, he's back and better than ever. Most moves of his are projectiles, save for his Up B, FAIR, BAIR, D-Tilt, Up-Tilt, Side-Smash, Down-Smash, and Up-Smash.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
