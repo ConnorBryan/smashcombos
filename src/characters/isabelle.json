@@ -52,6 +52,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "5910f578-3f2c-489b-8101-0001dd8cdf93"
+    },
+    {
+      "input": "sweet+dashatk utilt fsmash",
+      "damage": "42%",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Must hit dash attack with her body. ",
+      "uuid": "0dc2eacd-370a-4bc3-94e6-b899016bed25"
     }
   ],
   "preview": "",
