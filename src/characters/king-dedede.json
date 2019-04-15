@@ -53,6 +53,24 @@
       "demonstration": "https://www.youtube.com/embed/9oQ1E5MuD_s?start=228",
       "notes": "",
       "uuid": "ee437fb4-7260-4842-9736-7cfb3427f410"
+    },
+    {
+      "input": "falling+sour+sh+nair fh+bair",
+      "damage": "26.3",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "50-75",
+        "featherweight": "60-85",
+        "lightweight": "70-95",
+        "middleweight": "70-100",
+        "heavyweight": "70-105",
+        "superheavyweight": "80-120"
+      },
+      "demonstration": "",
+      "notes": "Requires RAR back air.\n\nUpper and lower limits of percentage ranges may differ with up/down DI.\n\nUpper limits will kill from starting position (on FD, no DI)\n\nCan also mix up by reversing the nair instead of bair.",
+      "uuid": "efb1236c-4a08-4ffd-8082-7e96556cba6d"
     }
   ],
   "preview": "",
