@@ -1,7 +1,7 @@
 {
   "name": "Donkey Kong",
   "render": "../../static/img/donkey-kong.png",
-  "description": "Even though he was already considered the best heavyweight in the previous game, Donkey Kong has received numerous buffs, particularly in his off stage game. Giant Punch no longer makes him helpless when used in air, giving him a new edge guarding option and improvements to his forward throw give him a lot more options out of grab. However, cargo up throw now has more knockback which, while having great kill potential, removes DK's infamous Ding Dong kill confirm. This, along with the nerf in rage, worsens Donkey Kong's kill power when the opponent is at earlier percents.",
+  "description": "Even though he was already considered the best heavyweight in the previous game, Donkey Kong has received numerous buffs, particularly in his off stage game. Giant Punch no longer makes him helpless when used in air, giving him a new edge guarding option and improvements to his forward throw give him a lot more options out of grab. However, cargo up throw now has more knockback which, while having great kill potential, removes DK's infamous Ding Dong kill confirm without the aid of platforms. This, along with the nerf in rage, worsens Donkey Kong's kill power when the opponent is at earlier percents.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
@@ -87,5 +87,8 @@
   "content": "\n\n",
   "basename": "donkey-kong",
   "id": "17e429cd-6590-44e2-9564-4de7c1e8d582",
-  "slug": "donkey-kong"
+  "slug": "donkey-kong",
+  "tags": [
+    "bigBody"
+  ]
 }
