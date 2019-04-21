@@ -32,7 +32,26 @@
       "value": "95"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dthrow jab",
+      "damage": "22",
+      "tags": [
+        "diable"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "use flurry jab",
+      "uuid": "f1df5b2b-0e4a-4353-91ac-c23614e062fd"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "robin",
