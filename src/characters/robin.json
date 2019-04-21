@@ -32,7 +32,24 @@
       "value": "95"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "sspecial sh+sspecial fh+uair",
+      "damage": "45.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Difficult on small characters. Also works with fh+sspecial",
+      "uuid": "f6cce0d9-bdad-4274-9436-d7444900e6c5"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "robin",
