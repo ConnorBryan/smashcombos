@@ -81,6 +81,22 @@
       "demonstration": "",
       "notes": "Works on very few characters only on 0%.",
       "uuid": "0f460403-14c2-404f-b4f7-8545c68a559f"
+    },
+    {
+      "input": "dtilt dashatk bair bair",
+      "damage": "48.6",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-10",
+        "featherweight": "0-10",
+        "lightweight": "0-10",
+        "middleweight": "0-10",
+        "heavyweight": "0-10",
+        "superheavyweight": "0-10"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "9b34f745-a8ca-42d0-b31b-7a88c40b49b3"
     }
   ],
   "preview": "",
