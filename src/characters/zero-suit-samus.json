@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "falling+nair sh+fair jab",
+      "damage": "30",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": ">10",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "More combos here\nhttps://tinyurl.com/zss-labs\n",
+      "uuid": "e87be367-3c73-4424-b096-2617f65e4854"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "zero-suit-samus",
