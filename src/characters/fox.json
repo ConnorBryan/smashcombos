@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "falling+bair jab",
+      "damage": "25.2",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "0"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "40adb99e-96ad-4910-a380-63b972c825b4"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "fox",
