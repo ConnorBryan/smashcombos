@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "falling+nair jab",
+      "damage": "24.0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "0",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": "10"
+      },
+      "demonstration": "",
+      "notes": "Nair can be also be used to cross up opponent and can lead to a turnaround jab.\nCan do more damage at the ledge",
+      "uuid": "2f8b24b3-f826-4d6e-a499-c13a8fbe9db4"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "fox",
