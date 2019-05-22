@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "fh+nair dtilt",
+      "damage": "19.7",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0",
+        "featherweight": "0",
+        "lightweight": "5",
+        "middleweight": "10",
+        "heavyweight": "15",
+        "superheavyweight": "20"
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "a4a74b68-b102-49c9-af64-e0ddc5c00cb5"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "fox",
