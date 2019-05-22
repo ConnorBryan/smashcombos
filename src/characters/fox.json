@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "falling+dair atkc+bair dtilt sh+bair nair",
+      "damage": "49.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "5",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "5f4f30c1-ff3a-4674-b795-49c4cf57675d"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "fox",
