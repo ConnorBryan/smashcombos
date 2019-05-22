@@ -36,7 +36,24 @@
   "tags": [
     "fastFaller"
   ],
-  "combos": [],
+  "combos": [
+    {
+      "input": "falling+bair dtilt",
+      "damage": "24.0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "0",
+        "middleweight": "0",
+        "heavyweight": "0",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Combo can be greatly extended",
+      "uuid": "49d46113-ba5e-4942-95fb-875705005b95"
+    }
+  ],
   "preview": "",
   "content": "\n\n",
   "basename": "fox",
