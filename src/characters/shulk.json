@@ -48,6 +48,24 @@
       "demonstration": "",
       "notes": "Requires buster art to be activated (at %'s where down tilt stops working, forward tilt should work)",
       "uuid": "fe774cee-cc25-44e4-8016-0b2a65436772"
+    },
+    {
+      "input": "nspecial grab pummel pummel dthrow nspecial uspecial",
+      "damage": "26.6",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "75",
+        "featherweight": "80",
+        "lightweight": "85",
+        "middleweight": "86",
+        "heavyweight": "90",
+        "superheavyweight": "95"
+      },
+      "demonstration": "https://youtu.be/WAlx9cZ7KjM",
+      "notes": "",
+      "uuid": "11c32f83-d489-47cc-8f27-7087b03884f5"
     }
   ],
   "preview": "",
