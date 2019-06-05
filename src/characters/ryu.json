@@ -32,7 +32,26 @@
       "value": "103"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "dspecial sh+dair uspecial",
+      "damage": "52.8",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "0-300",
+        "featherweight": "0-300",
+        "lightweight": "0-300",
+        "middleweight": "0-300",
+        "heavyweight": "0-300",
+        "superheavyweight": "0-300"
+      },
+      "demonstration": "",
+      "notes": "Focus Attack must be fully charged. True Shoryuken does 52.8%, while Up+B does 49.4%. Because of the damage of the combo, and the kill power, this combo is very good, although landing a fully charged Focus Attack may be difficult.",
+      "uuid": "361720df-2248-4690-a375-c5f1dcdaf5ce"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "ryu",
