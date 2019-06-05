@@ -32,7 +32,27 @@
       "value": "103"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "utilt utilt utilt utilt uspecial",
+      "damage": "31.2",
+      "tags": [
+        "diable",
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "0-26"
+      },
+      "demonstration": "",
+      "notes": "This is another good kill confirm for Ryu. Not only does it combo into Shoryuken (Ryu’s best kill move), it starts with a very fast attack. The other weight classes can be hit with Utilt a different number of times.",
+      "uuid": "32e97e6e-3a57-458a-8542-aa3b1f00c5a8"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "ryu",
