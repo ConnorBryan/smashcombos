@@ -32,7 +32,24 @@
       "value": "86"
     }
   },
-  "combos": [],
+  "combos": [
+    {
+      "input": "uthrow sh+uair",
+      "damage": "15.3",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "0-17",
+        "featherweight": "0-21",
+        "lightweight": "0-23",
+        "middleweight": "0-29",
+        "heavyweight": "0-39",
+        "superheavyweight": "0-45"
+      },
+      "demonstration": "",
+      "notes": "This combo is good for racking up damage quickly, especially since Sonic can Dash in and grab, having the fastest speed in the game.",
+      "uuid": "f95f687c-560a-4770-a30c-0142acdd676c"
+    }
+  ],
   "preview": "",
   "content": "\n",
   "basename": "sonic",
