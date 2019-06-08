@@ -1,7 +1,7 @@
 {
   "name": "Little Mac",
   "render": "../../static/img/little-mac.png",
-  "description": "...",
+  "description": "Little Mac hits hard and hits fast. He has one of the fastest run speeds in the game and has very fast tilt attacks. His special moves have good kill power (except for uspecial) and his stilt can be very deadly, considering it’s distance, kill power, and speed. However, his aerial attacks are abysmal, his vertical recovery is practically non-existent and his horizontal recovery is lacking. Little Mac can be deadly in the right hands - just don’t get hit. His combo game has been tuned down from SSB4.",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
