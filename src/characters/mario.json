@@ -51,6 +51,22 @@
       },
       "demonstration": "https://www.youtube.com/embed/Tx5w2cjmilQ",
       "notes": "-Is inescapable on big bodies.\n-Some aerials can convert into the initial grab\n\n-Depending on damage and DI, a short hop fair can be optimal to finish the combo, granting your only possible true forward air follow up.\n\n-If the full hop fair spikes onto the stage, follow up with a fast fall, full hop u-air, double jump u-air, up-special for optimal damage. This combo extensions grants the combo MASSIVE damage, eliminating over half of your opponents stock in most cases. \n\nAlso, depending on damage and DI, a short hop up-air may be necessary to extend the combo skipping the regrab. The rest of the combo works normally. "
+    },
+    {
+      "input": "utilt utilt utilt utilt sh+uair uair bair",
+      "damage": "54.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": "23-26"
+      },
+      "demonstration": "",
+      "notes": "Very good damage. If enemy is at 27% (Super Heavyweight), you can replace the bair with a nair.",
+      "uuid": "b4dd4978-eb80-4cb7-9c5b-753b2014c382"
     }
   ],
   "preview": "",
