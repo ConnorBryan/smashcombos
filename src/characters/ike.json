@@ -1,7 +1,7 @@
 {
   "name": "Ike",
   "render": "../../static/img/ike.png",
-  "description": "...",
+  "description": "Ike is your standard hard-hitter. He has slow attacks (except for his jab and dtilt) that hit hard and launch far. Although he lacks combos, he more than makes up with it with kill potential and damage (ala Ganon or Bowser).",
   "attributes": {
     "airAcceleration": {
       "baseValue": "0.01",
@@ -118,5 +118,6 @@
   "content": "\n",
   "basename": "ike",
   "id": "0bb63e70-e9b9-4149-be2c-2c0c61f8ce8d",
-  "slug": "ike"
+  "slug": "ike",
+  "tags": []
 }
