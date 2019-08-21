@@ -48,6 +48,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "8367fbcf-d88b-4d68-b986-fc19576dd22a"
+    },
+    {
+      "input": "jab jab jab",
+      "damage": "12",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "97a81bd0-f937-44bc-82ee-711506f09c4c"
     }
   ],
   "preview": "",
