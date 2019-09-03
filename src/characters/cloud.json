@@ -52,6 +52,22 @@
       "demonstration": "",
       "notes": "Primarily early percents just a safe neutral air confirm if you want to reset neutral against an aggressive/momentum player.",
       "uuid": "82e6af94-c973-4413-aab5-c30cbdea326d"
+    },
+    {
+      "input": "dashatk fair",
+      "damage": "30.0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "0f3145a2-bc92-4e49-be90-ce9a66fa8a51"
     }
   ],
   "preview": "",
