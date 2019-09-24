@@ -80,6 +80,22 @@
       "demonstration": "",
       "notes": "",
       "uuid": "aa9acb72-fc87-4b24-8f83-d411b45c4e60"
+    },
+    {
+      "input": "grab pummel pummel dthrow dashatk sh+sweet+uair",
+      "damage": "43.5",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Works at 0%. u/TechnoTyrant007\n",
+      "uuid": "6d853b6a-50ca-471d-af5a-a3e8bbad7ad8"
     }
   ],
   "preview": "",
