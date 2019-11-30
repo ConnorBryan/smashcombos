@@ -52,6 +52,22 @@
       "demonstration": "",
       "notes": "Primarily early percents just a safe neutral air confirm if you want to reset neutral against an aggressive/momentum player.",
       "uuid": "82e6af94-c973-4413-aab5-c30cbdea326d"
+    },
+    {
+      "input": "nair grab",
+      "damage": "08,1",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "",
+      "uuid": "ba7e2385-9156-4d65-bce6-8ba324650b6f"
     }
   ],
   "preview": "",
