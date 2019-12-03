@@ -69,6 +69,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "53f3e782-0725-4585-a492-ae3dc330e03a"
+    },
+    {
+      "input": "ff+nair sh+nair atkc+dspecial fair",
+      "damage": "45",
+      "tags": [
+        "fastFaller"
+      ],
+      "percentages": {
+        "balloonweight": "30",
+        "featherweight": "30",
+        "lightweight": "30",
+        "middleweight": "30",
+        "heavyweight": "30",
+        "superheavyweight": "30"
+      },
+      "demonstration": "",
+      "notes": "Quickly double jump, then fast fall onto your opponent. Then, before hitting the ground, do a nair. Then, once you hit the ground, jump immediately back up, and nair again. Then, jump up and footstool. Immediately after the footstool, do a down-special/deep-breathing. Immediately cancel the deep breathing. Fall with your opponent, then get in front of them and hit them with the back of your forward air. This will get them locked on the ground. Do whatever else combo from there.",
+      "uuid": "951f1c8e-2363-462e-a40b-4b598274802e"
     }
   ],
   "preview": "",
