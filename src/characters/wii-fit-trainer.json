@@ -69,6 +69,24 @@
       "demonstration": "",
       "notes": "",
       "uuid": "53f3e782-0725-4585-a492-ae3dc330e03a"
+    },
+    {
+      "input": "jab jab jab usmash",
+      "damage": "",
+      "tags": [
+        "killConfirm"
+      ],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Do 3 jabs to bury them, then go right where they are and up smash. Pretty sure anywhere above 60-75% kills.",
+      "uuid": "20e4d80a-cadf-498a-a3b4-d1b0cd958d50"
     }
   ],
   "preview": "",
