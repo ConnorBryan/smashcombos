@@ -52,6 +52,22 @@
       "demonstration": "",
       "notes": "Primarily early percents just a safe neutral air confirm if you want to reset neutral against an aggressive/momentum player.",
       "uuid": "82e6af94-c973-4413-aab5-c30cbdea326d"
+    },
+    {
+      "input": "falling+fair sspecial",
+      "damage": "0",
+      "tags": [],
+      "percentages": {
+        "balloonweight": "",
+        "featherweight": "",
+        "lightweight": "",
+        "middleweight": "",
+        "heavyweight": "",
+        "superheavyweight": ""
+      },
+      "demonstration": "",
+      "notes": "Low percent",
+      "uuid": "344fd2f5-d8d5-42f0-a3dc-450e716e5391"
     }
   ],
   "preview": "",
